@@ -515,8 +515,8 @@ echo "编码后URL: $encoded_combined_urls"
 
 # 构建订阅链接
 echo "========== 生成订阅链接 =========="
-subscribeclash="https://api-suc.0z.gs/sub?target=clash&url=$encoded_combined_urls&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2Fzsokami%2FACL4SSR%2Frefs%2Fheads%2Fmain%2FACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini&filename=GitHub-GetNode&emoji=true&sort=true&udp=true"
-subscribeV2ray="https://api-suc.0z.gs/sub?target=v2ray&url=$encoded_combined_urls&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2Fzsokami%2FACL4SSR%2Frefs%2Fheads%2Fmain%2FACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini&filename=GitHub-GetNode&emoji=true&sort=true&udp=true"
+subscribeclash="https://api.v1.mk/sub?target=clash&url=$encoded_combined_urls&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2Fzsokami%2FACL4SSR%2Frefs%2Fheads%2Fmain%2FACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini&filename=GitHub-GetNode&emoji=true&sort=true&udp=true"
+subscribeV2ray="https://api.v1.mk/sub?target=v2ray&url=$encoded_combined_urls&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2Fzsokami%2FACL4SSR%2Frefs%2Fheads%2Fmain%2FACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini&filename=GitHub-GetNode&emoji=true&sort=true&udp=true"
 
 # 打印完整的订阅链接参数
 echo "========== 订阅链接详情 =========="
@@ -575,17 +575,21 @@ fi
 # 下载订阅
 echo "========== 下载订阅文件 =========="
 echo "下载Clash配置..."
-if wget --timeout=90 --tries=3 -q "$subscribeclash" -O ./clash.yaml; then
+if wget --timeout=90 --tries=3 --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -q "$subscribeclash" -O ./clash.yaml; then
     echo "Clash配置下载成功"
 else
-    echo "Clash配置下载失败"
+    echo "Clash配置下载失败，退出码: $?"
+    # 尝试显示更多错误信息
+    wget --timeout=90 --tries=1 --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -S "$subscribeclash" -O ./clash.yaml 2>&1 | head -20
 fi
 
 echo "下载V2Ray配置..."
-if wget --timeout=90 --tries=3 -q "$subscribeV2ray" -O ./v2ray.txt; then
+if wget --timeout=90 --tries=3 --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -q "$subscribeV2ray" -O ./v2ray.txt; then
     echo "V2Ray配置下载成功"
 else
-    echo "V2Ray配置下载失败"
+    echo "V2Ray配置下载失败，退出码: $?"
+    # 尝试显示更多错误信息
+    wget --timeout=90 --tries=1 --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -S "$subscribeV2ray" -O ./v2ray.txt 2>&1 | head -20
 fi
 
 echo "========== 任务完成 =========="
