@@ -101,7 +101,8 @@ check_template_urls() {
     echo "模板[$template_key]: 开始检查URL可用性"
     
     # 检查最近几天的URL (从当天开始)
-    for ((i=0; i<max_days_to_check; i++)); do
+    i=0
+    while [ $i -lt $max_days_to_check ]; do
         # 计算日期 (当天及之前几天)
         if [ $i -gt 0 ]; then
             local date_info=$(calculate_previous_date $i)
@@ -149,6 +150,8 @@ check_template_urls() {
         if [ $(( (i+1) % 5 )) -eq 0 ]; then
             echo "已检查 $((i+1)) 天，继续搜索..."
         fi
+        
+        i=$((i + 1))
     done
 }
 
