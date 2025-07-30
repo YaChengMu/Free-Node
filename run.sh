@@ -30,7 +30,9 @@ calculate_previous_date() {
     days_to_subtract=$1
     # 在POSIX shell中使用不同的日期计算方法
     target_date=$(date -d "$currentyear-$currentmonth_padded-$currentday_padded -$days_to_subtract days" +"%Y %m %d %m %d" 2>/dev/null || echo "$currentyear $currentmonth_padded $currentday_padded $currentmonth $currentday")
-    echo $target_date
+    # 确保month_no_zero不包含前导零
+    target_date_no_zero=$(echo "$target_date" | awk '{print $1 " " $2 " " $3 " " ($4 + 0) " " ($5 + 0)}')
+    echo $target_date_no_zero
 }
 
 # ===== URL处理函数 =====
@@ -77,9 +79,9 @@ check_url_availability() {
     # -s: 静默模式，不显示进度
     # -L: 跟随重定向
     # -I: 只获取头信息
-    # --connect-timeout 10: 连接超时10秒
-    # --max-time 20: 总超时20秒
-    status_code=$(curl -s -L -I --connect-timeout 10 --max-time 20 -o /dev/null -w '%{http_code}' "$url")
+    # --connect-timeout 20: 连接超时20秒（从15秒增加到20秒）
+    # --max-time 45: 总超时45秒（从30秒增加到45秒）
+    status_code=$(curl -s -L -I --connect-timeout 20 --max-time 45 -o /dev/null -w '%{http_code}' "$url")
     
     # 检查状态码是否为200或30x（表示成功或重定向）
     case "$status_code" in
@@ -148,7 +150,7 @@ check_template_urls() {
         # 特殊处理模板
         if [ "$template_key" = "3" ]; then
             # 模板3只需要一个date_full参数
-            check_url=$(printf "$template" "$check_param3")
+            check_url=$(printf "$template" "$date_full")
         elif [ "$template_key" = "1" ] || [ "$template_key" = "2" ]; then
             # 模板1和2需要三个参数
             check_url=$(printf "$template" "$check_param1" "$check_param2" "$check_param3")
@@ -168,6 +170,9 @@ check_template_urls() {
                 check_url=$(printf "$template" "$check_param3")
             fi
         fi
+        
+        # 添加调试信息
+        echo "正在检查URL: $check_url (模板 $template_key, 第 $i 天)" >&2
         
         if check_url_availability "$check_url"; then
             echo "$check_url"
@@ -241,9 +246,10 @@ while [ $i -le 12 ]; do
         result=$(check_template_urls "$i" "$template" "$param1_type" "$param2_type" "$param3_type")
         if [ -n "$result" ]; then
             echo "${i}|${result}" >> "$temp_file"
-            echo "使用模板[$i]: $result" >&2
+            echo "检测到有效URL (模板[$i]): $result" >&2
         else
             echo "$i|未找到可用URL" >> "$temp_file"
+            echo "模板[$i] 未找到有效URL" >&2
         fi
     ) &
     
@@ -294,14 +300,17 @@ if [ $found_count -eq 0 ]; then
             1)
                 # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
                 url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
+                echo "生成模板1的默认URL: $url" >&2
                 ;;
             2)
                 # 模板2: https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full
                 url=$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")
+                echo "生成模板2的默认URL: $url" >&2
                 ;;
             3)
                 # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
                 url=$(printf "$template" "$date_full_default")
+                echo "生成模板3的默认URL: $url" >&2
                 ;;
             4)
                 # 模板4: https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash (无参数)
@@ -372,17 +381,23 @@ if [ $found_count -eq 0 ]; then
         i=$((i + 1))
     done
 else
-    # 显示最终使用的URL
+    # 显示最终使用的URL，并收集到valid_urls变量中
     i=1
     while [ $i -le 12 ]; do
         eval "url_value=\$template_valid_urls_${i}"
         if [ -n "$url_value" ]; then
             echo "使用模板[$i]: $url_value"
+            # 同时收集到valid_urls变量中
+            if [ -z "$valid_urls" ]; then
+                valid_urls="$url_value"
+            else
+                valid_urls="$valid_urls|$url_value"
+            fi
         fi
         i=$((i + 1))
     done
 fi
-    
+
 # 如果没有找到有效的URL，则使用默认URL
 if [ -z "$valid_urls" ]; then
     echo "未找到任何有效URL，使用默认URL"
@@ -403,14 +418,17 @@ if [ -z "$valid_urls" ]; then
             1)
                 # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
                 url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
+                echo "生成模板1的备用URL: $url" >&2
                 ;;
             2)
                 # 模板2: https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full
                 url=$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")
+                echo "生成模板2的备用URL: $url" >&2
                 ;;
             3)
                 # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
                 url=$(printf "$template" "$date_full_default")
+                echo "生成模板3的备用URL: $url" >&2
                 ;;
             4)
                 # 模板4: https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash (无参数)
@@ -483,125 +501,6 @@ if [ -z "$valid_urls" ]; then
             fi
         fi
             
-        i=$((i + 1))
-    done
-fi
-
-# 收集所有有效的URL到一个数组
-valid_urls=""
-i=1
-while [ $i -le 12 ]; do
-    eval "url_value=\$template_valid_urls_${i}"
-    if [ -n "$url_value" ]; then
-        if [ -z "$valid_urls" ]; then
-            valid_urls="$url_value"
-        else
-            valid_urls="$valid_urls|$url_value"
-        fi
-    fi
-    i=$((i + 1))
-done
-
-# 如果没有找到有效的URL，则使用默认URL
-if [ -z "$valid_urls" ]; then
-    echo "未找到任何有效URL，使用默认URL"
-    i=1
-    while [ $i -le 12 ]; do
-        eval "template_info=\$url_template_$i"
-        template=$(echo "$template_info" | cut -d'|' -f1)
-        param1_type=$(echo "$template_info" | cut -d'|' -f2)
-        param2_type=$(echo "$template_info" | cut -d'|' -f3)
-        param3_type=$(echo "$template_info" | cut -d'|' -f4)
-        
-        # 使用当天日期生成默认URL
-        date_full_default="${currentyear}${currentmonth_padded}${currentday_padded}"
-        
-        # 根据模板参数数量和类型生成默认URL
-        url=""
-        case $i in
-            1)
-                # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
-                url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
-                ;;
-            2)
-                # 模板2: https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full
-                url=$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")
-                ;;
-            3)
-                # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
-                url=$(printf "$template" "$date_full_default")
-                ;;
-            4)
-                # 模板4: https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash (无参数)
-                url="$template"
-                ;;
-            7)
-                # 模板7: https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub (无参数)
-                url="$template"
-                ;;
-            *)
-                # 处理其他模板 - 对于只有一个参数的模板
-                if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
-                    # 只有一个参数的模板，尝试用日期参数
-                    url=$(printf "$template" "$date_full_default")
-                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -n "$param3_type" ]; then
-                    # 三个参数的模板
-                    # 处理年份参数
-                    case $param1_type in
-                        "year") param1_val="$currentyear" ;;
-                        *) param1_val="$currentyear" ;;
-                    esac
-                    
-                    # 处理月份参数
-                    case $param2_type in
-                        "month") param2_val="$currentmonth_padded" ;;
-                        "month_no_zero") param2_val="$currentmonth" ;;
-                        "month_padded") param2_val="$currentmonth_padded" ;;
-                        *) param2_val="$currentmonth" ;;
-                    esac
-                    
-                    # 处理日期参数
-                    case $param3_type in
-                        "date") param3_val="$currentday_padded" ;;
-                        "date_no_zero") param3_val="$currentday" ;;
-                        "date_padded") param3_val="$currentday_padded" ;;
-                        "date_full") param3_val="$date_full_default" ;;
-                        *) param3_val="$date_full_default" ;;
-                    esac
-                    
-                    url=$(printf "$template" "$param1_val" "$param2_val" "$param3_val")
-                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -z "$param3_type" ]; then
-                    # 两个参数的模板
-                    # 处理第一个参数
-                    case $param1_type in
-                        "year") param1_val="$currentyear" ;;
-                        *) param1_val="$currentyear" ;;
-                    esac
-                    
-                    # 处理第二个参数
-                    case $param2_type in
-                        "month") param2_val="$currentmonth_padded" ;;
-                        "month_no_zero") param2_val="$currentmonth" ;;
-                        "month_padded") param2_val="$currentmonth_padded" ;;
-                        "date_full") param2_val="$date_full_default" ;;
-                        *) param2_val="$date_full_default" ;;
-                    esac
-                    
-                    url=$(printf "$template" "$param1_val" "$param2_val")
-                fi
-                ;;
-        esac
-        
-        # 保存URL
-        if [ -n "$url" ]; then
-            eval "template_valid_urls_${i}=\"$url\""
-            if [ -z "$valid_urls" ]; then
-                valid_urls="$url"
-            else
-                valid_urls="$valid_urls|$url"
-            fi
-        fi
-        
         i=$((i + 1))
     done
 fi
@@ -676,14 +575,14 @@ fi
 # 下载订阅
 echo "========== 下载订阅文件 =========="
 echo "下载Clash配置..."
-if curl -s "$subscribeclash" -o ./clash.yaml; then
+if wget --timeout=90 --tries=3 -q "$subscribeclash" -O ./clash.yaml; then
     echo "Clash配置下载成功"
 else
     echo "Clash配置下载失败"
 fi
 
 echo "下载V2Ray配置..."
-if curl -s "$subscribeV2ray" -o ./v2ray.txt; then
+if wget --timeout=90 --tries=3 -q "$subscribeV2ray" -O ./v2ray.txt; then
     echo "V2Ray配置下载成功"
 else
     echo "V2Ray配置下载失败"
