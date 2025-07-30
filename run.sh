@@ -168,7 +168,7 @@ check_template_urls() {
                 check_url=$(printf "$template" "$check_param3")
             fi
         fi
-        echo "Checking URL: $check_url"
+        
         if check_url_availability "$check_url"; then
             echo "$check_url"
             return 0
