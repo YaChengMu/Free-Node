@@ -16,8 +16,13 @@ get_current_date() {
     currentmonth_padded=$(date +%m)
     currentday_padded=$(date +%d)
     # 不包含前导零的月份和日期
-    currentmonth=$(date +%-m 2>/dev/null || date +%m | sed 's/^0*//')
-    currentday=$(date +%-d 2>/dev/null || date +%d | sed 's/^0*//')
+    currentmonth=$(echo "$currentmonth_padded" | sed 's/^0*//')
+    currentday=$(echo "$currentday_padded" | sed 's/^0*//')
+    
+    # 确保日期部分始终为两位数
+    if [ -z "$currentday" ]; then
+        currentday="0"
+    fi
 }
 
 # 计算前N天的日期函数
@@ -102,7 +107,7 @@ check_template_urls() {
     date_padded=$currentday_padded
     month_no_zero=$currentmonth
     date_no_zero=$currentday
-    date_full="${year}${month_padded}$(printf "%02d" $date_padded)"
+    date_full="${year}${month_padded}${date_padded}"
     
     # 检查最近几天的URL (从当天开始)
     i=0
@@ -115,7 +120,7 @@ check_template_urls() {
             date_padded=$(echo $date_info | cut -d' ' -f3)
             month_no_zero=$(echo $date_info | cut -d' ' -f4)
             date_no_zero=$(echo $date_info | cut -d' ' -f5)
-            date_full="${year}${month_padded}$(printf "%02d" $date_padded)"
+            date_full="${year}${month_padded}${date_padded}"
         fi
         
         # 根据参数类型选择对应的值
@@ -139,8 +144,31 @@ check_template_urls() {
         esac
         
         # 使用printf格式化URL
-        check_url=$(printf "$template" "$check_param1" "$check_param2" "$check_param3")
-        
+        check_url=""
+        # 特殊处理模板
+        if [ "$template_key" = "3" ]; then
+            # 模板3只需要一个date_full参数
+            check_url=$(printf "$template" "$check_param3")
+        elif [ "$template_key" = "1" ] || [ "$template_key" = "2" ]; then
+            # 模板1和2需要三个参数
+            check_url=$(printf "$template" "$check_param1" "$check_param2" "$check_param3")
+        else
+            # 其他模板的处理逻辑
+            if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
+                # 只有一个参数的模板
+                check_url=$(printf "$template" "$check_param3")
+            elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -n "$param3_type" ]; then
+                # 三个参数的模板
+                check_url=$(printf "$template" "$check_param1" "$check_param2" "$check_param3")
+            elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -z "$param3_type" ]; then
+                # 两个参数的模板
+                check_url=$(printf "$template" "$check_param1" "$check_param2")
+            else
+                # 默认处理方式
+                check_url=$(printf "$template" "$check_param3")
+            fi
+        fi
+        echo "Checking URL: $check_url"
         if check_url_availability "$check_url"; then
             echo "$check_url"
             return 0
@@ -258,27 +286,36 @@ if [ $found_count -eq 0 ]; then
         param3_type=$(echo "$template_info" | cut -d'|' -f4)
         
         # 使用当天日期生成默认URL
-        date_full_default="${currentyear}${currentmonth_padded}$(printf "%02d" $currentday_padded)"
+        date_full_default="${currentyear}${currentmonth_padded}${currentday_padded}"
         
         # 根据模板参数数量和类型生成默认URL
+        url=""
         case $i in
             1)
                 # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
-                eval "template_valid_urls_${i}=\"$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")\""
+                url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
                 ;;
             2)
                 # 模板2: https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full
-                eval "template_valid_urls_${i}=\"$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")\""
+                url=$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")
                 ;;
             3)
                 # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
-                eval "template_valid_urls_${i}=\"$(printf "$template" "$date_full_default")\""
+                url=$(printf "$template" "$date_full_default")
+                ;;
+            4)
+                # 模板4: https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash (无参数)
+                url="$template"
+                ;;
+            7)
+                # 模板7: https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub (无参数)
+                url="$template"
                 ;;
             *)
-                # 处理其他模板 - 对于只有一个参数的模板（如模板4）
+                # 处理其他模板 - 对于只有一个参数的模板
                 if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
                     # 只有一个参数的模板，尝试用日期参数
-                    eval "template_valid_urls_${i}=\"$(printf "$template" "$date_full_default")\""
+                    url=$(printf "$template" "$date_full_default")
                 elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -n "$param3_type" ]; then
                     # 三个参数的模板
                     # 处理年份参数
@@ -304,7 +341,7 @@ if [ $found_count -eq 0 ]; then
                         *) param3_val="$date_full_default" ;;
                     esac
                     
-                    eval "template_valid_urls_${i}=\"$(printf "$template" "$param1_val" "$param2_val" "$param3_val")\""
+                    url=$(printf "$template" "$param1_val" "$param2_val" "$param3_val")
                 elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -z "$param3_type" ]; then
                     # 两个参数的模板
                     # 处理第一个参数
@@ -322,10 +359,15 @@ if [ $found_count -eq 0 ]; then
                         *) param2_val="$date_full_default" ;;
                     esac
                     
-                    eval "template_valid_urls_${i}=\"$(printf "$template" "$param1_val" "$param2_val")\""
+                    url=$(printf "$template" "$param1_val" "$param2_val")
                 fi
                 ;;
         esac
+        
+        # 保存URL
+        if [ -n "$url" ]; then
+            eval "template_valid_urls_${i}=\"$url\""
+        fi
         
         i=$((i + 1))
     done
@@ -337,6 +379,110 @@ else
         if [ -n "$url_value" ]; then
             echo "使用模板[$i]: $url_value"
         fi
+        i=$((i + 1))
+    done
+fi
+    
+# 如果没有找到有效的URL，则使用默认URL
+if [ -z "$valid_urls" ]; then
+    echo "未找到任何有效URL，使用默认URL"
+    i=1
+    while [ $i -le 12 ]; do
+        eval "template_info=\$url_template_$i"
+        template=$(echo "$template_info" | cut -d'|' -f1)
+        param1_type=$(echo "$template_info" | cut -d'|' -f2)
+        param2_type=$(echo "$template_info" | cut -d'|' -f3)
+        param3_type=$(echo "$template_info" | cut -d'|' -f4)
+            
+        # 使用当天日期生成默认URL
+        date_full_default="${currentyear}${currentmonth_padded}${currentday_padded}"
+            
+        # 根据模板参数数量和类型生成默认URL
+        url=""
+        case $i in
+            1)
+                # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
+                url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
+                ;;
+            2)
+                # 模板2: https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full
+                url=$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")
+                ;;
+            3)
+                # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
+                url=$(printf "$template" "$date_full_default")
+                ;;
+            4)
+                # 模板4: https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash (无参数)
+                url="$template"
+                ;;
+            7)
+                # 模板7: https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub (无参数)
+                url="$template"
+                ;;
+            *)
+                # 处理其他模板 - 对于只有一个参数的模板
+                if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
+                    # 只有一个参数的模板，尝试用日期参数
+                    url=$(printf "$template" "$date_full_default")
+                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -n "$param3_type" ]; then
+                    # 三个参数的模板
+                    # 处理年份参数
+                    case $param1_type in
+                        "year") param1_val="$currentyear" ;;
+                        *) param1_val="$currentyear" ;;
+                    esac
+                        
+                    # 处理月份参数
+                    case $param2_type in
+                        "month") param2_val="$currentmonth_padded" ;;
+                        "month_no_zero") param2_val="$currentmonth" ;;
+                        "month_padded") param2_val="$currentmonth_padded" ;;
+                        *) param2_val="$currentmonth" ;;
+                    esac
+                        
+                    # 处理日期参数
+                    case $param3_type in
+                        "date") param3_val="$currentday_padded" ;;
+                        "date_no_zero") param3_val="$currentday" ;;
+                        "date_padded") param3_val="$currentday_padded" ;;
+                        "date_full") param3_val="$date_full_default" ;;
+                        *) param3_val="$date_full_default" ;;
+                    esac
+                        
+                    url=$(printf "$template" "$param1_val" "$param2_val" "$param3_val")
+                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -z "$param3_type" ]; then
+                    # 两个参数的模板
+                    # 处理第一个参数
+                    case $param1_type in
+                        "year") param1_val="$currentyear" ;;
+                        *) param1_val="$currentyear" ;;
+                    esac
+                        
+                    # 处理第二个参数
+                    case $param2_type in
+                        "month") param2_val="$currentmonth_padded" ;;
+                        "month_no_zero") param2_val="$currentmonth" ;;
+                        "month_padded") param2_val="$currentmonth_padded" ;;
+                        "date_full") param2_val="$date_full_default" ;;
+                        *) param2_val="$date_full_default" ;;
+                    esac
+                        
+                    url=$(printf "$template" "$param1_val" "$param2_val")
+                fi
+                ;;
+        esac
+            
+        # 保存URL
+        if [ -n "$url" ]; then
+            eval "template_valid_urls_${i}=\"$url\""
+            if [ -z "$valid_urls" ]; then
+                valid_urls="$url"
+            else
+                valid_urls="$valid_urls|$url"
+            fi
+        fi
+            
         i=$((i + 1))
     done
 fi
@@ -368,7 +514,7 @@ if [ -z "$valid_urls" ]; then
         param3_type=$(echo "$template_info" | cut -d'|' -f4)
         
         # 使用当天日期生成默认URL
-        date_full_default="${currentyear}${currentmonth_padded}$(printf "%02d" $currentday_padded)"
+        date_full_default="${currentyear}${currentmonth_padded}${currentday_padded}"
         
         # 根据模板参数数量和类型生成默认URL
         url=""
@@ -385,8 +531,16 @@ if [ -z "$valid_urls" ]; then
                 # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
                 url=$(printf "$template" "$date_full_default")
                 ;;
+            4)
+                # 模板4: https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash (无参数)
+                url="$template"
+                ;;
+            7)
+                # 模板7: https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub (无参数)
+                url="$template"
+                ;;
             *)
-                # 处理其他模板 - 对于只有一个参数的模板（如模板4）
+                # 处理其他模板 - 对于只有一个参数的模板
                 if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
                     # 只有一个参数的模板，尝试用日期参数
                     url=$(printf "$template" "$date_full_default")
