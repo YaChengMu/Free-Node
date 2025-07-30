@@ -71,11 +71,14 @@ check_url_availability() {
     local status_code=$(curl -s -L -I --connect-timeout 10 --max-time 20 -o /dev/null -w '%{http_code}' "$url")
     
     # 检查状态码是否为200或30x（表示成功或重定向）
-    if [[ "$status_code" =~ ^(200|30[0-9])$ ]]; then
-        return 0  # URL可用
-    else
-        return 1  # URL不可用
-    fi
+    case "$status_code" in
+        200|30[0-9])
+            return 0  # URL可用
+            ;;
+        *)
+            return 1  # URL不可用
+            ;;
+    esac
 }
 
 # 检查单个模板的URL可用性
@@ -186,7 +189,7 @@ for template_key in "${!url_templates[@]}"; do
     # 后台运行检查，结果写入临时文件
     (
         result=$(check_template_urls "$template_key" "$template" "$param1_type" "$param2_type" "$param3_type")
-        if [ -n "$result" ] && [[ "$result" != *"开始检查URL可用性"* ]]; then
+        if [ -n "$result" ] && [ "$result" != *"开始检查URL可用性"* ]; then
             echo "${template_key}|${result}" >> "$temp_file"
             echo "使用模板[$template_key]: $result"
         else
@@ -241,10 +244,10 @@ if [ $found_count -eq 0 ]; then
                 ;;
             *)
                 # 处理其他模板 - 对于只有一个参数的模板（如模板4）
-                if [[ -z "$param2_type" && -z "$param3_type" ]]; then
+                if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
                     # 只有一个参数的模板，尝试用日期参数
                     template_valid_urls[$template_key]=$(printf "$template" "$date_full_default")
-                elif [[ -n "$param1_type" && -n "$param2_type" && -n "$param3_type" ]]; then
+                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -n "$param3_type" ]; then
                     # 三个参数的模板
                     # 处理年份参数
                     case $param1_type in
@@ -270,7 +273,7 @@ if [ $found_count -eq 0 ]; then
                     esac
                     
                     template_valid_urls[$template_key]=$(printf "$template" "$param1_val" "$param2_val" "$param3_val")
-                elif [[ -n "$param1_type" && -n "$param2_type" && -z "$param3_type" ]]; then
+                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -z "$param3_type" ]; then
                     # 两个参数的模板
                     # 处理第一个参数
                     case $param1_type in
