@@ -104,8 +104,6 @@ check_template_urls() {
     date_no_zero=$currentday
     date_full="${year}${month_padded}$(printf "%02d" $date_padded)"
     
-    echo "模板[$template_key]: 开始检查URL可用性"
-    
     # 检查最近几天的URL (从当天开始)
     i=0
     while [ $i -lt $max_days_to_check ]; do
@@ -143,23 +141,22 @@ check_template_urls() {
         # 使用printf格式化URL
         check_url=$(printf "$template" "$check_param1" "$check_param2" "$check_param3")
         
-        echo "检查: $check_url"
         if check_url_availability "$check_url"; then
-            echo "可用: $check_url"
             echo "$check_url"
-            break
-        else
-            echo "不可用: $check_url"
+            return 0
         fi
         
         # 每检查5天打印一次进度
         remainder=$(( (i+1) % 5 ))
         if [ $remainder -eq 0 ]; then
-            echo "已检查 $((i+1)) 天，继续搜索..."
+            echo "已检查 $((i+1)) 天，继续搜索..." >&2
         fi
         
         i=$((i + 1))
     done
+    
+    # 如果没有找到有效的URL，返回空
+    return 1
 }
 
 # ===== 主程序 =====
@@ -215,17 +212,8 @@ while [ $i -le 12 ]; do
     (
         result=$(check_template_urls "$i" "$template" "$param1_type" "$param2_type" "$param3_type")
         if [ -n "$result" ]; then
-            case "$result" in
-                *"开始检查URL可用性"*)
-                    # 不包含这个字符串，说明是有效的URL
-                    echo "${i}|${result}" >> "$temp_file"
-                    echo "使用模板[$i]: $result"
-                    ;;
-                *)
-                    # 包含这个字符串，说明没有找到有效的URL
-                    echo "$i|未找到可用URL" >> "$temp_file"
-                    ;;
-            esac
+            echo "${i}|${result}" >> "$temp_file"
+            echo "使用模板[$i]: $result" >&2
         else
             echo "$i|未找到可用URL" >> "$temp_file"
         fi
@@ -368,6 +356,102 @@ while [ $i -le 12 ]; do
     i=$((i + 1))
 done
 
+# 如果没有找到有效的URL，则使用默认URL
+if [ -z "$valid_urls" ]; then
+    echo "未找到任何有效URL，使用默认URL"
+    i=1
+    while [ $i -le 12 ]; do
+        eval "template_info=\$url_template_$i"
+        template=$(echo "$template_info" | cut -d'|' -f1)
+        param1_type=$(echo "$template_info" | cut -d'|' -f2)
+        param2_type=$(echo "$template_info" | cut -d'|' -f3)
+        param3_type=$(echo "$template_info" | cut -d'|' -f4)
+        
+        # 使用当天日期生成默认URL
+        date_full_default="${currentyear}${currentmonth_padded}$(printf "%02d" $currentday_padded)"
+        
+        # 根据模板参数数量和类型生成默认URL
+        url=""
+        case $i in
+            1)
+                # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
+                url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
+                ;;
+            2)
+                # 模板2: https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full
+                url=$(printf "$template" "$currentyear" "$currentmonth_padded" "$date_full_default")
+                ;;
+            3)
+                # 模板3: https://free.datiya.com/uploads/%s-clash.yaml|date_full
+                url=$(printf "$template" "$date_full_default")
+                ;;
+            *)
+                # 处理其他模板 - 对于只有一个参数的模板（如模板4）
+                if [ -z "$param2_type" ] && [ -z "$param3_type" ]; then
+                    # 只有一个参数的模板，尝试用日期参数
+                    url=$(printf "$template" "$date_full_default")
+                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -n "$param3_type" ]; then
+                    # 三个参数的模板
+                    # 处理年份参数
+                    case $param1_type in
+                        "year") param1_val="$currentyear" ;;
+                        *) param1_val="$currentyear" ;;
+                    esac
+                    
+                    # 处理月份参数
+                    case $param2_type in
+                        "month") param2_val="$currentmonth_padded" ;;
+                        "month_no_zero") param2_val="$currentmonth" ;;
+                        "month_padded") param2_val="$currentmonth_padded" ;;
+                        *) param2_val="$currentmonth" ;;
+                    esac
+                    
+                    # 处理日期参数
+                    case $param3_type in
+                        "date") param3_val="$currentday_padded" ;;
+                        "date_no_zero") param3_val="$currentday" ;;
+                        "date_padded") param3_val="$currentday_padded" ;;
+                        "date_full") param3_val="$date_full_default" ;;
+                        *) param3_val="$date_full_default" ;;
+                    esac
+                    
+                    url=$(printf "$template" "$param1_val" "$param2_val" "$param3_val")
+                elif [ -n "$param1_type" ] && [ -n "$param2_type" ] && [ -z "$param3_type" ]; then
+                    # 两个参数的模板
+                    # 处理第一个参数
+                    case $param1_type in
+                        "year") param1_val="$currentyear" ;;
+                        *) param1_val="$currentyear" ;;
+                    esac
+                    
+                    # 处理第二个参数
+                    case $param2_type in
+                        "month") param2_val="$currentmonth_padded" ;;
+                        "month_no_zero") param2_val="$currentmonth" ;;
+                        "month_padded") param2_val="$currentmonth_padded" ;;
+                        "date_full") param2_val="$date_full_default" ;;
+                        *) param2_val="$date_full_default" ;;
+                    esac
+                    
+                    url=$(printf "$template" "$param1_val" "$param2_val")
+                fi
+                ;;
+        esac
+        
+        # 保存URL
+        if [ -n "$url" ]; then
+            eval "template_valid_urls_${i}=\"$url\""
+            if [ -z "$valid_urls" ]; then
+                valid_urls="$url"
+            else
+                valid_urls="$valid_urls|$url"
+            fi
+        fi
+        
+        i=$((i + 1))
+    done
+fi
+
 # 使用管道符号(|)连接所有有效URL
 combined_urls="$valid_urls"
 echo "合并URL: $combined_urls"
@@ -391,14 +475,23 @@ echo ""
 echo "订阅链接参数解析:"
 echo "- 目标格式: clash"
 echo "- 源URL列表: "
+
+# 显示所有有效的URL
+valid_url_count=0
 i=1
 while [ $i -le 12 ]; do
     eval "url_value=\$template_valid_urls_${i}"
     if [ -n "$url_value" ]; then
         echo "  * $url_value"
+        valid_url_count=$((valid_url_count + 1))
     fi
     i=$((i + 1))
 done
+
+# 如果没有找到任何有效URL，显示提示信息
+if [ $valid_url_count -eq 0 ]; then
+    echo "  * 未找到有效URL"
+fi
 
 # 解码配置URL
 config_encoded="https%3A%2F%2Fraw.githubusercontent.com%2FNZESupB%2FProfile%2Fmain%2Foutpref%2Fpypref%2Fpyfull.ini"
