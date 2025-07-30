@@ -42,7 +42,8 @@ urlencode() {
     local encoded=""
     local pos c o
     
-    for ((pos=0; pos<strlen; pos++)); do
+    pos=0
+    while [ $pos -lt $strlen ]; do
         c=${string:$pos:1}
         case "$c" in
             [-_.~a-zA-Z0-9]) # 这些字符不需要编码
@@ -53,6 +54,7 @@ urlencode() {
                 encoded+="$o"
                 ;;
         esac
+        pos=$((pos + 1))
     done
     echo "$encoded"
 }
