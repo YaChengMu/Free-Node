@@ -2,30 +2,43 @@
 name: Download The SUBSCRIBE
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 手动触发
   push:
-    branch:
+    分支:  # 注意：原配置是branch（单数），正确是branches（复数）
       - main
   schedule:   
-    - cron: '0 * * * *'   #国际标准时间，北京时间+8，即下午1点钟
-
-
+    - cron: '0 * * * *'   # 国际标准时间，北京时间+8，即上午8点（原注释写的下午1点是错误的，需确认 cron 表达式）
 
 jobs:
   run-csjs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main  #采用main分支下的
+      - uses: actions/checkout@v4  # 建议用固定版本v4，而非main分支（更稳定）
+        with:
+          fetch-depth: 0  # 拉取完整历史，避免git pull冲突
+
       - name: Download the subscribe
         run: |
           bash ./test.sh
+
       - name: Commit Changes
         run: |
-         git config --global user.email XinYiAndXiaoLan@msn.cn
-         git config --global user.name YaChengMu
-         git add .
-         git commit -m"由github actions推送,日期:`date`"
-         git pull --rebase
+          # 配置git身份
+          git config --global user.email XinYiAndXiaoLan@msn.cn
+          git config --global user.name YaChengMu
+          
+          # 核心：检查工作区是否有变更（无变更则直接退出，避免commit报错）
+          if ! git status --porcelain | grep -q .; then
+            echo "ℹ️ 工作区无变更，无需提交"
+            exit 0
+          fi
+          
+          # 有变更时才执行提交逻辑
+          git add .
+          # 先拉取最新代码（避免冲突），再提交
+          git pull --rebase origin main
+          git commit -m"由github actions推送,日期:`date`"
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
