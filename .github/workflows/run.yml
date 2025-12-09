@@ -1,48 +1,57 @@
-# name属性用来指定这个工作流的名字
 name: Download The SUBSCRIBE
 
 on:
-  workflow_dispatch:  # 手动触发
+  workflow_dispatch:
   push:
-    分支:  # 注意：原配置是branch（单数），正确是branches（复数）
+    branches:  # 修复单数branch→复数branches
       - main
   schedule:   
-    - cron: '0 * * * *'   # 国际标准时间，北京时间+8，即上午8点（原注释写的下午1点是错误的，需确认 cron 表达式）
+    - cron: '0 * * * *'   # 国际标准时间，北京时间+8（每小时8点执行）
 
 jobs:
   run-csjs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4  # 建议用固定版本v4，而非main分支（更稳定）
+      - uses: actions/checkout@v4  # 用稳定版本v4，而非main分支
         with:
-          fetch-depth: 0  # 拉取完整历史，避免git pull冲突
+          fetch-depth: 0  # 拉取完整历史，避免rebase冲突
+          token: ${{ secrets.GITHUB_TOKEN }}
 
+      # 第一步先拉取远程最新代码，确保本地代码是最新的
+      - name: Pull latest code
+        run: |
+          git config --global user.email XinYiAndXiaoLan@msn.cn
+          git config --global user.name YaChengMu
+          git pull --rebase origin main || git rebase --abort  # 拉取失败则放弃rebase
+
+      # 执行脚本下载订阅
       - name: Download the subscribe
         run: |
           bash ./test.sh
 
+      # 提交变更（仅当有变更时执行）
       - name: Commit Changes
         run: |
-          # 配置git身份
-          git config --global user.email XinYiAndXiaoLan@msn.cn
-          git config --global user.name YaChengMu
-          
-          # 核心：检查工作区是否有变更（无变更则直接退出，避免commit报错）
+          # 检查是否有文件变更，无变更则直接退出
           if ! git status --porcelain | grep -q .; then
             echo "ℹ️ 工作区无变更，无需提交"
             exit 0
           fi
-          
-          # 有变更时才执行提交逻辑
-          git add .
-          # 先拉取最新代码（避免冲突），再提交
-          git pull --rebase origin main
-          git commit -m"由github actions推送,日期:`date`"
 
+          # 有变更时提交
+          git add .
+          git commit -m"由github actions推送,日期:`date`" || echo "⚠️ 提交失败（无变更）"
+
+      # 推送前再次拉取（防止推送时远程已有新提交）
+      - name: Pull before push (resolve conflicts)
+        run: |
+          git pull --rebase origin main || (git add . && git rebase --continue)  # 有冲突则自动合并
+
+      # 推送变更
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          force_with_lease: true
+          force_with_lease: true  # 安全强制推送（避免覆盖他人提交）
           directory: .
