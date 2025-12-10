@@ -120,7 +120,6 @@ proxies:
   - {name: 🇨🇦 加拿大 006, server: 205.233.181.3, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
   - {name: 🇨🇦 加拿大 008, server: 68.168.31.196, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 68.168.31.196}}, udp: true}
   - {name: 🇨🇦 加拿大 009, server: 68.168.31.242, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 68.168.31.242}}, udp: true}
-  - {name: 🇨🇦 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, sni: diningtable.electricbanana.click, skip-cert-verify: true, udp: true}
   - {name: 🇨🇭 _CH_瑞士, server: 84.17.53.163, port: 80, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
   - {name: 🇨🇭 瑞士 002, server: 64.110.66.235, port: 8080, type: vmess, uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download, headers: {Host: download.windowsupdate.com}}, udp: true}
   - {name: 🇨🇳 中国 001, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
@@ -379,6 +378,7 @@ proxies:
   - {name: 🇭🇰 Standard|广港|IEPL|20, server: bs2.jymzffbquawl.com, port: 3609, type: ss, cipher: rc4-md5, password: RenzheCloudSS, plugin: obfs, plugin-opts: {mode: http, host: 1a985193720.microsoft.com}, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Ipxo LLC - 1, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: ee60273d-84c4-4610-8aa9-330bc3eb244b, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港2, server: 103.103.245.158, port: 443, type: ss, cipher: aes-256-gcm, password: ccf426f1fe78, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: newroot2v1.dsjsapp.com, path: /zksuapgx, tls: true, mux: true, skip-cert-verify: true}, udp: true}
   - {name: 🇭🇰 香港3, server: 203.198.122.217, port: 443, type: trojan, password: 76d630f2af6619c4a5de0ef953df3c6a, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 219.79.186.107, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -1095,7 +1095,6 @@ proxy-groups:
       - 🇨🇦 加拿大 006
       - 🇨🇦 加拿大 008
       - 🇨🇦 加拿大 009
-      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇨🇭 _CH_瑞士
       - 🇨🇭 瑞士 002
       - 🇨🇳 中国 001
@@ -1349,6 +1348,7 @@ proxy-groups:
       - 🇭🇰 Standard|广港|IEPL|20
       - 🇭🇰 中国 - 香港 - Ipxo LLC - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
@@ -2037,7 +2037,6 @@ proxy-groups:
       - 🇨🇦 加拿大 006
       - 🇨🇦 加拿大 008
       - 🇨🇦 加拿大 009
-      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇨🇭 _CH_瑞士
       - 🇨🇭 瑞士 002
       - 🇨🇳 中国 001
@@ -2291,6 +2290,7 @@ proxy-groups:
       - 🇭🇰 Standard|广港|IEPL|20
       - 🇭🇰 中国 - 香港 - Ipxo LLC - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
@@ -2983,6 +2983,7 @@ proxy-groups:
       - 🇭🇰 Standard|广港|IEPL|20
       - 🇭🇰 中国 - 香港 - Ipxo LLC - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
@@ -3209,6 +3210,7 @@ proxy-groups:
       - 🇭🇰 Standard|广港|IEPL|20
       - 🇭🇰 中国 - 香港 - Ipxo LLC - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
@@ -3855,7 +3857,6 @@ proxy-groups:
       - 🇨🇦 加拿大 006
       - 🇨🇦 加拿大 008
       - 🇨🇦 加拿大 009
-      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇨🇭 _CH_瑞士
       - 🇨🇭 瑞士 002
       - 🇨🇿 捷克 001
@@ -4044,6 +4045,7 @@ proxy-groups:
       - 🇭🇰 Standard|广港|IEPL|20
       - 🇭🇰 中国 - 香港 - Ipxo LLC - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
@@ -4264,6 +4266,7 @@ proxy-groups:
       - 🇭🇰 Standard|广港|IEPL|20
       - 🇭🇰 中国 - 香港 - Ipxo LLC - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港4
@@ -4898,7 +4901,6 @@ proxy-groups:
       - 🇨🇦 加拿大 006
       - 🇨🇦 加拿大 008
       - 🇨🇦 加拿大 009
-      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇨🇭 _CH_瑞士
       - 🇨🇭 瑞士 002
       - 🇨🇿 捷克 001
