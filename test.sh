@@ -236,20 +236,20 @@ get_current_date
 
 # 定义URL模板结构体
 # 格式: "URL模板|年份参数类型|月份参数类型|日期参数类型"
+#https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg
+#https://fastly.jsdelivr.net/gh/zhangkaiitugithub/passcro@main/speednodes.yaml
+#https://www.xrayvip.com/free.yaml
+#https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml
+#https://fpyjdy.zzong6599.workers.dev
 url_templates=(
     [1]="https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full"
     [2]="https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full"
     [3]="https://free.datiya.com/uploads/%s-clash.yaml|date_full"
     [4]="https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash"
-    [5]="https://www.xrayvip.com/free.yaml"
-    [6]="https://ghproxy.net/https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
-    [7]="https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
-    [8]="https://fastly.jsdelivr.net/gh/zhangkaiitugithub/passcro@main/speednodes.yaml"
-    [9]="https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
-    [10]="https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
-    [11]="https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg"
-    [12]="https://raw.githubusercontent.com/ermaozi01/free_clash_vpn/main/subscribe/clash.yml"
-    [13]="https://fpyjdy.zzong6599.workers.dev"
+    [5]="https://ghproxy.net/https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
+    [6]="https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
+    [7]="https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
+    [8]="https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
 )
 
 # 并行检查所有模板
