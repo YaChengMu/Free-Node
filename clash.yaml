@@ -24,6 +24,7 @@ proxies:
   - {name: 🇭🇰 中国 - 香港 - Cogent Communications - 5, server: ip.dudeuni.com, port: 52251, type: trojan, password: HQk9wst3vK, sni: ip.dudeuni.com, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6, server: 103.149.182.38, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港2, server: 103.149.182.86, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
   - {name: 🇭🇰 香港3, server: 58.152.18.226, port: 443, type: trojan, password: f36f4495b4b26cc2fe346cfa23e05b1b, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 58.152.18.48, port: 443, type: trojan, password: f36f4495b4b26cc2fe346cfa23e05b1b, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -52,8 +53,6 @@ proxies:
   - {name: 🇺🇸 _US_美国_1, server: 173.244.56.6, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 _US_美国_4, server: 185.47.255.22, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 🇺🇸 美国, server: 160.16.150.76, port: 1281, type: trojan, password: f36f4495b4b26cc2fe346cfa23e05b1b, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: sy4.620720.xyz, port: 443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sy4.620720.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国2, server: 160.16.68.250, port: 1281, type: trojan, password: f36f4495b4b26cc2fe346cfa23e05b1b, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 160.16.212.152, port: 1281, type: trojan, password: f36f4495b4b26cc2fe346cfa23e05b1b, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 18.183.82.133, port: 4569, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -106,6 +105,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - Cogent Communications - 5
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -133,8 +133,6 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_4
       - 🇺🇸 美国
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -162,6 +160,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - Cogent Communications - 5
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -189,8 +188,6 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_4
       - 🇺🇸 美国
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -260,6 +257,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - Cogent Communications - 5
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -283,6 +281,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - Cogent Communications - 5
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -323,8 +322,6 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_4
       - 🇺🇸 美国
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -361,6 +358,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - Cogent Communications - 5
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -378,6 +376,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - Cogent Communications - 5
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 6
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港2
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -409,8 +408,6 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_4
       - 🇺🇸 美国
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
