@@ -62,6 +62,7 @@ proxies:
   - {name: 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1, server: 58.152.110.104, port: 443, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Prime Security Corp. - 2, server: 47.112.189.21, port: 11234, type: ss, cipher: aes-256-gcm, password: 31ff2918-9330-4c11-afe0-d6c8b370684e, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2525252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 58.152.25.86, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 58.152.25.236, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇮🇷 _IR_伊朗, server: 217.60.249.112, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0eC4ZBvStOgQEzTpCYjWN5, udp: true}
@@ -143,7 +144,6 @@ proxies:
   - {name: "🇺🇸 美国 - 肯特 - Cloudflare, Inc. - 32", server: 104.196.250.34, port: 2087, type: trojan, password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0, sni: snippets.kkii.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram🇨🇳WangCai2, headers: {Host: snippets.kkii.eu.org}}, udp: true}
   - {name: 🇺🇸 美国 - 西雅圖 - Casablanca INT fraction - 2, server: 85.239.232.127, port: 10026, type: ss, cipher: chacha20-ietf-poly1305, password: ef33c53f6e9e3c1b, udp: true}
   - {name: "🇺🇸 美国 - 迈阿密 - Cloudflare, Inc. - 17", server: 64.44.177.238, port: 10010, type: trojan, password: ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0, sni: snippets.kkii.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram🇨🇳WangCai2, headers: {Host: snippets.kkii.eu.org}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 160.16.63.16, port: 1281, type: trojan, password: 381f2e86233720eacda26d50e9aa26da, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 18.177.146.37, port: 1112, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 16.163.98.169, port: 2173, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -221,6 +221,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1
       - 🇭🇰 中国 - 香港 - Prime Security Corp. - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇮🇷 _IR_伊朗
@@ -255,7 +256,6 @@ proxy-groups:
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 奥克顿 - OVH SAS - 4
       - 🇺🇸 美国 - 西雅圖 - Casablanca INT fraction - 2
-      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
@@ -308,6 +308,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1
       - 🇭🇰 中国 - 香港 - Prime Security Corp. - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇮🇷 _IR_伊朗
@@ -342,7 +343,6 @@ proxy-groups:
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 奥克顿 - OVH SAS - 4
       - 🇺🇸 美国 - 西雅圖 - Casablanca INT fraction - 2
-      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
@@ -423,6 +423,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1
       - 🇭🇰 中国 - 香港 - Prime Security Corp. - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港4
       - 🇭🇰 香港5
   - name: 🇹🇼 ‍台湾
@@ -447,6 +448,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1
       - 🇭🇰 中国 - 香港 - Prime Security Corp. - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇹🇼 台湾省台中市 中华电信
@@ -486,7 +488,6 @@ proxy-groups:
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 奥克顿 - OVH SAS - 4
       - 🇺🇸 美国 - 西雅圖 - Casablanca INT fraction - 2
-      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
@@ -556,6 +557,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1
       - 🇭🇰 中国 - 香港 - Prime Security Corp. - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港4
       - 🇭🇰 香港5
   - name: 👆🏻🇹🇼 ‍台湾
@@ -574,6 +576,7 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - PCCW IMS Limited - 1
       - 🇭🇰 中国 - 香港 - Prime Security Corp. - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇹🇼 台湾省台中市 中华电信
@@ -604,7 +607,6 @@ proxy-groups:
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 奥克顿 - OVH SAS - 4
       - 🇺🇸 美国 - 西雅圖 - Casablanca INT fraction - 2
-      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
