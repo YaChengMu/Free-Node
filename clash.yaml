@@ -19,7 +19,6 @@ proxies:
   - {name: 🇩🇰 丹麦 - Brøndby Strand - M247 Europe SRL - 1, server: 192.36.27.94, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 🇫🇷 法国 - 巴黎 - Amazon.com - 1, server: 15.224.1.8, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国 - Stretford - M247 Europe SRL - 1, server: 141.98.101.178, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2, server: 9ef7d9d8-t8pj40-tr9h64-1f1f1.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 28, server: 0a023e52-t8pj40-tifnix-1ro8s.hkt.gotochinatown.net, port: 80, type: vmess, uuid: a18ef18e-293a-11ef-b76e-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
@@ -53,8 +52,11 @@ proxies:
   - {name: 🇯🇵 日本, server: 18.179.20.173, port: 2595, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - 东京 - Oracle Corporation - 1, server: tokyo01.zgjok.com, port: 443, type: vmess, uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: tokyo01.zgjok.com, network: ws, ws-opts: {path: /, headers: {Host: tokyo01.zgjok.com}}, udp: true}
   - {name: 🇯🇵 日本2, server: 160.16.87.174, port: 4006, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本2|@ripaojiedian, server: 153.121.51.29, port: 4006, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本3, server: 160.16.87.174, port: 1933, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: 153.121.51.29, port: 1933, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本4, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.358.onl, port: 18005, type: ss, cipher: chacha20-ietf-poly1305, password: e611027a-7b55-4f64-b8df-258f2d7ef95c, udp: true}
+  - {name: 🇯🇵 日本|@ripaojiedian, server: 3.112.71.26, port: 2762, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 _KR_韩国, server: 221.150.109.89, port: 43231, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 _KR_韩国_1, server: 168.126.234.233, port: 28860, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 _KR_韩国_2, server: 218.38.103.150, port: 39502, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
@@ -71,15 +73,23 @@ proxies:
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 1, server: 195.58.49.100, port: 10912, type: ss, cipher: aes-256-gcm, password: 9f3d1a6d31468599, udp: true}
   - {name: 🇸🇬 新加坡, server: 160.16.87.174, port: 3901, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡2, server: 160.16.72.33, port: 3076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 160.16.150.76, port: 544, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡3, server: 54.250.46.5, port: 3127, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 3.112.254.143, port: 3579, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡4, server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.358.onl, port: 18017, type: ss, cipher: chacha20-ietf-poly1305, password: e611027a-7b55-4f64-b8df-258f2d7ef95c, udp: true}
-  - {name: 🇹🇼 台湾省台中市 中华电信, server: green2.cdntencentmusic.com, port: 31101, type: trojan, password: db86510f-8f0e-4e0e-9534-746dd8e4d07e, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 160.16.70.180, port: 544, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾省台中市 中华电信, server: green2.cdntencentmusic.com, port: 31102, type: trojan, password: f272b771-49f1-48f0-8ac4-ab7cd1a5c343, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾省台中市 中华电信 2, server: green2.cdntencentmusic.com, port: 31103, type: trojan, password: 459850f0-b409-4f18-95e2-440d4ebea0cd, sni: green2.cdntencentmusic.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: 85.90.207.104, port: 18794, type: ss, cipher: chacha20-ietf-poly1305, password: e716d7bbae4bdd14, udp: true}
+  - {name: 🇺🇦 乌克兰 V2CROSS.COM 2, server: 85.90.207.104, port: 18793, type: ss, cipher: chacha20-ietf-poly1305, password: e716d7bbae4bdd14, udp: true}
   - {name: 🇺🇸 _US_美国_2, server: kfjdi.pages.dev, port: 443, type: trojan, password: er668, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国, server: 160.16.87.174, port: 1281, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 紐約 - Datacamp Limited - 1, server: 37.19.198.236, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 美国 CloudFlare节点, server: zula.ir, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/nasnet/cdn?ed=2560", headers: {Host: nasnet-511952424.mcitel.co}}, udp: true}
   - {name: 🇺🇸 美国2, server: 160.16.72.33, port: 1281, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 43.198.110.101, port: 4569, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: 43.199.60.168, port: 4569, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 160.16.57.238, port: 5076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 1, server: 103.186.154.153, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 10, server: 103.186.154.16, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 11, server: 103.186.154.17, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
@@ -140,7 +150,6 @@ proxy-groups:
       - 🇩🇰 丹麦 - Brøndby Strand - M247 Europe SRL - 1
       - 🇫🇷 法国 - 巴黎 - Amazon.com - 1
       - 🇬🇧 英国 - Stretford - M247 Europe SRL - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 28
@@ -174,8 +183,11 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
       - 🇯🇵 日本2
+      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本4
+      - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国_1
       - 🇰🇷 _KR_韩国_2
@@ -192,15 +204,23 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 1
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡4
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇹🇼 台湾省台中市 中华电信
+      - 🇹🇼 台湾省台中市 中华电信 2
+      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇺🇦 乌克兰 V2CROSS.COM 2
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 紐約 - Datacamp Limited - 1
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
@@ -236,7 +256,6 @@ proxy-groups:
       - 🇩🇰 丹麦 - Brøndby Strand - M247 Europe SRL - 1
       - 🇫🇷 法国 - 巴黎 - Amazon.com - 1
       - 🇬🇧 英国 - Stretford - M247 Europe SRL - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 10
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 2
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 28
@@ -270,8 +289,11 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
       - 🇯🇵 日本2
+      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本4
+      - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国_1
       - 🇰🇷 _KR_韩国_2
@@ -288,15 +310,23 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 1
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡4
+      - 🇸🇬 新加坡|@ripaojiedian
       - 🇹🇼 台湾省台中市 中华电信
+      - 🇹🇼 台湾省台中市 中华电信 2
+      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇺🇦 乌克兰 V2CROSS.COM 2
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 紐約 - Datacamp Limited - 1
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
@@ -405,6 +435,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇹🇼 台湾省台中市 中华电信
+      - 🇹🇼 台湾省台中市 中华电信 2
   - name: 🇨🇳 ‍中国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -442,6 +473,7 @@ proxy-groups:
       - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇹🇼 台湾省台中市 中华电信
+      - 🇹🇼 台湾省台中市 中华电信 2
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -450,8 +482,11 @@ proxy-groups:
     proxies:
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡4
+      - 🇸🇬 新加坡|@ripaojiedian
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -461,8 +496,11 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
       - 🇯🇵 日本2
+      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本4
+      - 🇯🇵 日本|@ripaojiedian
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -475,6 +513,8 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -488,7 +528,6 @@ proxy-groups:
       - 🇩🇰 丹麦 - Brøndby Strand - M247 Europe SRL - 1
       - 🇫🇷 法国 - 巴黎 - Amazon.com - 1
       - 🇬🇧 英国 - Stretford - M247 Europe SRL - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇺 _HU_匈牙利
       - 🇯🇴 _JO_约旦
       - 🇯🇴 约旦 - 安曼 - Batelco Jordan - 1
@@ -506,6 +545,8 @@ proxy-groups:
       - 🇳🇱 _NL_荷兰_1
       - 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 1
+      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇺🇦 乌克兰 V2CROSS.COM 2
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
@@ -562,6 +603,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇹🇼 台湾省台中市 中华电信
+      - 🇹🇼 台湾省台中市 中华电信 2
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
@@ -596,21 +638,28 @@ proxy-groups:
       - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇹🇼 台湾省台中市 中华电信
+      - 🇹🇼 台湾省台中市 中华电信 2
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
+      - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡4
+      - 🇸🇬 新加坡|@ripaojiedian
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
       - 🇯🇵 日本
       - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
       - 🇯🇵 日本2
+      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
+      - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本4
+      - 🇯🇵 日本|@ripaojiedian
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -620,6 +669,8 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
@@ -630,7 +681,6 @@ proxy-groups:
       - 🇩🇰 丹麦 - Brøndby Strand - M247 Europe SRL - 1
       - 🇫🇷 法国 - 巴黎 - Amazon.com - 1
       - 🇬🇧 英国 - Stretford - M247 Europe SRL - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇺 _HU_匈牙利
       - 🇯🇴 _JO_约旦
       - 🇯🇴 约旦 - 安曼 - Batelco Jordan - 1
@@ -648,6 +698,8 @@ proxy-groups:
       - 🇳🇱 _NL_荷兰_1
       - 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 1
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 1
+      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇺🇦 乌克兰 V2CROSS.COM 2
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
