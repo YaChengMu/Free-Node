@@ -14,13 +14,12 @@ proxies:
   - {name: 🇨🇦 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 _CN_中国, server: 156.244.36.105, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 34bafa5f59fc339f, udp: true}
   - {name: 🇨🇳 _CN_中国_1, server: 154.205.147.237, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 2272de48c53e0a57, udp: true}
-  - {name: 🇨🇳 广东省湛江市 移动, server: tunnel1.qqa678.com, port: 47084, type: vmess, uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 浙江省嘉兴市 移动, server: 223.95.183.132, port: 25819, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
   - {name: 🇩🇪 德国 - 法兰克福 - OVH SAS - 1, server: 57.129.89.241, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 3f7693931fd1f9f8, udp: true}
   - {name: 🇩🇪 德国 - 法兰克福 - WAIcore Ltd - 4, server: 193.233.254.8, port: 1080, type: socks5, username: Og@193.233.254.8, password: "@193.233.254.8:", skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国 - 萨尔布吕肯 - OVH SAS - 2, server: 54.37.77.214, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: c0fb2805ee931691, udp: true}
   - {name: 🇫🇷 法国 - 巴黎 - Amazon Technologies Inc. - 1, server: 13.36.96.120, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国 - 伦敦 - Contabo Asia Private Limited - 1, server: 46.250.253.50, port: 10010, type: ss, cipher: chacha20-ietf-poly1305, password: ac81d5eb1ee96e1e, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - CGI GLOBAL LIMITED - 81, server: oss-4.qqa678.com, port: 47081, type: vmess, uuid: e49b8721-f124-4999-814a-fc777c0ae190, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 71, server: 103.149.182.79, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
   - {name: "🇭🇰 中国 - 香港 - GOALNOW NETWORK TECHNOLOGY CO., LIMITED - 113", server: 45.250.183.228, port: 11020, type: ss, cipher: chacha20-ietf-poly1305, password: bdd108a0-bbda-4950-bd34-e5d30df94d0e, udp: true}
@@ -120,23 +119,20 @@ proxies:
   - {name: 🇭🇰 中国 - 香港 - WSNT - 79, server: hk3.network-cdn-gw-yd.net, port: 32058, type: ss, cipher: chacha20-ietf-poly1305, password: aed6e687-58a9-4836-ba62-7d8184c94df4, udp: true}
   - {name: 🇭🇰 中国 - 香港 - WSNT - 80, server: hk13.network-cdn-gw-yd.net, port: 32061, type: ss, cipher: chacha20-ietf-poly1305, password: aed6e687-58a9-4836-ba62-7d8184c94df4, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 103.149.183.200, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
-  - {name: 🇭🇰 香港3, server: 112.118.116.123, port: 443, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: 58.152.110.111, port: 443, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 CDN520加速节点(BGP)数据中心, server: sv2.wy888.us, port: 443, type: vmess, uuid: cda69512-ad1b-4f85-b547-b1d545e7cc90, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sv2.wy888.us}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港2, server: 103.149.183.200, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456, udp: true}
+  - {name: 🇭🇰 香港3, server: 58.152.110.111, port: 443, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 58.152.25.130, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港5, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇺 _HU_匈牙利, server: 109.61.39.150, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 01dc0d7cbb650bc3, udp: true}
   - {name: 🇯🇴 _JO_约旦, server: 91.106.109.74, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 11bf054dcc0342cd, udp: true}
-  - {name: 🇯🇵 日本, server: 54.248.199.75, port: 3760, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本, server: 57.180.65.162, port: 2053, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - 东京 - Akile LTD - 4, server: 223.95.183.132, port: 26334, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
   - {name: "🇯🇵 日本 - 东京 - BrainStorm Network, Inc - 6", server: 223.95.183.132, port: 53596, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
   - {name: 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 1, server: 154.205.139.9, port: 11204, type: ss, cipher: chacha20-ietf-poly1305, password: 303ac65e30f28b0b, udp: true}
   - {name: 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 2, server: 154.205.139.9, port: 11203, type: ss, cipher: chacha20-ietf-poly1305, password: 303ac65e30f28b0b, udp: true}
-  - {name: 🇯🇵 日本2, server: 160.16.117.182, port: 1933, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: 160.16.81.84, port: 4006, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本3, server: 153.121.65.107, port: 1933, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本3|@ripaojiedian, server: 160.16.89.176, port: 4006, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: 57.180.65.162, port: 2053, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本2, server: 160.16.81.84, port: 4006, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本3, server: 160.16.89.176, port: 4006, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 _KR_韩国, server: 221.150.109.89, port: 43231, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 _KR_韩国_1, server: 168.126.234.233, port: 28860, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 _KR_韩国_2, server: 218.38.103.150, port: 39502, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
@@ -147,28 +143,23 @@ proxies:
   - {name: 🇳🇱 _NL_荷兰_1, server: fl3.cowjuice.me, port: 9443, type: ss, cipher: chacha20-ietf-poly1305, password: X36TIi4C3NH6Oln3TdGyjg, udp: true}
   - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - Greenhost BV - 1, server: 82.38.31.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
   - {name: 🇷🇺 俄罗斯 - 車里雅賓斯克 - Chelyabinsk-Signal LLC - 1, server: udrlink.orbit7net.com, port: 1051, type: ss, cipher: aes-128-gcm, password: 2502da81-8636-42b7-a78b-e306221fe920, udp: true}
-  - {name: 🇸🇬 新加坡, server: 153.121.65.107, port: 3901, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡, server: 160.16.106.99, port: 3076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡 - 新加坡 - Akile LTD - 1, server: 223.95.183.132, port: 39398, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
   - {name: 🇸🇬 新加坡 - 新加坡 - Shenzhen Tencent Computer Systems Company Limited - 2, server: 223.95.183.132, port: 45295, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
-  - {name: 🇸🇬 新加坡2, server: 160.16.124.55, port: 544, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 160.16.106.99, port: 544, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡3, server: 16.163.104.139, port: 381, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 18.163.206.7, port: 1196, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡4|@ripaojiedian, server: 223.95.183.132, port: 25819, type: ss, cipher: aes-128-gcm, password: b637f2e47b7827b308ebf399008075d2, udp: true}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 160.16.106.99, port: 3076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡2, server: 160.16.106.99, port: 544, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡3, server: 18.163.206.7, port: 1196, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 1, server: 163.171.137.72, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: d27faed8a9b98bd0, udp: true}
   - {name: 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 2, server: 163.171.137.66, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 31d96fab76ea4008, udp: true}
   - {name: 🇺🇸 _US_美国_2, server: kfjdi.pages.dev, port: 443, type: trojan, password: er668, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国, server: 160.16.124.55, port: 5076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国, server: 160.16.85.33, port: 5076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - Secaucus - WorkTitans B.V. - 3, server: 194.116.173.21, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
   - {name: 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1, server: 207.244.226.239, port: 45995, type: ss, cipher: chacha20-ietf-poly1305, password: 98f7aedd8adda6fe, udp: true}
   - {name: 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 2, server: 212.56.42.207, port: 29551, type: ss, cipher: chacha20-ietf-poly1305, password: 90e3f0733aa4fe2b, udp: true}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Akile LTD - 4, server: tunnel1.qqa678.com, port: 47084, type: vmess, uuid: 3fc3310d-fd84-4933-b370-8cb2d565fab9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 9, server: 8.138.92.143, port: 23382, type: ss, cipher: aes-128-gcm, password: beddd73b-ed90-4e76-8a30-492384220878, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国2, server: 160.16.89.176, port: 5076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国3, server: 18.163.194.227, port: 2173, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: 13.113.239.128, port: 1112, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 160.16.85.33, port: 5076, type: trojan, password: 61d8077bfb174e171b8283f155a555ad, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇳 越南, server: 103.186.155.123, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇺🇸 美国3, server: 13.113.239.128, port: 1112, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 1, server: 103.186.154.40, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 10, server: 103.186.154.36, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 11, server: 103.186.155.25, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
@@ -219,13 +210,12 @@ proxy-groups:
       - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇨🇳 _CN_中国
       - 🇨🇳 _CN_中国_1
-      - 🇨🇳 广东省湛江市 移动
+      - 🇨🇳 浙江省嘉兴市 移动
       - 🇩🇪 德国 - 法兰克福 - OVH SAS - 1
       - 🇩🇪 德国 - 法兰克福 - WAIcore Ltd - 4
       - 🇩🇪 德国 - 萨尔布吕肯 - OVH SAS - 2
       - 🇫🇷 法国 - 巴黎 - Amazon Technologies Inc. - 1
       - 🇬🇧 英国 - 伦敦 - Contabo Asia Private Limited - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 中国 - 香港 - CGI GLOBAL LIMITED - 81
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 71
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 1
@@ -324,11 +314,11 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - WSNT - 79
       - 🇭🇰 中国 - 香港 - WSNT - 80
       - 🇭🇰 香港
-      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港 CDN520加速节点(BGP)数据中心
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港2
       - 🇭🇰 香港3
-      - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港5
       - 🇭🇺 _HU_匈牙利
       - 🇯🇴 _JO_约旦
       - 🇯🇵 日本
@@ -336,10 +326,7 @@ proxy-groups:
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 1
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 2
       - 🇯🇵 日本2
-      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国_1
       - 🇰🇷 _KR_韩国_2
@@ -354,11 +341,7 @@ proxy-groups:
       - 🇸🇬 新加坡 - 新加坡 - Akile LTD - 1
       - 🇸🇬 新加坡 - 新加坡 - Shenzhen Tencent Computer Systems Company Limited - 2
       - 🇸🇬 新加坡2
-      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 1
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 2
       - 🇺🇸 _US_美国_2
@@ -366,12 +349,11 @@ proxy-groups:
       - 🇺🇸 美国 - Secaucus - WorkTitans B.V. - 3
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 2
+      - 🇺🇸 美国 - 洛杉矶 - Akile LTD - 4
       - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国3
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
@@ -397,13 +379,12 @@ proxy-groups:
       - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇨🇳 _CN_中国
       - 🇨🇳 _CN_中国_1
-      - 🇨🇳 广东省湛江市 移动
+      - 🇨🇳 浙江省嘉兴市 移动
       - 🇩🇪 德国 - 法兰克福 - OVH SAS - 1
       - 🇩🇪 德国 - 法兰克福 - WAIcore Ltd - 4
       - 🇩🇪 德国 - 萨尔布吕肯 - OVH SAS - 2
       - 🇫🇷 法国 - 巴黎 - Amazon Technologies Inc. - 1
       - 🇬🇧 英国 - 伦敦 - Contabo Asia Private Limited - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 中国 - 香港 - CGI GLOBAL LIMITED - 81
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 71
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 1
@@ -502,11 +483,11 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - WSNT - 79
       - 🇭🇰 中国 - 香港 - WSNT - 80
       - 🇭🇰 香港
-      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港 CDN520加速节点(BGP)数据中心
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港2
       - 🇭🇰 香港3
-      - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港5
       - 🇭🇺 _HU_匈牙利
       - 🇯🇴 _JO_约旦
       - 🇯🇵 日本
@@ -514,10 +495,7 @@ proxy-groups:
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 1
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 2
       - 🇯🇵 日本2
-      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国_1
       - 🇰🇷 _KR_韩国_2
@@ -532,11 +510,7 @@ proxy-groups:
       - 🇸🇬 新加坡 - 新加坡 - Akile LTD - 1
       - 🇸🇬 新加坡 - 新加坡 - Shenzhen Tencent Computer Systems Company Limited - 2
       - 🇸🇬 新加坡2
-      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 1
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 2
       - 🇺🇸 _US_美国_2
@@ -544,12 +518,11 @@ proxy-groups:
       - 🇺🇸 美国 - Secaucus - WorkTitans B.V. - 3
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 2
+      - 🇺🇸 美国 - 洛杉矶 - Akile LTD - 4
       - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国3
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
@@ -717,11 +690,11 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - WSNT - 79
       - 🇭🇰 中国 - 香港 - WSNT - 80
       - 🇭🇰 香港
-      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港 CDN520加速节点(BGP)数据中心
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港2
       - 🇭🇰 香港3
-      - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港5
   - name: 🇹🇼 ‍台湾
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -736,7 +709,7 @@ proxy-groups:
     proxies:
       - 🇨🇳 _CN_中国
       - 🇨🇳 _CN_中国_1
-      - 🇨🇳 广东省湛江市 移动
+      - 🇨🇳 浙江省嘉兴市 移动
       - 🇭🇰 中国 - 香港 - CGI GLOBAL LIMITED - 81
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 71
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 1
@@ -835,11 +808,11 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - WSNT - 79
       - 🇭🇰 中国 - 香港 - WSNT - 80
       - 🇭🇰 香港
-      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港 CDN520加速节点(BGP)数据中心
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港2
       - 🇭🇰 香港3
-      - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港5
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -850,11 +823,7 @@ proxy-groups:
       - 🇸🇬 新加坡 - 新加坡 - Akile LTD - 1
       - 🇸🇬 新加坡 - 新加坡 - Shenzhen Tencent Computer Systems Company Limited - 2
       - 🇸🇬 新加坡2
-      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
   - name: 🇯🇵 ‍日本
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -866,10 +835,7 @@ proxy-groups:
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 1
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 2
       - 🇯🇵 日本2
-      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
   - name: 🇺🇸 ‍美国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -881,11 +847,11 @@ proxy-groups:
       - 🇺🇸 美国 - Secaucus - WorkTitans B.V. - 3
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 2
+      - 🇺🇸 美国 - 洛杉矶 - Akile LTD - 4
       - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国3
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -900,7 +866,6 @@ proxy-groups:
       - 🇩🇪 德国 - 萨尔布吕肯 - OVH SAS - 2
       - 🇫🇷 法国 - 巴黎 - Amazon Technologies Inc. - 1
       - 🇬🇧 英国 - 伦敦 - Contabo Asia Private Limited - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇺 _HU_匈牙利
       - 🇯🇴 _JO_约旦
       - 🇰🇷 _KR_韩国
@@ -915,7 +880,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 車里雅賓斯克 - Chelyabinsk-Signal LLC - 1
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 1
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 2
-      - 🇻🇳 越南
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
@@ -1034,11 +998,11 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - WSNT - 79
       - 🇭🇰 中国 - 香港 - WSNT - 80
       - 🇭🇰 香港
-      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港 CDN520加速节点(BGP)数据中心
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港2
       - 🇭🇰 香港3
-      - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港5
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
@@ -1047,7 +1011,7 @@ proxy-groups:
     proxies:
       - 🇨🇳 _CN_中国
       - 🇨🇳 _CN_中国_1
-      - 🇨🇳 广东省湛江市 移动
+      - 🇨🇳 浙江省嘉兴市 移动
       - 🇭🇰 中国 - 香港 - CGI GLOBAL LIMITED - 81
       - 🇭🇰 中国 - 香港 - Dalian Yichuan Industrial CO - 71
       - 🇭🇰 中国 - 香港 - Hong Kong Telecommunications (HKT) Limited Mass Internet - 1
@@ -1146,11 +1110,11 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - WSNT - 79
       - 🇭🇰 中国 - 香港 - WSNT - 80
       - 🇭🇰 香港
-      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港 CDN520加速节点(BGP)数据中心
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港2
       - 🇭🇰 香港3
-      - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港5
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
@@ -1158,11 +1122,7 @@ proxy-groups:
       - 🇸🇬 新加坡 - 新加坡 - Akile LTD - 1
       - 🇸🇬 新加坡 - 新加坡 - Shenzhen Tencent Computer Systems Company Limited - 2
       - 🇸🇬 新加坡2
-      - 🇸🇬 新加坡2|@ripaojiedian
       - 🇸🇬 新加坡3
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇸🇬 新加坡|@ripaojiedian
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
@@ -1171,10 +1131,7 @@ proxy-groups:
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 1
       - 🇯🇵 日本 - 东京 - Kaopu Cloud HK Limited - 2
       - 🇯🇵 日本2
-      - 🇯🇵 日本2|@ripaojiedian
       - 🇯🇵 日本3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇯🇵 日本|@ripaojiedian
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
@@ -1183,11 +1140,11 @@ proxy-groups:
       - 🇺🇸 美国 - Secaucus - WorkTitans B.V. - 3
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 1
       - 🇺🇸 美国 - 圣路易斯 - Contabo Inc. - 2
+      - 🇺🇸 美国 - 洛杉矶 - Akile LTD - 4
       - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国2
       - 🇺🇸 美国3
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
@@ -1199,7 +1156,6 @@ proxy-groups:
       - 🇩🇪 德国 - 萨尔布吕肯 - OVH SAS - 2
       - 🇫🇷 法国 - 巴黎 - Amazon Technologies Inc. - 1
       - 🇬🇧 英国 - 伦敦 - Contabo Asia Private Limited - 1
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇺 _HU_匈牙利
       - 🇯🇴 _JO_约旦
       - 🇰🇷 _KR_韩国
@@ -1214,7 +1170,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 車里雅賓斯克 - Chelyabinsk-Signal LLC - 1
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 1
       - 🇺🇦 乌克兰 - Kyiv - Meteverse Limited. - 2
-      - 🇻🇳 越南
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
       - 🇻🇳 越南 - Hải Dương - FASTLY - 10
       - 🇻🇳 越南 - Hải Dương - FASTLY - 11
