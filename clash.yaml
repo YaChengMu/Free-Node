@@ -85,9 +85,8 @@ proxies:
   - {name: 🇭🇰 中国 - 香港 - ZYC Network LLC - 74, server: gd.bjnet2.com, port: 36602, type: ss, cipher: aes-128-gcm, password: be1c6eab-3d70-4cf0-ae9a-b3175c7dfb47, plugin: obfs, plugin-opts: {mode: http, host: 9962b9147f2651d984febb6ba061f477.baidu.com}, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.53.219, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2525252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 58.152.18.147, port: 443, type: trojan, password: 4843e94d205f3893f588255a591abe94, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 阿里云, server: n1761214908.wpg27.xyz, port: 443, type: vmess, uuid: 3514a93f-bb26-4442-8f99-971b2ff3388a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1761214908.wpg27.xyz}}, udp: true}
   - {name: 🇭🇰 香港2, server: 91.149.236.182, port: 8388, type: ss, cipher: aes-256-gcm, password: OWsoMhOel+7mcZ+p, udp: true}
+  - {name: 🇭🇰 香港3, server: 58.152.18.147, port: 443, type: trojan, password: 4843e94d205f3893f588255a591abe94, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 95.40.93.39, port: 3830, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 95.40.53.47, port: 3830, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇺 _HU_匈牙利, server: 109.61.39.150, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 01dc0d7cbb650bc3, udp: true}
@@ -122,6 +121,7 @@ proxies:
   - {name: 🇺🇸 美国 - 希尔斯伯勒 - OVH SAS - 2, server: 15.204.28.84, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: f96d6b42e30595dc, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - WAP.AC LTD - 8, server: gd2.bjnet2.com, port: 36608, type: ss, cipher: aes-128-gcm, password: be1c6eab-3d70-4cf0-ae9a-b3175c7dfb47, plugin: obfs, plugin-opts: {mode: http, host: 9962b9147f2651d984febb6ba061f477.baidu.com}, udp: true}
   - {name: 🇺🇸 美国 - 芝加哥 - Datacamp Limited - 3, server: 138.199.42.68, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: c7.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: c7.620720.xyz}}, udp: true}
   - {name: 🇺🇸 美国2, server: 160.16.85.33, port: 5076, type: trojan, password: 4843e94d205f3893f588255a591abe94, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 54.199.172.151, port: 1221, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇻🇳 越南 - Hải Dương - FASTLY - 1, server: 103.186.155.12, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
@@ -260,9 +260,8 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - ZYC Network LLC - 74
       - 🇭🇰 香港
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港2
+      - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇭🇺 _HU_匈牙利
@@ -296,6 +295,7 @@ proxy-groups:
       - 🇺🇸 美国 - 希尔斯伯勒 - OVH SAS - 2
       - 🇺🇸 美国 - 洛杉矶 - WAP.AC LTD - 8
       - 🇺🇸 美国 - 芝加哥 - Datacamp Limited - 3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
@@ -409,9 +409,8 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - ZYC Network LLC - 74
       - 🇭🇰 香港
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港2
+      - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇭🇺 _HU_匈牙利
@@ -445,6 +444,7 @@ proxy-groups:
       - 🇺🇸 美国 - 希尔斯伯勒 - OVH SAS - 2
       - 🇺🇸 美国 - 洛杉矶 - WAP.AC LTD - 8
       - 🇺🇸 美国 - 芝加哥 - Datacamp Limited - 3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
       - 🇻🇳 越南 - Hải Dương - FASTLY - 1
@@ -600,9 +600,8 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - ZYC Network LLC - 74
       - 🇭🇰 香港
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港2
+      - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇭🇰 香港5
   - name: 🇹🇼 ‍台湾
@@ -689,9 +688,8 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - ZYC Network LLC - 74
       - 🇭🇰 香港
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港2
+      - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇹🇼 中国 - 台湾 - Akari Networks Limited - 69
@@ -732,6 +730,7 @@ proxy-groups:
       - 🇺🇸 美国 - 希尔斯伯勒 - OVH SAS - 2
       - 🇺🇸 美国 - 洛杉矶 - WAP.AC LTD - 8
       - 🇺🇸 美国 - 芝加哥 - Datacamp Limited - 3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
   - name: 🎏 ‍其他
@@ -860,9 +859,8 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - ZYC Network LLC - 74
       - 🇭🇰 香港
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港2
+      - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇭🇰 香港5
   - name: 👆🏻🇹🇼 ‍台湾
@@ -943,9 +941,8 @@ proxy-groups:
       - 🇭🇰 中国 - 香港 - ZYC Network LLC - 74
       - 🇭🇰 香港
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港2
+      - 🇭🇰 香港3
       - 🇭🇰 香港4
       - 🇭🇰 香港5
       - 🇹🇼 中国 - 台湾 - Akari Networks Limited - 69
@@ -977,6 +974,7 @@ proxy-groups:
       - 🇺🇸 美国 - 希尔斯伯勒 - OVH SAS - 2
       - 🇺🇸 美国 - 洛杉矶 - WAP.AC LTD - 8
       - 🇺🇸 美国 - 芝加哥 - Datacamp Limited - 3
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国2
       - 🇺🇸 美国3
   - name: 👆🏻🎏 ‍其他
