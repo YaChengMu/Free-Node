@@ -856,7 +856,8 @@ while IFS= read -r line; do
                 if [ "$in_url_test_group" = "1" ]; then
                     need_check_validity=1
                 # 对于非url-test类型但name在指定集合中的group，需要检查节点有效性
-                elif [[ " $special_group_names " =~ " \"$current_group_name\" " ]]; then
+                # 使用更宽松的匹配方式
+                elif echo " $special_group_names " | grep -q " $current_group_name "; then
                     need_check_validity=1
                 fi
                 
@@ -889,7 +890,7 @@ while IFS= read -r line; do
                     in_url_test_group=0
                     
                     # 检查是否是特殊组且没有有效代理节点，如果有则添加fallback
-                    if [[ " $special_group_names " =~ " \"$current_group_name\" " ]] && [ $current_group_valid_proxy_count -eq 0 ]; then
+                    if echo " $special_group_names " | grep -q " $current_group_name " && [ $current_group_valid_proxy_count -eq 0 ]; then
                         # 如果特殊组没有有效代理，添加一个fallback或DIRECT作为占位符
                         echo "      - DIRECT"
                         echo "      # 注意: 原本的节点已被过滤，此处添加DIRECT作为占位符以避免配置错误"
