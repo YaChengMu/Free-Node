@@ -418,6 +418,8 @@ proxy-groups:
     proxies:
   - name: 🇨🇳 ‍中国
     type: url-test
+      - DIRECT
+      # 注意: 原本的节点已被过滤，此处添加DIRECT作为占位符以避免配置错误
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
@@ -566,6 +568,8 @@ proxy-groups:
     type: select
     proxies:
   - name: 👆🏻🇨🇳 ‍中国
+      - DIRECT
+      # 注意: 原本的节点已被过滤，此处添加DIRECT作为占位符以避免配置错误
     type: select
     proxies:
       - 🇨🇳 广东省云浮市 移动
