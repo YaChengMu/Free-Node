@@ -791,6 +791,9 @@ while IFS= read -r line; do
             in_proxies_list=0
             in_url_test_group=0
             current_group_type=""
+            # 重置计数器
+            current_group_proxy_count=0
+            current_group_valid_proxy_count=0
             echo "$line"
             continue
         fi
@@ -816,6 +819,9 @@ while IFS= read -r line; do
         # 检查是否是proxies列表开始
         if [[ "$line" =~ ^\ \ \ \ proxies:$ ]]; then
             in_proxies_list=1
+            # 重置组内代理计数器
+            current_group_proxy_count=0
+            current_group_valid_proxy_count=0
             echo "$line"
             continue
         fi
@@ -840,6 +846,9 @@ while IFS= read -r line; do
                     fi
                 fi
                 
+                # 更新组内代理计数
+                current_group_proxy_count=$((current_group_proxy_count + 1))
+                
                 # 检查是否需要验证节点有效性
                 need_check_validity=0
                 
@@ -856,6 +865,7 @@ while IFS= read -r line; do
                     if [ -n "$proxy_name" ]; then
                         # 检查是否在有效节点列表中，使用引号包围确保精确匹配
                         if [[ " $valid_names " =~ " \"$proxy_name\" " ]]; then
+                            current_group_valid_proxy_count=$((current_group_valid_proxy_count + 1))
                             echo "$line"
                         else
                             # 真正跳过输出该行
@@ -863,18 +873,27 @@ while IFS= read -r line; do
                         fi
                         continue
                     fi
+                    current_group_valid_proxy_count=$((current_group_valid_proxy_count + 1))
                     echo "$line"
                 else
                     # 不需要检查节点有效性，直接输出
+                    current_group_valid_proxy_count=$((current_group_valid_proxy_count + 1))
                     echo "$line"
                 fi
                 continue
             else
                 # 不是proxies列表条目，可能是结束或其他属性
-                # 重置proxies列表标记
+                # 检查proxies列表是否即将结束（遇到非缩进行或组内其他属性）
                 if [[ "$line" =~ ^\ \ \ \ [a-zA-Z] ]]; then
                     in_proxies_list=0
                     in_url_test_group=0
+                    
+                    # 检查是否是特殊组且没有有效代理节点，如果有则添加fallback
+                    if [[ " $special_group_names " =~ " \"$current_group_name\" " ]] && [ $current_group_valid_proxy_count -eq 0 ]; then
+                        # 如果特殊组没有有效代理，添加一个fallback或DIRECT作为占位符
+                        echo "      - DIRECT"
+                        echo "      # 注意: 原本的节点已被过滤，此处添加DIRECT作为占位符以避免配置错误"
+                    fi
                 fi
             fi
             echo "$line"
