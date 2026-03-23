@@ -250,6 +250,7 @@ url_templates=(
     [6]="https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
     [7]="https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
     [8]="https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
+    [9]="https://sfdr.zaixianyouxi.dpdns.org/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full'
 )
 
 # 并行检查所有模板
@@ -279,7 +280,7 @@ if [ $found_count -eq 0 ]; then
         
         # 根据模板参数数量和类型生成默认URL
         url=""
-        case $key in
+        case $key 在
             1)
                 # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
                 url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
