@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #########################################################
 # 节点订阅自动获取脚本 - 并行模板版本 (Bash优化版)
@@ -280,7 +281,7 @@ if [ $found_count -eq 0 ]; then
         
         # 根据模板参数数量和类型生成默认URL
         url=""
-        case $key 在
+        case $key in
             1)
                 # 模板1: https://a.nodeshare.xyz/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full
                 url=$(printf "$template" "$currentyear" "$currentmonth" "$date_full_default")
