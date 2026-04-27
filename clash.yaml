@@ -6,31 +6,41 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇩🇪 德国 - 法兰克福 - 2, server: v33.hdacd.com, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 - 陶努斯山麓巴德索登 - 1, server: 77.90.11.178, port: 17662, type: vmess, uuid: eafa523f-3472-4efc-f1c5-6ce25b3910a9, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国 - Frankfurt am Main - 3, server: 3.75.35.234, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 1, server: jp.111000.cc.cd, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇩🇪 德国 - 法兰克福 - 2, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇩🇪 德国 - 陶努斯山麓巴德索登 - 4, server: 77.90.11.178, port: 17662, type: vmess, uuid: eafa523f-3472-4efc-f1c5-6ce25b3910a9, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1, server: 92.118.205.177, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: 3-2h8.pages.dev, network: ws, ws-opts: {path: /proxyip=ProxyIP.DE.owg.dpdns.org}, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_2, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_3, server: 82.198.246.46, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_6, server: 185.135.9.40, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
-  - {name: 🇪🇨 厄瓜多尔 - 基多 - 1, server: 185.47.253.227, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
-  - {name: 🇫🇮 芬兰 - 万塔 - 1, server: 95.81.113.186, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇫🇷 法国 - 斯特拉斯堡 - 1, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇮 芬兰 - 赫尔辛基 - 1, server: 45.12.146.179, port: 4443, type: trojan, password: strong-secret-pass-777, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 1, server: 15.236.1.234, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 2, server: 15.236.1.234, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 3, server: 15.224.77.136, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 4, server: 15.224.77.136, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1, server: 2001:bc8:32d7:302::10, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2, server: 2001:bc8:32d7:302::14, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560"}, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_3, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_6, server: 2001:bc8:32d7:302::15, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1"}, udp: true}
   - {name: 🇬🇧 英国 - 伦敦 - 1, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 1, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 2, server: 38.22.93.20, port: 55165, type: vmess, uuid: 8108a7dc-6162-4366-d492-23dcd3553e38, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 3, server: 38.22.93.20, port: 15079, type: vmess, uuid: 66e12acd-4f93-4e35-e229-5f93e2f379e1, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 4, server: v9.hdacd.com, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v9.hdacd.com, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 5, server: v10.zgtfqs.click, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 3, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 4, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 6, server: 82.38.31.191, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 🇬🇧 英国 伦敦Virgin Media, server: 82.26.155.199, port: 10369, type: trojan, password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj, sni: fra4.chasem2026sud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 伦敦Virgin Media 2, server: 82.26.155.20, port: 10369, type: trojan, password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj, sni: fra35.chasem2026sud.com, udp: true}
+  - {name: 🇬🇧 英国 伦敦Virgin Media 3, server: 82.26.155.237, port: 10369, type: trojan, password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj, sni: fra5.chasem2026sud.com, udp: true}
+  - {name: 🇭🇰 中国 - 香港 - 1, server: 163.61.75.21, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1, server: 129.154.223.89, port: 15800, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_24, server: 45.207.156.255, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_25, server: 222.167.202.52, port: 7443, type: vless, uuid: 06ef598c-1555-4887-b3f9-08214a2f6792, tls: true, servername: 2026.hhhhh.eu.org, network: ws, ws-opts: {path: /222.167.202.52:7443}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_27, server: nnet.online, port: 80, type: vless, uuid: 1007b7c2-2170-4ba4-a68d-ec31fbb4bf74, tls: true, servername: nnet.online, network: ws, ws-opts: {path: /vless-ntls, headers: {Host: nnet.online}}, udp: true}
-  - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_28, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_3, server: chengbai02.ascwt179.com, port: 13223, type: ss, cipher: aes-128-gcm, password: JVrsLLN1tkN8oXZO, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_30, server: 162.159.39.157, port: 2087, type: vless, uuid: 4859c235-2530-4062-9a0b-ea859cbbf861, tls: true, servername: 1.proxy2.us.ci, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_31, server: 59.20.141.38, port: 37020, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: emp1twys5ym.danfeng.qzz.io, network: ws, ws-opts: {path: "/danfeng?ed=2560"}, udp: true}
@@ -46,17 +56,11 @@ proxies:
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 95.40.57.109, port: 50612, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 43.198.80.162, port: 5823, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 16.162.22.95, port: 9211, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 - Mumbai - 1, server: amanm.wsone.icu, port: 443, type: trojan, password: M7v%w11Se*, sni: amanm.wsone.icu, skip-cert-verify: true, udp: true}
   - {name: 🇮🇹 意大利(clashnodev2ray.github.io免费节点), server: 89.150.40.152, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: 3-7ny.pages.dev, network: ws, ws-opts: {path: /proxyip=ProxyIP.DE.owg.dpdns.org}, udp: true}
   - {name: 🇯🇵 日本, server: 18.183.73.62, port: 3122, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - Chiyoda City - 8, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - Shinagawa - 7, server: cfn.cdn.moe233.org, port: 443, type: vmess, uuid: 36989e03-b3b9-4e85-8a96-6d02de7c4f3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: d232fuc3xd1vzm.cloudfront.net, network: ws, ws-opts: {path: /riolu/4, headers: {Host: cfn.cdn.moe233.org}}, udp: true}
-  - {name: 🇯🇵 日本 - 东京 - 3, server: 43.165.183.249, port: 19557, type: ss, cipher: chacha20-ietf-poly1305, password: a9d727cd-330b-4edd-8911-7c224df6afd5, udp: true}
-  - {name: 🇯🇵 日本 - 东京 - 4, server: 43.165.170.86, port: 15795, type: ss, cipher: chacha20-ietf-poly1305, password: a9d727cd-330b-4edd-8911-7c224df6afd5, udp: true}
-  - {name: 🇯🇵 日本 - 东京 - 5, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - 成田市 - 1, server: 207.65.189.9, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
-  - {name: 🇯🇵 日本 - 東京都 - 2, server: 103.127.243.59, port: 56738, type: vmess, uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/ABCDE]}, udp: true}
-  - {name: 🇯🇵 日本 - 東京都 - 6, server: 103.127.243.54, port: 53229, type: vmess, uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/ABCDE]}, udp: true}
+  - {name: 🇯🇵 日本 - 东京 - 3, server: 403880e.j6.gladns.com, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 403880e.default.microsoft.io:164892}, udp: true}
+  - {name: 🇯🇵 日本 - 成田市 - 1, server: 31.57.172.176, port: 8443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇯🇵 日本 - 成田市 - 2, server: 207.65.189.9, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
   - {name: 🇯🇵 日本(clashnodev2ray.github.io免费节点), server: 140.238.51.35, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇯🇵 日本2, server: 18.183.73.62, port: 2001, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇯🇵 日本2|@ripaojiedian, server: 43.198.79.128, port: 9201, type: trojan, password: 69ecb45889d99f31b8ccc10bf8f76a72, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
@@ -65,34 +69,38 @@ proxies:
   - {name: 🇯🇵 日本|@ripaojiedian, server: 18.181.191.24, port: 3357, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 韩国 - 安山市 - 1, server: 211.178.105.134, port: 6123, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
   - {name: 🇰🇷 韩国 - 首尔特别市 - 2, server: kr02.a0a.xyz, port: 80, type: vmess, uuid: 5155860e-d07d-46c3-9128-3afbd84626c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: kr02.a0a.xyz, network: ws, ws-opts: {path: "%2Fcctv13.m3u8", headers: {Host: kr02.a0a.xyz}}, udp: true}
-  - {name: 🇰🇷 韩国 - 首尔特别市 - 3, server: 43.164.133.182, port: 15755, type: ss, cipher: chacha20-ietf-poly1305, password: a9d727cd-330b-4edd-8911-7c224df6afd5, udp: true}
   - {name: 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1, server: 130.162.132.38, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2, server: 152.53.60.198, port: 8444, type: trojan, password: trojan, sni: jflsjlaf.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jflsjlaf.pages.dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: fn.130519.xyz, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 2, server: 195.93.253.240, port: 14130, type: ss, cipher: chacha20-ietf-poly1305, password: EIFM79AsbXQQryKyZ5O7La, udp: true}
+  - {name: 🇳🇱 荷兰 - 哈勒姆 - 2, server: 51.15.17.169, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: cloudflare-ip.mofashi.ltd, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
   - {name: 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1, server: 45.131.4.40, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
   - {name: 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2, server: 185.36.140.105, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: 3-7ny.pages.dev, network: ws, ws-opts: {path: /proxyip=ProxyIP.DE.owg.dpdns.org}, udp: true}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - 1, server: 195.58.49.26, port: 40210, type: ss, cipher: aes-256-gcm, password: 3150466568eda87b, udp: true}
-  - {name: 🇷🇺 俄罗斯 - 莫斯科 - 2, server: 46.17.40.197, port: 40412, type: ss, cipher: aes-256-gcm, password: 9ca2803c16de72cd, udp: true}
+  - {name: 🇳🇿 新西兰 - 惠灵顿 - 1, server: 45.15.140.128, port: 4443, type: trojan, password: strong-secret-pass-777, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - 1, server: 194.87.68.6, port: 40120, type: ss, cipher: aes-256-gcm, password: 1a87017d0bf57f34, udp: true}
+  - {name: 🇷🇺 俄罗斯 - 莫斯科 - 2, server: 45.140.169.225, port: 40412, type: ss, cipher: aes-256-gcm, password: c5fcdf7829112cb4, udp: true}
+  - {name: 🇷🇺 俄罗斯 - 莫斯科 - 3, server: 46.17.40.12, port: 60290, type: ss, cipher: aes-256-gcm, password: f34579d0148b2581, udp: true}
+  - {name: 🇷🇺 俄罗斯 - 莫斯科 - 4, server: 130.49.189.40, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: LwB3KAdWCQgWnZDak2XmKPHMMwZpAzWP, udp: true}
   - {name: 🇸🇬 新加坡, server: 160.16.106.99, port: 3057, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: 8.222.244.182, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 2, server: 149.28.151.140, port: 443, type: trojan, password: d30ab83dbde4480082048fb315bedebd, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 3, server: store.ubi.com, port: 443, type: ss, cipher: none, password: 3e96ef7d-8637-42c2-ac73-75182196e755, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: mfvpn.fuchen.indevs.in, path: "/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560", tls: true, mux: false}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 4, server: 178.128.209.190, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: 47.79.236.9, port: 47034, type: vmess, uuid: 6f2879e2-7595-4fc2-ca7e-3c163dbe0d4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 2, server: 8.222.244.182, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 3, server: freeyx.cloudflare88.eu.org, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 4, server: 34.143.159.175, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 5, server: cdn.31514926.xyz, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 6, server: store.ubi.com, port: 443, type: ss, cipher: none, password: 3e96ef7d-8637-42c2-ac73-75182196e755, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: mfvpn.fuchen.indevs.in, path: "/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560", tls: true, mux: false}, udp: true}
   - {name: 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_2, server: falankefu1.zqjsqapi.com, port: 443, type: vless, uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19, tls: true, servername: falankefu1.zqjsqapi.com, network: ws, ws-opts: {path: /proxy, headers: {Host: falankefu1.zqjsqapi.com}}, udp: true}
   - {name: 🇸🇬 新加坡2, server: 160.16.132.38, port: 32876, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇸🇬 新加坡3, server: 43.198.80.162, port: 30726, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 52.194.223.24, port: 25675, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇹🇷 土耳其 - 伊斯坦布尔 - 1, server: 185.39.204.196, port: 7918, type: ss, cipher: aes-256-gcm, password: HGlzsKUqaTiC0PSLHn6jT83OZvGiLnpI, udp: true}
+  - {name: 🇹🇼 中国 - 台湾 - 2, server: 403880e.k4.gladns.com, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 403880e.default.epicgames.com:164892}, udp: true}
   - {name: 🇹🇼 台湾, server: 0cfbd3c0-fdc0-4f26-82fb-5c8f8b6ce82b.bnsepserv.com, port: 32003, type: trojan, password: f792d9b5-c254-4756-a740-c314fa62f964, sni: w1.ding-doc.com, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国, server: 54.249.145.163, port: 4019, type: trojan, password: 1774240c00db2b77d5a99f6540c47b69, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 - Secaucus - 5, server: node-us.connectsuite.org, port: 2053, type: vmess, uuid: 9b91e960-f8f7-41aa-ac67-f5c7b6b72e74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 北伯根 - 8, server: v24.hdacd.com, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 华盛顿特区 - 6, server: v4.hdacd.com, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 水牛城 - 10, server: 104.168.1.102, port: 8222, type: vmess, uuid: 4b64bbe9-347d-4cbe-83e6-0c925a9583d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国 - 洛杉矶 - 1, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 洛杉矶 - 4, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 達拉斯 - 9, server: v8.hdacd.com, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 - The Dalles - 4, server: 35.212.177.67, port: 40029, type: vmess, uuid: e8ab37c7-2b1d-4776-c062-2cac8fc066e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 - 华盛顿特区 - 9, server: v4.hdacd.com, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 - 旧金山 - 6, server: 403880e.q8.gladns.com, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 403880e.default.microsoft.is:164892}, udp: true}
+  - {name: 🇺🇸 美国 - 旧金山 - 7, server: 403880e.r8.gladns.com, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 403880e.default.nintendo.eu:164892}, udp: true}
+  - {name: 🇺🇸 美国 - 雷德蒙德 - 3, server: 216.167.126.14, port: 29709, type: vmess, uuid: c19c51e3-11ff-4f1c-92c6-200784acd4fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 纽约(Prudential), server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1, server: 104.129.166.42, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10, server: 195.85.59.42, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100, server: 192.169.223.42, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
@@ -143,7 +151,6 @@ proxies:
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_30, server: 43.165.174.229, port: 443, type: vless, uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19, tls: true, servername: dongjing1.zqjsqapi.com, network: ws, ws-opts: {path: /proxy}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_31, server: dongjing3.zqjsqapi.com, port: 443, type: vless, uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19, tls: true, servername: dongjing3.zqjsqapi.com, network: ws, ws-opts: {path: /proxy, headers: {Host: dongjing3.zqjsqapi.com}}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_32, server: 8.219.56.26, port: 40011, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
-  - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_33, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_34, server: dongjing2.zqjsqapi.com, port: 443, type: vless, uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19, tls: true, servername: dongjing2.zqjsqapi.com, network: ws, ws-opts: {path: /proxy, headers: {Host: dongjing2.zqjsqapi.com}}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_4, server: ip.sb, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: 3-9sp.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: ip.sb}}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_40, server: xinjiapo1.zqjsqapi.com, port: 443, type: vless, uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19, tls: true, servername: xinjiapo1.zqjsqapi.com, network: ws, ws-opts: {path: /proxy, headers: {Host: xinjiapo1.zqjsqapi.com}}, udp: true}
@@ -199,41 +206,45 @@ proxies:
   - {name: 🇺🇸 美国3, server: 43.198.80.162, port: 44386, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 54.46.42.174, port: 49534, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国|@ripaojiedian, server: 18.181.191.24, port: 4019, type: trojan, password: 69ecb45889d99f31b8ccc10bf8f76a72, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 1, server: 103.186.154.28, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 10, server: 103.186.155.134, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 11, server: 103.186.155.235, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 12, server: 103.186.155.146, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 13, server: 103.186.154.205, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 14, server: 103.186.154.233, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 15, server: 103.186.155.80, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 16, server: 103.186.154.11, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 17, server: 103.186.155.113, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 18, server: 103.186.155.82, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 19, server: 103.186.154.193, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 2, server: 103.186.154.206, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 20, server: 103.186.155.107, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 21, server: 103.186.155.48, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 22, server: 103.186.155.203, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 23, server: 103.186.155.240, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 24, server: 103.186.155.118, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 25, server: 103.186.154.77, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 26, server: 103.186.155.237, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 27, server: 103.186.155.12, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 28, server: 103.186.154.236, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 29, server: 103.186.155.34, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 3, server: 103.186.155.215, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 30, server: 103.186.154.216, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 31, server: 103.186.155.123, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 32, server: 103.186.155.202, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 33, server: 103.186.155.65, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 34, server: 103.186.155.45, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 35, server: 103.186.154.180, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 36, server: 103.186.155.77, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 4, server: 103.186.155.143, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 5, server: 103.186.155.222, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 6, server: 103.186.154.39, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 7, server: 103.186.154.65, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 8, server: 103.186.155.232, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 1, server: 103.186.154.167, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 10, server: 103.186.154.161, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 11, server: 103.186.154.35, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 12, server: 103.186.154.26, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 13, server: 103.186.155.65, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 14, server: 103.186.154.74, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 15, server: 103.186.154.204, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 16, server: 103.186.154.39, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 17, server: 103.186.154.214, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 18, server: 103.186.155.226, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 19, server: 103.186.155.183, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 2, server: 103.186.154.73, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 20, server: 103.186.154.251, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 21, server: 103.186.155.215, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 22, server: 103.186.154.54, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 23, server: 103.186.154.58, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 24, server: 103.186.155.154, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 25, server: 103.186.154.66, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 26, server: 103.186.155.45, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 27, server: 103.186.154.77, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 28, server: 103.186.155.150, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 29, server: 103.186.155.111, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 3, server: 103.186.154.254, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 30, server: 103.186.154.231, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 31, server: 103.186.154.248, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 32, server: 103.186.155.84, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 33, server: 103.186.154.236, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 34, server: 103.186.155.66, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 35, server: 103.186.155.80, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 36, server: 103.186.155.82, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 37, server: 103.186.154.25, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 38, server: 103.186.155.129, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 39, server: 103.186.155.230, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 4, server: 103.186.155.13, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 40, server: 103.186.154.197, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 5, server: 103.186.154.49, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 6, server: 103.186.155.143, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 7, server: 103.186.154.165, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 8, server: 103.186.154.141, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -264,17 +275,23 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 🇩🇪 德国 - Frankfurt am Main - 3
+      - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 1
+      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_2
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_3
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_5
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_6
-      - 🇪🇨 厄瓜多尔 - 基多 - 1
-      - 🇫🇮 芬兰 - 万塔 - 1
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇮 芬兰 - 赫尔辛基 - 1
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 - 巴黎 - 2
+      - 🇫🇷 法国 - 巴黎 - 3
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_3
@@ -282,6 +299,16 @@ proxy-groups:
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_5
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_6
       - 🇬🇧 英国 - 伦敦 - 1
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
+      - 🇬🇧 英国 V2CROSS.COM 7
+      - 🇬🇧 英国 伦敦Virgin Media
+      - 🇬🇧 英国 伦敦Virgin Media 2
+      - 🇬🇧 英国 伦敦Virgin Media 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -329,10 +356,6 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
       - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 2
-      - 🇭🇰 中国 - 香港 - 3
-      - 🇭🇰 中国 - 香港 - 4
-      - 🇭🇰 中国 - 香港 - 5
       - 🇭🇰 香港
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
@@ -378,17 +401,11 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 - Mumbai - 1
       - 🇮🇹 意大利(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本
-      - 🇯🇵 日本 - Chiyoda City - 8
-      - 🇯🇵 日本 - Shinagawa - 7
       - 🇯🇵 日本 - 东京 - 3
-      - 🇯🇵 日本 - 东京 - 4
-      - 🇯🇵 日本 - 东京 - 5
       - 🇯🇵 日本 - 成田市 - 1
-      - 🇯🇵 日本 - 東京都 - 2
-      - 🇯🇵 日本 - 東京都 - 6
+      - 🇯🇵 日本 - 成田市 - 2
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -397,20 +414,24 @@ proxy-groups:
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 韩国 - 安山市 - 1
       - 🇰🇷 韩国 - 首尔特别市 - 2
-      - 🇰🇷 韩国 - 首尔特别市 - 3
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇱 荷兰 - 哈勒姆 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇿 新西兰 - 惠灵顿 - 1
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
+      - 🇷🇺 俄罗斯 - 莫斯科 - 3
+      - 🇷🇺 俄罗斯 - 莫斯科 - 4
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
+      - 🇸🇬 新加坡 - 新加坡 - 5
+      - 🇸🇬 新加坡 - 新加坡 - 6
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_1
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_2
       - 🇸🇬 新加坡2
@@ -419,17 +440,18 @@ proxy-groups:
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
+      - 🇹🇼 中国 - 台湾 - 2
       - 🇹🇼 台湾
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Secaucus - 5
-      - 🇺🇸 美国 - 北伯根 - 8
-      - 🇺🇸 美国 - 华盛顿特区 - 6
-      - 🇺🇸 美国 - 水牛城 - 10
+      - 🇺🇸 美国 - The Dalles - 4
+      - 🇺🇸 美国 - 华盛顿特区 - 9
+      - 🇺🇸 美国 - 旧金山 - 6
+      - 🇺🇸 美国 - 旧金山 - 7
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 洛杉矶 - 4
-      - 🇺🇸 美国 - 達拉斯 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 8
+      - 🇺🇸 美国 - 雷德蒙德 - 3
+      - 🇺🇸 美国 纽约(Prudential)
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -591,7 +613,11 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 34
       - 🇻🇳 越南 - Hải Dương - 35
       - 🇻🇳 越南 - Hải Dương - 36
+      - 🇻🇳 越南 - Hải Dương - 37
+      - 🇻🇳 越南 - Hải Dương - 38
+      - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
@@ -602,17 +628,23 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 🇩🇪 德国 - Frankfurt am Main - 3
+      - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 1
+      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_2
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_3
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_5
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_6
-      - 🇪🇨 厄瓜多尔 - 基多 - 1
-      - 🇫🇮 芬兰 - 万塔 - 1
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇮 芬兰 - 赫尔辛基 - 1
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 - 巴黎 - 2
+      - 🇫🇷 法国 - 巴黎 - 3
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_3
@@ -620,6 +652,16 @@ proxy-groups:
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_5
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_6
       - 🇬🇧 英国 - 伦敦 - 1
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
+      - 🇬🇧 英国 V2CROSS.COM 7
+      - 🇬🇧 英国 伦敦Virgin Media
+      - 🇬🇧 英国 伦敦Virgin Media 2
+      - 🇬🇧 英国 伦敦Virgin Media 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -667,10 +709,6 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
       - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 2
-      - 🇭🇰 中国 - 香港 - 3
-      - 🇭🇰 中国 - 香港 - 4
-      - 🇭🇰 中国 - 香港 - 5
       - 🇭🇰 香港
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
@@ -716,17 +754,11 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 - Mumbai - 1
       - 🇮🇹 意大利(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本
-      - 🇯🇵 日本 - Chiyoda City - 8
-      - 🇯🇵 日本 - Shinagawa - 7
       - 🇯🇵 日本 - 东京 - 3
-      - 🇯🇵 日本 - 东京 - 4
-      - 🇯🇵 日本 - 东京 - 5
       - 🇯🇵 日本 - 成田市 - 1
-      - 🇯🇵 日本 - 東京都 - 2
-      - 🇯🇵 日本 - 東京都 - 6
+      - 🇯🇵 日本 - 成田市 - 2
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -735,20 +767,24 @@ proxy-groups:
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 韩国 - 安山市 - 1
       - 🇰🇷 韩国 - 首尔特别市 - 2
-      - 🇰🇷 韩国 - 首尔特别市 - 3
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇱 荷兰 - 哈勒姆 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇿 新西兰 - 惠灵顿 - 1
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
+      - 🇷🇺 俄罗斯 - 莫斯科 - 3
+      - 🇷🇺 俄罗斯 - 莫斯科 - 4
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
+      - 🇸🇬 新加坡 - 新加坡 - 5
+      - 🇸🇬 新加坡 - 新加坡 - 6
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_1
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_2
       - 🇸🇬 新加坡2
@@ -757,17 +793,18 @@ proxy-groups:
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
+      - 🇹🇼 中国 - 台湾 - 2
       - 🇹🇼 台湾
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Secaucus - 5
-      - 🇺🇸 美国 - 北伯根 - 8
-      - 🇺🇸 美国 - 华盛顿特区 - 6
-      - 🇺🇸 美国 - 水牛城 - 10
+      - 🇺🇸 美国 - The Dalles - 4
+      - 🇺🇸 美国 - 华盛顿特区 - 9
+      - 🇺🇸 美国 - 旧金山 - 6
+      - 🇺🇸 美国 - 旧金山 - 7
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 洛杉矶 - 4
-      - 🇺🇸 美国 - 達拉斯 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 8
+      - 🇺🇸 美国 - 雷德蒙德 - 3
+      - 🇺🇸 美国 纽约(Prudential)
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -929,7 +966,11 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 34
       - 🇻🇳 越南 - Hải Dương - 35
       - 🇻🇳 越南 - Hải Dương - 36
+      - 🇻🇳 越南 - Hải Dương - 37
+      - 🇻🇳 越南 - Hải Dương - 38
+      - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
@@ -988,10 +1029,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 2
-      - 🇭🇰 中国 - 香港 - 3
-      - 🇭🇰 中国 - 香港 - 4
-      - 🇭🇰 中国 - 香港 - 5
       - 🇭🇰 香港
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
@@ -1043,6 +1080,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
+      - 🇹🇼 中国 - 台湾 - 2
       - 🇹🇼 台湾
   - name: 🇨🇳 ‍中国
     type: url-test
@@ -1051,10 +1089,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 2
-      - 🇭🇰 中国 - 香港 - 3
-      - 🇭🇰 中国 - 香港 - 4
-      - 🇭🇰 中国 - 香港 - 5
       - 🇭🇰 香港
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
@@ -1100,6 +1134,7 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇹🇼 中国 - 台湾 - 2
       - 🇹🇼 台湾
   - name: 🇸🇬 ‍新加坡
     type: url-test
@@ -1112,6 +1147,8 @@ proxy-groups:
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
+      - 🇸🇬 新加坡 - 新加坡 - 5
+      - 🇸🇬 新加坡 - 新加坡 - 6
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_1
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_2
       - 🇸🇬 新加坡2
@@ -1126,14 +1163,9 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 - Chiyoda City - 8
-      - 🇯🇵 日本 - Shinagawa - 7
       - 🇯🇵 日本 - 东京 - 3
-      - 🇯🇵 日本 - 东京 - 4
-      - 🇯🇵 日本 - 东京 - 5
       - 🇯🇵 日本 - 成田市 - 1
-      - 🇯🇵 日本 - 東京都 - 2
-      - 🇯🇵 日本 - 東京都 - 6
+      - 🇯🇵 日本 - 成田市 - 2
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -1147,15 +1179,15 @@ proxy-groups:
     tolerance: 300
     proxies:
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Secaucus - 5
-      - 🇺🇸 美国 - 北伯根 - 8
-      - 🇺🇸 美国 - 华盛顿特区 - 6
-      - 🇺🇸 美国 - 水牛城 - 10
+      - 🇺🇸 美国 - The Dalles - 4
+      - 🇺🇸 美国 - 华盛顿特区 - 9
+      - 🇺🇸 美国 - 旧金山 - 6
+      - 🇺🇸 美国 - 旧金山 - 7
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 洛杉矶 - 4
-      - 🇺🇸 美国 - 達拉斯 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 8
+      - 🇺🇸 美国 - 雷德蒙德 - 3
+      - 🇺🇸 美国 纽约(Prudential)
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -1295,17 +1327,23 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 🇩🇪 德国 - Frankfurt am Main - 3
+      - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 1
+      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_2
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_3
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_5
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_6
-      - 🇪🇨 厄瓜多尔 - 基多 - 1
-      - 🇫🇮 芬兰 - 万塔 - 1
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇮 芬兰 - 赫尔辛基 - 1
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 - 巴黎 - 2
+      - 🇫🇷 法国 - 巴黎 - 3
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_3
@@ -1313,6 +1351,16 @@ proxy-groups:
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_5
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_6
       - 🇬🇧 英国 - 伦敦 - 1
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
+      - 🇬🇧 英国 V2CROSS.COM 7
+      - 🇬🇧 英国 伦敦Virgin Media
+      - 🇬🇧 英国 伦敦Virgin Media 2
+      - 🇬🇧 英国 伦敦Virgin Media 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -1359,19 +1407,20 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_7
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
-      - 🇮🇳 印度 - Mumbai - 1
       - 🇮🇹 意大利(clashnodev2ray.github.io免费节点)
       - 🇰🇷 韩国 - 安山市 - 1
       - 🇰🇷 韩国 - 首尔特别市 - 2
-      - 🇰🇷 韩国 - 首尔特别市 - 3
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇱 荷兰 - 哈勒姆 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇿 新西兰 - 惠灵顿 - 1
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
+      - 🇷🇺 俄罗斯 - 莫斯科 - 3
+      - 🇷🇺 俄罗斯 - 莫斯科 - 4
       - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
       - 🇻🇳 越南 - Hải Dương - 1
       - 🇻🇳 越南 - Hải Dương - 10
@@ -1403,7 +1452,11 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 34
       - 🇻🇳 越南 - Hải Dương - 35
       - 🇻🇳 越南 - Hải Dương - 36
+      - 🇻🇳 越南 - Hải Dương - 37
+      - 🇻🇳 越南 - Hải Dương - 38
+      - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
@@ -1413,10 +1466,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 2
-      - 🇭🇰 中国 - 香港 - 3
-      - 🇭🇰 中国 - 香港 - 4
-      - 🇭🇰 中国 - 香港 - 5
       - 🇭🇰 香港
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
@@ -1465,15 +1514,12 @@ proxy-groups:
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
+      - 🇹🇼 中国 - 台湾 - 2
       - 🇹🇼 台湾
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
       - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 2
-      - 🇭🇰 中国 - 香港 - 3
-      - 🇭🇰 中国 - 香港 - 4
-      - 🇭🇰 中国 - 香港 - 5
       - 🇭🇰 香港
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
@@ -1519,6 +1565,7 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇹🇼 中国 - 台湾 - 2
       - 🇹🇼 台湾
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
@@ -1528,6 +1575,8 @@ proxy-groups:
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
+      - 🇸🇬 新加坡 - 新加坡 - 5
+      - 🇸🇬 新加坡 - 新加坡 - 6
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_1
       - 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_2
       - 🇸🇬 新加坡2
@@ -1539,14 +1588,9 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 - Chiyoda City - 8
-      - 🇯🇵 日本 - Shinagawa - 7
       - 🇯🇵 日本 - 东京 - 3
-      - 🇯🇵 日本 - 东京 - 4
-      - 🇯🇵 日本 - 东京 - 5
       - 🇯🇵 日本 - 成田市 - 1
-      - 🇯🇵 日本 - 東京都 - 2
-      - 🇯🇵 日本 - 東京都 - 6
+      - 🇯🇵 日本 - 成田市 - 2
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -1557,15 +1601,15 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Secaucus - 5
-      - 🇺🇸 美国 - 北伯根 - 8
-      - 🇺🇸 美国 - 华盛顿特区 - 6
-      - 🇺🇸 美国 - 水牛城 - 10
+      - 🇺🇸 美国 - The Dalles - 4
+      - 🇺🇸 美国 - 华盛顿特区 - 9
+      - 🇺🇸 美国 - 旧金山 - 6
+      - 🇺🇸 美国 - 旧金山 - 7
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 洛杉矶 - 4
-      - 🇺🇸 美国 - 達拉斯 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 8
+      - 🇺🇸 美国 - 雷德蒙德 - 3
+      - 🇺🇸 美国 纽约(Prudential)
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -1702,17 +1746,23 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 🇩🇪 德国 - Frankfurt am Main - 3
+      - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 1
+      - 🇩🇪 德国 - 陶努斯山麓巴德索登 - 4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_2
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_3
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_4
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_5
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_6
-      - 🇪🇨 厄瓜多尔 - 基多 - 1
-      - 🇫🇮 芬兰 - 万塔 - 1
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇮 芬兰 - 赫尔辛基 - 1
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 - 巴黎 - 2
+      - 🇫🇷 法国 - 巴黎 - 3
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_3
@@ -1720,6 +1770,16 @@ proxy-groups:
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_5
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_6
       - 🇬🇧 英国 - 伦敦 - 1
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
+      - 🇬🇧 英国 V2CROSS.COM 7
+      - 🇬🇧 英国 伦敦Virgin Media
+      - 🇬🇧 英国 伦敦Virgin Media 2
+      - 🇬🇧 英国 伦敦Virgin Media 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -1766,19 +1826,20 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_7
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
-      - 🇮🇳 印度 - Mumbai - 1
       - 🇮🇹 意大利(clashnodev2ray.github.io免费节点)
       - 🇰🇷 韩国 - 安山市 - 1
       - 🇰🇷 韩国 - 首尔特别市 - 2
-      - 🇰🇷 韩国 - 首尔特别市 - 3
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇱 荷兰 - 哈勒姆 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
+      - 🇳🇿 新西兰 - 惠灵顿 - 1
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
+      - 🇷🇺 俄罗斯 - 莫斯科 - 3
+      - 🇷🇺 俄罗斯 - 莫斯科 - 4
       - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
       - 🇻🇳 越南 - Hải Dương - 1
       - 🇻🇳 越南 - Hải Dương - 10
@@ -1810,7 +1871,11 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 34
       - 🇻🇳 越南 - Hải Dương - 35
       - 🇻🇳 越南 - Hải Dương - 36
+      - 🇻🇳 越南 - Hải Dương - 37
+      - 🇻🇳 越南 - Hải Dương - 38
+      - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
