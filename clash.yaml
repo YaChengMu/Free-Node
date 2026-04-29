@@ -6,8 +6,8 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, udp: true}
-  - {name: 🇧🇬 保加利亚 V2CROSS.COM, server: 78.159.131.12, port: 28259, type: trojan, password: MeaDiUmPlkWbZJ2BON8tz, sni: ads.x5.ru, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt am Main - 3, server: 3.75.35.234, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国 - 德赖艾希 - 1, server: jp.111000.cc.cd, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
   - {name: 🇩🇪 德国 - 法兰克福 - 2, server: ssr2.762988.xyz, port: 33336, type: ssr, cipher: chacha20-ietf, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
@@ -26,18 +26,15 @@ proxies:
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_3, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_6, server: 2001:bc8:32d7:302::15, port: 44579, type: vmess, uuid: 8e34e170-13ae-4892-9d20-05962acc9f84, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1"}, udp: true}
   - {name: 🇬🇧 英国 - 伦敦 - 1, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM 3, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM 8, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 4, server: 82.38.31.214, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 1, server: 163.61.75.21, port: 443, type: ss, cipher: aes-128-gcm, password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: aoe.o.eoa.ccwu.cc, path: "/?enc\\=aes-128-gcm", tls: true, mux: false}, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: chengbai02.ascwt179.com, port: 13223, type: ss, cipher: aes-128-gcm, password: JVrsLLN1tkN8oXZO, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1, server: 129.154.223.89, port: 15800, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_24, server: 45.207.156.255, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_25, server: 222.167.202.52, port: 7443, type: vless, uuid: 06ef598c-1555-4887-b3f9-08214a2f6792, tls: true, servername: 2026.hhhhh.eu.org, network: ws, ws-opts: {path: /222.167.202.52:7443}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_27, server: nnet.online, port: 80, type: vless, uuid: 1007b7c2-2170-4ba4-a68d-ec31fbb4bf74, tls: true, servername: nnet.online, network: ws, ws-opts: {path: /vless-ntls, headers: {Host: nnet.online}}, udp: true}
-  - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_3, server: chengbai02.ascwt179.com, port: 13223, type: ss, cipher: aes-128-gcm, password: JVrsLLN1tkN8oXZO, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_30, server: 162.159.39.157, port: 2087, type: vless, uuid: 4859c235-2530-4062-9a0b-ea859cbbf861, tls: true, servername: 1.proxy2.us.ci, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_31, server: 59.20.141.38, port: 37020, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: emp1twys5ym.danfeng.qzz.io, network: ws, ws-opts: {path: "/danfeng?ed=2560"}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_33, server: 167.71.222.177, port: 443, type: vless, uuid: 42add63b-deda-4e71-aa48-ddd288181858, tls: true, servername: edtunnel-eiz.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
@@ -92,8 +89,12 @@ proxies:
   - {name: 🇺🇸 美国 - 华盛顿特区 - 9, server: v4.hdacd.com, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 旧金山 - 6, server: 403880e.q8.gladns.com, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 403880e.default.microsoft.is:164892}, udp: true}
   - {name: 🇺🇸 美国 - 旧金山 - 7, server: 403880e.r8.gladns.com, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 403880e.default.nintendo.eu:164892}, udp: true}
+  - {name: 🇺🇸 美国 - 洛杉矶 - 1, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 - 洛杉矶 - 2, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 雷德蒙德 - 3, server: 216.167.126.14, port: 29709, type: vmess, uuid: c19c51e3-11ff-4f1c-92c6-200784acd4fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 DXC Technology, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇺🇸 美国 DXC Technology, server: admin.c1.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇺🇸 美国 DXC Technology 2, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇺🇸 美国 DXC Technology 3, server: admin.c1.havij.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1kVr0KATIJI7mwOF, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1, server: 104.129.166.42, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10, server: 195.85.59.42, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100, server: 192.169.223.42, port: 443, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.danfeng.rr.kg, network: ws, ws-opts: {path: /danfeng}, udp: true}
@@ -269,7 +270,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 亚太地区 V2CROSS.COM
-      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
@@ -296,12 +298,6 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
       - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
-      - 🇬🇧 英国 V2CROSS.COM 6
-      - 🇬🇧 英国 V2CROSS.COM 7
-      - 🇬🇧 英国 V2CROSS.COM 8
-      - 🇬🇧 英国 V2CROSS.COM 9
-      - 🇬🇧 英国 V2CROSS.COM 10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -350,6 +346,7 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
       - 🇭🇰 中国 - 香港 - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_11
@@ -443,6 +440,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 - 雷德蒙德 - 3
       - 🇺🇸 美国 DXC Technology
+      - 🇺🇸 美国 DXC Technology 2
+      - 🇺🇸 美国 DXC Technology 3
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -621,7 +620,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 亚太地区 V2CROSS.COM
-      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
@@ -648,12 +648,6 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
       - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
-      - 🇬🇧 英国 V2CROSS.COM 6
-      - 🇬🇧 英国 V2CROSS.COM 7
-      - 🇬🇧 英国 V2CROSS.COM 8
-      - 🇬🇧 英国 V2CROSS.COM 9
-      - 🇬🇧 英国 V2CROSS.COM 10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -702,6 +696,7 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
       - 🇭🇰 中国 - 香港 - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_11
@@ -795,6 +790,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 - 雷德蒙德 - 3
       - 🇺🇸 美国 DXC Technology
+      - 🇺🇸 美国 DXC Technology 2
+      - 🇺🇸 美国 DXC Technology 3
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -1021,6 +1018,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 中国 - 香港 - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_11
@@ -1079,6 +1077,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 中国 - 香港 - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_11
@@ -1175,6 +1174,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 - 雷德蒙德 - 3
       - 🇺🇸 美国 DXC Technology
+      - 🇺🇸 美国 DXC Technology 2
+      - 🇺🇸 美国 DXC Technology 3
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -1316,7 +1317,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 亚太地区 V2CROSS.COM
-      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
@@ -1343,12 +1345,6 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
       - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
-      - 🇬🇧 英国 V2CROSS.COM 6
-      - 🇬🇧 英国 V2CROSS.COM 7
-      - 🇬🇧 英国 V2CROSS.COM 8
-      - 🇬🇧 英国 V2CROSS.COM 9
-      - 🇬🇧 英国 V2CROSS.COM 10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -1455,6 +1451,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 中国 - 香港 - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_11
@@ -1507,6 +1504,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 中国 - 香港 - 1
       - 🇭🇰 香港
+      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_10
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_11
@@ -1594,6 +1592,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 - 雷德蒙德 - 3
       - 🇺🇸 美国 DXC Technology
+      - 🇺🇸 美国 DXC Technology 2
+      - 🇺🇸 美国 DXC Technology 3
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_100
@@ -1732,7 +1732,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 亚太地区 V2CROSS.COM
-      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - 德赖艾希 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
@@ -1759,12 +1760,6 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
       - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
-      - 🇬🇧 英国 V2CROSS.COM 6
-      - 🇬🇧 英国 V2CROSS.COM 7
-      - 🇬🇧 英国 V2CROSS.COM 8
-      - 🇬🇧 英国 V2CROSS.COM 9
-      - 🇬🇧 英国 V2CROSS.COM 10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
