@@ -6,6 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国 - 德赖艾希 - 10, server: 92.119.90.67, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇩🇪 德国 - 德赖艾希 - 11, server: 77.221.157.251, port: 2083, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇩🇪 德国 - 德赖艾希 - 12, server: 147.45.197.21, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
@@ -30,6 +31,10 @@ proxies:
   - {name: 🇫🇷 法国 - 斯特拉斯堡 - 5, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国 - 伦敦 - 1, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 英国 - 豪恩斯洛 - 2, server: 38.180.175.143, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇬🇧 英国 Microsoft公司, server: 51.11.158.132, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 5, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 10, server: ff28248a-t9zts0-tb08pe-luwe.cm4.oshuawei.com, port: 5228, type: http, username: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 11, server: 38.207.160.213, port: 16396, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 12, server: 46.8.226.15, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
@@ -47,9 +52,9 @@ proxies:
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 18.162.168.19, port: 53018, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 13.231.158.129, port: 63131, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4|@ripaojiedian, server: bb.bejkn.cn, port: 11233, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇪 爱尔兰 V2CROSS.COM, server: admin.c1.havij.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1kVr0KATIJI7mwOF, udp: true}
   - {name: 🇯🇵 日本, server: bb.bejkn.cn, port: 6463, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - Chiyoda City - 1, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - Chiyoda City - 2, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - Ōkubo-naka - 4, server: 126.220.82.161, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇯🇵 日本 - 成田市 - 3, server: 108.162.198.253, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇯🇵 日本 - 成田市 - 5, server: 216.23.84.220, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
@@ -106,10 +111,8 @@ proxies:
   - {name: 🇺🇸 美国 - South Fulton - 17, server: 77.110.127.237, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国 - 水牛城 - 5, server: v24.hdacd.com, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 水牛城 - 6, server: v8.hdacd.com, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 洛杉矶 - 1, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 2, server: 172.235.33.179, port: 2053, type: vmess, uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: usaapp2.jisuyun.top, network: ws, ws-opts: {path: /usavm, headers: {Host: usaapp2.jisuyun.top}}, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 3, server: usaapp2.jisuyun.top, port: 2053, type: vmess, uuid: 95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: usaapp2.jisuyun.top, network: ws, ws-opts: {path: /usavm, headers: {Host: usaapp2.jisuyun.top}}, udp: true}
-  - {name: 🇺🇸 美国 - 洛杉矶 - 4, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 紐約 - 20, server: 143.47.96.200, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国 - 紐約 - 21, server: 199.119.137.77, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国2, server: 16.163.148.1, port: 4019, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -240,6 +243,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
       - 🇩🇪 德国 - 德赖艾希 - 12
@@ -264,6 +268,13 @@ proxy-groups:
       - 🇫🇷 法国 - 斯特拉斯堡 - 5
       - 🇬🇧 英国 - 伦敦 - 1
       - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 Microsoft公司
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
       - 🇭🇰 中国 - 香港 - 10
       - 🇭🇰 中国 - 香港 - 11
       - 🇭🇰 中国 - 香港 - 12
@@ -285,6 +296,7 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇯🇵 日本
       - 🇯🇵 日本 - Chiyoda City - 1
       - 🇯🇵 日本 - Chiyoda City - 2
@@ -458,6 +470,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
       - 🇩🇪 德国 - 德赖艾希 - 12
@@ -482,6 +495,13 @@ proxy-groups:
       - 🇫🇷 法国 - 斯特拉斯堡 - 5
       - 🇬🇧 英国 - 伦敦 - 1
       - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 Microsoft公司
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
       - 🇭🇰 中国 - 香港 - 10
       - 🇭🇰 中国 - 香港 - 11
       - 🇭🇰 中国 - 香港 - 12
@@ -503,6 +523,7 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇯🇵 日本
       - 🇯🇵 日本 - Chiyoda City - 1
       - 🇯🇵 日本 - Chiyoda City - 2
@@ -862,6 +883,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
       - 🇩🇪 德国 - 德赖艾希 - 12
@@ -886,6 +908,14 @@ proxy-groups:
       - 🇫🇷 法国 - 斯特拉斯堡 - 5
       - 🇬🇧 英国 - 伦敦 - 1
       - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 Microsoft公司
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇰🇷 韩国 - Yeongdong-gun - 1
       - 🇰🇷 韩国 - Yeongdong-gun - 2
       - 🇰🇷 韩国 - Yeongdong-gun - 3
@@ -1121,6 +1151,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 亚太地区 V2CROSS.COM
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
       - 🇩🇪 德国 - 德赖艾希 - 12
@@ -1145,6 +1176,14 @@ proxy-groups:
       - 🇫🇷 法国 - 斯特拉斯堡 - 5
       - 🇬🇧 英国 - 伦敦 - 1
       - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 Microsoft公司
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM 3
+      - 🇬🇧 英国 V2CROSS.COM 4
+      - 🇬🇧 英国 V2CROSS.COM 5
+      - 🇬🇧 英国 V2CROSS.COM 6
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇰🇷 韩国 - Yeongdong-gun - 1
       - 🇰🇷 韩国 - Yeongdong-gun - 2
       - 🇰🇷 韩国 - Yeongdong-gun - 3
