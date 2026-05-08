@@ -6,8 +6,12 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 3, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: planb.mojcn.com, port: 16632, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: planb.mojcn.com, port: 16648, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 3, server: t.cnmjcn.cyou, port: 16632, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 5, server: planb.mojcn.com, port: 16618, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 6, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 7, server: planb.mojcn.com, port: 16616, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
   - {name: 🇦🇺 澳大利亚 - 堪培拉 - 1, server: 45.15.185.70, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
   - {name: 🇨🇦 加拿大 - 多伦多 - 1, server: board-02.ddnskunlun.com, port: 11985, type: vmess, uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 加拿大(clashnodev2ray.github.io免费节点), server: 23.173.104.195, port: 2053, type: vless, uuid: 0862024f-f4fb-47f7-a022-9721f04d6ab7, tls: true, servername: tiyun.ysuzy.com, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
@@ -29,10 +33,9 @@ proxies:
   - {name: 🇫🇷 法国 - 奧奈叢林 - 2, server: 138.124.81.204, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇫🇷 法国 - 斯特拉斯堡 - 1, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v35.hdacd.com, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM 3, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 伦敦Microsoft公司, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
-  - {name: 🇬🇧 英国 伦敦Microsoft公司 2, server: admin.c1.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
-  - {name: 🇬🇧 英国 伦敦Microsoft公司 3, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: m.cnmjin.net, port: 16616, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 3, server: m.cnmjin.net, port: 16648, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇬🇧 英国 伦敦Microsoft公司, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
   - {name: 🇬🇧 英国(clashnodev2ray.github.io免费节点)_3, server: 94.247.142.231, port: 443, type: vless, uuid: 981fca81-5be1-41f8-ac9b-d138e8109943, tls: true, servername: babayaga-6i7.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 1, server: 212.192.15.78, port: 40210, type: ss, cipher: aes-256-gcm, password: 7e1dd4c55bf85da5, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 2, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -47,6 +50,7 @@ proxies:
   - {name: 🇭🇰 香港5, server: 18.181.180.183, port: 13963, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本, server: 54.248.66.236, port: 4099, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - 成田市 - 1, server: 154.36.156.141, port: 47293, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com}}, udp: true}
   - {name: 🇯🇵 日本(clashnodev2ray.github.io免费节点), server: 172.104.113.18, port: 74, type: vless, uuid: 26524cce-d514-4014-a426-365fb266a14d, tls: true, servername: snippet.fgfw.loc.cc, network: ws, ws-opts: {path: "/danfeng?ed=2560"}, udp: true}
   - {name: 🇯🇵 日本2, server: 54.46.50.228, port: 8066, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本2|@ripaojiedian, server: 52.197.26.190, port: 11541, type: trojan, password: ba62c023f9bce796ae334fecb20ef7cc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -148,8 +152,8 @@ proxies:
   - {name: 🇺🇸 美国 - 紐約 - 13, server: 104.238.129.93, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国 - 紐約 - 19, server: 165.140.242.26, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国 - 肯特 - 12, server: 172.245.126.104, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: chengbai02.ascwt179.com, port: 13223, type: ss, cipher: aes-128-gcm, password: JVrsLLN1tkN8oXZO, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 149.28.255.6, port: 816, type: ss, cipher: chacha20-ietf-poly1305, password: GyZ5Xo0ht41vYmW3H4, udp: true}
+  - {name: 🇺🇸 美国 Amazon数据中心, server: 13.37.76.238, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, alpn: [http/1.1], udp: true}
+  - {name: 🇺🇸 美国 惠普公司, server: 15.236.112.206, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, alpn: [http/1.1], udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1, server: 162.159.44.100, port: 2087, type: vless, uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c, tls: true, servername: fu.baiproxy.us.ci, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11, server: ru.n.belka.network, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: Mk_NNq9VBQHMhcRexcpCsExnadd0DeJK, udp: true}
@@ -158,6 +162,7 @@ proxies:
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_17, server: bpbg.anguswen.top, port: 443, type: trojan, password: 123456, sni: Bpbg.ANGuswen.top, skip-cert-verify: true, network: ws, ws-opts: {path: "/eyJqdW5rIjoiQ3U4MmVDZ3JnUzRLTjdnIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiYnBiLnlvdXNlZi5pc2VnYXJvLmNvbSJdfQ==?ed=2560", headers: {Host: Bpbg.ANGuswen.top}}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_18, server: 162.159.44.198, port: 443, type: vless, uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c, tls: true, servername: fu.baiproxy.us.ci, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_19, server: 104.17.152.254, port: 80, type: vless, uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b, tls: true, servername: sss.yaml7.ggff.net, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
+  - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_22, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_24, server: 104.16.158.162, port: 80, type: vless, uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883, tls: true, servername: mute-violet-c674.poviy66273.workers.dev, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_25, server: 45e755.shlswe.xyz, port: 28308, type: ss, cipher: aes-128-gcm, password: f97cf7d99d, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_26, server: wangcai139.cloudflare.182682.xyz, port: 8880, type: vless, uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510, tls: true, servername: Telegram-channel-WangCai2, network: ws, ws-opts: {path: "/Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: wangcai139.cloudflare.182682.xyz}}, udp: true}
@@ -180,6 +185,7 @@ proxies:
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_6, server: 173.244.56.9, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_60, server: 25.129.197.191, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.my111000.tech, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_61, server: cdn.tzpro.xyz, port: 80, type: vless, uuid: f2083aa4-f27d-43da-81cf-8bab31730400, tls: true, servername: germany.vipserver14.workers.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: cdn.tzpro.xyz}}, udp: true}
+  - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_65, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_7, server: jp2-8sb.6121999.dpdns.org, port: 24534, type: trojan, password: e136d465-0558-43b9-b50c-b1f45d4cb2c2, sni: jp2-8sb.6121999.dpdns.org, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_72, server: v8.hdacd.com, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_9, server: 194.87.91.192, port: 443, type: vless, uuid: e883ddd8-4011-4fac-9971-1ac3671475b8, tls: true, servername: shdows.feifanlib.fun, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
@@ -243,6 +249,10 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
       - 亚太地区 V2CROSS.COM 3
+      - 亚太地区 V2CROSS.COM 4
+      - 亚太地区 V2CROSS.COM 5
+      - 亚太地区 V2CROSS.COM 6
+      - 亚太地区 V2CROSS.COM 7
       - 🇦🇺 澳大利亚 - 堪培拉 - 1
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
@@ -269,11 +279,7 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
-      - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
       - 🇬🇧 英国 伦敦Microsoft公司
-      - 🇬🇧 英国 伦敦Microsoft公司 2
-      - 🇬🇧 英国 伦敦Microsoft公司 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -338,6 +344,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 🇯🇵 日本
       - 🇯🇵 日本 - 成田市 - 1
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -442,8 +449,8 @@ proxy-groups:
       - 🇺🇸 美国 - 紐約 - 13
       - 🇺🇸 美国 - 紐約 - 19
       - 🇺🇸 美国 - 肯特 - 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -559,6 +566,10 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
       - 亚太地区 V2CROSS.COM 3
+      - 亚太地区 V2CROSS.COM 4
+      - 亚太地区 V2CROSS.COM 5
+      - 亚太地区 V2CROSS.COM 6
+      - 亚太地区 V2CROSS.COM 7
       - 🇦🇺 澳大利亚 - 堪培拉 - 1
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
@@ -585,11 +596,7 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
-      - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
       - 🇬🇧 英国 伦敦Microsoft公司
-      - 🇬🇧 英国 伦敦Microsoft公司 2
-      - 🇬🇧 英国 伦敦Microsoft公司 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -654,6 +661,7 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 🇯🇵 日本
       - 🇯🇵 日本 - 成田市 - 1
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -758,8 +766,8 @@ proxy-groups:
       - 🇺🇸 美国 - 紐約 - 13
       - 🇺🇸 美国 - 紐約 - 19
       - 🇺🇸 美国 - 肯特 - 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -995,6 +1003,7 @@ proxy-groups:
     proxies:
       - 🇯🇵 日本
       - 🇯🇵 日本 - 成田市 - 1
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -1020,8 +1029,8 @@ proxy-groups:
       - 🇺🇸 美国 - 紐約 - 13
       - 🇺🇸 美国 - 紐約 - 19
       - 🇺🇸 美国 - 肯特 - 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -1117,6 +1126,10 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
       - 亚太地区 V2CROSS.COM 3
+      - 亚太地区 V2CROSS.COM 4
+      - 亚太地区 V2CROSS.COM 5
+      - 亚太地区 V2CROSS.COM 6
+      - 亚太地区 V2CROSS.COM 7
       - 🇦🇺 澳大利亚 - 堪培拉 - 1
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
@@ -1143,11 +1156,7 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
-      - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
       - 🇬🇧 英国 伦敦Microsoft公司
-      - 🇬🇧 英国 伦敦Microsoft公司 2
-      - 🇬🇧 英国 伦敦Microsoft公司 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
@@ -1355,6 +1364,7 @@ proxy-groups:
     proxies:
       - 🇯🇵 日本
       - 🇯🇵 日本 - 成田市 - 1
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -1377,8 +1387,8 @@ proxy-groups:
       - 🇺🇸 美国 - 紐約 - 13
       - 🇺🇸 美国 - 紐約 - 19
       - 🇺🇸 美国 - 肯特 - 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 惠普公司
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -1471,6 +1481,10 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
       - 亚太地区 V2CROSS.COM 3
+      - 亚太地区 V2CROSS.COM 4
+      - 亚太地区 V2CROSS.COM 5
+      - 亚太地区 V2CROSS.COM 6
+      - 亚太地区 V2CROSS.COM 7
       - 🇦🇺 澳大利亚 - 堪培拉 - 1
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
@@ -1497,11 +1511,7 @@ proxy-groups:
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国 V2CROSS.COM 3
-      - 🇬🇧 英国 V2CROSS.COM 4
-      - 🇬🇧 英国 V2CROSS.COM 5
       - 🇬🇧 英国 伦敦Microsoft公司
-      - 🇬🇧 英国 伦敦Microsoft公司 2
-      - 🇬🇧 英国 伦敦Microsoft公司 3
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_11
