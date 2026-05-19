@@ -6,44 +6,55 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇧🇷 巴西圣保罗 CloudFlare节点, server: 188.114.96.3, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
-  - {name: 🇨🇦 加拿大 - 列治文 - 2, server: 23.173.104.205, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇨🇦 加拿大 - 列治文 - 3, server: 23.173.104.238, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇨🇦 加拿大 - 列治文 - 4, server: 23.173.104.223, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇨🇦 加拿大 - 多伦多 - 1, server: 146.56.113.221, port: 7778, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇨🇦 加拿大 - 密西沙加 - 5, server: 172.245.156.126, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 巴西 - 圣保罗 - 1, server: 109.104.155.45, port: 41348, type: ss, cipher: chacha20-ietf-poly1305, password: NVcw9OTGwmThWmhs1uh7rrIJcVz7ln96ifYZiv4zsWvToTjg, udp: true}
+  - {name: 🇨🇦 加拿大 - 列治文 - 1, server: 23.173.104.205, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇨🇦 加拿大 - 列治文 - 2, server: 23.173.104.238, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇨🇦 加拿大 - 多伦多 - 4, server: 104.234.50.215, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇨🇦 加拿大 - 多伦多 - 5, server: 15.204.173.154, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇨🇦 加拿大 - 密西沙加 - 3, server: 172.245.156.126, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇨🇦 加拿大(clashnodev2ray.github.io免费节点), server: 23.173.104.195, port: 2053, type: vless, uuid: 0862024f-f4fb-47f7-a022-9721f04d6ab7, tls: true, servername: tiyun.ysuzy.com, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
-  - {name: 🇩🇪 德国 - Frankfurt am Main - 1, server: 63.184.236.74, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 - Frankfurt am Main - 2, server: 63.184.236.74, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 10, server: 51.195.44.182, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 11, server: 91.107.147.214, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 3, server: 62.60.216.82, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 4, server: 38.244.128.194, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 5, server: 85.209.195.61, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 6, server: 150.241.105.125, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 7, server: 150.241.108.2, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 8, server: 85.239.39.144, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇩🇪 德国 - 德赖艾希 - 9, server: 104.20.6.134, port: 2096, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /tr, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - Frankfurt am Main - 1, server: 3.122.111.21, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 10, server: 83.147.253.187, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 11, server: 83.147.253.124, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 12, server: 46.225.31.235, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 13, server: 23.88.97.94, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 14, server: 51.195.47.23, port: 2087, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 15, server: 138.201.190.15, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 2, server: 51.195.44.182, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 3, server: 85.209.195.61, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 4, server: 150.241.105.125, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 5, server: 150.241.108.2, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 6, server: 85.239.39.144, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 7, server: 213.176.92.138, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 8, server: 37.46.19.79, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 - 德赖艾希 - 9, server: 64.188.89.181, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.173.184, port: 2053, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1, server: hackney-latest-strike.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: XUMTygEM1jVYIvysXKqA5T, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_10, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_11, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_12, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(clashnodev2ray.github.io免费节点)_5, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇩🇰 丹麦 V2CROSS.COM, server: 185.162.231.138, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.indevs.in, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: sni.111000.indevs.in}}, udp: true}
-  - {name: 🇩🇰 丹麦 V2CROSS.COM 2, server: 185.162.229.238, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.jpmj.dev, network: ws, ws-opts: {path: /, headers: {Host: sni.jpmj.dev}}, udp: true}
-  - {name: 🇪🇺 欧盟 V2CROSS.COM, server: 45.80.111.138, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.indevs.in, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: sni.111000.indevs.in}}, udp: true}
   - {name: 🇫🇮 芬兰 - 万塔 - 1, server: 89.167.100.106, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇫🇷 法国 - 巴黎 - 2, server: 51.44.62.234, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 - 巴黎 - 3, server: 15.224.82.53, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国 - 斯特拉斯堡 - 1, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇮 芬兰 - 万塔 - 2, server: 95.81.113.186, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 1, server: 13.39.166.105, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 2, server: 15.237.38.184, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 3, server: 15.237.38.184, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 4, server: 13.39.166.105, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 - Slough - 1, server: board-03.ddnskunlun.com, port: 11956, type: vmess, uuid: 4d6a19fd-ba4f-36c5-89ad-97224cca5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: board-03.ddnskunlun.com, udp: true}
+  - {name: 🇬🇧 英国 - 豪恩斯洛 - 2, server: 38.244.128.194, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇬🇧 英国 - 豪恩斯洛 - 3, server: 51.89.226.75, port: 2083, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇬🇧 英国 - 豪恩斯洛 - 4, server: 57.128.165.222, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇬🇧 英国(clashnodev2ray.github.io免费节点)_17, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇬🇧 英国(clashnodev2ray.github.io免费节点)_2, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 1, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 3, server: 38.207.177.134, port: 39742, type: vmess, uuid: 36cf6565-bc71-4f8c-9e30-a9cc6156e583, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 4, server: 8.223.63.150, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 5, server: 116.44.53.251, port: 12126, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇭🇰 香港 阿里云, server: 47.82.155.79, port: 8443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇭🇰 中国 - 香港 - 5, server: 8.223.63.189, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇭🇰 中国 - 香港 - 6, server: 2.56.91.49, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇭🇰 中国 - 香港 - 7, server: 43.168.16.112, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 ThinkDream数据中心, server: 27.50.48.253, port: 443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇭🇰 香港 阿里云, server: 47.82.155.79, port: 2053, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 香港(clashnodev2ray.github.io免费节点)_3, server: vpn3.rnmcnm.com, port: 443, type: vless, uuid: c3d4e5f6-7890-1234-5678-90abcdef1234, tls: true, servername: vpn3.rnmcnm.com, network: ws, ws-opts: {path: /ray, headers: {Host: vpn3.rnmcnm.com}}, udp: true}
   - {name: 🇭🇰 香港3, server: 18.162.149.118, port: 2008, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
@@ -51,45 +62,53 @@ proxies:
   - {name: 🇭🇰 香港4, server: 16.163.95.49, port: 3685, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 18.166.210.152, port: 54708, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 18.162.145.230, port: 11233, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 印度 - 孟买 - 1, server: 209.182.232.30, port: 41348, type: ss, cipher: chacha20-ietf-poly1305, password: UlGOeb1ImdVe3rc45c3J5wxd4cubJi0aVVRtGi, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 31.58.226.196, port: 8443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇯🇵 日本, server: 16.162.188.88, port: 6463, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - 大阪市 - 1, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - 成田市 - 2, server: 43.207.197.79, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇯🇵 日本 - 成田市 - 3, server: 45.32.51.200, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇯🇵 日本 软银宽带, server: 126.220.82.161, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: gsgsdgreyrehjsrteargsfhtrhsrwrhtruiekghmg.pages.dev}}, udp: true}
+  - {name: 🇯🇵 日本 - 成田市 - 1, server: 8.219.195.31, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇯🇵 日本(clashnodev2ray.github.io免费节点), server: 126.220.82.161, port: 443, type: vless, uuid: 981fca81-5be1-41f8-ac9b-d138e8109943, tls: true, servername: babayaga-6i7.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
   - {name: 🇯🇵 日本2, server: 3.112.129.188, port: 3135, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本2|@ripaojiedian, server: 54.46.53.87, port: 11541, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本3, server: 54.238.114.193, port: 3135, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本|@ripaojiedian, server: 43.198.79.5, port: 4099, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 - Yeongdong-gun - 2, server: 59.31.102.62, port: 25565, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560", tls: true, mux: false}, udp: true}
-  - {name: 🇰🇷 韩国 - Yeongdong-gun - 3, server: 220.124.181.77, port: 18081, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560", tls: true, mux: false}, udp: true}
-  - {name: 🇰🇷 韩国 - 水原市 - 1, server: 121.169.46.116, port: 1090, type: socks5, username: Og%3D%3D, udp: true}
+  - {name: 🇰🇷 韩国 - Yeongdong-gun - 2, server: 146.56.113.221, port: 7778, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇰🇷 韩国 - Yeongdong-gun - 3, server: 211.194.210.183, port: 30047, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560", tls: true, mux: false}, udp: true}
+  - {name: 🇰🇷 韩国 - 首尔特别市 - 1, server: 154.90.62.168, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1, server: 210.183.12.194, port: 13720, type: vless, uuid: f5deb215-0e9e-4600-b231-3f737d0946ad, tls: true, servername: vpn4.rnmcnm.com, network: ws, ws-opts: {path: /2mwmynj3fqzmy1xo}, udp: true}
   - {name: 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2, server: 218.158.249.174, port: 10000, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: 144.124.253.182, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 2, server: 46.249.44.245, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 3, server: 152.53.200.164, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 4, server: 72.56.110.162, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: 82.38.31.35, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 10, server: 144.31.82.175, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 11, server: 109.71.241.236, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 2, server: 108.181.126.122, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: CJmTCCx7Ltud, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 3, server: 144.124.253.182, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 4, server: 46.249.44.245, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 5, server: 185.52.0.84, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 6, server: 72.56.70.26, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 7, server: 192.145.31.58, port: 2083, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 8, server: 64.188.93.200, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 6, server: 64.188.93.200, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 7, server: 72.56.70.107, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 8, server: 72.56.115.44, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 9, server: 72.56.74.52, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1, server: 193.56.8.103, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.dns.army, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2, server: 193.178.172.225, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.dns.army, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_3, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
   - {name: 🇵🇱 波兰 - 普魯斯科夫 - 1, server: 31.133.0.159, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: nl1.skysafe.online, port: 8443, type: vless, uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: f1kpVFY3EHaR41TCKGqSWzZq7HG-WpyE2g_tlMm2US0, short-id: "844dfa3681e4c4" }, servername: nl1.skysafe.online, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 - 多莫傑多沃 - 1, server: 150.241.74.98, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇷🇺 俄罗斯(clashnodev2ray.github.io免费节点), server: 31.128.32.98, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: "/?ed=2560&telegram🇨🇳@wangcai2"}, udp: true}
   - {name: 🇸🇪 瑞典 - Steninge - 1, server: 185.130.46.81, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇪 瑞典 - Steninge - 2, server: 193.23.201.26, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇪 瑞典 - Steninge - 2, server: 94.183.191.71, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇪 瑞典 - Steninge - 3, server: 84.19.3.83, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇪 瑞典 - Steninge - 4, server: 185.239.142.215, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇸🇬 新加坡, server: 3.112.129.188, port: 4840, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: v45.hdacd.com, port: 30845, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 2, server: 139.180.220.7, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 3, server: 188.239.21.47, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 5, server: 43.133.61.219, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 6, server: 139.99.124.165, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 7, server: 146.190.102.51, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 8, server: 157.245.159.88, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇸🇬 新加坡 - 新加坡 - 9, server: 143.198.213.40, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: ss.050.node-for-bigairport.win, port: 19001, type: ss, cipher: chacha20-ietf-poly1305, password: 792e0bdb-01db-450c-94c4-925151eb396e, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 10, server: 159.223.79.119, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 11, server: 152.42.169.132, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 2, server: 47.82.155.79, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 3, server: 157.245.159.88, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 4, server: 47.84.54.115, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 5, server: 8.222.195.24, port: 14706, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 6, server: 47.82.155.79, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 7, server: 159.89.205.195, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 8, server: 157.245.56.32, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 9, server: 194.87.10.77, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_1, server: 47.84.95.77, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: gogo.wknm.dpdns.org, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_2, server: 34.143.213.202, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: gogo.wknm.dpdns.org, network: ws, ws-opts: {path: /fp=chrome}, udp: true}
   - {name: 🇸🇬 新加坡(clashnodev2ray.github.io免费节点)_3, server: 43.160.207.175, port: 443, type: vless, uuid: 981fca81-5be1-41f8-ac9b-d138e8109943, tls: true, servername: babayaga-6i7.pages.dev, network: ws, ws-opts: {path: "/?ed=2560&Telegram🇨🇳@WangCai2"}, udp: true}
@@ -98,48 +117,57 @@ proxies:
   - {name: 🇸🇬 新加坡3, server: 54.248.24.57, port: 4203, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 43.198.14.133, port: 44079, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡|@ripaojiedian, server: 54.46.53.87, port: 1180, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi", server: 160.187.100.109, port: 443, type: hysteria2, password: qQe1z5kU8kN6SlKnDt9Ru3Qp, auth: qQe1z5kU8kN6SlKnDt9Ru3Qp, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 中国 - 台湾 - 2, server: tvhinet.lajichang.xyz, port: 2096, type: trojan, password: e5c22f63-e473-496a-beff-fdc5655008c1, sni: bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: 2.56.91.49, port: 2053, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇹🇼 中国 - 台湾 - 1, server: tvhinet.lajichang.xyz, port: 2096, type: trojan, password: e5c22f63-e473-496a-beff-fdc5655008c1, sni: bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 中国 - 台湾 - 2, server: 223.165.4.173, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇹🇼 中国 - 台湾 - 3, server: v11.zgtfqs.click, port: 30811, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 134.195.211.13, port: 443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国, server: 18.162.149.118, port: 3882, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Aldine - 51, server: 23.165.104.123, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - Aldine - 48, server: 23.165.104.123, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - Cheektowaga - 66, server: 198.46.174.212, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国 - Flower Mound - 49, server: 107.172.201.15, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - Reston - 46, server: 150.136.254.79, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - Reston - 47, server: 150.136.243.175, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - Reston - 54, server: 184.174.97.38, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - Reston - 50, server: 150.136.254.79, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - Reston - 51, server: 150.136.243.175, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - Reston - 52, server: 184.174.97.38, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国 - South Fulton - 53, server: 74.50.11.24, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 29, server: 107.174.198.228, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 45, server: 107.175.232.157, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 48, server: 192.3.216.76, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 5, server: 154.17.8.126, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 52, server: 74.48.140.167, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 6, server: 74.48.81.154, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 7, server: 104.223.41.217, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 东洛杉矶 - 8, server: 142.171.243.204, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 天堂市 - 38, server: 31.58.226.196, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 天堂市 - 43, server: 31.57.63.63, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 惠顿 - 55, server: 34.58.136.79, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 水牛城 - 4, server: v24.hdacd.com, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - 波特蘭 - 50, server: 16.145.218.182, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 紐約 - 11, server: 80.209.242.70, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 紐約 - 12, server: 199.119.137.41, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 肯特 - 10, server: 154.53.63.79, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 - 肯特 - 9, server: 107.172.180.151, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.40.34, port: 443, type: trojan, password: humanity, sni: www.gossipglove.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.gossipglove.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.20.6.134, port: 2052, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, network: ws, ws-opts: {path: /, headers: {Host: index.0x14.workers.dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.18.4.130, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.navy, network: ws, ws-opts: {path: /, headers: {Host: sni.111000.v6.navy}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.64.147.24, port: 443, type: trojan, password: humanity, sni: www.gossipglove.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.gossipglove.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.18.12.149, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.jpmj.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: sni.jpmj.dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.18.251.45, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.latonyamadeline.ndjp.net, network: ws, ws-opts: {path: "/?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=", headers: {Host: sni.latonyamadeline.ndjp.net}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.20.6.134, port: 443, type: trojan, password: 6202b230-417c-4d8e-b624-0f71afa9c75d, sni: sni.111000.dynv6.net, network: ws, ws-opts: {path: "/?proxyip=ip.111000.de5.net:443", headers: {Host: sni.111000.dynv6.net}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.20.6.134, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.dynv6.net, network: ws, ws-opts: {path: "/?Telegram @v2rayngzendegimamad", headers: {Host: sni.111000.dynv6.net}}, udp: true}
-  - {name: 🇺🇸 美国 得克萨斯州达拉斯Cloudflare Warp节点, server: 8.6.112.0, port: 443, type: vless, uuid: bd26c0c3-5eb9-425e-a4b6-2660df94e613, tls: true, servername: nEO1-3zC.pAGes.DeV, network: ws, ws-opts: {path: /, headers: {Host: nEO1-3zC.pAGes.DeV}}, udp: true}
+  - {name: 🇺🇸 美国 - South Fulton - 57, server: 77.110.109.7, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 10, server: 154.17.8.126, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳+@WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 11, server: 74.48.140.167, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 12, server: 74.48.81.154, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 13, server: 104.223.41.217, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 14, server: 142.171.243.204, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 55, server: 107.151.188.120, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 63, server: 172.245.93.26, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 7, server: 107.174.198.228, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 8, server: 107.175.232.157, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 东洛杉矶 - 9, server: 192.3.216.76, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 天堂市 - 47, server: 31.57.63.63, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 天堂市 - 58, server: 31.58.50.114, port: 8443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 惠顿 - 15, server: 34.58.136.79, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 水牛城 - 5, server: v24.hdacd.com, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 - 波特蘭 - 6, server: 16.145.218.182, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 洛杉矶 - 4, server: ikuai.bot.nu, port: 14555, type: trojan, password: 7c9fea7c-8def-3dd5-853a-5844f9b04146, sni: windows11.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 - 紐約 - 17, server: 199.119.137.41, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 紐約 - 65, server: 45.150.65.54, port: 2053, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 肯特 - 16, server: 107.172.180.151, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 - 芝加哥 - 3, server: 5.175.185.134, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: aHru4AvvaYOwTt0SWIEE12, udp: true}
+  - {name: 🇺🇸 美国 - 迈阿密 - 64, server: 50.228.203.26, port: 443, type: trojan, password: "8r<[9'l6hAO#8ZQi", sni: Koma-YT.PAGeS.Dev, skip-cert-verify: true, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: www.gossipglove.com, port: 443, type: trojan, password: humanity, sni: www.gossipglove.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.gossipglove.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.18.4.130, port: 2053, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.dynv6.net, network: ws, ws-opts: {path: /, headers: {Host: sni.111000.dynv6.net}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.18.13.149, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, alpn: [http%2F1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.66.47.163, port: 443, type: vless, uuid: d37a75db-76b6-4db8-b213-0d5b044d138d, tls: true, servername: hio-awx.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: hio-awx.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.16.147.104, port: 443, type: trojan, password: humanity, sni: www.creationlong.org, network: ws, ws-opts: {path: /assignment, headers: {Host: www.creationlong.org}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: ciallo-egb.pages.dev, port: 2053, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, servername: Ciallo-eGB.PageS.dev, network: ws, ws-opts: {path: /%252F, headers: {Host: Ciallo-eGB.PageS.dev}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.38.35, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.latonyamadeline.ndjp.net, network: ws, ws-opts: {path: "/?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=", headers: {Host: sni.latonyamadeline.ndjp.net}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 45.153.7.191, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.my111000.tech, network: ws, ws-opts: {path: /, headers: {Host: sni.my111000.tech}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 159.246.55.238, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.jpmj.dev, network: ws, ws-opts: {path: /, headers: {Host: sni.jpmj.dev}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 139.64.235.238, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.jpmj.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: sni.jpmj.dev}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 4, server: 216.128.134.116, port: 443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司, server: 166.62.112.253, port: 443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
+  - {name: 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2, server: 50.62.89.253, port: 443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, network: ws, ws-opts: {path: /trTelegram🇨🇳 @WangCai2, headers: {Host: Koma-YT.PAGeS.Dev}}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1, server: 162.159.44.66, port: 2053, type: vless, uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c, tls: true, servername: fu.baiproxy.us.ci, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10, server: 45.89.244.77, port: 8443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.army, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/YouTube@小青科学网🇨🇳"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11, server: 206.168.212.162, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.dns.army, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_12, server: 45.8.211.191, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.my111000.tech, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560"}, udp: true}
-  - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_13, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_14, server: v4.hdacd.com, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_15, server: v8.hdacd.com, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(clashnodev2ray.github.io免费节点)_16, server: 104.129.164.138, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.indevs.in, network: ws, ws-opts: {path: "/?telegram🇨🇳@wangcai2="}, udp: true}
@@ -189,44 +217,50 @@ proxies:
   - {name: 🇺🇸 美国3, server: 18.166.29.176, port: 44386, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 13.231.239.1, port: 23255, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国|@ripaojiedian, server: 54.46.53.87, port: 6604, type: trojan, password: a922dfbe65cf53c7bc225fcfeb6cedbc, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 1, server: 103.186.154.237, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 10, server: 103.186.154.244, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 11, server: 103.186.155.154, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 12, server: 103.186.155.149, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 13, server: 103.186.155.226, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 14, server: 103.186.155.121, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 15, server: 103.186.154.16, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 16, server: 103.186.155.25, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 17, server: 103.186.155.44, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 18, server: 103.186.154.240, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 19, server: 103.186.155.147, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 2, server: 103.186.155.81, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 20, server: 103.186.154.14, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 21, server: 103.186.154.54, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 22, server: 103.186.155.141, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 23, server: 103.186.155.43, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 24, server: 103.186.155.59, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 25, server: 103.186.155.204, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 26, server: 103.186.155.40, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 27, server: 103.186.155.130, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 28, server: 103.186.155.143, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 29, server: 103.186.154.34, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 3, server: 103.186.155.9, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 30, server: 103.186.155.105, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 31, server: 103.186.154.227, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 32, server: 103.186.155.19, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 33, server: 103.186.154.202, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 34, server: 103.186.154.26, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 35, server: 103.186.154.63, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 36, server: 103.186.154.31, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 37, server: 103.186.155.108, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 38, server: 103.186.155.134, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 39, server: 103.186.155.2, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 4, server: 103.186.154.32, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 5, server: 103.186.154.243, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 6, server: 103.186.155.125, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 7, server: 103.186.154.248, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
-  - {name: 🇻🇳 越南 - Hải Dương - 8, server: 103.186.155.5, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 1, server: 103.186.154.152, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 10, server: 103.186.155.149, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 11, server: 103.186.154.252, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 12, server: 103.186.155.44, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 13, server: 103.186.155.49, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 14, server: 103.186.155.106, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 15, server: 103.186.154.29, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 16, server: 103.186.154.229, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 17, server: 103.186.154.31, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 18, server: 103.186.155.81, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 19, server: 103.186.155.46, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 2, server: 103.186.154.151, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 20, server: 103.186.154.228, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 21, server: 103.186.155.204, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 22, server: 103.186.154.187, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 23, server: 103.186.155.33, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 24, server: 103.186.154.54, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 25, server: 103.186.154.61, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 26, server: 103.186.155.183, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 27, server: 103.186.154.41, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 28, server: 103.186.154.9, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 29, server: 103.186.155.40, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 3, server: 103.186.154.12, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 30, server: 103.186.154.221, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 31, server: 103.186.154.21, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 32, server: 103.186.155.57, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 33, server: 103.186.155.145, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 34, server: 103.186.155.10, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 35, server: 103.186.154.34, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 36, server: 103.186.154.11, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 37, server: 103.186.154.227, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 38, server: 103.186.155.26, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 39, server: 103.186.154.63, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 4, server: 103.186.155.111, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 40, server: 103.186.154.176, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 41, server: 103.186.155.108, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 42, server: 103.186.154.188, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 43, server: 103.186.155.119, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 44, server: 103.186.155.127, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 45, server: 103.186.155.2, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 5, server: 103.186.154.248, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 6, server: 103.186.155.9, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 7, server: 103.186.155.5, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
+  - {name: 🇻🇳 越南 - Hải Dương - 8, server: 103.186.154.244, port: 38388, type: ss, cipher: aes-256-cfb, password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -257,17 +291,22 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 🇧🇷 巴西 - 圣保罗 - 1
+      - 🇨🇦 加拿大 - 列治文 - 1
       - 🇨🇦 加拿大 - 列治文 - 2
-      - 🇨🇦 加拿大 - 列治文 - 3
-      - 🇨🇦 加拿大 - 列治文 - 4
-      - 🇨🇦 加拿大 - 多伦多 - 1
-      - 🇨🇦 加拿大 - 密西沙加 - 5
+      - 🇨🇦 加拿大 - 多伦多 - 4
+      - 🇨🇦 加拿大 - 多伦多 - 5
+      - 🇨🇦 加拿大 - 密西沙加 - 3
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇩🇪 德国 - Frankfurt am Main - 2
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
+      - 🇩🇪 德国 - 德赖艾希 - 12
+      - 🇩🇪 德国 - 德赖艾希 - 13
+      - 🇩🇪 德国 - 德赖艾希 - 14
+      - 🇩🇪 德国 - 德赖艾希 - 15
+      - 🇩🇪 德国 - 德赖艾希 - 2
       - 🇩🇪 德国 - 德赖艾希 - 3
       - 🇩🇪 德国 - 德赖艾希 - 4
       - 🇩🇪 德国 - 德赖艾希 - 5
@@ -275,6 +314,7 @@ proxy-groups:
       - 🇩🇪 德国 - 德赖艾希 - 7
       - 🇩🇪 德国 - 德赖艾希 - 8
       - 🇩🇪 德国 - 德赖艾希 - 9
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_10
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_11
@@ -288,15 +328,18 @@ proxy-groups:
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_7
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_8
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_9
-      - 🇩🇰 丹麦 V2CROSS.COM
-      - 🇩🇰 丹麦 V2CROSS.COM 2
-      - 🇪🇺 欧盟 V2CROSS.COM
       - 🇫🇮 芬兰 - 万塔 - 1
+      - 🇫🇮 芬兰 - 万塔 - 2
+      - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 - 巴黎 - 2
       - 🇫🇷 法国 - 巴黎 - 3
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
+      - 🇬🇧 英国 - Slough - 1
+      - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 - 豪恩斯洛 - 3
+      - 🇬🇧 英国 - 豪恩斯洛 - 4
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
@@ -355,11 +398,12 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_7
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
-      - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 3
       - 🇭🇰 中国 - 香港 - 4
       - 🇭🇰 中国 - 香港 - 5
+      - 🇭🇰 中国 - 香港 - 6
+      - 🇭🇰 中国 - 香港 - 7
       - 🇭🇰 香港
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇭🇰 香港 阿里云
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_2
@@ -371,11 +415,10 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇮🇳 印度 - 孟买 - 1
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇯🇵 日本
-      - 🇯🇵 日本 - 大阪市 - 1
-      - 🇯🇵 日本 - 成田市 - 2
-      - 🇯🇵 日本 - 成田市 - 3
-      - 🇯🇵 日本 软银宽带
+      - 🇯🇵 日本 - 成田市 - 1
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -384,10 +427,12 @@ proxy-groups:
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 韩国 - Yeongdong-gun - 2
       - 🇰🇷 韩国 - Yeongdong-gun - 3
-      - 🇰🇷 韩国 - 水原市 - 1
+      - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 10
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 11
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 3
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 4
@@ -395,18 +440,23 @@ proxy-groups:
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 6
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 7
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 8
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 9
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_3
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_4
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_5
       - 🇵🇱 波兰 - 普魯斯科夫 - 1
-      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 - 多莫傑多沃 - 1
       - 🇷🇺 俄罗斯(clashnodev2ray.github.io免费节点)
       - 🇸🇪 瑞典 - Steninge - 1
       - 🇸🇪 瑞典 - Steninge - 2
+      - 🇸🇪 瑞典 - Steninge - 3
+      - 🇸🇪 瑞典 - Steninge - 4
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
+      - 🇸🇬 新加坡 - 新加坡 - 10
+      - 🇸🇬 新加坡 - 新加坡 - 11
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
@@ -423,37 +473,43 @@ proxy-groups:
       - 🇸🇬 新加坡3
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
-      - "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi"
+      - 🇹🇼 中国 - 台湾 - 1
       - 🇹🇼 中国 - 台湾 - 2
-      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇹🇼 中国 - 台湾 - 3
       - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Aldine - 51
+      - 🇺🇸 美国 - Aldine - 48
+      - 🇺🇸 美国 - Cheektowaga - 66
       - 🇺🇸 美国 - Flower Mound - 49
-      - 🇺🇸 美国 - Reston - 46
-      - 🇺🇸 美国 - Reston - 47
-      - 🇺🇸 美国 - Reston - 54
+      - 🇺🇸 美国 - Reston - 50
+      - 🇺🇸 美国 - Reston - 51
+      - 🇺🇸 美国 - Reston - 52
       - 🇺🇸 美国 - South Fulton - 53
-      - 🇺🇸 美国 - 东洛杉矶 - 29
-      - 🇺🇸 美国 - 东洛杉矶 - 45
-      - 🇺🇸 美国 - 东洛杉矶 - 48
-      - 🇺🇸 美国 - 东洛杉矶 - 5
-      - 🇺🇸 美国 - 东洛杉矶 - 52
-      - 🇺🇸 美国 - 东洛杉矶 - 6
+      - 🇺🇸 美国 - South Fulton - 57
+      - 🇺🇸 美国 - 东洛杉矶 - 10
+      - 🇺🇸 美国 - 东洛杉矶 - 11
+      - 🇺🇸 美国 - 东洛杉矶 - 12
+      - 🇺🇸 美国 - 东洛杉矶 - 13
+      - 🇺🇸 美国 - 东洛杉矶 - 14
+      - 🇺🇸 美国 - 东洛杉矶 - 55
+      - 🇺🇸 美国 - 东洛杉矶 - 63
       - 🇺🇸 美国 - 东洛杉矶 - 7
       - 🇺🇸 美国 - 东洛杉矶 - 8
-      - 🇺🇸 美国 - 天堂市 - 38
-      - 🇺🇸 美国 - 天堂市 - 43
-      - 🇺🇸 美国 - 惠顿 - 55
-      - 🇺🇸 美国 - 水牛城 - 4
-      - 🇺🇸 美国 - 波特蘭 - 50
+      - 🇺🇸 美国 - 东洛杉矶 - 9
+      - 🇺🇸 美国 - 天堂市 - 46
+      - 🇺🇸 美国 - 天堂市 - 47
+      - 🇺🇸 美国 - 天堂市 - 58
+      - 🇺🇸 美国 - 惠顿 - 15
+      - 🇺🇸 美国 - 水牛城 - 5
+      - 🇺🇸 美国 - 波特蘭 - 6
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 紐約 - 11
-      - 🇺🇸 美国 - 紐約 - 12
-      - 🇺🇸 美国 - 肯特 - 10
-      - 🇺🇸 美国 - 肯特 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 4
+      - 🇺🇸 美国 - 紐約 - 17
+      - 🇺🇸 美国 - 紐約 - 65
+      - 🇺🇸 美国 - 肯特 - 16
+      - 🇺🇸 美国 - 芝加哥 - 3
+      - 🇺🇸 美国 - 迈阿密 - 64
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -461,8 +517,12 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 得克萨斯州达拉斯Cloudflare Warp节点
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -601,6 +661,12 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 38
       - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
+      - 🇻🇳 越南 - Hải Dương - 41
+      - 🇻🇳 越南 - Hải Dương - 42
+      - 🇻🇳 越南 - Hải Dương - 43
+      - 🇻🇳 越南 - Hải Dương - 44
+      - 🇻🇳 越南 - Hải Dương - 45
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
@@ -611,17 +677,22 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 🇧🇷 巴西 - 圣保罗 - 1
+      - 🇨🇦 加拿大 - 列治文 - 1
       - 🇨🇦 加拿大 - 列治文 - 2
-      - 🇨🇦 加拿大 - 列治文 - 3
-      - 🇨🇦 加拿大 - 列治文 - 4
-      - 🇨🇦 加拿大 - 多伦多 - 1
-      - 🇨🇦 加拿大 - 密西沙加 - 5
+      - 🇨🇦 加拿大 - 多伦多 - 4
+      - 🇨🇦 加拿大 - 多伦多 - 5
+      - 🇨🇦 加拿大 - 密西沙加 - 3
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇩🇪 德国 - Frankfurt am Main - 2
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
+      - 🇩🇪 德国 - 德赖艾希 - 12
+      - 🇩🇪 德国 - 德赖艾希 - 13
+      - 🇩🇪 德国 - 德赖艾希 - 14
+      - 🇩🇪 德国 - 德赖艾希 - 15
+      - 🇩🇪 德国 - 德赖艾希 - 2
       - 🇩🇪 德国 - 德赖艾希 - 3
       - 🇩🇪 德国 - 德赖艾希 - 4
       - 🇩🇪 德国 - 德赖艾希 - 5
@@ -629,6 +700,7 @@ proxy-groups:
       - 🇩🇪 德国 - 德赖艾希 - 7
       - 🇩🇪 德国 - 德赖艾希 - 8
       - 🇩🇪 德国 - 德赖艾希 - 9
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_10
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_11
@@ -642,15 +714,18 @@ proxy-groups:
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_7
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_8
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_9
-      - 🇩🇰 丹麦 V2CROSS.COM
-      - 🇩🇰 丹麦 V2CROSS.COM 2
-      - 🇪🇺 欧盟 V2CROSS.COM
       - 🇫🇮 芬兰 - 万塔 - 1
+      - 🇫🇮 芬兰 - 万塔 - 2
+      - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 - 巴黎 - 2
       - 🇫🇷 法国 - 巴黎 - 3
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
+      - 🇬🇧 英国 - Slough - 1
+      - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 - 豪恩斯洛 - 3
+      - 🇬🇧 英国 - 豪恩斯洛 - 4
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
@@ -709,11 +784,12 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_7
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
-      - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 3
       - 🇭🇰 中国 - 香港 - 4
       - 🇭🇰 中国 - 香港 - 5
+      - 🇭🇰 中国 - 香港 - 6
+      - 🇭🇰 中国 - 香港 - 7
       - 🇭🇰 香港
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇭🇰 香港 阿里云
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_2
@@ -725,11 +801,10 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇮🇳 印度 - 孟买 - 1
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇯🇵 日本
-      - 🇯🇵 日本 - 大阪市 - 1
-      - 🇯🇵 日本 - 成田市 - 2
-      - 🇯🇵 日本 - 成田市 - 3
-      - 🇯🇵 日本 软银宽带
+      - 🇯🇵 日本 - 成田市 - 1
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -738,10 +813,12 @@ proxy-groups:
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 韩国 - Yeongdong-gun - 2
       - 🇰🇷 韩国 - Yeongdong-gun - 3
-      - 🇰🇷 韩国 - 水原市 - 1
+      - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 10
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 11
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 3
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 4
@@ -749,18 +826,23 @@ proxy-groups:
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 6
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 7
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 8
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 9
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_3
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_4
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_5
       - 🇵🇱 波兰 - 普魯斯科夫 - 1
-      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 - 多莫傑多沃 - 1
       - 🇷🇺 俄罗斯(clashnodev2ray.github.io免费节点)
       - 🇸🇪 瑞典 - Steninge - 1
       - 🇸🇪 瑞典 - Steninge - 2
+      - 🇸🇪 瑞典 - Steninge - 3
+      - 🇸🇪 瑞典 - Steninge - 4
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
+      - 🇸🇬 新加坡 - 新加坡 - 10
+      - 🇸🇬 新加坡 - 新加坡 - 11
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
@@ -777,37 +859,43 @@ proxy-groups:
       - 🇸🇬 新加坡3
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
-      - "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi"
+      - 🇹🇼 中国 - 台湾 - 1
       - 🇹🇼 中国 - 台湾 - 2
-      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇹🇼 中国 - 台湾 - 3
       - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Aldine - 51
+      - 🇺🇸 美国 - Aldine - 48
+      - 🇺🇸 美国 - Cheektowaga - 66
       - 🇺🇸 美国 - Flower Mound - 49
-      - 🇺🇸 美国 - Reston - 46
-      - 🇺🇸 美国 - Reston - 47
-      - 🇺🇸 美国 - Reston - 54
+      - 🇺🇸 美国 - Reston - 50
+      - 🇺🇸 美国 - Reston - 51
+      - 🇺🇸 美国 - Reston - 52
       - 🇺🇸 美国 - South Fulton - 53
-      - 🇺🇸 美国 - 东洛杉矶 - 29
-      - 🇺🇸 美国 - 东洛杉矶 - 45
-      - 🇺🇸 美国 - 东洛杉矶 - 48
-      - 🇺🇸 美国 - 东洛杉矶 - 5
-      - 🇺🇸 美国 - 东洛杉矶 - 52
-      - 🇺🇸 美国 - 东洛杉矶 - 6
+      - 🇺🇸 美国 - South Fulton - 57
+      - 🇺🇸 美国 - 东洛杉矶 - 10
+      - 🇺🇸 美国 - 东洛杉矶 - 11
+      - 🇺🇸 美国 - 东洛杉矶 - 12
+      - 🇺🇸 美国 - 东洛杉矶 - 13
+      - 🇺🇸 美国 - 东洛杉矶 - 14
+      - 🇺🇸 美国 - 东洛杉矶 - 55
+      - 🇺🇸 美国 - 东洛杉矶 - 63
       - 🇺🇸 美国 - 东洛杉矶 - 7
       - 🇺🇸 美国 - 东洛杉矶 - 8
-      - 🇺🇸 美国 - 天堂市 - 38
-      - 🇺🇸 美国 - 天堂市 - 43
-      - 🇺🇸 美国 - 惠顿 - 55
-      - 🇺🇸 美国 - 水牛城 - 4
-      - 🇺🇸 美国 - 波特蘭 - 50
+      - 🇺🇸 美国 - 东洛杉矶 - 9
+      - 🇺🇸 美国 - 天堂市 - 46
+      - 🇺🇸 美国 - 天堂市 - 47
+      - 🇺🇸 美国 - 天堂市 - 58
+      - 🇺🇸 美国 - 惠顿 - 15
+      - 🇺🇸 美国 - 水牛城 - 5
+      - 🇺🇸 美国 - 波特蘭 - 6
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 紐約 - 11
-      - 🇺🇸 美国 - 紐約 - 12
-      - 🇺🇸 美国 - 肯特 - 10
-      - 🇺🇸 美国 - 肯特 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 4
+      - 🇺🇸 美国 - 紐約 - 17
+      - 🇺🇸 美国 - 紐約 - 65
+      - 🇺🇸 美国 - 肯特 - 16
+      - 🇺🇸 美国 - 芝加哥 - 3
+      - 🇺🇸 美国 - 迈阿密 - 64
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -815,8 +903,12 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 得克萨斯州达拉斯Cloudflare Warp节点
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -955,6 +1047,12 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 38
       - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
+      - 🇻🇳 越南 - Hải Dương - 41
+      - 🇻🇳 越南 - Hải Dương - 42
+      - 🇻🇳 越南 - Hải Dương - 43
+      - 🇻🇳 越南 - Hải Dương - 44
+      - 🇻🇳 越南 - Hải Dương - 45
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
@@ -1012,11 +1110,12 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 3
       - 🇭🇰 中国 - 香港 - 4
       - 🇭🇰 中国 - 香港 - 5
+      - 🇭🇰 中国 - 香港 - 6
+      - 🇭🇰 中国 - 香港 - 7
       - 🇭🇰 香港
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇭🇰 香港 阿里云
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_2
@@ -1034,19 +1133,21 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi"
+      - 🇹🇼 中国 - 台湾 - 1
       - 🇹🇼 中国 - 台湾 - 2
+      - 🇹🇼 中国 - 台湾 - 3
   - name: 🇨🇳 ‍中国
     type: url-test
     url: https://i.ytimg.com/generate_204
     interval: 15
     tolerance: 100
     proxies:
-      - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 3
       - 🇭🇰 中国 - 香港 - 4
       - 🇭🇰 中国 - 香港 - 5
+      - 🇭🇰 中国 - 香港 - 6
+      - 🇭🇰 中国 - 香港 - 7
       - 🇭🇰 香港
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇭🇰 香港 阿里云
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_2
@@ -1058,8 +1159,9 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi"
+      - 🇹🇼 中国 - 台湾 - 1
       - 🇹🇼 中国 - 台湾 - 2
+      - 🇹🇼 中国 - 台湾 - 3
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -1068,6 +1170,8 @@ proxy-groups:
     proxies:
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
+      - 🇸🇬 新加坡 - 新加坡 - 10
+      - 🇸🇬 新加坡 - 新加坡 - 11
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
@@ -1091,10 +1195,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 - 大阪市 - 1
-      - 🇯🇵 日本 - 成田市 - 2
-      - 🇯🇵 日本 - 成田市 - 3
-      - 🇯🇵 日本 软银宽带
+      - 🇯🇵 日本 - 成田市 - 1
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -1109,32 +1210,38 @@ proxy-groups:
     proxies:
       - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Aldine - 51
+      - 🇺🇸 美国 - Aldine - 48
+      - 🇺🇸 美国 - Cheektowaga - 66
       - 🇺🇸 美国 - Flower Mound - 49
-      - 🇺🇸 美国 - Reston - 46
-      - 🇺🇸 美国 - Reston - 47
-      - 🇺🇸 美国 - Reston - 54
+      - 🇺🇸 美国 - Reston - 50
+      - 🇺🇸 美国 - Reston - 51
+      - 🇺🇸 美国 - Reston - 52
       - 🇺🇸 美国 - South Fulton - 53
-      - 🇺🇸 美国 - 东洛杉矶 - 29
-      - 🇺🇸 美国 - 东洛杉矶 - 45
-      - 🇺🇸 美国 - 东洛杉矶 - 48
-      - 🇺🇸 美国 - 东洛杉矶 - 5
-      - 🇺🇸 美国 - 东洛杉矶 - 52
-      - 🇺🇸 美国 - 东洛杉矶 - 6
+      - 🇺🇸 美国 - South Fulton - 57
+      - 🇺🇸 美国 - 东洛杉矶 - 10
+      - 🇺🇸 美国 - 东洛杉矶 - 11
+      - 🇺🇸 美国 - 东洛杉矶 - 12
+      - 🇺🇸 美国 - 东洛杉矶 - 13
+      - 🇺🇸 美国 - 东洛杉矶 - 14
+      - 🇺🇸 美国 - 东洛杉矶 - 55
+      - 🇺🇸 美国 - 东洛杉矶 - 63
       - 🇺🇸 美国 - 东洛杉矶 - 7
       - 🇺🇸 美国 - 东洛杉矶 - 8
-      - 🇺🇸 美国 - 天堂市 - 38
-      - 🇺🇸 美国 - 天堂市 - 43
-      - 🇺🇸 美国 - 惠顿 - 55
-      - 🇺🇸 美国 - 水牛城 - 4
-      - 🇺🇸 美国 - 波特蘭 - 50
+      - 🇺🇸 美国 - 东洛杉矶 - 9
+      - 🇺🇸 美国 - 天堂市 - 46
+      - 🇺🇸 美国 - 天堂市 - 47
+      - 🇺🇸 美国 - 天堂市 - 58
+      - 🇺🇸 美国 - 惠顿 - 15
+      - 🇺🇸 美国 - 水牛城 - 5
+      - 🇺🇸 美国 - 波特蘭 - 6
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 紐約 - 11
-      - 🇺🇸 美国 - 紐約 - 12
-      - 🇺🇸 美国 - 肯特 - 10
-      - 🇺🇸 美国 - 肯特 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 4
+      - 🇺🇸 美国 - 紐約 - 17
+      - 🇺🇸 美国 - 紐約 - 65
+      - 🇺🇸 美国 - 肯特 - 16
+      - 🇺🇸 美国 - 芝加哥 - 3
+      - 🇺🇸 美国 - 迈阿密 - 64
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -1142,8 +1249,12 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 得克萨斯州达拉斯Cloudflare Warp节点
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -1256,17 +1367,22 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 🇧🇷 巴西 - 圣保罗 - 1
+      - 🇨🇦 加拿大 - 列治文 - 1
       - 🇨🇦 加拿大 - 列治文 - 2
-      - 🇨🇦 加拿大 - 列治文 - 3
-      - 🇨🇦 加拿大 - 列治文 - 4
-      - 🇨🇦 加拿大 - 多伦多 - 1
-      - 🇨🇦 加拿大 - 密西沙加 - 5
+      - 🇨🇦 加拿大 - 多伦多 - 4
+      - 🇨🇦 加拿大 - 多伦多 - 5
+      - 🇨🇦 加拿大 - 密西沙加 - 3
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇩🇪 德国 - Frankfurt am Main - 2
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
+      - 🇩🇪 德国 - 德赖艾希 - 12
+      - 🇩🇪 德国 - 德赖艾希 - 13
+      - 🇩🇪 德国 - 德赖艾希 - 14
+      - 🇩🇪 德国 - 德赖艾希 - 15
+      - 🇩🇪 德国 - 德赖艾希 - 2
       - 🇩🇪 德国 - 德赖艾希 - 3
       - 🇩🇪 德国 - 德赖艾希 - 4
       - 🇩🇪 德国 - 德赖艾希 - 5
@@ -1274,6 +1390,7 @@ proxy-groups:
       - 🇩🇪 德国 - 德赖艾希 - 7
       - 🇩🇪 德国 - 德赖艾希 - 8
       - 🇩🇪 德国 - 德赖艾希 - 9
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_10
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_11
@@ -1287,15 +1404,18 @@ proxy-groups:
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_7
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_8
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_9
-      - 🇩🇰 丹麦 V2CROSS.COM
-      - 🇩🇰 丹麦 V2CROSS.COM 2
-      - 🇪🇺 欧盟 V2CROSS.COM
       - 🇫🇮 芬兰 - 万塔 - 1
+      - 🇫🇮 芬兰 - 万塔 - 2
+      - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 - 巴黎 - 2
       - 🇫🇷 法国 - 巴黎 - 3
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
+      - 🇬🇧 英国 - Slough - 1
+      - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 - 豪恩斯洛 - 3
+      - 🇬🇧 英国 - 豪恩斯洛 - 4
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
@@ -1354,12 +1474,16 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_7
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
+      - 🇮🇳 印度 - 孟买 - 1
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇰🇷 韩国 - Yeongdong-gun - 2
       - 🇰🇷 韩国 - Yeongdong-gun - 3
-      - 🇰🇷 韩国 - 水原市 - 1
+      - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 10
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 11
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 3
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 4
@@ -1367,17 +1491,19 @@ proxy-groups:
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 6
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 7
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 8
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 9
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_3
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_4
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_5
       - 🇵🇱 波兰 - 普魯斯科夫 - 1
-      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 - 多莫傑多沃 - 1
       - 🇷🇺 俄罗斯(clashnodev2ray.github.io免费节点)
       - 🇸🇪 瑞典 - Steninge - 1
       - 🇸🇪 瑞典 - Steninge - 2
-      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇸🇪 瑞典 - Steninge - 3
+      - 🇸🇪 瑞典 - Steninge - 4
       - 🇻🇳 越南 - Hải Dương - 1
       - 🇻🇳 越南 - Hải Dương - 10
       - 🇻🇳 越南 - Hải Dương - 11
@@ -1412,6 +1538,12 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 38
       - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
+      - 🇻🇳 越南 - Hải Dương - 41
+      - 🇻🇳 越南 - Hải Dương - 42
+      - 🇻🇳 越南 - Hải Dương - 43
+      - 🇻🇳 越南 - Hải Dương - 44
+      - 🇻🇳 越南 - Hải Dương - 45
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
@@ -1420,11 +1552,12 @@ proxy-groups:
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 3
       - 🇭🇰 中国 - 香港 - 4
       - 🇭🇰 中国 - 香港 - 5
+      - 🇭🇰 中国 - 香港 - 6
+      - 🇭🇰 中国 - 香港 - 7
       - 🇭🇰 香港
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇭🇰 香港 阿里云
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_2
@@ -1439,16 +1572,18 @@ proxy-groups:
   - name: 👆🏻🇹🇼 ‍台湾
     type: select
     proxies:
-      - "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi"
+      - 🇹🇼 中国 - 台湾 - 1
       - 🇹🇼 中国 - 台湾 - 2
+      - 🇹🇼 中国 - 台湾 - 3
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - 🇭🇰 中国 - 香港 - 1
-      - 🇭🇰 中国 - 香港 - 3
       - 🇭🇰 中国 - 香港 - 4
       - 🇭🇰 中国 - 香港 - 5
+      - 🇭🇰 中国 - 香港 - 6
+      - 🇭🇰 中国 - 香港 - 7
       - 🇭🇰 香港
+      - 🇭🇰 香港 ThinkDream数据中心
       - 🇭🇰 香港 阿里云
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_1
       - 🇭🇰 香港(clashnodev2ray.github.io免费节点)_2
@@ -1460,13 +1595,16 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - "🇹🇼 TW_1|1.6MB/s | 更多节点: https://t.me/byxiaoxi"
+      - 🇹🇼 中国 - 台湾 - 1
       - 🇹🇼 中国 - 台湾 - 2
+      - 🇹🇼 中国 - 台湾 - 3
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
+      - 🇸🇬 新加坡 - 新加坡 - 10
+      - 🇸🇬 新加坡 - 新加坡 - 11
       - 🇸🇬 新加坡 - 新加坡 - 2
       - 🇸🇬 新加坡 - 新加坡 - 3
       - 🇸🇬 新加坡 - 新加坡 - 4
@@ -1487,10 +1625,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 - 大阪市 - 1
-      - 🇯🇵 日本 - 成田市 - 2
-      - 🇯🇵 日本 - 成田市 - 3
-      - 🇯🇵 日本 软银宽带
+      - 🇯🇵 日本 - 成田市 - 1
       - 🇯🇵 日本(clashnodev2ray.github.io免费节点)
       - 🇯🇵 日本2
       - 🇯🇵 日本2|@ripaojiedian
@@ -1502,32 +1637,38 @@ proxy-groups:
     proxies:
       - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
-      - 🇺🇸 美国 - Aldine - 51
+      - 🇺🇸 美国 - Aldine - 48
+      - 🇺🇸 美国 - Cheektowaga - 66
       - 🇺🇸 美国 - Flower Mound - 49
-      - 🇺🇸 美国 - Reston - 46
-      - 🇺🇸 美国 - Reston - 47
-      - 🇺🇸 美国 - Reston - 54
+      - 🇺🇸 美国 - Reston - 50
+      - 🇺🇸 美国 - Reston - 51
+      - 🇺🇸 美国 - Reston - 52
       - 🇺🇸 美国 - South Fulton - 53
-      - 🇺🇸 美国 - 东洛杉矶 - 29
-      - 🇺🇸 美国 - 东洛杉矶 - 45
-      - 🇺🇸 美国 - 东洛杉矶 - 48
-      - 🇺🇸 美国 - 东洛杉矶 - 5
-      - 🇺🇸 美国 - 东洛杉矶 - 52
-      - 🇺🇸 美国 - 东洛杉矶 - 6
+      - 🇺🇸 美国 - South Fulton - 57
+      - 🇺🇸 美国 - 东洛杉矶 - 10
+      - 🇺🇸 美国 - 东洛杉矶 - 11
+      - 🇺🇸 美国 - 东洛杉矶 - 12
+      - 🇺🇸 美国 - 东洛杉矶 - 13
+      - 🇺🇸 美国 - 东洛杉矶 - 14
+      - 🇺🇸 美国 - 东洛杉矶 - 55
+      - 🇺🇸 美国 - 东洛杉矶 - 63
       - 🇺🇸 美国 - 东洛杉矶 - 7
       - 🇺🇸 美国 - 东洛杉矶 - 8
-      - 🇺🇸 美国 - 天堂市 - 38
-      - 🇺🇸 美国 - 天堂市 - 43
-      - 🇺🇸 美国 - 惠顿 - 55
-      - 🇺🇸 美国 - 水牛城 - 4
-      - 🇺🇸 美国 - 波特蘭 - 50
+      - 🇺🇸 美国 - 东洛杉矶 - 9
+      - 🇺🇸 美国 - 天堂市 - 46
+      - 🇺🇸 美国 - 天堂市 - 47
+      - 🇺🇸 美国 - 天堂市 - 58
+      - 🇺🇸 美国 - 惠顿 - 15
+      - 🇺🇸 美国 - 水牛城 - 5
+      - 🇺🇸 美国 - 波特蘭 - 6
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
-      - 🇺🇸 美国 - 洛杉矶 - 3
-      - 🇺🇸 美国 - 紐約 - 11
-      - 🇺🇸 美国 - 紐約 - 12
-      - 🇺🇸 美国 - 肯特 - 10
-      - 🇺🇸 美国 - 肯特 - 9
+      - 🇺🇸 美国 - 洛杉矶 - 4
+      - 🇺🇸 美国 - 紐約 - 17
+      - 🇺🇸 美国 - 紐約 - 65
+      - 🇺🇸 美国 - 肯特 - 16
+      - 🇺🇸 美国 - 芝加哥 - 3
+      - 🇺🇸 美国 - 迈阿密 - 64
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -1535,8 +1676,12 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 得克萨斯州达拉斯Cloudflare Warp节点
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
+      - 🇺🇸 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_1
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_10
       - 🇺🇸 美国(clashnodev2ray.github.io免费节点)_11
@@ -1646,17 +1791,22 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 🇧🇷 巴西 - 圣保罗 - 1
+      - 🇨🇦 加拿大 - 列治文 - 1
       - 🇨🇦 加拿大 - 列治文 - 2
-      - 🇨🇦 加拿大 - 列治文 - 3
-      - 🇨🇦 加拿大 - 列治文 - 4
-      - 🇨🇦 加拿大 - 多伦多 - 1
-      - 🇨🇦 加拿大 - 密西沙加 - 5
+      - 🇨🇦 加拿大 - 多伦多 - 4
+      - 🇨🇦 加拿大 - 多伦多 - 5
+      - 🇨🇦 加拿大 - 密西沙加 - 3
       - 🇨🇦 加拿大(clashnodev2ray.github.io免费节点)
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇩🇪 德国 - Frankfurt am Main - 2
       - 🇩🇪 德国 - 德赖艾希 - 10
       - 🇩🇪 德国 - 德赖艾希 - 11
+      - 🇩🇪 德国 - 德赖艾希 - 12
+      - 🇩🇪 德国 - 德赖艾希 - 13
+      - 🇩🇪 德国 - 德赖艾希 - 14
+      - 🇩🇪 德国 - 德赖艾希 - 15
+      - 🇩🇪 德国 - 德赖艾希 - 2
       - 🇩🇪 德国 - 德赖艾希 - 3
       - 🇩🇪 德国 - 德赖艾希 - 4
       - 🇩🇪 德国 - 德赖艾希 - 5
@@ -1664,6 +1814,7 @@ proxy-groups:
       - 🇩🇪 德国 - 德赖艾希 - 7
       - 🇩🇪 德国 - 德赖艾希 - 8
       - 🇩🇪 德国 - 德赖艾希 - 9
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_1
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_10
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_11
@@ -1677,15 +1828,18 @@ proxy-groups:
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_7
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_8
       - 🇩🇪 德国(clashnodev2ray.github.io免费节点)_9
-      - 🇩🇰 丹麦 V2CROSS.COM
-      - 🇩🇰 丹麦 V2CROSS.COM 2
-      - 🇪🇺 欧盟 V2CROSS.COM
       - 🇫🇮 芬兰 - 万塔 - 1
+      - 🇫🇮 芬兰 - 万塔 - 2
+      - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 - 巴黎 - 2
       - 🇫🇷 法国 - 巴黎 - 3
-      - 🇫🇷 法国 - 斯特拉斯堡 - 1
+      - 🇫🇷 法国 - 巴黎 - 4
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_1
       - 🇫🇷 法国(clashnodev2ray.github.io免费节点)_2
+      - 🇬🇧 英国 - Slough - 1
+      - 🇬🇧 英国 - 豪恩斯洛 - 2
+      - 🇬🇧 英国 - 豪恩斯洛 - 3
+      - 🇬🇧 英国 - 豪恩斯洛 - 4
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_1
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_10
@@ -1744,12 +1898,16 @@ proxy-groups:
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_7
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_8
       - 🇬🇧 英国(clashnodev2ray.github.io免费节点)_9
+      - 🇮🇳 印度 - 孟买 - 1
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇰🇷 韩国 - Yeongdong-gun - 2
       - 🇰🇷 韩国 - Yeongdong-gun - 3
-      - 🇰🇷 韩国 - 水原市 - 1
+      - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_1
       - 🇰🇷 韩国(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 10
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 11
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 2
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 3
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 4
@@ -1757,17 +1915,19 @@ proxy-groups:
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 6
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 7
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 8
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 9
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_1
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_2
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_3
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_4
       - 🇳🇱 荷兰(clashnodev2ray.github.io免费节点)_5
       - 🇵🇱 波兰 - 普魯斯科夫 - 1
-      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 - 多莫傑多沃 - 1
       - 🇷🇺 俄罗斯(clashnodev2ray.github.io免费节点)
       - 🇸🇪 瑞典 - Steninge - 1
       - 🇸🇪 瑞典 - Steninge - 2
-      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇸🇪 瑞典 - Steninge - 3
+      - 🇸🇪 瑞典 - Steninge - 4
       - 🇻🇳 越南 - Hải Dương - 1
       - 🇻🇳 越南 - Hải Dương - 10
       - 🇻🇳 越南 - Hải Dương - 11
@@ -1802,6 +1962,12 @@ proxy-groups:
       - 🇻🇳 越南 - Hải Dương - 38
       - 🇻🇳 越南 - Hải Dương - 39
       - 🇻🇳 越南 - Hải Dương - 4
+      - 🇻🇳 越南 - Hải Dương - 40
+      - 🇻🇳 越南 - Hải Dương - 41
+      - 🇻🇳 越南 - Hải Dương - 42
+      - 🇻🇳 越南 - Hải Dương - 43
+      - 🇻🇳 越南 - Hải Dương - 44
+      - 🇻🇳 越南 - Hải Dương - 45
       - 🇻🇳 越南 - Hải Dương - 5
       - 🇻🇳 越南 - Hải Dương - 6
       - 🇻🇳 越南 - Hải Dương - 7
