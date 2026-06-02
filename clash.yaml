@@ -7,11 +7,10 @@ external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇦🇺 澳大利亚 - 悉尼 - 1, server: au-3.tr202605.com, port: 443, type: trojan, password: owreRY1bmquS1WcYN2, udp: true}
-  - {name: 🇧🇬 保加利亚 V2CROSS.COM, server: 87.120.93.131, port: 443, type: vless, uuid: 91e120bc-159a-4390-b4e1-197b19602ea0, tls: true, flow: xtls-rprx-vision, servername: sub.sbrf-cdn342.ru, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇨🇳 中国 - 上海 - 5, server: 61.171.92.202, port: 1001, type: ss, cipher: aes-256-gcm, password: 123, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt am Main - 1, server: 52.57.7.168, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国 - 法兰克福 - 2, server: v33.hdacd.com, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.59.183.234, port: 666, type: vless, uuid: 56aaf8cd-d2fb-5211-bc9b-c242ee37d429, tls: false, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 黑森州法兰克福Linode数据中心, server: 172.104.237.100, port: 443, type: trojan, password: VPTFm=oZ++SuNT+jMRqGZqrAnWq-r8KJyY, sni: 172.104.237.100, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国(免费节点)_1, server: 89.23.108.19, port: 4433, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org, network: ws, ws-opts: {path: /@Marisa_kristi}, udp: true}
   - {name: 🇩🇪 德国(免费节点)_10, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(免费节点)_11, server: hackney-latest-strike.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: XUMTygEM1jVYIvysXKqA5T, udp: true}
@@ -20,8 +19,8 @@ proxies:
   - {name: 🇫🇷 法国 - 巴黎 - 2, server: 52.47.172.108, port: 22223, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国(免费节点)_1, server: 163.5.58.140, port: 443, type: vless, uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798, tls: true, servername: sni.skylee4.cloudns.ch, network: ws, ws-opts: {path: /proxyip=ProxyIP.CMLiussss.net}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇬🇧 英国(免费节点)_1, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国(免费节点)_11, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 1, server: a.twodnwnpoe.xyz, port: 40015, type: trojan, password: da292191-b895-3264-b41c-200512b8f965, sni: 1.lossyesterday.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 2, server: a.twodnwnpoe.xyz, port: 52225, type: trojan, password: da292191-b895-3264-b41c-200512b8f965, sni: i.comfortableyou.top, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 3, server: a.twodnwnpoe.xyz, port: 40017, type: trojan, password: da292191-b895-3264-b41c-200512b8f965, sni: water.waittomorrow.top, skip-cert-verify: true, udp: true}
@@ -29,47 +28,41 @@ proxies:
   - {name: 🇭🇰 香港(免费节点)_1, server: 83.229.126.127, port: 32237, type: vless, uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d, tls: true, servername: dcsrzh.ccwu.cc, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇭🇰 香港(免费节点)_3, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 香港(免费节点)_4, server: 104.26.5.134, port: 2096, type: vless, uuid: 7f50ec42-4673-41e2-94be-ae6253909def, tls: true, servername: joey.freen1.de5.net, network: ws, ws-opts: {path: "/?ed=2048"}, udp: true}
-  - {name: 🇭🇰 香港3, server: 43.199.204.59, port: 2008, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: 13.115.175.169, port: 2008, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港4, server: 16.162.24.151, port: 32858, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港4|@ripaojiedian, server: 13.231.249.183, port: 50712, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港3, server: 13.115.175.169, port: 2008, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港4, server: 13.231.249.183, port: 50712, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 18.162.145.230, port: 11233, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本, server: 3.112.60.98, port: 4099, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 - 东京 - 1, server: 43.199.61.178, port: 47655, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本, server: 43.199.61.178, port: 47655, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - 大阪市 - 2, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本(免费节点)_1, server: 172.64.53.241, port: 443, type: vless, uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798, tls: true, servername: sni.skylee4.cloudns.ch, network: ws, ws-opts: {path: /proxyip=ProxyIP.CMLiussss.net}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_2, server: 162.141.130.233, port: 24443, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: guslef2w8oz12wv.ymj.xx.kg, network: ws, ws-opts: {path: /@Marisa_kristi}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_3, server: 103.127.243.59, port: 56738, type: vmess, uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/ABCDE]}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_4, server: time.is, port: 443, type: vless, uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9, tls: true, servername: 2-ee1.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: time.is}}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_5, server: 2a02:6ea0:d32f::f8fe:349b, port: 24202, type: vmess, uuid: b20a7042-70ff-4376-a79f-b68f9edb7519, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999-newpac/fanqiang}, udp: true}
-  - {name: 🇯🇵 日本2, server: 18.163.75.132, port: 24184, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: 13.115.175.169, port: 11541, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本3, server: 43.199.160.155, port: 3135, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本2, server: 13.115.175.169, port: 11541, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国 KT电信, server: 121.180.171.43, port: 11310, type: trojan, password: GKHWMe2R4qwNcNxu6l3KMkdd, sni: vpn1.rnmcnm.com, network: ws, ws-opts: {path: /trj-ws, headers: {Host: vpn1.rnmcnm.com}}, udp: true}
   - {name: 🇱🇮 列支敦士登 - 瓦都茲 - 1, server: 45.15.167.20, port: 443, type: trojan, password: 3ac6a6ca99f74941b1eaf892818e2ddb, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 85.234.114.53, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 85.234.114.53, port: 443, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡, server: 175.41.230.39, port: 4840, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡2, server: 54.178.81.79, port: 3842, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 16.163.157.108, port: 3842, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡3, server: 18.166.225.36, port: 42710, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 52.69.79.73, port: 29440, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 16.163.157.108, port: 1180, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇴 挪威 V2CROSS.COM, server: 138.124.244.248, port: 443, type: vless, uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66, tls: true, reality-opts: {public-key: PYX0lu3m0L_h28eW4186s63gRFHXoTc3K9wKeFewDUQ, short-id: "e9a8" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: r1.mizulina.top, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 90.156.254.164, port: 19562, type: vless, uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3, tls: true, reality-opts: {public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws, short-id: "9e" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡, server: 16.163.157.108, port: 1180, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡2, server: 16.163.157.108, port: 3842, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡3, server: 52.69.79.73, port: 29440, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇹🇼 中国 - 台湾 - 4, server: r3mrcg001269pz2.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
   - {name: 🇹🇼 中国 - 台湾 - 6, server: 59.125.62.188, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: (Telegram🇨🇳 @WangCai2)7eb777f:123571}, udp: true}
   - {name: 🇹🇼 中国 - 台湾 - 7, server: world.t.51guangtaobao.com, port: 2512, type: vmess, uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇹🇼 中国 - 台湾 - 8, server: yd3.ainivp.com, port: 33404, type: vmess, uuid: 9204afcd-026e-781f-1abc-c03efabd1344, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: yd3.ainivp.com, network: ws, ws-opts: {path: /ray, headers: {Host: yd3.ainivp.com}}, udp: true}
   - {name: 🇹🇼 台湾(免费节点)_1, server: r3mrcg007134n4g.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
   - {name: 🇹🇼 台湾(免费节点)_2, server: r3mrcg0011499tl.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
-  - {name: 🇺🇸 美国, server: 175.41.230.39, port: 6604, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾省 V2CROSS.COM, server: 211.76.176.98, port: 19128, type: trojan, password: gcuCpQfaiVeDBdWG, sni: yazhou10.dynu.net, udp: true}
+  - {name: 🇺🇸 美国, server: 16.163.157.108, port: 6604, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 2, server: cg1c06.waimaojd.com, port: 443, type: vmess, uuid: a60f3900-bfc6-4e99-a221-239f9692d59e, alterId: 0, cipher: auto, tls: true, servername: cg1c06.waimaojd.com, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c06.waimaojd.com}}, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 3, server: cg1c03.waimaojd.com, port: 443, type: vmess, uuid: a60f3900-bfc6-4e99-a221-239f9692d59e, alterId: 0, cipher: auto, tls: true, servername: cg1c03.waimaojd.com, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c03.waimaojd.com}}, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 4, server: cg1c02.waimaojd.com, port: 443, type: vmess, uuid: a60f3900-bfc6-4e99-a221-239f9692d59e, alterId: 0, cipher: auto, tls: true, servername: cg1c02.waimaojd.com, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c02.waimaojd.com}}, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 6, server: cg1c05.waimaojd.com, port: 443, type: vmess, uuid: 332774e5-9371-48bb-b518-1fe56c7268da, alterId: 0, cipher: auto, tls: true, servername: cg1c05.waimaojd.com, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c05.waimaojd.com}}, udp: true}
   - {name: 🇺🇸 美国 - 洛杉矶 - 8, server: select-us.ddnskunlun.com, port: 9027, type: vmess, uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 Akamai科技公司CDN网络节点, server: 172.238.120.124, port: 443, type: trojan, password: r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 Akamai科技公司CDN网络节点 2, server: 172.236.220.10, port: 443, type: trojan, password: s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui, sni: 172.236.220.10, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 Akamai科技公司CDN网络节点, server: 172.237.145.189, port: 443, type: trojan, password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM, sni: 172.237.145.189, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国 V2CROSS.COM, server: gtm-sg-cc54q7d1q01.365cloud0285.com, port: 6004, type: vmess, uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司, server: 130.94.68.100, port: 443, type: trojan, password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE, sni: www.rolll.click, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 149.104.109.74, port: 21273, type: ss, cipher: chacha20-ietf-poly1305, password: Ll6cYfXM5DzQbdtMMb72A_jqVnNljU3yqe, udp: true}
   - {name: 🇺🇸 美国(免费节点)_1, server: 195.133.2.2, port: 34898, type: ss, cipher: chacha20-ietf-poly1305, password: D1oFY5dskhFuI8PNbSA35s, udp: true}
   - {name: 🇺🇸 美国(免费节点)_10, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(免费节点)_11, server: 185.162.230.138, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.indevs.in, network: ws, ws-opts: {path: /}, udp: true}
@@ -120,11 +113,9 @@ proxies:
   - {name: 🇺🇸 美国(免费节点)_88, server: 140.238.17.157, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.v6.rocks, network: ws, ws-opts: {path: "/?ed=2560&https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_89, server: 31.43.179.191, port: 443, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.my111000.tech, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_9, server: 172.64.149.54, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.jpmj.dev, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
-  - {name: 🇺🇸 美国2, server: 54.238.76.39, port: 6604, type: trojan, password: f6d3aa07a52dbcedcb4731029e2fb6ae, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国3, server: 54.238.206.69, port: 17801, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: 95.40.4.37, port: 2520, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国2, server: 54.238.76.39, port: 6604, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国3, server: 95.40.4.37, port: 2520, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国5, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 16.163.157.108, port: 6604, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -156,11 +147,10 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 🇦🇺 澳大利亚 - 悉尼 - 1
-      - 🇧🇬 保加利亚 V2CROSS.COM
       - 🇨🇳 中国 - 上海 - 5
       - 🇩🇪 德国 - Frankfurt am Main - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -177,6 +167,7 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -253,7 +244,9 @@ proxy-groups:
       - 🇯🇵 日本3
       - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
+      - 🇰🇷 韩国 KT电信
       - 🇱🇮 列支敦士登 - 瓦都茲 - 1
+      - 🇳🇴 挪威 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇸🇬 新加坡
@@ -268,6 +261,7 @@ proxy-groups:
       - 🇹🇼 中国 - 台湾 - 8
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
+      - 🇹🇼 台湾省 V2CROSS.COM
       - 🇺🇸 美国
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
@@ -278,9 +272,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 7
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点 2
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -387,11 +380,10 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 🇦🇺 澳大利亚 - 悉尼 - 1
-      - 🇧🇬 保加利亚 V2CROSS.COM
       - 🇨🇳 中国 - 上海 - 5
       - 🇩🇪 德国 - Frankfurt am Main - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -408,6 +400,7 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -484,7 +477,9 @@ proxy-groups:
       - 🇯🇵 日本3
       - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
+      - 🇰🇷 韩国 KT电信
       - 🇱🇮 列支敦士登 - 瓦都茲 - 1
+      - 🇳🇴 挪威 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇸🇬 新加坡
@@ -499,6 +494,7 @@ proxy-groups:
       - 🇹🇼 中国 - 台湾 - 8
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
+      - 🇹🇼 台湾省 V2CROSS.COM
       - 🇺🇸 美国
       - 🇺🇸 美国 - 洛杉矶 - 1
       - 🇺🇸 美国 - 洛杉矶 - 2
@@ -509,9 +505,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 7
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点 2
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -691,6 +686,7 @@ proxy-groups:
       - 🇹🇼 中国 - 台湾 - 8
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
+      - 🇹🇼 台湾省 V2CROSS.COM
   - name: 🇨🇳 ‍中国
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -719,6 +715,7 @@ proxy-groups:
       - 🇹🇼 中国 - 台湾 - 8
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
+      - 🇹🇼 台湾省 V2CROSS.COM
   - name: 🇸🇬 ‍新加坡
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -766,9 +763,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 7
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点 2
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -877,10 +873,9 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 🇦🇺 澳大利亚 - 悉尼 - 1
-      - 🇧🇬 保加利亚 V2CROSS.COM
       - 🇩🇪 德国 - Frankfurt am Main - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -897,6 +892,7 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -945,7 +941,9 @@ proxy-groups:
       - 🇬🇧 英国(免费节点)_7
       - 🇬🇧 英国(免费节点)_8
       - 🇬🇧 英国(免费节点)_9
+      - 🇰🇷 韩国 KT电信
       - 🇱🇮 列支敦士登 - 瓦都茲 - 1
+      - 🇳🇴 挪威 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇿🇦 南非 - 约翰内斯堡 - 1
@@ -976,6 +974,7 @@ proxy-groups:
       - 🇹🇼 中国 - 台湾 - 8
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
+      - 🇹🇼 台湾省 V2CROSS.COM
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
@@ -1001,6 +1000,7 @@ proxy-groups:
       - 🇹🇼 中国 - 台湾 - 8
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
+      - 🇹🇼 台湾省 V2CROSS.COM
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
@@ -1039,9 +1039,8 @@ proxy-groups:
       - 🇺🇸 美国 - 洛杉矶 - 7
       - 🇺🇸 美国 - 洛杉矶 - 8
       - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点 2
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -1147,10 +1146,9 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - 🇦🇺 澳大利亚 - 悉尼 - 1
-      - 🇧🇬 保加利亚 V2CROSS.COM
       - 🇩🇪 德国 - Frankfurt am Main - 1
       - 🇩🇪 德国 - 法兰克福 - 2
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -1167,6 +1165,7 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -1215,7 +1214,9 @@ proxy-groups:
       - 🇬🇧 英国(免费节点)_7
       - 🇬🇧 英国(免费节点)_8
       - 🇬🇧 英国(免费节点)_9
+      - 🇰🇷 韩国 KT电信
       - 🇱🇮 列支敦士登 - 瓦都茲 - 1
+      - 🇳🇴 挪威 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇿🇦 南非 - 约翰内斯堡 - 1
