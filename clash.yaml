@@ -6,17 +6,16 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: de01.goodmaximum.com, port: 443, type: vless, uuid: c2401b12-8bb8-0014-abc0-89dbaea88116, tls: true, reality-opts: {public-key: fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ, short-id: "31181028b56c8704" }, servername: glimmerhouse.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: de01.goodmaximum.com, port: 443, type: vless, uuid: c2401b12-8bb8-0014-abc0-89dbaea88116, tls: true, reality-opts: {public-key: fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ, short-id: "31181028b56c8704" }, servername: portal.glimmerhouse.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇦🇿 阿塞拜疆 - 巴库 - 1, server: 90081bb25c.node.tro.cac.cab, port: 41943, type: trojan, password: 4f4d1167-ef14-4304-9bce-0740472503ef, sni: az.01.naiun.bilibili.com, skip-cert-verify: true, udp: true}
   - {name: 🇦🇿 阿塞拜疆 - 巴库 - 2, server: 155.117.198.87, port: 41943, type: trojan, password: 4f4d1167-ef14-4304-9bce-0740472503ef, sni: az.01.naiun.bilibili.com, skip-cert-verify: true, udp: true}
-  - {name: 🇧🇪 比利时 V2CROSS.COM, server: 150.251.158.76, port: 443, type: vless, uuid: 10550754-cf62-3d3b-ba6a-50be27a275d7, tls: true, flow: xtls-rprx-vision, servername: s646.okgg.top, client-fingerprint: random, network: tcp, udp: true}
   - {name: 🇨🇦 加拿大 - 多伦多 - 1, server: 52.60.99.199, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇨🇦 加拿大 - 多伦多 - 2, server: 3.96.152.83, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇨🇳 广东省 珠江宽频, server: 122.8.44.3, port: 993, type: vless, uuid: 2703cda8-5cf4-019d-c4bd-6cf0c2261946, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: UvQ2HZFkQXrBiaprbcmks-aFo1dvnfPlHXcUKcl-i04}, servername: dl.google.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt am Main - 3, server: 63.185.124.176, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt am Main - 4, server: 63.185.124.176, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国 - 兰河畔林堡 - 1, server: de5.niekotin.de, port: 80, type: vmess, uuid: 85bf5801-4658-441c-a2e5-842c6c71a521, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: de5.niekotin.de}}, udp: true}
   - {name: 🇩🇪 德国 - 法兰克福 - 2, server: 103.244.145.247, port: 28893, type: ss, cipher: chacha20-ietf-poly1305, password: V6_RXT2UlL5ONSD3Fmvd9XqBGNmespBu, udp: true}
+  - {name: 🇩🇪 德国 V2CROSS.COM, server: 91.233.8.138, port: 443, type: trojan, password: qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq, sni: www.homelywebs.click, skip-cert-verify: false, udp: true}
   - {name: 🇩🇪 德国(免费节点)_1, server: 89.23.108.19, port: 4433, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: 49ax00d7kmg3ijp3vbkua090bws.majusti.dpdns.org, network: ws, ws-opts: {path: /@Marisa_kristi}, udp: true}
   - {name: 🇩🇪 德国(免费节点)_10, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇩🇪 德国(免费节点)_11, server: hackney-latest-strike.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: XUMTygEM1jVYIvysXKqA5T, udp: true}
@@ -28,7 +27,6 @@ proxies:
   - {name: 🇫🇷 法国(免费节点)_1, server: 163.5.58.140, port: 443, type: vless, uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798, tls: true, servername: sni.skylee4.cloudns.ch, network: ws, ws-opts: {path: /proxyip=ProxyIP.CMLiussss.net}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇬🇧 _GB_英国, server: 31.76.113.91, port: 443, type: vless, uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY, short-id: "7a3f9e2b1c8d4f6a" }, servername: it.s3-cloud.xyz, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 31.76.113.34, port: 443, type: vless, uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY, short-id: "7a3f9e2b1c8d4f6a" }, servername: it.s3-cloud.xyz, client-fingerprint: edge, network: tcp, udp: true}
   - {name: 🇬🇧 英国(免费节点)_1, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇬🇧 英国(免费节点)_11, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: li.feng3d.com, port: 8388, type: ss, cipher: aes-256-gcm, password: feng3d@ss2025, udp: true}
@@ -61,9 +59,7 @@ proxies:
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - 1, server: 195.58.49.104, port: 20129, type: ss, cipher: aes-256-gcm, password: fbaf33bcffe53cf9, udp: true}
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - 2, server: 195.58.49.162, port: 60120, type: ss, cipher: aes-256-gcm, password: 9f3d1a6d31468599, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 3, server: 45.140.169.244, port: 20981, type: ss, cipher: aes-256-gcm, password: cfe685726eea2c4b, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: r1.mizulina.top, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: greb.loralden.com, port: 443, type: vless, uuid: 2065a8c9-8b3d-4dba-b0ce-90d649aa3da7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: EUK_ePvEKUGcezQYHqgJ5P462XxLPXPm9CZWGLaL33k, short-id: "3620820fe66d6731" }, servername: greb.loralden.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 3, server: 85.234.114.53, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 85.234.114.53, port: 22231, type: vless, uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8, tls: true, flow: xtls-rprx-vision, servername: r1.mizulina.top, client-fingerprint: edge, network: tcp, udp: true}
   - {name: 🇸🇬 新加坡, server: 16.162.93.34, port: 48402, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: ss.050.node-for-bigairport.win, port: 19001, type: ss, cipher: chacha20-ietf-poly1305, password: 792e0bdb-01db-450c-94c4-925151eb396e, udp: true}
   - {name: 🇸🇬 新加坡2, server: 18.167.173.1, port: 2511, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -73,10 +69,12 @@ proxies:
   - {name: 🇹🇼 台湾(免费节点)_1, server: r3mrcg007134n4g.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
   - {name: 🇹🇼 台湾(免费节点)_2, server: r3mrcg0011499tl.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
   - {name: 🇺🇸 美国, server: 16.162.93.34, port: 5224, type: trojan, password: d84665c37878196ecf983cf6910e3b44, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 Akamai科技公司CDN网络节点, server: 172.237.145.189, port: 443, type: trojan, password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM, sni: 172.237.145.189, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: speedtest.org, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: de2.ping-game.ir}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: cf.9999669.xyz, port: 2087, type: vless, uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2, tls: true, servername: fgnix832fx.fx6hsv0.ccwu.cc, network: ws, ws-opts: {path: /, headers: {Host: fgnix832fx.fx6hsv0.ccwu.cc}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.18.155.229, port: 443, type: vless, uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a, tls: true, servername: www.genflix.co.id.r3xxe.eu.cc, network: ws, ws-opts: {path: /au-do, headers: {Host: www.genflix.co.id.r3xxe.eu.cc}}, udp: true}
   - {name: 🇺🇸 美国 加利福尼亚, server: 64.176.65.85, port: 443, type: trojan, password: iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf, udp: true}
-  - {name: 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司, server: 130.94.107.171, port: 443, type: trojan, password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV, sni: www.logger-guard.click, udp: true}
+  - {name: 🇺🇸 美国 德克萨斯州达拉斯Linode数据中心, server: 45.79.8.17, port: 443, type: trojan, password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf, sni: 45.79.8.17, udp: true}
+  - {name: 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司, server: 130.94.104.210, port: 443, type: trojan, password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m, sni: www.cdn-structure.click, udp: true}
+  - {name: 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2, server: 130.94.68.100, port: 443, type: trojan, password: l64tlWoGT6USQr%3D3WnjWedzvVSHXn8TNTE, sni: www.rolll.click, udp: true}
   - {name: 🇺🇸 美国(免费节点)_1, server: 195.133.2.2, port: 34898, type: ss, cipher: chacha20-ietf-poly1305, password: D1oFY5dskhFuI8PNbSA35s, udp: true}
   - {name: 🇺🇸 美国(免费节点)_11, server: 185.162.230.138, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.indevs.in, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_12, server: 221.149.34.13, port: 10909, type: trojan, password: GKHWMe2R4qwNcNxu6l3KMkdd, sni: vpn1.rnmcnm.com, skip-cert-verify: true, network: ws, ws-opts: {path: /trj-ws, headers: {Host: vpn1.rnmcnm.com}}, udp: true}
@@ -160,14 +158,13 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 🇦🇿 阿塞拜疆 - 巴库 - 1
       - 🇦🇿 阿塞拜疆 - 巴库 - 2
-      - 🇧🇪 比利时 V2CROSS.COM
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大 - 多伦多 - 2
-      - 🇨🇳 广东省 珠江宽频
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - Frankfurt am Main - 4
       - 🇩🇪 德国 - 兰河畔林堡 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -187,7 +184,6 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -276,8 +272,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
       - 🇸🇬 新加坡2
@@ -293,10 +287,12 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
       - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 加利福尼亚
+      - 🇺🇸 美国 德克萨斯州达拉斯Linode数据中心
       - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -403,14 +399,13 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 🇦🇿 阿塞拜疆 - 巴库 - 1
       - 🇦🇿 阿塞拜疆 - 巴库 - 2
-      - 🇧🇪 比利时 V2CROSS.COM
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大 - 多伦多 - 2
-      - 🇨🇳 广东省 珠江宽频
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - Frankfurt am Main - 4
       - 🇩🇪 德国 - 兰河畔林堡 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -430,7 +425,6 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -519,8 +513,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡 - 新加坡 - 1
       - 🇸🇬 新加坡2
@@ -536,10 +528,12 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
       - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 加利福尼亚
+      - 🇺🇸 美国 德克萨斯州达拉斯Linode数据中心
       - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -723,7 +717,6 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇨🇳 广东省 珠江宽频
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 _HK_中国香港_1
       - 🇭🇰 _HK_中国香港_2
@@ -785,10 +778,12 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
       - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 加利福尼亚
+      - 🇺🇸 美国 德克萨斯州达拉斯Linode数据中心
       - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -897,13 +892,13 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 🇦🇿 阿塞拜疆 - 巴库 - 1
       - 🇦🇿 阿塞拜疆 - 巴库 - 2
-      - 🇧🇪 比利时 V2CROSS.COM
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大 - 多伦多 - 2
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - Frankfurt am Main - 4
       - 🇩🇪 德国 - 兰河畔林堡 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -923,7 +918,6 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -984,8 +978,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
       - 🇿🇦 南非 - 约翰内斯堡 - 1
   - name: 👆🏻🇭🇰 ‍香港
     type: select
@@ -1017,7 +1009,6 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - 🇨🇳 广东省 珠江宽频
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 _HK_中国香港_1
       - 🇭🇰 _HK_中国香港_2
@@ -1070,10 +1061,12 @@ proxy-groups:
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
       - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 加利福尼亚
+      - 🇺🇸 美国 德克萨斯州达拉斯Linode数据中心
       - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
+      - 🇺🇸 美国 科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -1179,13 +1172,13 @@ proxy-groups:
       - 亚太地区 V2CROSS.COM
       - 🇦🇿 阿塞拜疆 - 巴库 - 1
       - 🇦🇿 阿塞拜疆 - 巴库 - 2
-      - 🇧🇪 比利时 V2CROSS.COM
       - 🇨🇦 加拿大 - 多伦多 - 1
       - 🇨🇦 加拿大 - 多伦多 - 2
       - 🇩🇪 德国 - Frankfurt am Main - 3
       - 🇩🇪 德国 - Frankfurt am Main - 4
       - 🇩🇪 德国 - 兰河畔林堡 - 1
       - 🇩🇪 德国 - 法兰克福 - 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_10
       - 🇩🇪 德国(免费节点)_11
@@ -1205,7 +1198,6 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -1266,8 +1258,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - 圣彼得堡 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
       - 🇿🇦 南非 - 约翰内斯堡 - 1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
