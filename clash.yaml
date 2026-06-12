@@ -6,6 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇨🇭 瑞士 V2CROSS.COM, server: 1.sdwan.realm-sync.com, port: 5457, type: vless, uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 8Ct9wBZLha-ePZMWbSau9ViKgbwlCgEsbGMjNnoVDzw, short-id: "9da3779ceafd" }, servername: swcdn.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇨🇳 中国 - 上海 - 1, server: 61.171.92.202, port: 1001, type: ss, cipher: aes-256-gcm, password: 123, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt Am Main - 3, server: 108.165.216.37, port: 443, type: vmess, uuid: 84cff269-a423-4e6e-8179-7e197c6cddbf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cf.accuratenetworkchecker.ir, network: ws, ws-opts: {path: "/api/v2/ws/2r3xSszHva?ed=2048"}, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt Am Main - 4, server: 104.25.77.248, port: 443, type: vmess, uuid: 84cff269-a423-4e6e-8179-7e197c6cddbf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cf.accuratenetworkchecker.ir, network: ws, ws-opts: {path: "/api/v2/ws/2r3xSszHva?ed=2048"}, udp: true}
@@ -22,6 +23,8 @@ proxies:
   - {name: 🇫🇷 法国(免费节点)_1, server: 163.5.58.140, port: 443, type: vless, uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798, tls: true, servername: sni.skylee4.cloudns.ch, network: ws, ws-opts: {path: /proxyip=ProxyIP.CMLiussss.net}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇬🇧 _GB_英国, server: 31.76.113.91, port: 443, type: vless, uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY, short-id: "7a3f9e2b1c8d4f6a" }, servername: it.s3-cloud.xyz, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: de.pink-perfect.ru, port: 443, type: vless, uuid: 8ea0665e-dee3-418c-8822-1f70f350f2db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0, short-id: "86b80f1e713a33ad" }, servername: yandex.net, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: sw.pink-perfect.ru, port: 443, type: vless, uuid: 8ea0665e-dee3-418c-8822-1f70f350f2db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 2fgsbEAn-ALVpjnE4ZTPrzaZY70vVplYwldCnslInE0, short-id: "86b80f1e713a33ad" }, servername: yandex.net, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇬🇧 英国(免费节点)_1, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇬🇧 英国(免费节点)_11, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: li.feng3d.com, port: 8388, type: ss, cipher: aes-256-gcm, password: feng3d@ss2025, udp: true}
@@ -42,8 +45,6 @@ proxies:
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 95.40.19.84, port: 1123, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇮🇷 _IR_伊朗, server: 185.143.233.122, port: 80, type: vless, uuid: 661f5954-7f13-4c5f-add8-a7c0b250aabd, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: gre.greentab.ir}}, udp: true}
   - {name: 🇯🇵 日本, server: 52.195.147.173, port: 53307, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 东京Fastly节点, server: 151.101.109.223, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇯🇵 日本 东京Fastly节点 2, server: 151.101.109.223, port: 443, type: vless, uuid: 060cd76b-72e1-478f-b6c9-8e6d2bdc5517, tls: true, servername: default.ssl.fastly.net, network: ws, ws-opts: {path: /, headers: {Host: default.ssl.fastly.net}}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_1, server: 172.64.53.241, port: 443, type: vless, uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798, tls: true, servername: sni.skylee4.cloudns.ch, network: ws, ws-opts: {path: /proxyip=ProxyIP.CMLiussss.net}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_2, server: 162.141.130.233, port: 24443, type: vless, uuid: 00000000-0000-4000-8000-000000000000, tls: true, servername: guslef2w8oz12wv.ymj.xx.kg, network: ws, ws-opts: {path: /@Marisa_kristi}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_3, server: 103.127.243.59, port: 56738, type: vmess, uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/ABCDE]}, udp: true}
@@ -55,6 +56,7 @@ proxies:
   - {name: 🇯🇵 日本|@ripaojiedian, server: 18.183.150.2, port: 47655, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 _KR_韩国, server: okrs01.7770123.xyz, port: 15219, type: hysteria2, password: ff488c48-b745-4d65-a6a1-0339be0b7fd7, auth: ff488c48-b745-4d65-a6a1-0339be0b7fd7, sni: okrs01.7770123.xyz, skip-cert-verify: false, alpn: [h3], udp: true}
   - {name: 🇰🇷 韩国 - 首尔特别市 - 1, server: lsv-kr.mmm.uw.to, port: 443, type: vmess, uuid: 60f4e608-94fa-4ee2-931a-e0ace9bd5d13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: lsv-kr.mmm.uw.to, network: ws, ws-opts: {path: /60f4e608-94fa-4ee2-931a-e0ace9bd5d13-vm, headers: {Host: lsv-kr.mmm.uw.to}}, udp: true}
+  - {name: 🇱🇹 立陶宛 V2CROSS.COM, server: 89.116.46.210, port: 443, type: vless, uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1, tls: true, servername: octopusss4.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /tsghdws, headers: {Host: octopusss4.com}}, udp: true}
   - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: 82.38.31.11, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 1, server: 185.22.154.46, port: 20129, type: ss, cipher: aes-256-gcm, password: 32c0ea6e823341a2, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 2, server: 185.22.154.170, port: 8033, type: ss, cipher: aes-256-gcm, password: c5fcdf7829112cb4, udp: true}
@@ -68,12 +70,10 @@ proxies:
   - {name: 🇹🇼 _TW_中国台湾, server: r3mrcg001286ek2.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
   - {name: 🇹🇼 台湾(免费节点)_1, server: r3mrcg007134n4g.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
   - {name: 🇹🇼 台湾(免费节点)_2, server: r3mrcg0011499tl.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: cdn7-39.vk-cdnvideo.com, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇺🇸 美国, server: 43.199.62.44, port: 17005, type: trojan, password: d02e3bb7e6b3333e818d36866d40de6e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 堪薩斯城 - 1, server: 95.182.86.97, port: 1019, type: ss, cipher: aes-256-gcm, password: Rt2YkW, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.130.219, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 167.82.0.1, port: 80, type: vless, uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 199.232.197.131, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.20.6.134, port: 443, type: trojan, password: humanity, sni: www.multiplydose.com, network: ws, ws-opts: {path: /%2Fassignment, headers: {Host: www.multiplydose.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: cdn7-39.vk-cdnvideo.com, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, network: tcp, udp: true}
   - {name: 🇺🇸 美国(免费节点)_1, server: 195.133.2.2, port: 34898, type: ss, cipher: chacha20-ietf-poly1305, password: D1oFY5dskhFuI8PNbSA35s, udp: true}
   - {name: 🇺🇸 美国(免费节点)_10, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 🇺🇸 美国(免费节点)_11, server: 185.162.230.138, port: 2096, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: sni.111000.indevs.in, network: ws, ws-opts: {path: /}, udp: true}
@@ -158,6 +158,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇨🇳 中国 - 上海 - 1
       - 🇩🇪 德国 - Frankfurt Am Main - 3
       - 🇩🇪 德国 - Frankfurt Am Main - 4
@@ -182,6 +183,8 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -251,8 +254,6 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 🇮🇷 _IR_伊朗
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇯🇵 日本 东京Fastly节点 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -265,6 +266,7 @@ proxy-groups:
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
+      - 🇱🇹 立陶宛 V2CROSS.COM
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
@@ -278,15 +280,13 @@ proxy-groups:
       - 🇹🇼 _TW_中国台湾
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
-      - 🇺🇦 乌克兰 V2CROSS.COM
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
-      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -389,6 +389,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇨🇳 中国 - 上海 - 1
       - 🇩🇪 德国 - Frankfurt Am Main - 3
       - 🇩🇪 德国 - Frankfurt Am Main - 4
@@ -413,6 +414,8 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -482,8 +485,6 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 🇮🇷 _IR_伊朗
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇯🇵 日本 东京Fastly节点 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -496,6 +497,7 @@ proxy-groups:
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
+      - 🇱🇹 立陶宛 V2CROSS.COM
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
@@ -509,15 +511,13 @@ proxy-groups:
       - 🇹🇼 _TW_中国台湾
       - 🇹🇼 台湾(免费节点)_1
       - 🇹🇼 台湾(免费节点)_2
-      - 🇺🇦 乌克兰 V2CROSS.COM
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
-      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -743,8 +743,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇯🇵 日本 东京Fastly节点 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -766,9 +764,8 @@ proxy-groups:
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
-      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -874,6 +871,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇩🇪 德国 - Frankfurt Am Main - 3
       - 🇩🇪 德国 - Frankfurt Am Main - 4
       - 🇩🇪 德国 - Frankfurt Am Main - 5
@@ -897,6 +895,8 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -948,11 +948,11 @@ proxy-groups:
       - 🇮🇷 _IR_伊朗
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
+      - 🇱🇹 立陶宛 V2CROSS.COM
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
-      - 🇺🇦 乌克兰 V2CROSS.COM
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -1020,8 +1020,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇯🇵 日本 东京Fastly节点 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -1040,9 +1038,8 @@ proxy-groups:
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
-      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -1145,6 +1142,7 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇩🇪 德国 - Frankfurt Am Main - 3
       - 🇩🇪 德国 - Frankfurt Am Main - 4
       - 🇩🇪 德国 - Frankfurt Am Main - 5
@@ -1168,6 +1166,8 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_2
       - 🇫🇷 法国(免费节点)_3
       - 🇬🇧 _GB_英国
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_10
       - 🇬🇧 英国(免费节点)_11
@@ -1219,11 +1219,11 @@ proxy-groups:
       - 🇮🇷 _IR_伊朗
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
+      - 🇱🇹 立陶宛 V2CROSS.COM
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
-      - 🇺🇦 乌克兰 V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
