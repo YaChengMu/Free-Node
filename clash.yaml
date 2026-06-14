@@ -61,10 +61,12 @@ proxies:
   - {name: 🇭🇰 香港3, server: 16.162.192.48, port: 2008, type: trojan, password: d02e3bb7e6b3333e818d36866d40de6e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 16.162.220.24, port: 1035, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 18.166.75.58, port: 11035, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇷 克罗地亚 V2CROSS.COM, server: 46.229.243.123, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, servername: cdn9-33.vk-cdnvideo.com, network: tcp, udp: true}
+  - {name: 🇭🇷 克罗地亚 V2CROSS.COM 2, server: cdn3-87.vk-cdnvideo.com, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, servername: cdn3-87.vk-cdnvideo.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.88.241.133, port: 8443, type: hysteria2, password: 71b0bd15-a03a-481e-a52d-74042c8db157, auth: 71b0bd15-a03a-481e-a52d-74042c8db157, sni: slopllex.app, udp: true}
   - {name: 🇮🇷 _IR_伊朗, server: 185.143.233.122, port: 80, type: vless, uuid: 661f5954-7f13-4c5f-add8-a7c0b250aabd, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: gre.greentab.ir}}, udp: true}
-  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: iiserver.imagician.shop, port: 49236, type: vmess, uuid: f516466e-c42d-4d55-979e-252d595d3dc8, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: 🇯🇵 日本, server: 18.181.230.17, port: 5408, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 东京Fastly节点, server: 151.101.109.223, port: 443, type: vless, uuid: 62d26257-546d-a267-c4f1-fb19de937929, tls: true, alpn: ["h3,h2,http/1.1"], servername: global.fastly.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: global.fastly.com}}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_1, server: cu1.ainivp.com, port: 33105, type: vmess, uuid: 9204afcd-026e-781f-1abc-c03efabd1344, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: cu1.ainivp.com}}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_2, server: 2a02:6ea0:d32f::f8fe:349b, port: 24202, type: vmess, uuid: b20a7042-70ff-4376-a79f-b68f9edb7519, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999-newpac/fanqiang}, udp: true}
   - {name: 🇯🇵 日本2, server: 95.40.55.96, port: 55973, type: trojan, password: d02e3bb7e6b3333e818d36866d40de6e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -72,25 +74,24 @@ proxies:
   - {name: 🇰🇷 _KR_韩国, server: okrs01.7770123.xyz, port: 15219, type: hysteria2, password: ff488c48-b745-4d65-a6a1-0339be0b7fd7, auth: ff488c48-b745-4d65-a6a1-0339be0b7fd7, sni: okrs01.7770123.xyz, skip-cert-verify: false, alpn: [h3], udp: true}
   - {name: 🇰🇷 韩国 - 首尔特别市 - 1, server: lsv-kr.mmm.uw.to, port: 443, type: vmess, uuid: 60f4e608-94fa-4ee2-931a-e0ace9bd5d13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: lsv-kr.mmm.uw.to, network: ws, ws-opts: {path: /60f4e608-94fa-4ee2-931a-e0ace9bd5d13-vm, headers: {Host: lsv-kr.mmm.uw.to}}, udp: true}
   - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: 82.38.31.11, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 185.229.191.10, port: 8443, type: vless, uuid: 394f6981-a782-4779-9a85-e6cf22935d93, tls: true, servername: ams1.fromblancwithlove.com, network: tcp, udp: true}
   - {name: 🇳🇱 荷兰(免费节点)_1, server: nl08.abvpn.ru, port: 443, type: vless, uuid: 95e118b4-4352-4218-8493-f20cc7fc467a, tls: true, servername: nl08.abvpn.ru, network: ws, ws-opts: {path: /websocket, headers: {Host: nl08.abvpn.ru}}, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.254, port: 443, type: trojan, password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd, sni: www.directorypipeline.click, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 1, server: 185.22.154.46, port: 20129, type: ss, cipher: aes-256-gcm, password: 32c0ea6e823341a2, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 2, server: 185.22.154.170, port: 8033, type: ss, cipher: aes-256-gcm, password: c5fcdf7829112cb4, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 3, server: 185.22.154.212, port: 50129, type: ss, cipher: aes-256-gcm, password: cfe685726eea2c4b, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 195.58.48.56, port: 50801, type: ss, cipher: aes-256-gcm, password: 1a87017d0bf57f34, udp: true}
   - {name: 🇸🇬 新加坡, server: 16.162.192.48, port: 48738, type: trojan, password: d02e3bb7e6b3333e818d36866d40de6e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡3, server: 16.163.154.228, port: 45744, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇹🇼 _TW_中国台湾, server: r3mrcg001286ek2.cybervena.com, port: 50099, type: ss, cipher: chacha20-ietf-poly1305, password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4, udp: true}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: cdn9-33.vk-cdnvideo.com, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, servername: cdn9-33.vk-cdnvideo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM 2, server: cdn3-87.vk-cdnvideo.com, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, servername: cdn3-87.vk-cdnvideo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM 3, server: 95.133.245.163, port: 8443, type: vless, uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f, tls: true, servername: cdn3-87.vk-cdnvideo.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇺🇸 _US_美国, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 _US_美国_1, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 _US_美国_2, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国, server: 95.40.55.96, port: 17005, type: trojan, password: d02e3bb7e6b3333e818d36866d40de6e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - 堪薩斯城 - 1, server: 95.182.86.97, port: 1019, type: ss, cipher: aes-256-gcm, password: Rt2YkW, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.0.1, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 149.28.255.6, port: 816, type: ss, cipher: chacha20-ietf-poly1305, password: GyZ5Xo0ht41vYmW3H4, udp: true}
-  - {name: 🇺🇸 美国 教育网, server: 140.245.27.220, port: 51000, type: hysteria2, password: 940f51d6-e0a4-4add-b96b-328e4a84b642, auth: 940f51d6-e0a4-4add-b96b-328e4a84b642, sni: cn.cremedelamer.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.174.117, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.185.178, port: 443, type: vless, uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b, tls: true, servername: hhlfy.twiladaphne.ndjp.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: hhlfy.twiladaphne.ndjp.net}}, udp: true}
+  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.66.219, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇺🇸 美国 洛杉矶, server: 66.81.247.155, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
   - {name: 🇺🇸 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司, server: 207.211.214.42, port: 8443, type: vless, uuid: 394f6981-a782-4779-9a85-e6cf22935d93, tls: true, servername: bru-be-01.fromblancwithlove.com, network: tcp, udp: true}
   - {name: 🇺🇸 美国(免费节点)_1, server: 198.41.208.251, port: 443, type: vless, uuid: 7872e85d-fd7e-4472-99e5-49cb48d0f668, tls: true, servername: freepol2.3r8sv.workers.dev, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_10, server: 132.243.223.219, port: 8443, type: vless, uuid: 785c7771-8d7f-48ca-bbc2-1a22e360d4d0, tls: true, servername: max.ru, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: max.ru}, udp: true}
@@ -158,7 +159,6 @@ proxies:
   - {name: 🇺🇸 美国(免费节点)_8, server: 104.18.15.19, port: 80, type: vless, uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc, tls: true, servername: vahidqaz-ft33vt-1.vahidqaz.workers.dev, network: ws, ws-opts: {path: "/?ed=2560"}, udp: true}
   - {name: 🇺🇸 美国2, server: 16.163.144.103, port: 17005, type: trojan, password: d02e3bb7e6b3333e818d36866d40de6e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 43.198.12.196, port: 17801, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点, server: 173.245.49.22, port: 8880, type: vless, uuid: b6e42688-3076-47aa-9345-6ff10fe1a36b, tls: false, network: ws, ws-opts: {path: /sync, headers: {Host: wandering-rice-1ac4.cloudfelar.workers.dev}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -255,10 +255,12 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
       - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇷 _IR_伊朗
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇯🇵 日本
+      - 🇯🇵 日本 东京Fastly节点
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本2
@@ -269,13 +271,14 @@ proxy-groups:
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇳🇱 荷兰(免费节点)_1
       - 🇳🇱 荷兰(免费节点)_2
       - 🇳🇱 荷兰(免费节点)_3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
       - 🇸🇬 新加坡2|@ripaojiedian
@@ -283,17 +286,15 @@ proxy-groups:
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇹🇼 _TW_中国台湾
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇺🇦 乌克兰 V2CROSS.COM 2
-      - 🇺🇦 乌克兰 V2CROSS.COM 3
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 教育网
+      - 🇺🇸 美国 洛杉矶
       - 🇺🇸 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
@@ -375,8 +376,6 @@ proxy-groups:
       - 🇺🇸 美国4
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻 ‍指定
     type: select
     proxies:
@@ -448,10 +447,12 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
       - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇷 _IR_伊朗
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇯🇵 日本
+      - 🇯🇵 日本 东京Fastly节点
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本2
@@ -462,13 +463,14 @@ proxy-groups:
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇳🇱 荷兰(免费节点)_1
       - 🇳🇱 荷兰(免费节点)_2
       - 🇳🇱 荷兰(免费节点)_3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
       - 🇸🇬 新加坡2|@ripaojiedian
@@ -476,17 +478,15 @@ proxy-groups:
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇹🇼 _TW_中国台湾
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇺🇦 乌克兰 V2CROSS.COM 2
-      - 🇺🇦 乌克兰 V2CROSS.COM 3
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 教育网
+      - 🇺🇸 美国 洛杉矶
       - 🇺🇸 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
@@ -568,8 +568,6 @@ proxy-groups:
       - 🇺🇸 美国4
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇿🇦 南非 V2CROSS.COM
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -686,6 +684,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本
+      - 🇯🇵 日本 东京Fastly节点
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本2
@@ -704,9 +703,10 @@ proxy-groups:
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 教育网
+      - 🇺🇸 美国 洛杉矶
       - 🇺🇸 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
@@ -788,7 +788,6 @@ proxy-groups:
       - 🇺🇸 美国4
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -847,23 +846,21 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_9
       - 🇬🇧 _GB_英国
       - 🇬🇧 英国(免费节点)
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
       - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇷 _IR_伊朗
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇳🇱 荷兰(免费节点)_1
       - 🇳🇱 荷兰(免费节点)_2
       - 🇳🇱 荷兰(免费节点)_3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇺🇦 乌克兰 V2CROSS.COM 2
-      - 🇺🇦 乌克兰 V2CROSS.COM 3
-      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -919,6 +916,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本
+      - 🇯🇵 日本 东京Fastly节点
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本2
@@ -934,9 +932,10 @@ proxy-groups:
       - 🇺🇸 _US_美国_2
       - 🇺🇸 美国
       - 🇺🇸 美国 - 堪薩斯城 - 1
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 教育网
+      - 🇺🇸 美国 洛杉矶
       - 🇺🇸 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
@@ -1018,7 +1017,6 @@ proxy-groups:
       - 🇺🇸 美国4
       - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国弗吉尼亚州阿什本 CloudFlare节点
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
@@ -1074,23 +1072,21 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_9
       - 🇬🇧 _GB_英国
       - 🇬🇧 英国(免费节点)
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
       - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇷 _IR_伊朗
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - 首尔特别市 - 1
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
+      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇳🇱 荷兰(免费节点)_1
       - 🇳🇱 荷兰(免费节点)_2
       - 🇳🇱 荷兰(免费节点)_3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇷🇺 俄罗斯 - 莫斯科 - 2
       - 🇷🇺 俄罗斯 - 莫斯科 - 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇺🇦 乌克兰 V2CROSS.COM 2
-      - 🇺🇦 乌克兰 V2CROSS.COM 3
-      - 🇿🇦 南非 V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
