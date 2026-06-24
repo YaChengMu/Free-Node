@@ -438,7 +438,7 @@ proxies:
   - {name: 🇦🇺 澳大利亚 037, server: 43.201.103.12, port: 29930, type: vmess, uuid: f46b2e2a-e02c-437a-833c-023410840a80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f46b2e2a-e02c-437a-833c-023410840a80, headers: {Host: 43.201.103.12}}, udp: true}
   - {name: 🇦🇺 澳大利亚 038, server: 140.83.63.38, port: 24445, type: vmess, uuid: 94c5ef37-4d82-49f9-c624-f01259374a17, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 澳大利亚 039, server: 43.201.253.222, port: 26540, type: vmess, uuid: c841c903-7657-41f7-bf55-b41dd9456179, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /c841c903-7657-41f7-bf55-b41dd9456179, headers: {Host: 43.201.253.222}}, udp: true}
-  - {name: 🇦🇺 澳大利亚 V2CROSS.COM, server: 104.156.233.234, port: 27116, type: ss, cipher: chacha20-ietf-poly1305, password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E, udp: true}
+  - {name: 🇦🇺 澳大利亚 Fastly节点 2, server: 151.101.171.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇧🇪 比利时 001, server: 57.183.13.23, port: 2008, type: trojan, password: 2009158055b4d37156cee7082c50ffde, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇧🇪 比利时 002, server: 57.183.13.23, port: 6357, type: trojan, password: 2009158055b4d37156cee7082c50ffde, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇧🇪 比利时 003, server: 57.183.13.23, port: 49277, type: trojan, password: 2009158055b4d37156cee7082c50ffde, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -910,6 +910,8 @@ proxies:
   - {name: 🇩🇪 德国 117, server: cd1.consolgame.ir, port: 2087, type: vless, uuid: 77fc16d2-5145-4aa3-952c-7caaf25cd921, tls: true, servername: cd-dc2.consolegamenet.ir, network: ws, ws-opts: {path: /path, headers: {Host: cd-dc2.consolegamenet.ir}}, udp: true}
   - {name: 🇩🇪 德国 119, server: www.parzort.ir, port: 443, type: vless, uuid: 8402d3e8-77ca-4181-a991-fe9571fb283d, tls: true, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}, udp: true}
   - {name: 🇩🇪 德国 120, server: 68.183.65.82, port: 2083, type: vless, uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384, tls: true, servername: lucky-sky-0104.alvlirm444.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: lucky-sky-0104.alvlirm444.workers.dev}}, udp: true}
+  - {name: 🇩🇪 德国 Fastly节点, server: 151.101.112.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇩🇪 德国 Fastly节点 2, server: 151.101.115.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇩🇪 德国(免费节点)_1, server: 31.185.108.30, port: 8880, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: true, servername: vms.lifetime23.workers.dev, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇩🇪 德国(免费节点)_2, server: 94.156.122.251, port: 443, type: vless, uuid: ca428a2e-7f82-4030-851b-cab731a5645a, tls: false, network: tcp, udp: true}
   - {name: 🇩🇪 德国(免费节点)_3, server: fsxhh.fastshop1.com, port: 443, type: vless, uuid: 4c9b304f-ec00-41af-be5b-aa3f22ed430e, tls: false, network: tcp, udp: true}
@@ -935,7 +937,6 @@ proxies:
   - {name: 🇫🇮 芬兰 006, server: 95.216.151.125, port: 2096, type: vless, uuid: 8b596857-5c40-44f9-b1e7-ff573e25d009, tls: true, servername: beat.miracletaxbits.top., client-fingerprint: chrome, network: ws, ws-opts: {path: /2096/, headers: {Host: beat.miracletaxbits.top.}}, udp: true}
   - {name: 🇫🇮 芬兰 007, server: 95.216.171.50, port: 8880, type: vless, uuid: df0680ca-e43c-498d-ed86-8e196eedd012, tls: true, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}, udp: true}
   - {name: 🇫🇮 芬兰 008, server: poorivpn.soft20.ir, port: 443, type: vless, uuid: 678707ae-1ed7-42d0-af14-7cfb351c9510, tls: true, servername: poorivpn.soft20.ir, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram-poori_vpn-poori_vpn, headers: {Host: poorivpn.soft20.ir}}, udp: true}
-  - {name: 🇫🇮 芬兰 赫尔辛基Fastly节点, server: 151.101.247.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇫🇷 _FR_法国, server: 194.226.169.36, port: 443, type: vless, uuid: 4706d9c3-eec0-4666-9d84-e608a200e872, tls: true, reality-opts: {public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk, short-id: "b8aa" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇫🇷 法国 - 巴黎 - 1, server: 13.38.243.57, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国 001, server: 141.11.139.82, port: 8080, type: vmess, uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: download.windowsupdate.com}}, udp: true}
@@ -1167,8 +1168,6 @@ proxies:
   - {name: 🇬🇧 英国 V2CROSS.COM, server: 185.126.236.44, port: 443, type: trojan, password: BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL, sni: www.mesaly.click, udp: true}
   - {name: 🇬🇧 英国(免费节点), server: 152.233.28.200, port: 8443, type: vless, uuid: 394f6981-a782-4779-9a85-e6cf22935d93, tls: true, servername: ams1.fromblancwithlove.com, network: tcp, udp: true}
   - {name: 🇬🇷 希腊 001, server: 185.235.241.230, port: 8443, type: vless, uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0, tls: true, servername: mnwzf164yo.myspdmmeti.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: mnwzf164yo.myspdmmeti.com}}, udp: true}
-  - {name: 🇬🇷 希腊 V2CROSS.COM, server: 92.119.35.119, port: 443, type: trojan, password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇷 希腊 V2CROSS.COM 2, server: 92.119.35.127, port: 443, type: trojan, password: aR9EJWEB2Jp3m6xKJK=Ct7kLyqFSU-iDBR, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: li.feng3d.com, port: 8388, type: ss, cipher: aes-256-gcm, password: feng3d@ss2025, udp: true}
   - {name: 🇭🇰 _HK_中国香港_1, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 _HK_中国香港_2, server: 8.210.239.58, port: 443, type: vmess, uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: n1761296889.4u9ma.icu, network: ws, ws-opts: {path: /}, udp: true}
@@ -1250,6 +1249,7 @@ proxies:
   - {name: 🇮🇷 伊朗 058, server: tuns.textin.ir, port: 443, type: vless, uuid: f5ed21e1-926c-4a5c-9951-8da239c0d445, tls: true, servername: tuns.textin.ir, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdn-sync, headers: {Host: tuns.textin.ir}}, udp: true}
   - {name: 🇮🇹 意大利 001, server: 151.101.242.172, port: 80, type: vless, uuid: 62915088-0f71-4592-bf82-3f02d4db1239, tls: true, servername: Germany.ss.ss, network: ws, ws-opts: {path: "WEDBAZ?ed=2048", headers: {Host: Germany.ss.ss}}, udp: true}
   - {name: 🇮🇹 意大利 002, server: 31.14.135.127, port: 7035, type: vless, uuid: 7d27c544-135d-41a2-bd84-713b8af4f3c2, tls: true, servername: filimo.com, network: ws, ws-opts: {path: /, headers: {Host: filimo.com}}, udp: true}
+  - {name: 🇮🇹 意大利 米兰Fastly节点, server: 151.101.242.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇯🇵 日本, server: 18.179.204.16, port: 45691, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 001, server: 146.56.45.242, port: 33333, type: vmess, uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: download.windowsupdate.com}}, udp: true}
   - {name: 🇯🇵 日本 002, server: 91.200.242.187, port: 14954, type: vmess, uuid: efb748ec-c921-42a1-ac9e-1d5485d6c447, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /download, headers: {Host: download.windowsupdate.com}}, udp: true}
@@ -1561,6 +1561,7 @@ proxies:
   - {name: 🇸🇪 瑞典 023, server: 148.135.14.99, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1704188270531, headers: {Host: www.20414124.xyz}}, udp: true}
   - {name: 🇸🇪 瑞典 024, server: 148.135.31.171, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1703924658447, headers: {Host: www.72672771.xyz}}, udp: true}
   - {name: 🇸🇪 瑞典 025, server: 148.135.33.140, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1704188270531, headers: {Host: www.31270022.xyz}}, udp: true}
+  - {name: 🇸🇪 瑞典 Fastly节点, server: 151.101.84.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇸🇪 瑞典(免费节点)_1, server: 45.159.12.15, port: 8443, type: vless, uuid: 394f6981-a782-4779-9a85-e6cf22935d93, tls: true, servername: ams1.fromblancwithlove.com, network: tcp, udp: true}
   - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: 13.250.63.234, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
   - {name: 🇸🇬 新加坡 - 新加坡 - 2, server: 54.169.219.98, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
@@ -2289,7 +2290,6 @@ proxies:
   - {name: 🇺🇸 美国 199, server: 104.16.3.5, port: 443, type: vless, uuid: 963816bd-b6e7-4648-abff-8af25bc07d87, tls: true, servername: gulf-d96.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ecY3gziM8W6ud5yj?ed", headers: {Host: gulf-d96.pages.dev}}, udp: true}
   - {name: 🇺🇸 美国 200, server: 85.209.155.9, port: 8880, type: vless, uuid: 964582fa-d157-491e-9ce7-bb3e2df57625, tls: true, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}, udp: true}
   - {name: 🇺🇸 美国 201, server: 104.17.147.22, port: 2096, type: vless, uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc, tls: true, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 202, server: 151.101.171.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇺🇸 美国 203, server: zula.ir, port: 2096, type: vless, uuid: 97909ffd-6da0-4893-9d63-00e72ad55256, tls: true, servername: frAgteSt.JaHANGiRKh.eU.orG, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512", headers: {Host: frAgteSt.JaHANGiRKh.eU.orG}}, udp: true}
   - {name: 🇺🇸 美国 206, server: 38.180.26.251, port: 7035, type: vless, uuid: 9b1b61ca-2b67-4091-a777-5baa7a8f741f, tls: true, servername: filimo.com, network: ws, ws-opts: {path: /, headers: {Host: filimo.com}}, udp: true}
   - {name: 🇺🇸 美国 207, server: 54.36.115.88, port: 15298, type: vless, uuid: 9c42231c-c24e-4cbd-8491-29a29e171ff0, tls: true, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}, udp: true}
@@ -3054,17 +3054,11 @@ proxies:
   - {name: 🇺🇸 美国 997, server: 172.67.193.108, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gwdef.sbs}}, udp: true}
   - {name: 🇺🇸 美国 998, server: 104.21.83.115, port: 443, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link, headers: {Host: hms02.fxiaomi.sbs}}, udp: true}
   - {name: 🇺🇸 美国 999, server: 104.16.68.38, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}, udp: true}
-  - {name: 🇺🇸 美国 Akamai科技公司CDN网络节点, server: 172.234.202.34, port: 24833, type: ss, cipher: chacha20-ietf-poly1305, password: hRd=IXkjozMEKLeGR_0q09jtwly5J2la2O, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.75.224, port: 443, type: vless, uuid: b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c, tls: true, servername: server-ir-3.ariyuz.org, network: ws, ws-opts: {path: /page=2, headers: {Host: server-ir-3.ariyuz.org}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.20.6.134, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, alpn: [http%2F1.1], skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.130.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点 2, server: 151.101.192.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 Fastly节点, server: 151.101.71.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 207.126.167.162, port: 443, type: trojan, password: GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K, udp: true}
-  - {name: 🇺🇸 美国 加利福尼亚州洛杉矶Fastly节点, server: 151.101.24.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.54.64.247, port: 443, type: trojan, password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk, udp: true}
-  - {name: 🇺🇸 美国 得克萨斯州达拉斯Fastly节点, server: 151.101.49.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
-  - {name: 🇺🇸 美国 纽约Fastly节点, server: 151.101.21.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇺🇸 美国 Alabanza, server: 65.109.182.211, port: 8044, type: vless, uuid: 6e25f7b4-efce-425a-af98-3f310623bfa2, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [play.google.com]}}, udp: true}
+  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.193.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇺🇸 美国 伊利诺伊州芝加哥Fastly节点, server: 151.101.44.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: /, headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇺🇸 美国 弗吉尼亚州阿什本Fastly节点, server: 151.101.34.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
+  - {name: 🇺🇸 美国 德克萨斯州休斯顿Fastly节点, server: 151.101.180.151, port: 80, type: vless, uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846, tls: false, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳", headers: {Host: max-gb1.global.ssl.fastly.net}}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_10, server: 192.169.220.240, port: 443, type: vless, uuid: b991b390-dd0f-4061-9150-bee0cb467bce, tls: true, servername: opu-ao6.pages.dev, network: ws, ws-opts: {path: "/?https://t.me/WangCai2🇨🇳"}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_100, server: 152.233.28.201, port: 8443, type: vless, uuid: 394f6981-a782-4779-9a85-e6cf22935d93, tls: true, servername: ams1.fromblancwithlove.com, network: tcp, udp: true}
   - {name: 🇺🇸 美国(免费节点)_101, server: tinkered-pennies-puppies.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hbGrpfvNrJsUmKmPbR3iY2, udp: true}
@@ -3170,6 +3164,7 @@ proxies:
   - {name: 🇻🇳 越南 002, server: max1.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AnhBin, headers: {Host: max1.flash5g.com}}, udp: true}
   - {name: 🇻🇳 越南 003, server: 103.232.54.160, port: 80, type: vmess, uuid: d95cded2-816a-4b5d-bb21-6180bd6d4d3a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zenpn.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
   - {name: 🇿🇦 南非 001, server: 102.177.189.101, port: 443, type: vmess, uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/4fc128ce-4845-11f0-a948-6a75f667b472?ed=2365", headers: {Host: 4fc128ce-4845-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat}}, udp: true}
+  - {name: 🇿🇦 南非 002, server: 102.177.176.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: true, servername: jp.laoyoutiao.link, network: ws, ws-opts: {path: /, headers: {Host: jp.laoyoutiao.link}}, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -3637,7 +3632,7 @@ proxy-groups:
       - 🇦🇺 澳大利亚 038
       - 🇦🇺 澳大利亚 039
       - 🇦🇺 澳大利亚 Fastly节点
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇦🇺 澳大利亚 Fastly节点 2
       - 🇧🇪 比利时 001
       - 🇧🇪 比利时 002
       - 🇧🇪 比利时 003
@@ -3812,7 +3807,6 @@ proxy-groups:
       - 🇨🇦 加拿大 048
       - 🇨🇦 加拿大 049
       - 🇨🇦 加拿大 050
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Fastly节点
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
       - 🇨🇦 加拿大(免费节点)_11
@@ -4114,6 +4108,8 @@ proxy-groups:
       - 🇩🇪 德国 117
       - 🇩🇪 德国 119
       - 🇩🇪 德国 120
+      - 🇩🇪 德国 Fastly节点
+      - 🇩🇪 德国 Fastly节点 2
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇩🇪 德国(免费节点)_3
@@ -4139,7 +4135,6 @@ proxy-groups:
       - 🇫🇮 芬兰 006
       - 🇫🇮 芬兰 007
       - 🇫🇮 芬兰 008
-      - 🇫🇮 芬兰 赫尔辛基Fastly节点
       - 🇫🇷 _FR_法国
       - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 001
@@ -4372,16 +4367,16 @@ proxy-groups:
       - 🇬🇧 英国 041
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 伦敦Fastly节点
+      - 🇬🇧 英国 伯克郡斯劳Fastly节点
       - 🇬🇧 英国(免费节点)
       - 🇬🇷 希腊 001
-      - 🇬🇷 希腊 V2CROSS.COM
-      - 🇬🇷 希腊 V2CROSS.COM 2
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 _HK_中国香港_1
       - 🇭🇰 _HK_中国香港_2
       - 🇭🇰 _HK_中国香港_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 Fastly节点
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_10
       - 🇭🇰 香港(免费节点)_11
@@ -4422,6 +4417,7 @@ proxy-groups:
       - 🇮🇳 印度 007
       - 🇮🇳 印度 008
       - 🇮🇳 印度 010
+      - 🇮🇳 印度 金奈Fastly节点
       - 🇮🇷 _IR_伊朗
       - 🇮🇷 伊朗 001
       - 🇮🇷 伊朗 003
@@ -4463,6 +4459,7 @@ proxy-groups:
       - 🇮🇷 伊朗 058
       - 🇮🇹 意大利 001
       - 🇮🇹 意大利 002
+      - 🇮🇹 意大利 米兰Fastly节点
       - 🇯🇵 日本
       - 🇯🇵 日本 001
       - 🇯🇵 日本 002
@@ -4785,6 +4782,7 @@ proxy-groups:
       - 🇸🇪 瑞典 023
       - 🇸🇪 瑞典 024
       - 🇸🇪 瑞典 025
+      - 🇸🇪 瑞典 Fastly节点
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇬 新加坡
@@ -6313,18 +6311,13 @@ proxy-groups:
       - 🇺🇸 美国 997
       - 🇺🇸 美国 998
       - 🇺🇸 美国 999
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Alabanza
       - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇺🇸 美国 Fastly全球Anycast节点 2
       - 🇺🇸 美国 Fastly节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Fastly节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 得克萨斯州达拉斯Fastly节点
-      - 🇺🇸 美国 纽约Fastly节点
+      - 🇺🇸 美国 伊利诺伊州芝加哥Fastly节点
+      - 🇺🇸 美国 弗吉尼亚州阿什本Fastly节点
+      - 🇺🇸 美国 德克萨斯州休斯顿Fastly节点
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_100
@@ -6470,6 +6463,7 @@ proxy-groups:
       - 🇻🇳 越南(免费节点)
       - 🇿🇦 南非 001
       - 🇿🇦 南非 002
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻 ‍指定
     type: select
     proxies:
@@ -6912,7 +6906,7 @@ proxy-groups:
       - 🇦🇺 澳大利亚 038
       - 🇦🇺 澳大利亚 039
       - 🇦🇺 澳大利亚 Fastly节点
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇦🇺 澳大利亚 Fastly节点 2
       - 🇧🇪 比利时 001
       - 🇧🇪 比利时 002
       - 🇧🇪 比利时 003
@@ -7087,7 +7081,6 @@ proxy-groups:
       - 🇨🇦 加拿大 048
       - 🇨🇦 加拿大 049
       - 🇨🇦 加拿大 050
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Fastly节点
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
       - 🇨🇦 加拿大(免费节点)_11
@@ -7389,6 +7382,8 @@ proxy-groups:
       - 🇩🇪 德国 117
       - 🇩🇪 德国 119
       - 🇩🇪 德国 120
+      - 🇩🇪 德国 Fastly节点
+      - 🇩🇪 德国 Fastly节点 2
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇩🇪 德国(免费节点)_3
@@ -7414,7 +7409,6 @@ proxy-groups:
       - 🇫🇮 芬兰 006
       - 🇫🇮 芬兰 007
       - 🇫🇮 芬兰 008
-      - 🇫🇮 芬兰 赫尔辛基Fastly节点
       - 🇫🇷 _FR_法国
       - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 001
@@ -7647,16 +7641,16 @@ proxy-groups:
       - 🇬🇧 英国 041
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 伦敦Fastly节点
+      - 🇬🇧 英国 伯克郡斯劳Fastly节点
       - 🇬🇧 英国(免费节点)
       - 🇬🇷 希腊 001
-      - 🇬🇷 希腊 V2CROSS.COM
-      - 🇬🇷 希腊 V2CROSS.COM 2
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 _HK_中国香港_1
       - 🇭🇰 _HK_中国香港_2
       - 🇭🇰 _HK_中国香港_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 Fastly节点
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_10
       - 🇭🇰 香港(免费节点)_11
@@ -7697,6 +7691,7 @@ proxy-groups:
       - 🇮🇳 印度 007
       - 🇮🇳 印度 008
       - 🇮🇳 印度 010
+      - 🇮🇳 印度 金奈Fastly节点
       - 🇮🇷 _IR_伊朗
       - 🇮🇷 伊朗 001
       - 🇮🇷 伊朗 003
@@ -7738,6 +7733,7 @@ proxy-groups:
       - 🇮🇷 伊朗 058
       - 🇮🇹 意大利 001
       - 🇮🇹 意大利 002
+      - 🇮🇹 意大利 米兰Fastly节点
       - 🇯🇵 日本
       - 🇯🇵 日本 001
       - 🇯🇵 日本 002
@@ -8060,6 +8056,7 @@ proxy-groups:
       - 🇸🇪 瑞典 023
       - 🇸🇪 瑞典 024
       - 🇸🇪 瑞典 025
+      - 🇸🇪 瑞典 Fastly节点
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇬 新加坡
@@ -9588,18 +9585,13 @@ proxy-groups:
       - 🇺🇸 美国 997
       - 🇺🇸 美国 998
       - 🇺🇸 美国 999
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Alabanza
       - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇺🇸 美国 Fastly全球Anycast节点 2
       - 🇺🇸 美国 Fastly节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Fastly节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 得克萨斯州达拉斯Fastly节点
-      - 🇺🇸 美国 纽约Fastly节点
+      - 🇺🇸 美国 伊利诺伊州芝加哥Fastly节点
+      - 🇺🇸 美国 弗吉尼亚州阿什本Fastly节点
+      - 🇺🇸 美国 德克萨斯州休斯顿Fastly节点
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_100
@@ -9745,6 +9737,7 @@ proxy-groups:
       - 🇻🇳 越南(免费节点)
       - 🇿🇦 南非 001
       - 🇿🇦 南非 002
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -9803,6 +9796,7 @@ proxy-groups:
       - 🇭🇰 _HK_中国香港_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 Fastly节点
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_10
       - 🇭🇰 香港(免费节点)_11
@@ -9990,6 +9984,7 @@ proxy-groups:
       - 🇭🇰 _HK_中国香港_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 Fastly节点
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_10
       - 🇭🇰 香港(免费节点)_11
@@ -11561,18 +11556,13 @@ proxy-groups:
       - 🇺🇸 美国 997
       - 🇺🇸 美国 998
       - 🇺🇸 美国 999
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Alabanza
       - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇺🇸 美国 Fastly全球Anycast节点 2
       - 🇺🇸 美国 Fastly节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Fastly节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 得克萨斯州达拉斯Fastly节点
-      - 🇺🇸 美国 纽约Fastly节点
+      - 🇺🇸 美国 伊利诺伊州芝加哥Fastly节点
+      - 🇺🇸 美国 弗吉尼亚州阿什本Fastly节点
+      - 🇺🇸 美国 德克萨斯州休斯顿Fastly节点
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_100
@@ -12156,7 +12146,7 @@ proxy-groups:
       - 🇦🇺 澳大利亚 038
       - 🇦🇺 澳大利亚 039
       - 🇦🇺 澳大利亚 Fastly节点
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇦🇺 澳大利亚 Fastly节点 2
       - 🇧🇪 比利时 001
       - 🇧🇪 比利时 002
       - 🇧🇪 比利时 003
@@ -12331,7 +12321,6 @@ proxy-groups:
       - 🇨🇦 加拿大 048
       - 🇨🇦 加拿大 049
       - 🇨🇦 加拿大 050
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Fastly节点
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
       - 🇨🇦 加拿大(免费节点)_11
@@ -12486,6 +12475,8 @@ proxy-groups:
       - 🇩🇪 德国 117
       - 🇩🇪 德国 119
       - 🇩🇪 德国 120
+      - 🇩🇪 德国 Fastly节点
+      - 🇩🇪 德国 Fastly节点 2
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇩🇪 德国(免费节点)_3
@@ -12511,7 +12502,6 @@ proxy-groups:
       - 🇫🇮 芬兰 006
       - 🇫🇮 芬兰 007
       - 🇫🇮 芬兰 008
-      - 🇫🇮 芬兰 赫尔辛基Fastly节点
       - 🇫🇷 _FR_法国
       - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 001
@@ -12744,10 +12734,9 @@ proxy-groups:
       - 🇬🇧 英国 041
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 伦敦Fastly节点
+      - 🇬🇧 英国 伯克郡斯劳Fastly节点
       - 🇬🇧 英国(免费节点)
       - 🇬🇷 希腊 001
-      - 🇬🇷 希腊 V2CROSS.COM
-      - 🇬🇷 希腊 V2CROSS.COM 2
       - 🇭🇷 克罗地亚 001
       - 🇭🇷 克罗地亚 002
       - 🇭🇺 匈牙利 001
@@ -12767,6 +12756,7 @@ proxy-groups:
       - 🇮🇳 印度 007
       - 🇮🇳 印度 008
       - 🇮🇳 印度 010
+      - 🇮🇳 印度 金奈Fastly节点
       - 🇮🇷 _IR_伊朗
       - 🇮🇷 伊朗 001
       - 🇮🇷 伊朗 003
@@ -12808,6 +12798,7 @@ proxy-groups:
       - 🇮🇷 伊朗 058
       - 🇮🇹 意大利 001
       - 🇮🇹 意大利 002
+      - 🇮🇹 意大利 米兰Fastly节点
       - 🇰🇬 吉尔吉斯斯坦 001
       - 🇰🇭 柬埔寨 001
       - 🇰🇷 _KR_韩国
@@ -13066,6 +13057,7 @@ proxy-groups:
       - 🇸🇪 瑞典 023
       - 🇸🇪 瑞典 024
       - 🇸🇪 瑞典 025
+      - 🇸🇪 瑞典 Fastly节点
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇮 斯洛文尼亚 001
@@ -13133,6 +13125,7 @@ proxy-groups:
       - 🇻🇳 越南(免费节点)
       - 🇿🇦 南非 001
       - 🇿🇦 南非 002
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -13142,6 +13135,7 @@ proxy-groups:
       - 🇭🇰 _HK_中国香港_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 Fastly节点
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_10
       - 🇭🇰 香港(免费节点)_11
@@ -13323,6 +13317,7 @@ proxy-groups:
       - 🇭🇰 _HK_中国香港_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
+      - 🇭🇰 香港 Fastly节点
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_10
       - 🇭🇰 香港(免费节点)_11
@@ -14885,18 +14880,13 @@ proxy-groups:
       - 🇺🇸 美国 997
       - 🇺🇸 美国 998
       - 🇺🇸 美国 999
-      - 🇺🇸 美国 Akamai科技公司CDN网络节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Alabanza
       - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇺🇸 美国 Fastly全球Anycast节点 2
       - 🇺🇸 美国 Fastly节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州洛杉矶Fastly节点
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 得克萨斯州达拉斯Fastly节点
-      - 🇺🇸 美国 纽约Fastly节点
+      - 🇺🇸 美国 伊利诺伊州芝加哥Fastly节点
+      - 🇺🇸 美国 弗吉尼亚州阿什本Fastly节点
+      - 🇺🇸 美国 德克萨斯州休斯顿Fastly节点
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_100
@@ -15477,7 +15467,7 @@ proxy-groups:
       - 🇦🇺 澳大利亚 038
       - 🇦🇺 澳大利亚 039
       - 🇦🇺 澳大利亚 Fastly节点
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇦🇺 澳大利亚 Fastly节点 2
       - 🇧🇪 比利时 001
       - 🇧🇪 比利时 002
       - 🇧🇪 比利时 003
@@ -15652,7 +15642,6 @@ proxy-groups:
       - 🇨🇦 加拿大 048
       - 🇨🇦 加拿大 049
       - 🇨🇦 加拿大 050
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Fastly节点
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
       - 🇨🇦 加拿大(免费节点)_11
@@ -15807,6 +15796,8 @@ proxy-groups:
       - 🇩🇪 德国 117
       - 🇩🇪 德国 119
       - 🇩🇪 德国 120
+      - 🇩🇪 德国 Fastly节点
+      - 🇩🇪 德国 Fastly节点 2
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇩🇪 德国(免费节点)_3
@@ -15832,7 +15823,6 @@ proxy-groups:
       - 🇫🇮 芬兰 006
       - 🇫🇮 芬兰 007
       - 🇫🇮 芬兰 008
-      - 🇫🇮 芬兰 赫尔辛基Fastly节点
       - 🇫🇷 _FR_法国
       - 🇫🇷 法国 - 巴黎 - 1
       - 🇫🇷 法国 001
@@ -16065,10 +16055,9 @@ proxy-groups:
       - 🇬🇧 英国 041
       - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇧 英国 伦敦Fastly节点
+      - 🇬🇧 英国 伯克郡斯劳Fastly节点
       - 🇬🇧 英国(免费节点)
       - 🇬🇷 希腊 001
-      - 🇬🇷 希腊 V2CROSS.COM
-      - 🇬🇷 希腊 V2CROSS.COM 2
       - 🇭🇷 克罗地亚 001
       - 🇭🇷 克罗地亚 002
       - 🇭🇺 匈牙利 001
@@ -16088,6 +16077,7 @@ proxy-groups:
       - 🇮🇳 印度 007
       - 🇮🇳 印度 008
       - 🇮🇳 印度 010
+      - 🇮🇳 印度 金奈Fastly节点
       - 🇮🇷 _IR_伊朗
       - 🇮🇷 伊朗 001
       - 🇮🇷 伊朗 003
@@ -16129,6 +16119,7 @@ proxy-groups:
       - 🇮🇷 伊朗 058
       - 🇮🇹 意大利 001
       - 🇮🇹 意大利 002
+      - 🇮🇹 意大利 米兰Fastly节点
       - 🇰🇬 吉尔吉斯斯坦 001
       - 🇰🇭 柬埔寨 001
       - 🇰🇷 _KR_韩国
@@ -16387,6 +16378,7 @@ proxy-groups:
       - 🇸🇪 瑞典 023
       - 🇸🇪 瑞典 024
       - 🇸🇪 瑞典 025
+      - 🇸🇪 瑞典 Fastly节点
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇮 斯洛文尼亚 001
@@ -16454,6 +16446,7 @@ proxy-groups:
       - 🇻🇳 越南(免费节点)
       - 🇿🇦 南非 001
       - 🇿🇦 南非 002
+      - 🇿🇦 南非 V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
