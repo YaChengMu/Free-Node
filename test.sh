@@ -247,11 +247,10 @@ url_templates=(
     [2]="https://nodefree.githubrowcontent.com/%s/%s/%s.yaml|year|month_padded|date_full"
     [3]="https://free.datiya.com/uploads/%s-clash.yaml|date_full"
     [4]="https://fastly.jsdelivr.net/gh/ripaojiedian/freenode@main/clash"
-    [5]="https://ghproxy.net/https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml"
-    [6]="https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
-    [7]="https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
-    [8]="https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
-    [9]="https://sfdr.zaixianyouxi.dpdns.org/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full"
+    [5]="https://ghproxy.net/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
+    [6]="https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
+    [7]="https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
+    [8]="https://sfdr.zaixianyouxi.dpdns.org/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full"
 )
 
 # 并行检查所有模板
