@@ -6,7 +6,7 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.125.216.18, port: 443, type: trojan, password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf, skip-cert-verify: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.125.216.68, port: 443, type: trojan, password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf, skip-cert-verify: false, udp: true}
   - {name: 🇦🇺 _AU_澳大利亚, server: tight-possum.rooster465.autos, port: 443, type: trojan, password: PI36027154, skip-cert-verify: true, udp: true}
   - {name: 🇦🇺 澳洲(免费节点), server: ip4.vpean2.qzz.io, port: 443, type: trojan, password: rYuChHcwQZskq9E0zdoR, sni: vpn5.rnmcnm.com, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-79dffb8106db, headers: {Host: vpn5.rnmcnm.com}}, udp: true}
   - {name: 🇨🇦 加拿大(免费节点)_1, server: 104.18.44.198, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
@@ -80,7 +80,7 @@ proxies:
   - {name: 🇬🇧 英国(免费节点)_3, server: 193.219.99.177, port: 8443, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇭🇰 中国 - 香港 - 2, server: 16.162.118.81, port: 9211, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: jpbgp.netvigor.cc, port: 19128, type: trojan, password: OccIqeORGQwiNkwS, sni: yazhou10.dynu.net, udp: true}
+  - {name: 🇭🇰 香港(免费节点)_1, server: jpbgp.netvigor.cc, port: 19128, type: trojan, password: OccIqeORGQwiNkwS, sni: yazhou10.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港(免费节点)_2, server: 103.177.136.42, port: 41943, type: trojan, password: 4f4d1167-ef14-4304-9bce-0740472503ef, sni: az.01.naiun.bilibili.com, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港3, server: 95.40.113.209, port: 2008, type: trojan, password: cbed60798db0624ba9d15418f0d0d9a4, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 18.162.58.236, port: 2008, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -88,10 +88,8 @@ proxies:
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 18.162.144.111, port: 29449, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 16.163.149.119, port: 3941, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 18.166.152.128, port: 11035, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.241.66.76, port: 14605, type: ss, cipher: chacha20-ietf-poly1305, password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY, udp: true}
   - {name: 🇮🇳 印度(免费节点), server: 143.110.247.61, port: 2053, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇯🇵 日本, server: 18.181.219.39, port: 52904, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 日本 东京Choopa数据中心, server: s5975.okgg.top, port: 443, type: vless, uuid: 9794d18f-9280-3553-a7a5-a23da75aca76, tls: true, alpn: [h2%2Chttp%2F1.1], flow: xtls-rprx-vision, servername: u691611uee859f33s5969.wagahaha.xyz, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇯🇵 日本(免费节点)_1, server: 54.199.97.220, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_10, server: 158.247.198.196, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_2, server: 168.138.197.147, port: 12345, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
@@ -148,7 +146,9 @@ proxies:
   - {name: 🇷🇴 罗马尼亚 - Voluntari - 9, server: 84.239.49.42, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 27, server: 193.176.84.32, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 28, server: 193.176.84.37, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.142, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.156, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM 2, server: 185.137.157.145, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM 3, server: 185.137.157.138, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, skip-cert-verify: false, udp: true}
   - {name: 🇸🇪 瑞典(免费节点)_1, server: 193.233.251.202, port: 443, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇪 瑞典(免费节点)_2, server: 62.182.192.163, port: 4433, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇪 瑞典(免费节点)_3, server: 88.216.223.37, port: 8443, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
@@ -156,6 +156,7 @@ proxies:
   - {name: 🇸🇪 瑞典(免费节点)_6, server: 103.177.136.42, port: 47909, type: trojan, password: 4f4d1167-ef14-4304-9bce-0740472503ef, sni: is.01.naiun.bilibili.com, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 _SG_新加坡, server: rich-mule.rooster465.autos, port: 443, type: trojan, password: PI36027154, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡, server: 95.40.113.209, port: 6357, type: trojan, password: cbed60798db0624ba9d15418f0d0d9a4, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 Choopa数据中心, server: 45.32.122.179, port: 23027, type: ss, cipher: chacha20-ietf-poly1305, password: I-bP3lFh.dTG3XitF7XtVK83CZ7rI2Ut=n, udp: true}
   - {name: 🇸🇬 新加坡(免费节点)_2, server: 45.76.183.217, port: 49292, type: vless, uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4, tls: true, servername: vpn47.cc.cd, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 新加坡(免费节点)_3, server: support.zoom.us, port: 80, type: vless, uuid: 84205690-b389-4689-86ad-95cd169ba862, tls: true, servername: free.sahanwickramasinghevip.shop, network: ws, ws-opts: {path: /, headers: {Host: support.zoom.us}}, udp: true}
   - {name: 🇸🇬 新加坡(免费节点)_4, server: 163.128.99.194, port: 443, type: vless, uuid: 3b25e77f-e46e-43b0-b2f2-d5d9660e5246, tls: false, flow: xtls-rprx-vision, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
@@ -164,11 +165,8 @@ proxies:
   - {name: 🇸🇬 新加坡3, server: 16.162.192.195, port: 9149, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 18.162.152.114, port: 41421, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国, server: 95.40.113.209, port: 49277, type: trojan, password: cbed60798db0624ba9d15418f0d0d9a4, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.20.6.134, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.64.153.159, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.21.227.134, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.60.252.118, port: 443, type: trojan, password: NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw, sni: 38.60.252.118, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 2, server: 38.54.80.160, port: 16292, type: ss, cipher: chacha20-ietf-poly1305, password: r_NRe-+WRq2zVqMpCnJtTESlT8WyffHyFy, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.180.221.145, port: 17283, type: ss, cipher: chacha20-ietf-poly1305, password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 2, server: 38.54.64.247, port: 443, type: trojan, password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk, udp: true}
   - {name: 🇺🇸 美国(免费节点)_1, server: cf.090227.xyz, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: cf.090227.xyz}}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_10, server: 151.101.1.242, port: 443, type: trojan, password: Mitivpn, sni: cdn.gamingdll.ir, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn.gamingdll.ir}}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_100, server: 154.37.223.56, port: 43203, type: vmess, uuid: 68bd04a1-0547-46a6-cdb2-c8ac3fce1e67, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
@@ -265,7 +263,8 @@ proxies:
   - {name: 🇺🇸 美国3, server: 16.163.149.119, port: 11993, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 18.162.152.114, port: 44265, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国|@ripaojiedian, server: 16.163.43.143, port: 17005, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇪 委内瑞拉 V2CROSS.COM, server: 158.160.191.91, port: 443, type: vless, uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE, short-id: "34256b39b4ebb864" }, servername: rezerv8.yunus.guru, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇻🇪 委内瑞拉 V2CROSS.COM, server: 158.160.198.162, port: 443, type: vless, uuid: a5ea9247-79f3-4655-aece-3fb51e1e669e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6QIHdF1dvSK8mDPOeWXvGIqJmZ2ySq5fyc7N15h1WFE, short-id: "34256b39b4ebb864" }, servername: rezerv11.yunus.guru, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇻🇳 _VN_越南, server: vn2.yuntong.click, port: 443, type: hysteria2, password: f7cb07a0-e6f9-4d22-a60e-c61854450c89, auth: f7cb07a0-e6f9-4d22-a60e-c61854450c89, sni: vn2.yuntong.click, skip-cert-verify: true, obfs: salamander, obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -373,7 +372,6 @@ proxy-groups:
       - 🇬🇧 英国(免费节点)_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港3
@@ -383,10 +381,8 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇳 印度(免费节点)
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Choopa数据中心
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_10
       - 🇯🇵 日本(免费节点)_2
@@ -446,6 +442,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇪 瑞典(免费节点)_3
@@ -454,6 +452,7 @@ proxy-groups:
       - 🇸🇪 瑞典(免费节点)_6
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 Choopa数据中心
       - 🇸🇬 新加坡(免费节点)_1
       - 🇸🇬 新加坡(免费节点)_2
       - 🇸🇬 新加坡(免费节点)_3
@@ -465,8 +464,6 @@ proxy-groups:
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
       - 🇺🇸 美国(免费节点)_1
@@ -590,6 +587,7 @@ proxy-groups:
       - 🇺🇸 美国|@ripaojiedian
       - 🇻🇪 委内瑞拉 V2CROSS.COM
       - 🇻🇳 _VN_越南
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻 ‍指定
     type: select
     proxies:
@@ -672,7 +670,6 @@ proxy-groups:
       - 🇬🇧 英国(免费节点)_3
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港3
@@ -682,10 +679,8 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇳 印度(免费节点)
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Choopa数据中心
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_10
       - 🇯🇵 日本(免费节点)_2
@@ -745,6 +740,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇪 瑞典(免费节点)_3
@@ -753,6 +750,7 @@ proxy-groups:
       - 🇸🇪 瑞典(免费节点)_6
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 Choopa数据中心
       - 🇸🇬 新加坡(免费节点)_1
       - 🇸🇬 新加坡(免费节点)_2
       - 🇸🇬 新加坡(免费节点)_3
@@ -764,8 +762,6 @@ proxy-groups:
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇸 美国
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
       - 🇺🇸 美国(免费节点)_1
@@ -889,6 +885,7 @@ proxy-groups:
       - 🇺🇸 美国|@ripaojiedian
       - 🇻🇪 委内瑞拉 V2CROSS.COM
       - 🇻🇳 _VN_越南
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -943,7 +940,6 @@ proxy-groups:
     proxies:
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港3
@@ -969,7 +965,6 @@ proxy-groups:
       - 🇨🇳 中国 - 上海 - 1
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港3
@@ -987,6 +982,7 @@ proxy-groups:
     proxies:
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 Choopa数据中心
       - 🇸🇬 新加坡(免费节点)_1
       - 🇸🇬 新加坡(免费节点)_2
       - 🇸🇬 新加坡(免费节点)_3
@@ -1003,7 +999,6 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Choopa数据中心
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_10
       - 🇯🇵 日本(免费节点)_2
@@ -1027,8 +1022,6 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
       - 🇺🇸 美国(免费节点)_1
@@ -1232,7 +1225,6 @@ proxy-groups:
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_2
       - 🇬🇧 英国(免费节点)_3
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇳 印度(免费节点)
       - 🇰🇷 韩国(免费节点)_1
       - 🇰🇷 韩国(免费节点)_2
@@ -1278,6 +1270,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇪 瑞典(免费节点)_3
@@ -1286,12 +1280,12 @@ proxy-groups:
       - 🇸🇪 瑞典(免费节点)_6
       - 🇻🇪 委内瑞拉 V2CROSS.COM
       - 🇻🇳 _VN_越南
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港3
@@ -1311,7 +1305,6 @@ proxy-groups:
       - 🇨🇳 中国 - 上海 - 1
       - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港3
@@ -1326,6 +1319,7 @@ proxy-groups:
     proxies:
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡 Choopa数据中心
       - 🇸🇬 新加坡(免费节点)_1
       - 🇸🇬 新加坡(免费节点)_2
       - 🇸🇬 新加坡(免费节点)_3
@@ -1339,7 +1333,6 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本
-      - 🇯🇵 日本 东京Choopa数据中心
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_10
       - 🇯🇵 日本(免费节点)_2
@@ -1360,8 +1353,6 @@ proxy-groups:
     proxies:
       - 🇺🇸 美国
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
       - 🇺🇸 美国(免费节点)_1
@@ -1562,7 +1553,6 @@ proxy-groups:
       - 🇬🇧 英国(免费节点)_1
       - 🇬🇧 英国(免费节点)_2
       - 🇬🇧 英国(免费节点)_3
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇮🇳 印度(免费节点)
       - 🇰🇷 韩国(免费节点)_1
       - 🇰🇷 韩国(免费节点)_2
@@ -1608,6 +1598,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇸🇪 瑞典(免费节点)_1
       - 🇸🇪 瑞典(免费节点)_2
       - 🇸🇪 瑞典(免费节点)_3
@@ -1616,6 +1608,7 @@ proxy-groups:
       - 🇸🇪 瑞典(免费节点)_6
       - 🇻🇪 委内瑞拉 V2CROSS.COM
       - 🇻🇳 _VN_越南
+      - 🇿🇦 南非 V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
