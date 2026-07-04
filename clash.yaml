@@ -6,7 +6,6 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.125.216.18, port: 443, type: trojan, password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf, skip-cert-verify: false, udp: true}
   - {name: 🇦🇺 澳洲(免费节点), server: tight-possum.rooster465.autos, port: 443, type: trojan, password: PI36027154, sni: tight-possum.rooster465.autos, skip-cert-verify: true, udp: true}
   - {name: 🇨🇦 加拿大(免费节点)_1, server: 104.18.35.13, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇨🇦 加拿大(免费节点)_10, server: 162.159.3.48, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
@@ -45,10 +44,12 @@ proxies:
   - {name: 🇨🇦 加拿大(免费节点)_7, server: 162.159.14.252, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇨🇦 加拿大(免费节点)_8, server: 108.162.196.3, port: 2083, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇨🇦 加拿大(免费节点)_9, server: 162.159.1.170, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇳 中国 - 上海 - 1, server: 61.171.92.202, port: 1001, type: ss, cipher: aes-256-gcm, password: 123, udp: true}
+  - {name: 🇩🇪 德国 - 法兰克福 - 1, server: 213.108.20.209, port: 42549, type: trojan, password: SoftNetConnect, sni: www.speedtest.net, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 德国(免费节点)_1, server: 5.129.250.210, port: 2053, type: vless, uuid: 9316bdbe-64c3-11f1-a103-aef63c7126b0, tls: true, servername: cam-msk-6.videomonitor.cloud, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-direct}, udp: true}
   - {name: 🇩🇪 德国(免费节点)_2, server: 51.116.101.212, port: 443, type: vless, uuid: ad1f7afa-af80-4878-816d-1196c9ea70f2, tls: false, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇫🇮 _FI_芬兰, server: bot.sobhanpor.ir, port: 443, type: vless, uuid: c6021439-a298-42a2-8db5-9407f48c60b3, tls: true, network: tcp, udp: true}
+  - {name: 🇫🇷 法国 - 巴黎 - 1, server: 15.237.74.149, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇫🇷 法国 V2CROSS.COM, server: sca13.directdnsai.shop, port: 8880, type: vless, uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3, tls: false, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_1, server: cloudflare-ip.mofashi.ltd, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: cloudflare-ip.mofashi.ltd}}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_10, server: 162.159.49.145, port: 443, type: vless, uuid: 407ecce0-dc85-465f-89f5-e520e9378baf, tls: true, servername: ld.223350.xyz, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_11, server: 162.159.43.131, port: 443, type: vless, uuid: 407ecce0-dc85-465f-89f5-e520e9378baf, tls: true, servername: ld.223350.xyz, network: ws, ws-opts: {path: /}, udp: true}
@@ -62,59 +63,50 @@ proxies:
   - {name: 🇫🇷 法国(免费节点)_7, server: mfa.gov.ua, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: mfa.gov.ua}}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_8, server: 104.19.87.194, port: 443, type: vless, uuid: 407ecce0-dc85-465f-89f5-e520e9378baf, tls: true, servername: ld.223350.xyz, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇫🇷 法国(免费节点)_9, server: 104.24.9.6, port: 443, type: vless, uuid: 407ecce0-dc85-465f-89f5-e520e9378baf, tls: true, servername: ld.223350.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇬🇧 英国 - Erith - 1, server: 104.17.124.179, port: 80, type: vmess, uuid: f8975871-a7a0-4906-8835-a23c1258ca1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.}}, udp: true}
   - {name: 🇬🇧 英国(免费节点), server: 20.0.105.19, port: 443, type: vless, uuid: 47df3f6c-c3a0-463b-a6a0-ad4e8494c95b, tls: false, flow: xtls-rprx-vision, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 中国 - 香港 - 2, server: 16.162.118.81, port: 9211, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: jpbgp.netvigor.cc, port: 19128, type: trojan, password: OccIqeORGQwiNkwS, sni: yazhou10.dynu.net, udp: true}
   - {name: 🇭🇰 香港(免费节点)_1, server: moved-osprey.rooster465.autos, port: 443, type: trojan, password: PI36027154, sni: moved-osprey.rooster465.autos, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港(免费节点)_2, server: 45.144.174.72, port: 60000, type: vless, uuid: 9402e506-6907-4fe6-9c41-c5e60c86b621, tls: false, flow: xtls-rprx-vision, servername: forex.prod.cnyes.cool, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港(免费节点)_3, server: jpbgp.netvigor.cc, port: 19128, type: trojan, password: OccIqeORGQwiNkwS, sni: yazhou10.dynu.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港3, server: 18.162.58.236, port: 2008, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 16.163.50.86, port: 53012, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 95.40.26.121, port: 29449, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 43.199.66.183, port: 11035, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 18.163.124.19, port: 11035, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.240.147.113, port: 14605, type: ss, cipher: chacha20-ietf-poly1305, password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY, udp: true}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: 16.162.34.241, port: 4374, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.241.66.76, port: 14605, type: ss, cipher: chacha20-ietf-poly1305, password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY, udp: true}
   - {name: 🇯🇵 日本, server: 52.194.214.115, port: 10624, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本 - 东京 - 1, server: ss.042.node-for-bigairport.win, port: 19000, type: ss, cipher: chacha20-ietf-poly1305, password: 792e0bdb-01db-450c-94c4-925151eb396e, udp: true}
+  - {name: 🇯🇵 日本 - 大阪市 - 2, server: v6.hdacd.com, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: v6.hdacd.com, udp: true}
   - {name: 🇯🇵 日本(免费节点)_1, server: yg1.ygkkk.dpdns.org, port: 443, type: vmess, uuid: 537a036f-a4ad-4051-80c4-011a46c62bb0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /537a036f-a4ad-4051-80c4-011a46c62bb0-vm, headers: {Host: yg1.ygkkk.dpdns.org}}, udp: true}
   - {name: 🇯🇵 日本(免费节点)_2, server: large-baboon.rooster465.autos, port: 443, type: trojan, password: PI36027154, sni: large-baboon.rooster465.autos, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本(免费节点)_3, server: 45.76.194.232, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇯🇵 日本2, server: 18.162.58.236, port: 5701, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本3, server: 16.163.138.198, port: 3743, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: 18.162.58.236, port: 55973, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本|@ripaojiedian, server: 13.230.228.151, port: 27826, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇱🇹 _LT_立陶宛, server: 45.194.10.191, port: 8443, type: vless, uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA, short-id: "2cfb5a0ae8ab0cb0" }, servername: storage.yandex.net, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇱🇹 _LT_立陶宛_1, server: 45.194.10.139, port: 8443, type: vless, uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA, short-id: "2cfb5a0ae8ab0cb0" }, servername: storage.yandex.net, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇱🇹 _LT_立陶宛_2, server: 45.194.10.5, port: 8443, type: vless, uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA, short-id: "2cfb5a0ae8ab0cb0" }, servername: storage.yandex.net, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇳🇱 _NL_荷兰, server: assets.hihidress.com, port: 443, type: vless, uuid: 27f914c5-bdcc-441a-9459-368daf552606, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zCeRZCK7gCGFmPlOzBaTWHVkmysMFJlPqgDTPZRjRx0, short-id: "6ba85179e30d4fc2" }, servername: m.media-amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 193.168.175.56, port: 14605, type: ss, cipher: chacha20-ietf-poly1305, password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY, udp: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - 1, server: select-hk.ddnskunlun.com, port: 9006, type: vmess, uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Voluntari - 1, server: 84.239.49.187, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 10, server: 84.239.49.196, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 11, server: 84.239.49.211, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 12, server: 84.239.49.204, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 13, server: 84.239.49.157, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 14, server: 84.239.49.160, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 15, server: 84.239.49.239, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 16, server: 84.239.49.234, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 17, server: 84.239.49.40, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 18, server: 84.239.49.245, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 19, server: 84.239.14.160, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 2, server: 84.239.14.159, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 20, server: 84.239.49.185, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 21, server: 84.239.49.175, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 22, server: 84.239.49.159, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 23, server: 84.239.49.247, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 24, server: 84.239.49.235, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 25, server: 84.239.14.152, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 26, server: 84.239.49.219, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 29, server: 84.239.49.183, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 3, server: 84.239.14.149, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 30, server: 84.239.49.171, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 4, server: 84.239.49.227, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 5, server: 84.239.49.191, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 6, server: 84.239.49.207, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 7, server: 84.239.49.202, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 8, server: 84.239.49.253, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Voluntari - 9, server: 84.239.49.42, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 27, server: 193.176.84.32, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 28, server: 193.176.84.37, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.140, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, sni: 185.137.157.140, udp: true}
-  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM 2, server: 185.137.157.149, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 10, server: 84.239.49.247, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 11, server: 84.239.49.235, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 12, server: 84.239.49.219, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 2, server: 84.239.49.202, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 3, server: 84.239.49.196, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 4, server: 84.239.49.211, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 5, server: 84.239.49.204, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 6, server: 84.239.49.57, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 7, server: 84.239.49.185, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 8, server: 84.239.49.209, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - Voluntari - 9, server: 84.239.49.159, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 13, server: 193.176.84.32, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 14, server: 193.176.84.31, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 15, server: 193.176.84.37, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.135, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, udp: true}
   - {name: 🇷🇺 _RU_俄罗斯, server: 45.132.18.70, port: 443, type: vless, uuid: dcde0c41-e089-4228-baef-d85eaec01710, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: fCHXLcQG11a2TwH8f1_Ygsfbk_jlQV6SNzx3a0coIn0, short-id: "abcd1234" }, servername: ya.ru, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇸🇪 _SE_瑞典, server: swed-yott.red-panda.top, port: 1443, type: vless, uuid: f097453b-5fa6-48a7-a164-7fe7ef89a140, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: LM5y6SHLrbW00XvaN030dTyz8OFsxpb7mjFb84p3LUw, short-id: "2ce30d4ba28b2e97" }, servername: www.github.com, client-fingerprint: edge, network: tcp, udp: true}
   - {name: 🇸🇬 新加坡, server: 16.163.43.143, port: 29642, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -122,14 +114,20 @@ proxies:
   - {name: 🇸🇬 新加坡(免费节点)_1, server: singtel.maywind.us.kg, port: 54221, type: vless, uuid: 79f65972-9652-4d3f-8443-0f719934dda6, tls: false, flow: xtls-rprx-vision, servername: www.icloud.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇸🇬 新加坡(免费节点)_2, server: 149.28.156.182, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇸🇬 新加坡3, server: 43.198.12.202, port: 22459, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 43.199.77.197, port: 45744, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 16.163.50.86, port: 48738, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇷 土耳其 - 伊斯坦布尔 - 1, server: auto.mhjstudio.ir, port: 443, type: trojan, password: dfdse334053vuohm, sni: alternative.mhjstudio.ir, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alternative.mhjstudio.ir}}, udp: true}
   - {name: 🇺🇸 _US_美国, server: 3.148.210.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇺🇸 _US_美国_1, server: 3.17.162.229, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇺🇸 美国, server: 16.163.43.143, port: 17005, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: www.baipiao.eu.org, port: 8880, type: vless, uuid: d829cf8d-0a32-4e60-bcc3-a03fb4658ea4, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net, headers: {Host: shy-wind-a26f.182-104.workers.dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.21.227.134, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: nexusmods.com, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 45.130.125.32, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.60.220.65, port: 443, type: trojan, password: t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 - Dublin - 2, server: 3.133.132.79, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 美国 - 德雷珀 - 1, server: 18.162.53.72, port: 34638, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.227.134, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.16.174.44, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: www.speedtest.net, port: 443, type: vless, uuid: c3722a1b-6699-4904-b4f2-24a554df2f26, tls: true, alpn: ["h2,h3,http/1.1"], servername: line.sugerdood.qzz.io, client-fingerprint: chrome, network: ws, ws-opts: {path: /take, headers: {Host: line.sugerdood.qzz.io}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.17.131.138, port: 443, type: vless, uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535, tls: true, servername: support.zoom.us.yxls.eu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /sg-amz, headers: {Host: support.zoom.us.yxls.eu.cc}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 167.82.101.252, port: 443, type: trojan, password: MiTiVPN, sni: ssl.fastly.com, alpn: [http/1.1], skip-cert-verify: true, network: ws, ws-opts: {path: /MiTiVPN=Se, headers: {Host: ssl.fastly.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: gt-ch-01.live, port: 8443, type: vless, uuid: 05a01432-0302-439f-a88d-8442cd27b7d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc, short-id: "445ab326fc7c90ac" }, servername: storage.yandex.net, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇺🇸 美国(免费节点)_1, server: cf.090227.xyz, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: cf.090227.xyz}}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_10, server: 104.19.47.188, port: 8443, type: vless, uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928, tls: true, servername: go.iranfree.de5.net, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_11, server: 162.159.140.78, port: 8880, type: vless, uuid: c18fd69e-92ba-446e-981b-213dbb551593, tls: true, servername: billowing-wind-5b29.133-323.workers.dev, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net}, udp: true}
@@ -152,6 +150,7 @@ proxies:
   - {name: 🇺🇸 美国(免费节点)_30, server: fn.fifapes.monster, port: 2090, type: vless, uuid: eab915bc-d2df-73d1-47d0-6eb240497055, tls: false, network: tcp, udp: true}
   - {name: 🇺🇸 美国(免费节点)_31, server: 162.159.45.201, port: 2083, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_32, server: 8.35.211.101, port: 2083, type: vless, uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928, tls: true, servername: go.iranfree.de5.net, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国(免费节点)_33, server: www.baipiao.eu.org, port: 8880, type: vless, uuid: ea29d6f1-3567-4d45-b8c2-e42f162caef4, tls: true, servername: mute-dawn-f27b.375.workers.dev, network: ws, ws-opts: {path: /pyip=ProxyIP.JP.CMLiussss.net, headers: {Host: www.baipiao.eu.org}}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_34, server: 162.159.38.25, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_35, server: 162.159.42.163, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 美国(免费节点)_36, server: 162.159.24.39, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /}, udp: true}
@@ -180,7 +179,16 @@ proxies:
   - {name: 🇺🇸 美国(免费节点)_61, server: it.fifapes.monster, port: 29148, type: vless, uuid: eab915bc-d2df-73d1-47d0-6eb240497055, tls: false, network: tcp, udp: true}
   - {name: 🇺🇸 美国(免费节点)_62, server: 45.130.125.6, port: 443, type: vless, uuid: ac006062-f051-43c6-bd4c-f409285c8635, tls: false, network: tcp, udp: true}
   - {name: 🇺🇸 美国2, server: 16.163.50.86, port: 49277, type: trojan, password: b8494776252056a1b62e77c4ff6a6d61, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: 16.163.138.198, port: 49277, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 16.163.155.249, port: 2366, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 16.162.58.236, port: 49277, type: trojan, password: d6788cf74e6844c45538204efd24b00f, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM, server: 45.196.182.231, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM 2, server: 45.196.182.222, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM 3, server: 45.196.182.209, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM 4, server: 45.196.182.139, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM 5, server: 45.196.182.129, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM 6, server: 45.196.182.179, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM 7, server: 45.196.182.178, port: 8449, type: hysteria2, password: 03e7f55f-22f8-4564-880f-b86c8cdbf140, auth: 03e7f55f-22f8-4564-880f-b86c8cdbf140, sni: https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -211,7 +219,6 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 亚太地区 V2CROSS.COM
       - 🇦🇺 澳洲(免费节点)
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
@@ -250,10 +257,12 @@ proxy-groups:
       - 🇨🇦 加拿大(免费节点)_7
       - 🇨🇦 加拿大(免费节点)_8
       - 🇨🇦 加拿大(免费节点)_9
-      - 🇨🇳 中国 - 上海 - 1
+      - 🇩🇪 德国 - 法兰克福 - 1
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇫🇮 _FI_芬兰
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 V2CROSS.COM
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_10
       - 🇫🇷 法国(免费节点)_11
@@ -267,11 +276,10 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_7
       - 🇫🇷 法国(免费节点)_8
       - 🇫🇷 法国(免费节点)_9
+      - 🇬🇧 英国 - Erith - 1
       - 🇬🇧 英国(免费节点)
       - 🇭🇰 _HK_中国香港
-      - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港(免费节点)_3
@@ -284,6 +292,8 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 🇮🇳 印度 V2CROSS.COM
       - 🇯🇵 日本
+      - 🇯🇵 日本 - 东京 - 1
+      - 🇯🇵 日本 - 大阪市 - 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -296,39 +306,23 @@ proxy-groups:
       - 🇱🇹 _LT_立陶宛_1
       - 🇱🇹 _LT_立陶宛_2
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 10
       - 🇷🇴 罗马尼亚 - Voluntari - 11
       - 🇷🇴 罗马尼亚 - Voluntari - 12
-      - 🇷🇴 罗马尼亚 - Voluntari - 13
-      - 🇷🇴 罗马尼亚 - Voluntari - 14
-      - 🇷🇴 罗马尼亚 - Voluntari - 15
-      - 🇷🇴 罗马尼亚 - Voluntari - 16
-      - 🇷🇴 罗马尼亚 - Voluntari - 17
-      - 🇷🇴 罗马尼亚 - Voluntari - 18
-      - 🇷🇴 罗马尼亚 - Voluntari - 19
       - 🇷🇴 罗马尼亚 - Voluntari - 2
-      - 🇷🇴 罗马尼亚 - Voluntari - 20
-      - 🇷🇴 罗马尼亚 - Voluntari - 21
-      - 🇷🇴 罗马尼亚 - Voluntari - 22
-      - 🇷🇴 罗马尼亚 - Voluntari - 23
-      - 🇷🇴 罗马尼亚 - Voluntari - 24
-      - 🇷🇴 罗马尼亚 - Voluntari - 25
-      - 🇷🇴 罗马尼亚 - Voluntari - 26
-      - 🇷🇴 罗马尼亚 - Voluntari - 29
       - 🇷🇴 罗马尼亚 - Voluntari - 3
-      - 🇷🇴 罗马尼亚 - Voluntari - 30
       - 🇷🇴 罗马尼亚 - Voluntari - 4
       - 🇷🇴 罗马尼亚 - Voluntari - 5
       - 🇷🇴 罗马尼亚 - Voluntari - 6
       - 🇷🇴 罗马尼亚 - Voluntari - 7
       - 🇷🇴 罗马尼亚 - Voluntari - 8
       - 🇷🇴 罗马尼亚 - Voluntari - 9
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 13
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 14
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 15
       - 🇷🇴 罗马尼亚 V2CROSS.COM
-      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
       - 🇷🇺 _RU_俄罗斯
       - 🇸🇪 _SE_瑞典
       - 🇸🇬 新加坡
@@ -340,16 +334,20 @@ proxy-groups:
       - 🇸🇬 新加坡3
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 美国
+      - 🇺🇸 美国 - Dublin - 2
+      - 🇺🇸 美国 - 德雷珀 - 1
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -417,12 +415,19 @@ proxy-groups:
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM 2
+      - 🇿🇦 南非 V2CROSS.COM 3
+      - 🇿🇦 南非 V2CROSS.COM 4
+      - 🇿🇦 南非 V2CROSS.COM 5
+      - 🇿🇦 南非 V2CROSS.COM 6
+      - 🇿🇦 南非 V2CROSS.COM 7
+      - 🇿🇦 南非 V2CROSS.COM 8
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 亚太地区 V2CROSS.COM
       - 🇦🇺 澳洲(免费节点)
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
@@ -461,10 +466,12 @@ proxy-groups:
       - 🇨🇦 加拿大(免费节点)_7
       - 🇨🇦 加拿大(免费节点)_8
       - 🇨🇦 加拿大(免费节点)_9
-      - 🇨🇳 中国 - 上海 - 1
+      - 🇩🇪 德国 - 法兰克福 - 1
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇫🇮 _FI_芬兰
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 V2CROSS.COM
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_10
       - 🇫🇷 法国(免费节点)_11
@@ -478,11 +485,10 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_7
       - 🇫🇷 法国(免费节点)_8
       - 🇫🇷 法国(免费节点)_9
+      - 🇬🇧 英国 - Erith - 1
       - 🇬🇧 英国(免费节点)
       - 🇭🇰 _HK_中国香港
-      - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港(免费节点)_3
@@ -495,6 +501,8 @@ proxy-groups:
       - 🇭🇰 香港|@ripaojiedian
       - 🇮🇳 印度 V2CROSS.COM
       - 🇯🇵 日本
+      - 🇯🇵 日本 - 东京 - 1
+      - 🇯🇵 日本 - 大阪市 - 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -507,39 +515,23 @@ proxy-groups:
       - 🇱🇹 _LT_立陶宛_1
       - 🇱🇹 _LT_立陶宛_2
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 10
       - 🇷🇴 罗马尼亚 - Voluntari - 11
       - 🇷🇴 罗马尼亚 - Voluntari - 12
-      - 🇷🇴 罗马尼亚 - Voluntari - 13
-      - 🇷🇴 罗马尼亚 - Voluntari - 14
-      - 🇷🇴 罗马尼亚 - Voluntari - 15
-      - 🇷🇴 罗马尼亚 - Voluntari - 16
-      - 🇷🇴 罗马尼亚 - Voluntari - 17
-      - 🇷🇴 罗马尼亚 - Voluntari - 18
-      - 🇷🇴 罗马尼亚 - Voluntari - 19
       - 🇷🇴 罗马尼亚 - Voluntari - 2
-      - 🇷🇴 罗马尼亚 - Voluntari - 20
-      - 🇷🇴 罗马尼亚 - Voluntari - 21
-      - 🇷🇴 罗马尼亚 - Voluntari - 22
-      - 🇷🇴 罗马尼亚 - Voluntari - 23
-      - 🇷🇴 罗马尼亚 - Voluntari - 24
-      - 🇷🇴 罗马尼亚 - Voluntari - 25
-      - 🇷🇴 罗马尼亚 - Voluntari - 26
-      - 🇷🇴 罗马尼亚 - Voluntari - 29
       - 🇷🇴 罗马尼亚 - Voluntari - 3
-      - 🇷🇴 罗马尼亚 - Voluntari - 30
       - 🇷🇴 罗马尼亚 - Voluntari - 4
       - 🇷🇴 罗马尼亚 - Voluntari - 5
       - 🇷🇴 罗马尼亚 - Voluntari - 6
       - 🇷🇴 罗马尼亚 - Voluntari - 7
       - 🇷🇴 罗马尼亚 - Voluntari - 8
       - 🇷🇴 罗马尼亚 - Voluntari - 9
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 13
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 14
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 15
       - 🇷🇴 罗马尼亚 V2CROSS.COM
-      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
       - 🇷🇺 _RU_俄罗斯
       - 🇸🇪 _SE_瑞典
       - 🇸🇬 新加坡
@@ -551,16 +543,20 @@ proxy-groups:
       - 🇸🇬 新加坡3
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 美国
+      - 🇺🇸 美国 - Dublin - 2
+      - 🇺🇸 美国 - 德雷珀 - 1
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -628,6 +624,14 @@ proxy-groups:
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM 2
+      - 🇿🇦 南非 V2CROSS.COM 3
+      - 🇿🇦 南非 V2CROSS.COM 4
+      - 🇿🇦 南非 V2CROSS.COM 5
+      - 🇿🇦 南非 V2CROSS.COM 6
+      - 🇿🇦 南非 V2CROSS.COM 7
+      - 🇿🇦 南非 V2CROSS.COM 8
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -681,9 +685,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇭🇰 _HK_中国香港
-      - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港(免费节点)_3
@@ -707,11 +709,8 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇨🇳 中国 - 上海 - 1
       - 🇭🇰 _HK_中国香港
-      - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港(免费节点)_3
@@ -744,6 +743,8 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本
+      - 🇯🇵 日本 - 东京 - 1
+      - 🇯🇵 日本 - 大阪市 - 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -761,13 +762,16 @@ proxy-groups:
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 美国
+      - 🇺🇸 美国 - Dublin - 2
+      - 🇺🇸 美国 - 德雷珀 - 1
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -843,7 +847,6 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 亚太地区 V2CROSS.COM
       - 🇦🇺 澳洲(免费节点)
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
@@ -882,9 +885,12 @@ proxy-groups:
       - 🇨🇦 加拿大(免费节点)_7
       - 🇨🇦 加拿大(免费节点)_8
       - 🇨🇦 加拿大(免费节点)_9
+      - 🇩🇪 德国 - 法兰克福 - 1
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇫🇮 _FI_芬兰
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 V2CROSS.COM
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_10
       - 🇫🇷 法国(免费节点)_11
@@ -898,54 +904,46 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_7
       - 🇫🇷 法国(免费节点)_8
       - 🇫🇷 法国(免费节点)_9
+      - 🇬🇧 英国 - Erith - 1
       - 🇬🇧 英国(免费节点)
       - 🇮🇳 印度 V2CROSS.COM
       - 🇱🇹 _LT_立陶宛
       - 🇱🇹 _LT_立陶宛_1
       - 🇱🇹 _LT_立陶宛_2
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 10
       - 🇷🇴 罗马尼亚 - Voluntari - 11
       - 🇷🇴 罗马尼亚 - Voluntari - 12
-      - 🇷🇴 罗马尼亚 - Voluntari - 13
-      - 🇷🇴 罗马尼亚 - Voluntari - 14
-      - 🇷🇴 罗马尼亚 - Voluntari - 15
-      - 🇷🇴 罗马尼亚 - Voluntari - 16
-      - 🇷🇴 罗马尼亚 - Voluntari - 17
-      - 🇷🇴 罗马尼亚 - Voluntari - 18
-      - 🇷🇴 罗马尼亚 - Voluntari - 19
       - 🇷🇴 罗马尼亚 - Voluntari - 2
-      - 🇷🇴 罗马尼亚 - Voluntari - 20
-      - 🇷🇴 罗马尼亚 - Voluntari - 21
-      - 🇷🇴 罗马尼亚 - Voluntari - 22
-      - 🇷🇴 罗马尼亚 - Voluntari - 23
-      - 🇷🇴 罗马尼亚 - Voluntari - 24
-      - 🇷🇴 罗马尼亚 - Voluntari - 25
-      - 🇷🇴 罗马尼亚 - Voluntari - 26
-      - 🇷🇴 罗马尼亚 - Voluntari - 29
       - 🇷🇴 罗马尼亚 - Voluntari - 3
-      - 🇷🇴 罗马尼亚 - Voluntari - 30
       - 🇷🇴 罗马尼亚 - Voluntari - 4
       - 🇷🇴 罗马尼亚 - Voluntari - 5
       - 🇷🇴 罗马尼亚 - Voluntari - 6
       - 🇷🇴 罗马尼亚 - Voluntari - 7
       - 🇷🇴 罗马尼亚 - Voluntari - 8
       - 🇷🇴 罗马尼亚 - Voluntari - 9
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 13
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 14
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 15
       - 🇷🇴 罗马尼亚 V2CROSS.COM
-      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
       - 🇷🇺 _RU_俄罗斯
       - 🇸🇪 _SE_瑞典
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM 2
+      - 🇿🇦 南非 V2CROSS.COM 3
+      - 🇿🇦 南非 V2CROSS.COM 4
+      - 🇿🇦 南非 V2CROSS.COM 5
+      - 🇿🇦 南非 V2CROSS.COM 6
+      - 🇿🇦 南非 V2CROSS.COM 7
+      - 🇿🇦 南非 V2CROSS.COM 8
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
       - 🇭🇰 _HK_中国香港
-      - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港(免费节点)_3
@@ -963,11 +961,8 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - 🇨🇳 中国 - 上海 - 1
       - 🇭🇰 _HK_中国香港
-      - 🇭🇰 中国 - 香港 - 2
       - 🇭🇰 香港
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇭🇰 香港(免费节点)_1
       - 🇭🇰 香港(免费节点)_2
       - 🇭🇰 香港(免费节点)_3
@@ -994,6 +989,8 @@ proxy-groups:
     type: select
     proxies:
       - 🇯🇵 日本
+      - 🇯🇵 日本 - 东京 - 1
+      - 🇯🇵 日本 - 大阪市 - 2
       - 🇯🇵 日本(免费节点)_1
       - 🇯🇵 日本(免费节点)_2
       - 🇯🇵 日本(免费节点)_3
@@ -1008,13 +1005,16 @@ proxy-groups:
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 美国
+      - 🇺🇸 美国 - Dublin - 2
+      - 🇺🇸 美国 - 德雷珀 - 1
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
       - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国(免费节点)_1
       - 🇺🇸 美国(免费节点)_10
       - 🇺🇸 美国(免费节点)_11
@@ -1087,7 +1087,6 @@ proxy-groups:
     proxies:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - 亚太地区 V2CROSS.COM
       - 🇦🇺 澳洲(免费节点)
       - 🇨🇦 加拿大(免费节点)_1
       - 🇨🇦 加拿大(免费节点)_10
@@ -1126,9 +1125,12 @@ proxy-groups:
       - 🇨🇦 加拿大(免费节点)_7
       - 🇨🇦 加拿大(免费节点)_8
       - 🇨🇦 加拿大(免费节点)_9
+      - 🇩🇪 德国 - 法兰克福 - 1
       - 🇩🇪 德国(免费节点)_1
       - 🇩🇪 德国(免费节点)_2
       - 🇫🇮 _FI_芬兰
+      - 🇫🇷 法国 - 巴黎 - 1
+      - 🇫🇷 法国 V2CROSS.COM
       - 🇫🇷 法国(免费节点)_1
       - 🇫🇷 法国(免费节点)_10
       - 🇫🇷 法国(免费节点)_11
@@ -1142,47 +1144,41 @@ proxy-groups:
       - 🇫🇷 法国(免费节点)_7
       - 🇫🇷 法国(免费节点)_8
       - 🇫🇷 法国(免费节点)_9
+      - 🇬🇧 英国 - Erith - 1
       - 🇬🇧 英国(免费节点)
       - 🇮🇳 印度 V2CROSS.COM
       - 🇱🇹 _LT_立陶宛
       - 🇱🇹 _LT_立陶宛_1
       - 🇱🇹 _LT_立陶宛_2
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 1
       - 🇷🇴 罗马尼亚 - Voluntari - 10
       - 🇷🇴 罗马尼亚 - Voluntari - 11
       - 🇷🇴 罗马尼亚 - Voluntari - 12
-      - 🇷🇴 罗马尼亚 - Voluntari - 13
-      - 🇷🇴 罗马尼亚 - Voluntari - 14
-      - 🇷🇴 罗马尼亚 - Voluntari - 15
-      - 🇷🇴 罗马尼亚 - Voluntari - 16
-      - 🇷🇴 罗马尼亚 - Voluntari - 17
-      - 🇷🇴 罗马尼亚 - Voluntari - 18
-      - 🇷🇴 罗马尼亚 - Voluntari - 19
       - 🇷🇴 罗马尼亚 - Voluntari - 2
-      - 🇷🇴 罗马尼亚 - Voluntari - 20
-      - 🇷🇴 罗马尼亚 - Voluntari - 21
-      - 🇷🇴 罗马尼亚 - Voluntari - 22
-      - 🇷🇴 罗马尼亚 - Voluntari - 23
-      - 🇷🇴 罗马尼亚 - Voluntari - 24
-      - 🇷🇴 罗马尼亚 - Voluntari - 25
-      - 🇷🇴 罗马尼亚 - Voluntari - 26
-      - 🇷🇴 罗马尼亚 - Voluntari - 29
       - 🇷🇴 罗马尼亚 - Voluntari - 3
-      - 🇷🇴 罗马尼亚 - Voluntari - 30
       - 🇷🇴 罗马尼亚 - Voluntari - 4
       - 🇷🇴 罗马尼亚 - Voluntari - 5
       - 🇷🇴 罗马尼亚 - Voluntari - 6
       - 🇷🇴 罗马尼亚 - Voluntari - 7
       - 🇷🇴 罗马尼亚 - Voluntari - 8
       - 🇷🇴 罗马尼亚 - Voluntari - 9
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 27
-      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 28
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 13
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 14
+      - 🇷🇴 罗马尼亚 - 布加勒斯特 - 15
       - 🇷🇴 罗马尼亚 V2CROSS.COM
-      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
       - 🇷🇺 _RU_俄罗斯
       - 🇸🇪 _SE_瑞典
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - 1
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM 2
+      - 🇿🇦 南非 V2CROSS.COM 3
+      - 🇿🇦 南非 V2CROSS.COM 4
+      - 🇿🇦 南非 V2CROSS.COM 5
+      - 🇿🇦 南非 V2CROSS.COM 6
+      - 🇿🇦 南非 V2CROSS.COM 7
+      - 🇿🇦 南非 V2CROSS.COM 8
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
