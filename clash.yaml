@@ -22,7 +22,6 @@ proxies:
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 16.163.129.148, port: 39411, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 43.199.252.80, port: 29443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 18.162.245.50, port: 11035, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.111.114.82, port: 28061, type: ss, cipher: chacha20-ietf-poly1305, password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm, udp: true}
   - {name: 🇯🇵 日本, server: 43.199.31.196, port: 10624, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本 - 东京 - 1, server: 18.183.180.62, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇯🇵 日本 - 东京 - 3, server: 52.195.12.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
@@ -61,7 +60,9 @@ proxies:
   - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 1, server: 193.176.84.31, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 2, server: 193.176.84.37, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - 布加勒斯特 - 3, server: 193.176.84.32, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.156, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.137.157.140, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM 2, server: 185.137.157.149, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM 3, server: 185.137.157.151, port: 443, type: trojan, password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q, udp: true}
   - {name: 🇷🇺 俄罗斯 - 莫斯科 - 1, server: 46.17.40.13, port: 10129, type: ss, cipher: aes-256-gcm, password: b24a80e79cee1d1f, udp: true}
   - {name: 🇸🇬 _SG_新加坡, server: 54.255.102.19, port: 443, type: hysteria2, password: H7mP2xY9kJ4nQ8wR5tF6vB3z, auth: H7mP2xY9kJ4nQ8wR5tF6vB3z, sni: https://t.me/WangCai2🇨🇳, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 _SG_新加坡_1, server: aw-sg.vndmall.pro, port: 8888, type: ss, cipher: aes-256-gcm, password: a338A9, udp: true}
@@ -85,21 +86,20 @@ proxies:
   - {name: 🇺🇸 _US_美国_8, server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net, port: 443, type: trojan, password: eb6fb64d-18c0-44d0-9ee5-f29c29194083, sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国, server: 18.163.105.231, port: 17005, type: trojan, password: b1a42ca60884057bf527d8d38b618cfb, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - Dublin - 1, server: 3.145.57.90, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.170.11, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.20.6.134, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 172.64.153.159, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: cs3iiova.cf.3666888.xyz, port: 2086, type: vless, uuid: 4a805850-a2c4-42b3-898a-798f0c19c609, tls: false, network: ws, ws-opts: {path: /sub, headers: {Host: od1kl638.xn--nxa.nyc.mn}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 172.64.52.240, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: yx.cloudflare.182682.xyz, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 172.66.44.211, port: 443, type: trojan, password: humanity, sni: www.multiplydose.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.multiplydose.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: store.ubi.com, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 172.64.52.134, port: 8443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 162.159.44.172, port: 2083, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 162.159.32.239, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 12, server: 104.21.227.134, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 170.114.45.6, port: 443, type: vless, uuid: 4d10c997-4781-4cd9-82c3-15453523e12c, tls: true, servername: support.zoom.us.yxls.eu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /sg-melbi, headers: {Host: support.zoom.us.yxls.eu.cc}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.60.168.129, port: 443, type: trojan, password: Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 2, server: 38.54.64.247, port: 443, type: trojan, password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare, server: 162.159.16.154, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.64.52.18, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: cfd9.466688.xyz, port: 443, type: vless, uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5, tls: true, servername: edge-4cb23bf6.pages.dev, network: ws, ws-opts: {path: "/@https://t.me/QiangLieTuiJian?ed=2048fp=chromefp=chrome", headers: {Host: edge-4cb23bf6.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.229.21, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, alpn: [http/1.1], skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.20.6.134, port: 443, type: trojan, password: humanity, sni: www.calmloud.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmloud.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: cs3iiova.cf.3666888.xyz, port: 2086, type: vless, uuid: 4a805850-a2c4-42b3-898a-798f0c19c609, tls: false, network: ws, ws-opts: {path: /sub, headers: {Host: od1kl638.xn--nxa.nyc.mn}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 162.159.38.119, port: 443, type: vless, uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8, tls: true, servername: octopusss5.info, client-fingerprint: chrome, network: ws, ws-opts: {path: /udfyfws, headers: {Host: octopusss5.info}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 162.159.46.226, port: 8443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 162.159.10.87, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: yx.cloudflare.182682.xyz, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 172.64.52.134, port: 8443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 104.19.208.184, port: 443, type: trojan, password: humanity, sni: www.multiplydose.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.multiplydose.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 12, server: 172.67.170.11, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 13, server: 104.21.94.161, port: 443, type: vless, uuid: eeb6823c-b926-4ea2-866a-5542edd26e59, tls: true, servername: t1s1.rittbo.kdns.fr, network: ws, ws-opts: {path: /, headers: {Host: t1s1.rittbo.kdns.fr}}, udp: true}
   - {name: 🇺🇸 美国2, server: 18.166.63.229, port: 17005, type: trojan, password: b1a42ca60884057bf527d8d38b618cfb, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 18.163.192.100, port: 49277, type: trojan, password: b490740312aedb5f9f6b84c7aebd08c0, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 18.163.115.109, port: 44265, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -152,7 +152,6 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇯🇵 日本
       - 🇯🇵 日本 - 东京 - 1
       - 🇯🇵 日本 - 东京 - 3
@@ -192,6 +191,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 2
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 3
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _SG_新加坡_1
@@ -219,6 +220,7 @@ proxy-groups:
       - 🇺🇸 美国
       - 🇺🇸 美国 - Dublin - 1
       - 🇺🇸 美国 - 圣克拉拉 - 2
+      - 🇺🇸 美国 CloudFlare
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -231,9 +233,7 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 华盛顿Cogent通信公司 2
+      - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -262,7 +262,6 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇯🇵 日本
       - 🇯🇵 日本 - 东京 - 1
       - 🇯🇵 日本 - 东京 - 3
@@ -302,6 +301,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 2
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 3
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _SG_新加坡_1
@@ -329,6 +330,7 @@ proxy-groups:
       - 🇺🇸 美国
       - 🇺🇸 美国 - Dublin - 1
       - 🇺🇸 美国 - 圣克拉拉 - 2
+      - 🇺🇸 美国 CloudFlare
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -341,9 +343,7 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 华盛顿Cogent通信公司 2
+      - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -497,6 +497,7 @@ proxy-groups:
       - 🇺🇸 美国
       - 🇺🇸 美国 - Dublin - 1
       - 🇺🇸 美国 - 圣克拉拉 - 2
+      - 🇺🇸 美国 CloudFlare
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -509,9 +510,7 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 华盛顿Cogent通信公司 2
+      - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -529,7 +528,6 @@ proxy-groups:
       - 🇩🇪 德国 - 纽伦堡 - 1
       - 🇫🇷 _FR_法国
       - 🇬🇧 _GB_英国
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇳🇴 挪威 V2CROSS.COM
       - 🇷🇴 罗马尼亚 - Voluntari - 10
@@ -560,6 +558,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 2
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 3
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇻🇳 _VN_越南
   - name: 👆🏻🇭🇰 ‍香港
@@ -645,6 +645,7 @@ proxy-groups:
       - 🇺🇸 美国
       - 🇺🇸 美国 - Dublin - 1
       - 🇺🇸 美国 - 圣克拉拉 - 2
+      - 🇺🇸 美国 CloudFlare
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
@@ -657,9 +658,7 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 CloudFlare节点 11
       - 🇺🇸 美国 CloudFlare节点 12
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 华盛顿Cogent通信公司 2
+      - 🇺🇸 美国 CloudFlare节点 13
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -674,7 +673,6 @@ proxy-groups:
       - 🇩🇪 德国 - 纽伦堡 - 1
       - 🇫🇷 _FR_法国
       - 🇬🇧 _GB_英国
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇳🇱 荷兰 - 阿姆斯特丹 - 1
       - 🇳🇴 挪威 V2CROSS.COM
       - 🇷🇴 罗马尼亚 - Voluntari - 10
@@ -705,6 +703,8 @@ proxy-groups:
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 2
       - 🇷🇴 罗马尼亚 - 布加勒斯特 - 3
       - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM 3
       - 🇷🇺 俄罗斯 - 莫斯科 - 1
       - 🇻🇳 _VN_越南
 rules:
