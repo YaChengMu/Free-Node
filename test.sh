@@ -251,6 +251,7 @@ url_templates=(
     [6]="https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml"
     [7]="https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml"
     [8]="https://sfdr.zaixianyouxi.dpdns.org/uploads/%s/%s/%s.yaml|year|month_no_zero|date_full"
+    [9]="https://panel.xingvoy.com/api/sub/Pr2uaeZ5o2ad3mgb"
 )
 
 # 并行检查所有模板
