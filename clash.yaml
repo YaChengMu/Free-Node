@@ -12,6 +12,7 @@ proxies:
   - {name: 🇩🇪 _DE_德国, server: prodfr.h2corp.org, port: 443, type: hysteria2, password: 1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq, auth: 1hOIVDVBG2hdKtJwOV2aUEFTDaFArCSH9-HrcOnps8yqQZeq, sni: prodfr.h2corp.org, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 _DE_德国_1, server: 5.83.129.90, port: 54177, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: none, sni: bing.com, skip-cert-verify: true, alpn: [h3], udp: true}
   - {name: 🇩🇪 _DE_德国_2, server: 83.243.86.109, port: 27947, type: tuic, password: 261d95d4-73c0-4c33-957a-04b6d407bea2, uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2, sni: bing.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
+  - {name: 🇫🇮 芬兰 V2CROSS.COM, server: s128.okgfw.top, port: 443, type: vless, uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3, tls: true, alpn: [h2%2Chttp%2F1.1], flow: xtls-rprx-vision, servername: u695099u775a58bcs124.ccgfw.top, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇫🇷 法国 - 巴黎 - 1, server: musical-shrew.rooster465.autos, port: 443, type: trojan, password: JT80563429, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 HK_1|513KB/s, server: fv2026.node2.top, port: 21001, type: vless, uuid: 99e8921a-a594-4ac1-90f9-3c99d9b448bd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: n1747624260.4u9ma.icu, port: 443, type: vmess, uuid: eee8cb72-7eab-4034-a308-ed06cb07e003, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1747624260.4u9ma.icu}}, udp: true}
@@ -28,7 +29,6 @@ proxies:
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 43.198.94.204, port: 29443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 18.167.224.152, port: 35151, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 18.166.69.73, port: 29443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.111.114.71, port: 28061, type: ss, cipher: chacha20-ietf-poly1305, password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm, udp: true}
   - {name: 🇯🇵 JP_1|754KB/s, server: 54.95.225.70, port: 443, type: hysteria2, password: H7mP2xY9kJ4nQ8wR5tF6vB3z, auth: H7mP2xY9kJ4nQ8wR5tF6vB3z, sni: https://t.me/@oneclickvpnkeys, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本, server: 18.164.124.189, port: 27826, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本2, server: 18.163.55.76, port: 40138, type: trojan, password: b490740312aedb5f9f6b84c7aebd08c0, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
@@ -37,10 +37,8 @@ proxies:
   - {name: 🇯🇵 日本3|@ripaojiedian, server: 54.46.11.134, port: 38937, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇯🇵 日本|@ripaojiedian, server: 18.162.149.22, port: 45691, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇰🇷 _KR_韩国, server: touching-pigeon.rooster465.autos, port: 443, type: trojan, password: JT80563429, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 KT电信, server: 59.12.232.18, port: 11481, type: vless, uuid: 57d68ec3-6cc5-10e9-2bca-5ba3994aa783, tls: true, servername: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr, network: ws, ws-opts: {path: /glasspanel/0038ba35_0_1bdabe931208/fp=chrome, headers: {Host: l.m.j.u.w.9.y.i.m.y.s.8.p.y.us.art-us.kdns.fr}}, udp: true}
   - {name: 🇳🇱 NL_1|1.4MB/s, server: 89.34.230.77, port: 43780, type: vless, uuid: 64beb03f-886e-48be-9bdf-2fa68156fd74, tls: true, reality-opts: {public-key: xqkFi7Uvyxb7749s6mqs9OMd_-IWOvkDHRWOE-mgW1I, short-id: "006e47f4a13a08cc" }, servername: ourworldindata.org, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇳🇱 _NL_荷兰, server: s1243.gogocs.xyz, port: 443, type: vless, uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3, tls: true, flow: xtls-rprx-vision, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 188.164.248.122, port: 443, type: trojan, password: c206d543-023d-46cc-9d5a-1f0f2fc16323, sni: space.byu.id.yxls.eu.cc, skip-cert-verify: false, network: ws, ws-opts: {path: /in-pdr, headers: {Host: space.byu.id.yxls.eu.cc}}, udp: true}
   - {name: 🇷🇴 RO_10|1.1MB/s, server: 84.239.49.225, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 RO_11|863KB/s, server: 84.239.49.185, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 RO_12|692KB/s, server: 84.239.49.39, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
@@ -80,6 +78,7 @@ proxies:
   - {name: 🇷🇺 _RU_俄罗斯_1, server: 188.225.46.217, port: 443, type: vless, uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: KgKu2yHqldNUFnYCY7suz-YTQKi6ZX2mLBduS2yy1xs}, servername: api-maps.yandex.ru, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇸🇬 SG_1|4.0MB/s, server: sg5.dexlos.com, port: 20878, type: hysteria2, password: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D, auth: ABBB1AFA-AD9F-4EF9-9AEE-47C43557557D, skip-cert-verify: true, obfs: salamander, obfs-password: xK9mN2pLq5vR8wB3, udp: true}
   - {name: 🇸🇬 新加坡, server: 18.183.93.55, port: 48738, type: trojan, password: b490740312aedb5f9f6b84c7aebd08c0, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 新加坡 - 新加坡 - 1, server: 188.164.248.122, port: 443, type: trojan, password: c206d543-023d-46cc-9d5a-1f0f2fc16323, sni: space.byu.id.yxls.eu.cc, skip-cert-verify: true, network: ws, ws-opts: {path: /in-pdr, headers: {Host: space.byu.id.yxls.eu.cc}}, udp: true}
   - {name: 🇸🇬 新加坡2, server: 18.183.93.55, port: 6357, type: trojan, password: b490740312aedb5f9f6b84c7aebd08c0, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 18.166.52.50, port: 6357, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇸🇬 新加坡3, server: 16.163.106.206, port: 51396, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -90,7 +89,6 @@ proxies:
   - {name: 🇹🇷 _TR_土耳其_2, server: 45.196.201.33, port: 443, type: vless, uuid: f75814f6-8f81-4847-b792-168c41f2dc85, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04, short-id: "c6ef72e4635d15a5" }, servername: storage.yandex.net, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇹🇷 _TR_土耳其_3, server: 45.196.201.142, port: 443, type: vless, uuid: f75814f6-8f81-4847-b792-168c41f2dc85, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04, short-id: "c6ef72e4635d15a5" }, servername: storage.yandex.net, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇹🇼 TW_1|516KB/s, server: twmoon1-cdn-route.couldflare-cdn.com, port: 1443, type: http, username: mrwdfNTD8M79LCukCieldrqZWqs=, password: exaxgqkKkd0TAMrCxeonWg==, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: germany1.noesissite.ru, port: 443, type: hysteria2, password: 042a1881-44e4-4781-bd40-bf75164faf4f, auth: 042a1881-44e4-4781-bd40-bf75164faf4f, sni: germany1.noesissite.ru, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 US_1|1.5MB/s, server: 54.197.30.38, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: 🇺🇸 US_2|3.4MB/s, server: 178.128.65.195, port: 19108, type: hysteria2, password: nNS3WyiBOL, auth: nNS3WyiBOL, sni: aws.amazon.com, skip-cert-verify: true, obfs: salamander, obfs-password: vwrgaergG, udp: true}
   - {name: 🇺🇸 US_3|1.9MB/s, server: 5.253.38.67, port: 40444, type: vless, uuid: 0f036757-b419-4528-b270-db855490fd8c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
@@ -100,13 +98,15 @@ proxies:
   - {name: 🇺🇸 _US_美国_3, server: vpn-us-002.fastervpn.world, port: 443, type: hysteria2, password: qQe1z5kU8kN6SlKnDt9Ru3Qp, auth: qQe1z5kU8kN6SlKnDt9Ru3Qp, sni: vpn-us-002.fastervpn.world, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 _US_美国_4, server: guanwang.awsno.com, port: 443, type: vmess, uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 _US_美国_5, server: 34.207.235.215, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 198.62.62.23, port: 443, type: trojan, password: humanity, sni: www.calmlunch.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.calmlunch.com}}, udp: true}
   - {name: 🇺🇸 美国, server: 95.40.110.103, port: 49277, type: trojan, password: b490740312aedb5f9f6b84c7aebd08c0, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 152.53.127.214, port: 443, type: vless, uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c, tls: true, alpn: [networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-], flow: xtls-rprx-vision, reality-opts: {public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs, short-id: "7a76f3c4b9dd" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: premium-us-ca-01-gthost.efgwf.online, port: 8080, type: vless, uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6, tls: false, network: ws, ws-opts: {path: /ws-6Tta3kYF, headers: {Host: premium-us-ca-01-gthost.efgwf.online}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 149.104.104.58, port: 443, type: trojan, password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix, sni: 149.104.104.58, udp: true}
+  - {name: 🇺🇸 美国 宾利大学, server: 141.133.172.222, port: 20342, type: vless, uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11, tls: false, network: tcp, udp: true}
   - {name: 🇺🇸 美国2, server: 18.167.94.81, port: 49277, type: trojan, password: b490740312aedb5f9f6b84c7aebd08c0, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 43.207.96.164, port: 49277, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国3, server: 18.163.28.78, port: 35966, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 18.166.59.129, port: 51396, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 54.46.11.134, port: 49277, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -144,6 +144,7 @@ proxy-groups:
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 _DE_德国_2
+      - 🇫🇮 芬兰 V2CROSS.COM
       - 🇫🇷 法国 - 巴黎 - 1
       - 🇭🇰 HK_1|513KB/s
       - 🇭🇰 HK_2|566KB/s
@@ -164,7 +165,6 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇯🇵 JP_1|754KB/s
       - 🇯🇵 日本
       - 🇯🇵 日本2
@@ -173,10 +173,8 @@ proxy-groups:
       - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
-      - 🇰🇷 韩国 KT电信
       - 🇳🇱 NL_1|1.4MB/s
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇷🇴 RO_10|1.1MB/s
       - 🇷🇴 RO_11|863KB/s
       - 🇷🇴 RO_12|692KB/s
@@ -252,7 +250,6 @@ proxy-groups:
       - 🇹🇷 _TR_土耳其_3
       - 🇹🇼 TW_1|516KB/s
       - 🇹🇼 中国 - 台湾 - 3
-      - 🇺🇦 乌克兰 V2CROSS.COM
       - 🇺🇸 US_1|1.5MB/s
       - 🇺🇸 US_2|3.4MB/s
       - 🇺🇸 US_3|1.9MB/s
@@ -263,16 +260,20 @@ proxy-groups:
       - 🇺🇸 _US_美国_3
       - 🇺🇸 _US_美国_4
       - 🇺🇸 _US_美国_5
-      - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
       - 🇺🇸 美国 - Ashburn - 1
       - 🇺🇸 美国 - Ashburn - 2
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 宾利大学
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻 ‍指定
     type: select
     proxies:
@@ -285,6 +286,7 @@ proxy-groups:
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 _DE_德国_2
+      - 🇫🇮 芬兰 V2CROSS.COM
       - 🇫🇷 法国 - 巴黎 - 1
       - 🇭🇰 HK_1|513KB/s
       - 🇭🇰 HK_2|566KB/s
@@ -305,7 +307,6 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇯🇵 JP_1|754KB/s
       - 🇯🇵 日本
       - 🇯🇵 日本2
@@ -314,10 +315,8 @@ proxy-groups:
       - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
       - 🇰🇷 _KR_韩国
-      - 🇰🇷 韩国 KT电信
       - 🇳🇱 NL_1|1.4MB/s
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇷🇴 RO_10|1.1MB/s
       - 🇷🇴 RO_11|863KB/s
       - 🇷🇴 RO_12|692KB/s
@@ -393,7 +392,6 @@ proxy-groups:
       - 🇹🇷 _TR_土耳其_3
       - 🇹🇼 TW_1|516KB/s
       - 🇹🇼 中国 - 台湾 - 3
-      - 🇺🇦 乌克兰 V2CROSS.COM
       - 🇺🇸 US_1|1.5MB/s
       - 🇺🇸 US_2|3.4MB/s
       - 🇺🇸 US_3|1.9MB/s
@@ -404,16 +402,20 @@ proxy-groups:
       - 🇺🇸 _US_美国_3
       - 🇺🇸 _US_美国_4
       - 🇺🇸 _US_美国_5
-      - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
       - 🇺🇸 美国 - Ashburn - 1
       - 🇺🇸 美国 - Ashburn - 2
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 宾利大学
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -564,11 +566,14 @@ proxy-groups:
       - 🇺🇸 _US_美国_3
       - 🇺🇸 _US_美国_4
       - 🇺🇸 _US_美国_5
-      - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
       - 🇺🇸 美国 - Ashburn - 1
       - 🇺🇸 美国 - Ashburn - 2
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 宾利大学
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -588,13 +593,11 @@ proxy-groups:
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 _DE_德国_2
+      - 🇫🇮 芬兰 V2CROSS.COM
       - 🇫🇷 法国 - 巴黎 - 1
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇰🇷 _KR_韩国
-      - 🇰🇷 韩国 KT电信
       - 🇳🇱 NL_1|1.4MB/s
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇷🇴 RO_10|1.1MB/s
       - 🇷🇴 RO_11|863KB/s
       - 🇷🇴 RO_12|692KB/s
@@ -660,7 +663,7 @@ proxy-groups:
       - 🇹🇷 _TR_土耳其_1
       - 🇹🇷 _TR_土耳其_2
       - 🇹🇷 _TR_土耳其_3
-      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
@@ -747,11 +750,14 @@ proxy-groups:
       - 🇺🇸 _US_美国_3
       - 🇺🇸 _US_美国_4
       - 🇺🇸 _US_美国_5
-      - 🇺🇸 北美地区 V2CROSS.COM
       - 🇺🇸 美国
       - 🇺🇸 美国 - Ashburn - 1
       - 🇺🇸 美国 - Ashburn - 2
+      - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 宾利大学
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -768,13 +774,11 @@ proxy-groups:
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 _DE_德国_2
+      - 🇫🇮 芬兰 V2CROSS.COM
       - 🇫🇷 法国 - 巴黎 - 1
-      - 🇮🇳 印度 V2CROSS.COM
       - 🇰🇷 _KR_韩国
-      - 🇰🇷 韩国 KT电信
       - 🇳🇱 NL_1|1.4MB/s
       - 🇳🇱 _NL_荷兰
-      - 🇳🇱 荷兰 V2CROSS.COM
       - 🇷🇴 RO_10|1.1MB/s
       - 🇷🇴 RO_11|863KB/s
       - 🇷🇴 RO_12|692KB/s
@@ -840,7 +844,7 @@ proxy-groups:
       - 🇹🇷 _TR_土耳其_1
       - 🇹🇷 _TR_土耳其_2
       - 🇹🇷 _TR_土耳其_3
-      - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
