@@ -7,6 +7,8 @@ external-controller: :9090
 proxies:
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
   - {name: ❓Other_1|1.5MB/s, server: 27.155.93.29, port: 1080, type: http, tls: false, udp: true}
+  - {name: 🇧🇬 保加利亚 V2CROSS.COM, server: 185.246.223.158, port: 443, type: vless, uuid: dd8b69d3-5ef6-418c-a94c-2f4f37d88a7f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: dGF9csm2FGTtmgL5ZOxfU_wOMVilKOVq60lwD7F-MVw}, servername: germanag.online, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 167.17.68.205, port: 443, type: vless, uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs, short-id: "250b5976473a" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇨🇳 _CN_中国, server: 120.227.1.43, port: 12528, type: vless, uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d, tls: false, network: tcp, udp: true}
   - {name: 🇨🇳 中国 - Kwai Chung - 1, server: v9.hdacd.com, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇨🇳 中国 - Taichung - 2, server: 60.249.35.95, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
@@ -29,9 +31,7 @@ proxies:
   - {name: 🇫🇷 FR_2|1.1MB/s, server: 37.59.125.131, port: 8888, type: http, tls: false, udp: true}
   - {name: 🇫🇷 法国 - Paris - 1, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB_1|1.7MB/s, server: 193.36.118.210, port: 443, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 Technicolor SA, server: hkdcrtc-e.catcat321.com, port: 20129, type: trojan, password: 41c406e2-12b5-41f2-a329-d0621052d675, sni: hk.catxstar.com, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 Technicolor SA 2, server: oplosgru-c.catcat321.com, port: 20004, type: trojan, password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6, sni: hk.catxstar.com, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 31.76.251.127.cdn-one.org, port: 443, type: vless, uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c, tls: true, servername: 31.76.251.127.cdn-one.org, network: ws, ws-opts: {path: /10336/2GCOqG7bvA, headers: {Host: 31.76.251.127.cdn-one.org}}, udp: true}
+  - {name: 🇬🇷 希腊 V2CROSS.COM, server: 88.218.44.4, port: 993, type: vless, uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4}, servername: swcdn.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇭🇰 HK_1|948KB/s, server: 59.38.113.185, port: 20000, type: socks5, username: Og==, password: Og==, udp: true}
   - {name: 🇭🇰 HK_2|997KB/s, server: 160.124.240.189, port: 89, type: http, username: aa, password: aa, tls: false, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -196,7 +196,6 @@ proxies:
   - {name: 🇺🇸 US_7|899KB/s, server: 138.199.35.206, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US_8|565KB/s, server: 138.199.35.214, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US_9|1.3MB/s, server: 138.199.35.209, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 _US_美国, server: 88.218.44.4, port: 993, type: vless, uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ}, servername: download.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇺🇸 _US_美国_1, server: 88.218.44.4, port: 8443, type: vless, uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4, tls: true, reality-opts: {public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ}, servername: download.nvidia.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: TunService}, udp: true}
   - {name: 🇺🇸 _US_美国_2, server: guanwang.awsno.com, port: 443, type: vmess, uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 _US_美国_3, server: 180.178.60.253, port: 10000, type: vless, uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195, tls: false, network: tcp, udp: true}
@@ -214,7 +213,9 @@ proxies:
   - {name: 🇺🇸 美国 - San Jose - 7, server: 134.195.101.119, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
   - {name: 🇺🇸 美国 - San Jose - 8, server: 134.195.101.118, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
   - {name: 🇺🇸 美国 - San Jose - 9, server: 134.195.101.125, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 170.168.97.3, port: 993, type: vless, uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs}, servername: download.nvidia.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 Microsoft数据中心, server: cindy52.ceoiii.com, port: 36803, type: vmess, uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ajax.microsoft.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 152.53.236.22, port: 443, type: vless, uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs, short-id: "7a76f3c4b9dd" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司, server: s482.ccgfw.online, port: 443, type: vless, uuid: 5d02517f-63d5-3e9f-b467-1bcf4d4e25d3, tls: true, alpn: [h2%2Chttp%2F1.1], flow: xtls-rprx-vision, servername: u695099u34a1d2ebs478.gogocs.xyz, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇺🇸 美国2, server: 18.163.100.58, port: 39024, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国3, server: 16.162.3.64, port: 53001, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 95.40.58.84, port: 34039, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -249,6 +250,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - ❓Other_1|1.5MB/s
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇨🇦 加拿大 V2CROSS.COM
       - 🇨🇳 _CN_中国
       - 🇨🇳 中国 - Kwai Chung - 1
       - 🇨🇳 中国 - Taichung - 2
@@ -273,9 +276,7 @@ proxy-groups:
       - 🇫🇷 FR_2|1.1MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.7MB/s
-      - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇷 希腊 V2CROSS.COM
       - 🇭🇰 HK_1|948KB/s
       - 🇭🇰 HK_2|997KB/s
       - 🇭🇰 _HK_中国香港
@@ -474,8 +475,10 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 7
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -488,6 +491,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - ❓Other_1|1.5MB/s
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇨🇦 加拿大 V2CROSS.COM
       - 🇨🇳 _CN_中国
       - 🇨🇳 中国 - Kwai Chung - 1
       - 🇨🇳 中国 - Taichung - 2
@@ -512,9 +517,7 @@ proxy-groups:
       - 🇫🇷 FR_2|1.1MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.7MB/s
-      - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇷 希腊 V2CROSS.COM
       - 🇭🇰 HK_1|948KB/s
       - 🇭🇰 HK_2|997KB/s
       - 🇭🇰 _HK_中国香港
@@ -713,8 +716,10 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 7
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -911,8 +916,10 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 7
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -927,6 +934,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - ❓Other_1|1.5MB/s
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇨🇦 加拿大 V2CROSS.COM
       - 🇨🇴 CO_1|818KB/s
       - 🇨🇴 _CO_哥伦比亚
       - 🇩🇪 DE_1|1.0MB/s
@@ -944,9 +953,7 @@ proxy-groups:
       - 🇫🇷 FR_2|1.1MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.7MB/s
-      - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇷 希腊 V2CROSS.COM
       - 🇮🇪 爱尔兰 - Dublin - 1
       - 🇮🇳 IN_1|3.5MB/s
       - 🇰🇷 KR_1|2.1MB/s
@@ -1183,8 +1190,10 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 7
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -1196,6 +1205,8 @@ proxy-groups:
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
       - ❓Other_1|1.5MB/s
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇨🇦 加拿大 V2CROSS.COM
       - 🇨🇴 CO_1|818KB/s
       - 🇨🇴 _CO_哥伦比亚
       - 🇩🇪 DE_1|1.0MB/s
@@ -1213,9 +1224,7 @@ proxy-groups:
       - 🇫🇷 FR_2|1.1MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.7MB/s
-      - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇷 希腊 V2CROSS.COM
       - 🇮🇪 爱尔兰 - Dublin - 1
       - 🇮🇳 IN_1|3.5MB/s
       - 🇰🇷 KR_1|2.1MB/s
