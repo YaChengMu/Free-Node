@@ -39,9 +39,9 @@ proxies:
   - {name: 🇫🇷 FR_5|1.3MB/s, server: 103.82.101.44, port: 443, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国 - Paris - 1, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇬🇧 GB_1|1.0MB/s, server: 78.159.240.69, port: 8443, type: hysteria2, password: 7836b28e-8451-4596-ad3e-e3601b2335ba, auth: 7836b28e-8451-4596-ad3e-e3601b2335ba, sni: quic.tyr-agentstvo.tech, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: db1.mangshe.xyz, port: 2056, type: hysteria2, password: 9d3356a0-c07e-43cc-b30e-450bd50521b8, auth: 9d3356a0-c07e-43cc-b30e-450bd50521b8, sni: db1.mangshe.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇬🇷 GR_1|749KB/s, server: 83.147.216.208, port: 1080, type: socks5, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 Simcentric网络公司, server: 180.178.60.253, port: 10000, type: vless, uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195, tls: false, network: tcp, udp: true}
   - {name: 🇭🇰 香港3, server: 18.166.178.12, port: 5077, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 2c.fast9988.com, port: 50887, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 43.198.209.68, port: 27161, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -149,10 +149,12 @@ proxies:
   - {name: 🇺🇸 美国 - San Jose - 7, server: 134.195.101.119, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
   - {name: 🇺🇸 美国 - San Jose - 8, server: 134.195.101.118, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
   - {name: 🇺🇸 美国 - San Jose - 9, server: 134.195.101.125, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: time.is, port: 443, type: vless, uuid: 4d10c997-4781-4cd9-82c3-15453523e12c, tls: true, alpn: ["h3,h2,http/1.1"], servername: support.zoom.us.yxls.eu.cc., client-fingerprint: chrome, network: ws, ws-opts: {path: "/sg-melbi?ed=443", headers: {Host: support.zoom.us.yxls.eu.cc.}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.26.12.41, port: 443, type: vless, uuid: 4d10c997-4781-4cd9-82c3-15453523e12c, tls: true, servername: support.zoom.us.yxls.eu.cc, client-fingerprint: chrome, network: ws, ws-opts: {path: /sg-melbi, headers: {Host: support.zoom.us.yxls.eu.cc}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: cf5.466688.xyz, port: 8880, type: vless, uuid: 612f78a0-65ca-45af-a3ff-7d0f8e9f8655, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian, headers: {Host: broken-star-c5ae.446.workers.dev}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 144.31.166.91, port: 443, type: hysteria2, password: 71cada65-d23e-418c-88e4-a06188d14689, auth: 71cada65-d23e-418c-88e4-a06188d14689, sni: de-two.quiet-rogue.site, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: cf.090227.xyz, port: 443, type: trojan, password: 87961f9d-bee1-4377-826b-e169e7891c4f, sni: yks-dd9.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: yks-dd9.pages.dev}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: deepl.com, port: 8880, type: vless, uuid: f15a5586-23f6-453f-97f5-c301b949e699, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.KR.CMLiussss.net, headers: {Host: mute-sunset-0849.40-aeb.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 Microsoft数据中心, server: cindy52.ceoiii.com, port: 36803, type: vmess, uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ajax.microsoft.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: jdwadgw.cvewfjg.shop, port: 443, type: vless, uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs, short-id: "7a76f3c4b9dd" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点, server: i3.cloud--vpn.site, port: 443, type: vless, uuid: f04c31f7-cfab-4824-d167-4137d836ea82, tls: true, alpn: [h2], servername: ssl.fastly.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: ssl.fastly.com}}, udp: true}
+  - {name: 🇺🇸 美国 麻省理工学院, server: 18.239.83.52, port: 443, type: vless, uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53, tls: true, servername: d1yxsk0zprgivr.cloudfront.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: d1yxsk0zprgivr.cloudfront.net}}, udp: true}
   - {name: 🇺🇸 美国2, server: 18.163.100.58, port: 39024, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 18.166.178.12, port: 28051, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 95.40.58.84, port: 34039, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -220,10 +222,10 @@ proxy-groups:
       - 🇫🇷 FR_5|1.3MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.0MB/s
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇷 GR_1|749KB/s
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -338,12 +340,12 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 内华达州拉斯维加斯Versaweb
+      - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
+      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -387,10 +389,10 @@ proxy-groups:
       - 🇫🇷 FR_5|1.3MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.0MB/s
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇷 GR_1|749KB/s
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -505,12 +507,12 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 内华达州拉斯维加斯Versaweb
+      - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
+      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -570,6 +572,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -599,6 +602,7 @@ proxy-groups:
       - 🇨🇳 中国 - Tung Chung - 7
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -673,12 +677,12 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 内华达州拉斯维加斯Versaweb
+      - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
+      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -718,7 +722,6 @@ proxy-groups:
       - 🇫🇷 FR_5|1.3MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.0MB/s
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇷 GR_1|749KB/s
       - 🇮🇪 爱尔兰 - Dublin - 1
       - 🇱🇹 LT_1|2.8MB/s
@@ -783,6 +786,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -806,6 +810,7 @@ proxy-groups:
       - 🇨🇳 中国 - Tung Chung - 7
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -871,12 +876,12 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 内华达州拉斯维加斯Versaweb
+      - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
+      - 🇺🇸 美国 麻省理工学院
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -913,7 +918,6 @@ proxy-groups:
       - 🇫🇷 FR_5|1.3MB/s
       - 🇫🇷 法国 - Paris - 1
       - 🇬🇧 GB_1|1.0MB/s
-      - 🇬🇧 英国 V2CROSS.COM
       - 🇬🇷 GR_1|749KB/s
       - 🇮🇪 爱尔兰 - Dublin - 1
       - 🇱🇹 LT_1|2.8MB/s
