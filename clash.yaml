@@ -32,12 +32,11 @@ proxies:
   - {name: 🇫🇮 芬兰 - Helsinki - 1, server: creativeboxfin.zanity.net, port: 5223, type: ss, cipher: chacha20-ietf-poly1305, password: d3dNkbPb1w5BCBx9Fr5xsb, udp: true}
   - {name: 🇫🇷 FR_2|2.0MB/s, server: eac88fe8-t9zts0-tonrmx-8n27.fr.oshuawei.com, port: 443, type: http, username: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc, password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇫🇷 法国 - Paris - 1, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 法国巴黎 CloudFlare节点, server: 141.101.90.101, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
   - {name: 🇬🇧 GB_1|915KB/s, server: 78.159.240.69, port: 8443, type: hysteria2, password: 7836b28e-8451-4596-ad3e-e3601b2335ba, auth: 7836b28e-8451-4596-ad3e-e3601b2335ba, sni: quic.tyr-agentstvo.tech, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 Technicolor SA, server: oplosgru-c.catcat321.com, port: 20088, type: trojan, password: 41c406e2-12b5-41f2-a329-d0621052d675, sni: hk.catxstar.com, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 Technicolor SA 2, server: oplosgru-c.catcat321.com, port: 20004, type: trojan, password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6, sni: hk.catxstar.com, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 31.76.251.127.cdn-one.org, port: 443, type: vless, uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c, tls: true, servername: 31.76.251.127.cdn-one.org, network: ws, ws-opts: {path: /10336/2GCOqG7bvA, headers: {Host: 31.76.251.127.cdn-one.org}}, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: 82.39.171.148, port: 443, type: vless, uuid: d65cc14c-f53f-4fe2-b262-97856601319c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg, short-id: "c39cc7310a" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 英国 Technicolor SA, server: oplosgru-c.catcat321.com, port: 20034, type: trojan, password: 41c406e2-12b5-41f2-a329-d0621052d675, sni: hk.catxstar.com, udp: true}
   - {name: 🇭🇰 _HK_中国香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 香港 Simcentric网络公司, server: 180.178.60.253, port: 10000, type: vless, uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195, tls: false, network: tcp, udp: true}
   - {name: 🇭🇰 香港3, server: 18.166.178.12, port: 5077, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 2c.fast9988.com, port: 50887, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港4, server: 43.198.209.68, port: 27161, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -131,16 +130,15 @@ proxies:
   - {name: 🇺🇸 美国 - San Jose - 7, server: 134.195.101.119, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
   - {name: 🇺🇸 美国 - San Jose - 8, server: 134.195.101.118, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
   - {name: 🇺🇸 美国 - San Jose - 9, server: 134.195.101.125, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: 817aa69.default.nintendo.com:112719}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: cf.090227.xyz, port: 443, type: trojan, password: 87961f9d-bee1-4377-826b-e169e7891c4f, sni: yks-dd9.pages.dev, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: yks-dd9.pages.dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: cf2.466688.xyz, port: 8880, type: vless, uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.US.CMLiussss.net@https://t.me/QiangLieTuiJian, headers: {Host: quiet-snowflake-e1dd.374-ac3.workers.dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.26.1.195, port: 8080, type: vless, uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6, tls: false, network: ws, ws-opts: {path: /ws-6Tta3kYF, headers: {Host: premium-us-ca-01-gthost.efgwf.online}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: deepl.com, port: 8880, type: vless, uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.SG.CMLiussss.net, headers: {Host: sweet-truth-ccdb.134-7e9.workers.dev}}, udp: true}
   - {name: 🇺🇸 美国 Microsoft数据中心, server: cindy52.ceoiii.com, port: 36803, type: vmess, uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: ajax.microsoft.com}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 209.38.167.200, port: 47063, type: vless, uuid: d550a7cb-3a70-4b1a-8321-79347439f2a3, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [play.google.com]}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 149.104.104.58, port: 443, type: trojan, password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 149.104.104.58, port: 443, type: trojan, password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix, sni: 149.104.104.58, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: www.true.th, port: 443, type: vless, uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53, tls: true, servername: d1yxsk0zprgivr.cloudfront.net, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: d1yxsk0zprgivr.cloudfront.net}}, udp: true}
   - {name: 🇺🇸 美国2, server: 18.163.100.58, port: 39024, type: trojan, password: d1960ba9f0f6353353994fa844cf817b, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 18.166.178.12, port: 28051, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 95.40.58.84, port: 34039, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 43.198.89.155, port: 1431, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 95.40.107.76, port: 39024, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -198,13 +196,12 @@ proxy-groups:
       - 🇫🇮 芬兰 - Helsinki - 1
       - 🇫🇷 FR_2|2.0MB/s
       - 🇫🇷 法国 - Paris - 1
+      - 🇫🇷 法国巴黎 CloudFlare节点
       - 🇬🇧 GB_1|915KB/s
       - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -302,18 +299,18 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
       - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国纽约州水牛城 ColoCrossing数据中心
   - name: 👆🏻 ‍指定
     type: select
     proxies:
@@ -346,13 +343,12 @@ proxy-groups:
       - 🇫🇮 芬兰 - Helsinki - 1
       - 🇫🇷 FR_2|2.0MB/s
       - 🇫🇷 法国 - Paris - 1
+      - 🇫🇷 法国巴黎 CloudFlare节点
       - 🇬🇧 GB_1|915KB/s
       - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -450,18 +446,18 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
       - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国纽约州水牛城 ColoCrossing数据中心
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -516,6 +512,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -545,6 +542,7 @@ proxy-groups:
       - 🇨🇳 中国 - Tung Chung - 7
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -619,18 +617,18 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
       - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国纽约州水牛城 ColoCrossing数据中心
   - name: 🎏 ‍其他
     type: url-test
     url: https://i.ytimg.com/generate_204
@@ -659,11 +657,9 @@ proxy-groups:
       - 🇫🇮 芬兰 - Helsinki - 1
       - 🇫🇷 FR_2|2.0MB/s
       - 🇫🇷 法国 - Paris - 1
+      - 🇫🇷 法国巴黎 CloudFlare节点
       - 🇬🇧 GB_1|915KB/s
       - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇮🇪 爱尔兰 - Dublin - 1
       - 🇰🇷 KR_1|3.1MB/s
       - 🇰🇷 KR_2|5.2MB/s
@@ -710,6 +706,7 @@ proxy-groups:
     proxies:
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -733,6 +730,7 @@ proxy-groups:
       - 🇨🇳 中国 - Tung Chung - 7
       - 🇭🇰 _HK_中国香港
       - 🇭🇰 香港
+      - 🇭🇰 香港 Simcentric网络公司
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
       - 🇭🇰 香港4
@@ -798,18 +796,18 @@ proxy-groups:
       - 🇺🇸 美国 - San Jose - 8
       - 🇺🇸 美国 - San Jose - 9
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 Microsoft数据中心
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 V2CROSS.COM 2
       - 🇺🇸 美国 V2CROSS.COM 3
+      - 🇺🇸 美国 V2CROSS.COM 4
       - 🇺🇸 美国 乔治亚洲亚特兰大Fastly节点
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇺🇸 美国纽约州水牛城 ColoCrossing数据中心
   - name: 👆🏻🎏 ‍其他
     type: select
     proxies:
@@ -835,11 +833,9 @@ proxy-groups:
       - 🇫🇮 芬兰 - Helsinki - 1
       - 🇫🇷 FR_2|2.0MB/s
       - 🇫🇷 法国 - Paris - 1
+      - 🇫🇷 法国巴黎 CloudFlare节点
       - 🇬🇧 GB_1|915KB/s
       - 🇬🇧 英国 Technicolor SA
-      - 🇬🇧 英国 Technicolor SA 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇬🇧 英国 V2CROSS.COM 2
       - 🇮🇪 爱尔兰 - Dublin - 1
       - 🇰🇷 KR_1|3.1MB/s
       - 🇰🇷 KR_2|5.2MB/s
