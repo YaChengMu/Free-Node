@@ -7,29 +7,34 @@ external-controller: :9090
 proxies:
   - {name: _CW_CW, server: 88.216.67.50, port: 8880, type: vless, uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vms.lifetime05.workers.dev}}, udp: true}
   - {name: ℹ️ tg频道:@freenodedaily, server: 63.180.254.10, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: ❓Other_1|2.2MB/s, server: 138.199.35.209, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇹 AT_1|2.0MB/s, server: 152.53.1.40, port: 443, type: vless, uuid: edde565e-41f5-400e-84ea-7b87a3e84488, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc, short-id: "43dcff53849b81e6" }, servername: at.quattro-tech.ru, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇧🇪 BE_1|1.8MB/s, server: 0u1b-m23jqv.jumpnest.top, port: 443, type: vless, uuid: 4b7a69d9-74cd-4ab2-bfb3-1d2093e8179f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: rwR7H9XhX1w-LjcPCZiDnzV_sUUyJRSJvGYhIYHmS3E, short-id: "28bf2d7deea465ff" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: ❓Other_1|2.1MB/s, server: 138.199.35.205, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇹 AT_1|1.4MB/s, server: 152.53.1.40, port: 443, type: vless, uuid: edde565e-41f5-400e-84ea-7b87a3e84488, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc, short-id: "43dcff53849b81e6" }, servername: at.quattro-tech.ru, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇧🇪 BE_1|909KB/s, server: 0u1b-m23jqv.jumpnest.top, port: 443, type: vless, uuid: 4b7a69d9-74cd-4ab2-bfb3-1d2093e8179f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: rwR7H9XhX1w-LjcPCZiDnzV_sUUyJRSJvGYhIYHmS3E, short-id: "28bf2d7deea465ff" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇧🇷 BR_1|1.2MB/s, server: u234-6njjdk.startora.top, port: 443, type: vless, uuid: c396fa08-e07a-459b-b894-389456fd6a82, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: m89wjPa2LxODyi8U5pRVI4E1fwVawIaftC3fLY0ZLw4, short-id: "9ea177c3c147119b" }, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇧🇷 巴西圣保罗 CloudFlare节点, server: 188.114.97.7, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
   - {name: 🇨🇦 加拿大 - Toronto - 1, server: 137.184.172.41, port: 1921, type: trojan, password: fg20mtCFHy, sni: sfecv.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 广东省广州市 电信IDC机房(校场西), server: us22.sofast.live, port: 58011, type: vless, uuid: 0afc6426-606c-48e7-bd70-3c424a416842, tls: false, network: tcp, udp: true}
+  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 130.250.137.171, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇨🇭 CH_1|1.1MB/s, server: jhmq-16fdqod.henghesoft.net, port: 443, type: vless, uuid: f04037b7-125e-4666-841f-4b6bdbc9823d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: cFmHbKSQO1BQnCBGd26-EA0CU-zYmduwk0Wqu0fhuT0, short-id: "7e8d2954eb836947" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇨🇳 广东省广州市 腾讯云, server: jp.sofast.live, port: 52683, type: vless, uuid: 399b6b23-cc40-4831-a494-61948e2df133, tls: false, network: tcp, udp: true}
-  - {name: 🇩🇪 DE_1|2.4MB/s, server: de.trxlnsnet.ir, port: 443, type: vless, uuid: afd63042-1c62-472f-9b56-5904d71e44d1, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c, short-id: "aaea1528e22abe1a" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 DE_2|2.1MB/s, server: 92.5.97.62, port: 59924, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: RN0dGU/NAYohNIxZ5fu2lARksVacVsxpo5MslRTjV8o=, udp: true}
+  - {name: 🇩🇪 DE_1|3.0MB/s, server: 89.144.35.232, port: 17306, type: tuic, password: 3ebac90b-6977-47c0-bef5-b2e37554432c, uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c, sni: www.microsoft.com, skip-cert-verify: true, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
+  - {name: 🇩🇪 DE_2|2.5MB/s, server: 194.31.223.107, port: 443, type: hysteria2, password: 81378ef7-89a1-43b5-9a9d-a04a8af25b7c, auth: 81378ef7-89a1-43b5-9a9d-a04a8af25b7c, sni: de1.apexvpn.space, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_3|1.8MB/s, server: 43.224.150.71, port: 443, type: vless, uuid: 0a31984d-b06f-4e79-b255-0dc64ee5d419, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: jkGStCLgX1e3kQ31H1_ycSuYm_zSNQ4qVafasU7bkwU, short-id: "4c0be5bf40e9f5ce" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE_4|1.1MB/s, server: 2.26.71.73, port: 443, type: vless, uuid: 4e843ed6-09e7-4be5-bd52-a1dc46568aeb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: YkcQyTOh9YpZmilRob-eVxwoo4uwBAa9oHmURMTFzEM, short-id: "2b8c5e91" }, servername: www.cloudflare.com, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇩🇪 _DE_德国, server: 3.79.218.80, port: 22222, type: vless, uuid: e4514801-0d5a-42ba-869f-39bd605aef9e, tls: false, network: tcp, udp: true}
   - {name: 🇩🇪 _DE_德国_1, server: 18.157.224.206, port: 22224, type: vless, uuid: e4514801-0d5a-42ba-869f-39bd605aef9e, tls: false, network: tcp, udp: true}
   - {name: 🇩🇪 德国 - Frankfurt am Main - 1, server: 209.38.240.27, port: 5859, type: trojan, password: fg20mtCFHy, sni: uyped.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇪🇪 EE_1|2.1MB/s, server: ru-5b7331.atlanta-games.com, port: 443, type: trojan, password: HaZLUMP__fVySm7WzxFcnk7Nm8-f1CCK, sni: ru-5b7331.atlanta-games.com, alpn: [h2], skip-cert-verify: false, network: grpc, grpc-opts: {grpc-service-name: ajv}, udp: true}
-  - {name: 🇫🇮 FI_1|1.2MB/s, server: fi.trxlnsnet.ir, port: 443, type: vless, uuid: afd63042-1c62-472f-9b56-5904d71e44d1, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c, short-id: "aaea1528e22abe1a" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇫🇮 FI_2|1.2MB/s, server: 109.248.161.163, port: 443, type: vless, uuid: afd63042-1c62-472f-9b56-5904d71e44d1, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SaMFOixEvpRj18sFAi-knccGo5_1KT2x6EwUMeGx00c, short-id: "aaea1528e22abe1a" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇫🇮 FI_1|1.2MB/s, server: 85.192.49.151, port: 443, type: vless, uuid: bb05f9d7-a3d1-4b81-a790-f6dba0301907, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: i00_tpIO0Oe2TV2lxm2BLm6QUzzkncyJtauMa7Rn500, short-id: "b91a73752053b039" }, servername: de.servers.gracevpnbuy.com, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇫🇮 芬兰 - Helsinki - 1, server: creativeboxvpnf.zanity.net, port: 5223, type: ss, cipher: chacha20-ietf-poly1305, password: YwkJ1ViArbK6AZBCyjEC2p, udp: true}
+  - {name: 🇫🇷 FR_1|1.5MB/s, server: 163.5.153.153, port: 443, type: vless, uuid: 0a76a766-d141-44b8-944e-dff757d7116f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: aB_2Tcf0A5LoiIEZHztR_l-ZOFeJKxYRH67s_OVQ9C0, short-id: "a91045bc" }, servername: www.samsung.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇫🇷 _FR_法国, server: 15.237.189.197, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇫🇷 法国巴黎 CloudFlare节点, server: 141.101.90.101, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇬🇧 GB_1|537KB/s, server: 195.184.247.223, port: 443, type: vless, uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI, short-id: "f63805c3ecc7a483" }, servername: savesafe.co, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇬🇧 GB_2|2.1MB/s, server: 195.184.247.222, port: 443, type: vless, uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI, short-id: "f63805c3ecc7a483" }, servername: savesafe.co, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇬🇧 GB_4|2.1MB/s, server: 195.184.247.225, port: 443, type: vless, uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI, short-id: "f63805c3ecc7a483" }, servername: savesafe.co, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇬🇧 GB_1|1.3MB/s, server: 195.184.247.225, port: 443, type: vless, uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI, short-id: "f63805c3ecc7a483" }, servername: savesafe.co, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇬🇧 GB_2|1.3MB/s, server: 85.137.249.157, port: 2054, type: vless, uuid: f6da8274-44be-4599-a8d8-66929c980677, tls: true, reality-opts: {public-key: Re5uQKjLVnOpmsyTQKCiqh8LLJ-UAyZy0s3KO6PRtEY, short-id: "300580005a374a9f" }, servername: max.ru, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc}, udp: true}
   - {name: 🇬🇧 _GB_英国, server: 104.248.167.79, port: 5624, type: trojan, password: fg20mtCFHy, sni: dsgvc.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: fast.wwwinternetvideo.click, port: 443, type: hysteria2, password: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE, auth: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE, sni: fast.wwwinternetvideo.click, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK_1|4.4MB/s, server: 6sdo-zilhxv.logicara.top, port: 443, type: vless, uuid: daf0c4cb-3541-4f20-bc71-cc9d94bb17bc, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BF9aCRIeWaFADnCRCeEKsX1SSRaqAPrXttdD9eFCl0k, short-id: "96b6483bfb4ac526" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 195.184.247.222, port: 443, type: vless, uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI, short-id: "f63805c3ecc7a483" }, servername: savesafe.co, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: planb.mojcn.com.linuxlh.xin, port: 16632, type: vmess, uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇭🇰 HK_1|3.3MB/s, server: hk2.xiaoliyu.cyou, port: 4433, type: hysteria2, password: 1427eb10-7529-4d38-a6a2-01b337868b37, auth: 1427eb10-7529-4d38-a6a2-01b337868b37, sni: hk2.xiaoliyu.cyou, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK_2|5.2MB/s, server: 43.100.43.112, port: 3060, type: socks5, username: 123, password: 123, udp: true}
+  - {name: 🇭🇰 HK_3|1.8MB/s, server: 9wf3-zili1w.laurelmedco.com, port: 443, type: vless, uuid: e01b5875-0b0b-4056-bbf5-0b0ecdc97937, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Z41OxiwFrf0VAEv7_qXoEMKSmLJPjEPPJzXpP1s6gGk, short-id: "977a84fa5512be5a" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇭🇰 香港, server: v10.hdacd.com, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇭🇰 香港3, server: 16.163.156.207, port: 14684, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港3|@ripaojiedian, server: 18.162.156.145, port: 50887, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
@@ -37,15 +42,17 @@ proxies:
   - {name: 🇭🇰 香港4|@ripaojiedian, server: 18.163.114.228, port: 7674, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5, server: 43.198.109.134, port: 14684, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇭🇰 香港5|@ripaojiedian, server: 16.162.103.28, port: 7674, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇱 IL_1|1.4MB/s, server: 185.95.231.156, port: 443, type: vless, uuid: 2c368215-ac89-4787-9762-edb2c9947630, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ytnOqGbyUQ3efc25iPD8bJGdXgOi6zdBTP55JIa5OU0, short-id: "964b2a1a" }, servername: www.apple.com, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇮🇳 _IN_印度, server: 157.245.99.215, port: 5750, type: trojan, password: fg20mtCFHy, sni: inyct.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 2.144.21.112, port: 40443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
   - {name: 🇮🇹 意大利 - Milan - 1, server: 172.238.226.26, port: 5444, type: trojan, password: fg20mtCFHy, sni: xcvge.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP_1|858KB/s, server: 211.91.158.24, port: 21119, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
-  - {name: 🇯🇵 JP_2|559KB/s, server: 211.91.158.27, port: 21109, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
-  - {name: 🇯🇵 JP_3|870KB/s, server: 211.91.158.27, port: 21119, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
-  - {name: 🇯🇵 JP_4|5.7MB/s, server: 103.100.158.10, port: 443, type: vless, uuid: 6a1f6c94-7785-42e2-9203-381d1f4db37e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1xIu8ESLs4JviWXp8XaOceWAEVHqWLzNIiojA_uf8Ug, short-id: "83feb7aa267e9ddf" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 JP_5|1.7MB/s, server: 188.253.123.164, port: 39411, type: vless, uuid: f06c6039-a489-3d78-a676-ed43be6deca3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA, short-id: "bc8e3658db7d1323" }, servername: cdnjs.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 JP_6|3.2MB/s, server: 103.76.85.228, port: 443, type: vless, uuid: 696338ec-091d-4b41-b855-8f88d5b5d873, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: oCsEp9srC8WQ7ZAsGSqD0QZ9MrNtIrUyllSZcgTfd28, short-id: "b81f60db2e3d6346" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP_1|3.4MB/s, server: 211.91.158.24, port: 21109, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇯🇵 JP_2|2.2MB/s, server: 211.91.158.24, port: 21119, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇯🇵 JP_3|2.9MB/s, server: 211.91.158.27, port: 21109, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇯🇵 JP_4|2.2MB/s, server: 211.91.158.27, port: 21119, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇯🇵 JP_5|5.0MB/s, server: 188.253.123.164, port: 39411, type: vless, uuid: f06c6039-a489-3d78-a676-ed43be6deca3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA, short-id: "bc8e3658db7d1323" }, servername: cdnjs.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP_6|821KB/s, server: 64cq-19370l2.meiboyun.cloud, port: 443, type: vless, uuid: 048a61f8-b236-4082-b1c3-c22a85693c12, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: gcqSfWJ1yR5Aa2fsBYZ3vyaC0yQnil4qqNMZN4weZlE, short-id: "674a07ea4d1c4255" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP_7|3.7MB/s, server: upright-sheepdog.rooster465.autos, port: 443, type: trojan, password: EQ30679154, sni: upright-sheepdog.rooster465.autos, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP_8|1.3MB/s, server: 35.200.86.178, port: 21143, type: vless, uuid: 16b3793b-3335-4832-b1fd-877b2c5e15d6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: VFcjMcy9uLRCq3dy9zqYFOPF73TAx6QO11rleDrfBgM, short-id: "274772e3550ee3eb" }, servername: www.spotify.com, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇯🇵 _JP_日本, server: driven-doberman.rooster465.autos, port: 443, type: trojan, password: HC04361579, sni: driven-doberman.rooster465.autos, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 _JP_日本_1, server: 3.112.15.214, port: 443, type: trojan, password: ND91608427, sni: adjusted-labrador.rooster465.autos, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本, server: 16.163.139.175, port: 49811, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
@@ -60,80 +67,137 @@ proxies:
   - {name: 🇯🇵 日本3, server: 16.162.192.182, port: 3415, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本3|@ripaojiedian, server: 18.163.114.228, port: 26704, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇯🇵 日本|@ripaojiedian, server: 54.46.126.133, port: 9408, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR_1|579KB/s, server: 211.91.158.24, port: 21107, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
-  - {name: 🇰🇷 KR_2|600KB/s, server: 211.91.158.27, port: 21107, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
-  - {name: 🇰🇷 KR_5|10.2MB/s, server: 3.39.237.40, port: 56001, type: hysteria2, password: NjpqMyHOlMjWTcjE, auth: NjpqMyHOlMjWTcjE, sni: kor-ls-6.nebulacloud.win, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR_6|3.6MB/s, server: 121.46.230.235, port: 65443, type: ss, cipher: aes-256-cfb, password: 7eadc6dbe2ae, udp: true}
+  - {name: 🇰🇷 KR_1|3.5MB/s, server: 211.91.158.24, port: 21114, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇰🇷 KR_2|2.8MB/s, server: 211.91.158.24, port: 21107, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇰🇷 KR_3|2.8MB/s, server: 211.91.158.27, port: 21107, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
+  - {name: 🇰🇷 KR_4|4.8MB/s, server: 3.39.237.40, port: 56001, type: hysteria2, password: NjpqMyHOlMjWTcjE, auth: NjpqMyHOlMjWTcjE, sni: kor-ls-6.nebulacloud.win, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR_5|5.5MB/s, server: 121.46.230.235, port: 65443, type: ss, cipher: aes-256-cfb, password: 7eadc6dbe2ae, udp: true}
+  - {name: 🇰🇷 KR_6|2.0MB/s, server: 155.117.199.13, port: 39213, type: vless, uuid: f06c6039-a489-3d78-a676-ed43be6deca3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA, short-id: "bc8e3658db7d1323" }, servername: cdnjs.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 KR_7|2.5MB/s, server: 188.253.123.164, port: 38551, type: vless, uuid: f06c6039-a489-3d78-a676-ed43be6deca3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA, short-id: "bc8e3658db7d1323" }, servername: cdnjs.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇰🇷 _KR_韩国, server: awake-redbird.rooster465.autos, port: 443, type: trojan, password: PQ05174892, sni: awake-redbird.rooster465.autos, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 - Gangseo-gu - 1, server: 211.91.158.24, port: 21114, type: ss, cipher: chacha20-ietf-poly1305, password: 9325a345-c72f-4637-a8f4-34f9effb7ba6, udp: true}
-  - {name: 🇳🇱 NL_1|1.6MB/s, server: 84.17.47.148, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL_2|1.4MB/s, server: 84.17.47.150, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL_3|2.4MB/s, server: 85.155.226.200, port: 443, type: vless, uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 5Z6PwoPSNBLPIsX8lZtHM7-Y-psMMR1vz5Pit0EVISs, short-id: "82f5d3a1e9c0b661" }, servername: getsavesafe.net, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇱🇺 LU_1|1.3MB/s, server: pretty-mollusk.rooster465.autos, port: 443, type: trojan, password: EQ30679154, sni: pretty-mollusk.rooster465.autos, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 NL_10|2.6MB/s, server: 193.123.36.56, port: 62145, type: vless, uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a, tls: false, network: tcp, udp: true}
+  - {name: 🇳🇱 NL_1|1.7MB/s, server: 51.159.225.196, port: 23856, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_2|1.3MB/s, server: 84.17.47.146, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_3|964KB/s, server: 84.17.47.147, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_4|948KB/s, server: 84.17.47.148, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_6|1.6MB/s, server: 84.17.47.149, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_7|1.4MB/s, server: 84.17.47.125, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_8|2.6MB/s, server: nl2.frkn.org, port: 8443, type: hysteria2, password: 3b8c82ed-fe66-472d-915e-034ccb57103f, auth: 3b8c82ed-fe66-472d-915e-034ccb57103f, sni: nl2.frkn.org, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_9|2.0MB/s, server: 144.31.237.57, port: 443, type: vless, uuid: 47b104e0-59cf-4ec4-a8fd-d080b4a756d6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: TC8D2edifNXaro0S31ZiC9izi8tAmXJyxdOHptwNUTw, short-id: "660c1badc77a422b" }, servername: edge-nl.mystatic-cdn.ru, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇳🇱 _NL_荷兰, server: 141.148.225.158, port: 62145, type: vless, uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a, tls: false, network: tcp, udp: true}
   - {name: 🇳🇱 _NL_荷兰_1, server: serv40.strettenvpn.com, port: 7771, type: vless, uuid: 707db87b-9cbf-438f-b4c7-9d984c8e944a, tls: true, reality-opts: {public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28, short-id: "c4a9f1e2" }, servername: sun6-21.userapi.com, client-fingerprint: qq, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: vless-grpc}, udp: true}
-  - {name: 🇳🇱 荷兰 - Amsterdam - 1, server: 51.159.225.196, port: 23856, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 荷兰 - Amsterdam - 2, server: 84.17.47.146, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 荷兰 - Amsterdam - 5, server: 84.17.47.149, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 荷兰 - Amsterdam - 6, server: 84.17.47.125, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 荷兰 - Amsterdam - 7, server: 84.17.47.150, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 荷兰 - Amsterdam - 9, server: 206.189.7.80, port: 5446, type: trojan, password: fg20mtCFHy, sni: inxgc.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 185.206.170.114, port: 20184, type: vless, uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HVT2ZMgVLqnL1eccq5a7CRcYsOJ_FKUUv-88tix4Om0, short-id: "e695831a6e5f2ba4" }, servername: jgirpgor3g54.vpvr4ib84nuv6hdkt.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇵🇪 PE_1|2.0MB/s, server: 5r86-tuq187.operix.top, port: 443, type: vless, uuid: 4caaaae0-516b-4026-b2b2-69fea69df19a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: LDpWYUJjGRJomvaN-gfgY96EJOF2DDHiFcNPEBLtoW0, short-id: "9019bbea8ff8781e" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇵🇪 PE_1|1.7MB/s, server: 5r86-tuq187.operix.top, port: 443, type: vless, uuid: 4caaaae0-516b-4026-b2b2-69fea69df19a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: LDpWYUJjGRJomvaN-gfgY96EJOF2DDHiFcNPEBLtoW0, short-id: "9019bbea8ff8781e" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇵🇱 PL_1|548KB/s, server: 82.38.65.76, port: 443, type: vless, uuid: f1c496bf-d2ab-45be-bc13-051d60d227b7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: tcBg_sBbiRt9z-JHFYbf_jITjuuiBULB3chmNBuFRh8}, servername: pypi.org, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇷🇴 RO_10|650KB/s, server: 84.239.49.185, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_11|843KB/s, server: 84.239.49.201, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_12|783KB/s, server: 84.239.49.57, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_13|616KB/s, server: 84.239.49.235, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_14|792KB/s, server: 84.239.49.43, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_15|842KB/s, server: 84.239.14.147, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_16|685KB/s, server: 84.239.49.50, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_17|947KB/s, server: 84.239.49.196, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_18|1.4MB/s, server: 84.239.14.156, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_19|573KB/s, server: 84.239.49.191, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_1|1.1MB/s, server: 84.239.49.49, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_20|932KB/s, server: 84.239.14.149, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_21|825KB/s, server: 84.239.49.223, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_22|1.8MB/s, server: 84.239.49.225, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_23|1.3MB/s, server: 84.239.49.240, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_24|2.1MB/s, server: 84.239.49.56, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_25|1.3MB/s, server: 84.239.49.233, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_26|930KB/s, server: 84.239.49.231, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_27|1.9MB/s, server: 84.239.49.192, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_28|1.8MB/s, server: 84.239.49.217, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_29|912KB/s, server: 84.239.49.62, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_2|1.7MB/s, server: 84.239.49.202, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_30|1.3MB/s, server: 84.239.49.254, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_31|1.9MB/s, server: 84.239.49.163, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_32|2.0MB/s, server: 84.239.49.58, port: 9002, type: http, username: "null", password: "null", tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_33|1.4MB/s, server: 84.239.14.152, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_34|1.0MB/s, server: 84.239.49.245, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_35|1.8MB/s, server: 84.239.49.200, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_36|2.1MB/s, server: 84.239.49.157, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_37|1.4MB/s, server: 84.239.49.171, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_38|818KB/s, server: 84.239.49.194, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_39|1.3MB/s, server: 193.176.84.25, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_3|1.9MB/s, server: 84.239.49.59, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_40|1.1MB/s, server: 84.239.49.175, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_41|1.0MB/s, server: 84.239.14.154, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_42|626KB/s, server: 193.176.84.19, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_43|2.0MB/s, server: 84.239.49.159, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_44|1.9MB/s, server: 84.239.49.39, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_45|861KB/s, server: 84.239.49.37, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_46|1.4MB/s, server: 84.239.49.211, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_47|1.2MB/s, server: 84.239.49.160, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_48|797KB/s, server: 84.239.49.207, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_49|1.7MB/s, server: 84.239.49.42, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_4|1.8MB/s, server: 84.239.49.162, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_50|1.2MB/s, server: 84.239.49.173, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_51|903KB/s, server: 84.239.49.164, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_52|2.1MB/s, server: 84.239.49.183, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_53|2.2MB/s, server: 84.239.14.148, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_54|1.3MB/s, server: 193.176.84.37, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_5|1.6MB/s, server: 84.239.49.244, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_6|939KB/s, server: 84.239.49.253, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_7|1.4MB/s, server: 84.239.49.241, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_8|671KB/s, server: 84.239.49.181, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇴 RO_9|1.5MB/s, server: 193.176.84.16, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 1, server: 193.176.84.39, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 10, server: 84.239.49.43, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 11, server: 84.239.14.147, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 12, server: 84.239.49.196, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 13, server: 84.239.14.156, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 14, server: 84.239.49.191, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 15, server: 84.239.14.149, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 16, server: 84.239.49.231, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 17, server: 84.239.49.217, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 18, server: 84.239.49.254, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 19, server: 84.239.49.58, port: 9002, type: http, username: "null", password: "null", tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 2, server: 84.239.49.162, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 20, server: 84.239.14.152, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 21, server: 84.239.49.200, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 22, server: 84.239.49.197, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 23, server: 84.239.49.171, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 24, server: 84.239.49.194, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 25, server: 193.176.84.25, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 26, server: 193.176.84.20, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 27, server: 193.176.84.34, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 28, server: 193.176.84.24, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 29, server: 193.176.84.29, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 3, server: 84.239.49.241, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 30, server: 84.239.14.154, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 31, server: 84.239.49.204, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 32, server: 193.176.84.19, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 33, server: 84.239.49.211, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 34, server: 84.239.49.160, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 35, server: 84.239.49.165, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 36, server: 193.176.84.32, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 37, server: 84.239.14.153, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 38, server: 193.176.84.31, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 39, server: 84.239.49.164, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 4, server: 193.176.84.38, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 40, server: 84.239.14.148, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 41, server: 193.176.84.23, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 5, server: 193.176.84.35, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 6, server: 84.239.49.181, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 7, server: 193.176.84.16, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇴 罗马尼亚 - Bucharest - 8, server: 193.176.84.30, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 罗马尼亚 - Bucharest - 9, server: 84.239.49.235, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇷🇺 俄罗斯 - Moscow - 3, server: 45.140.169.123, port: 20887, type: ss, cipher: aes-256-gcm, password: 6b39ae3234dfd68b, udp: true}
   - {name: 🇷🇺 俄罗斯 - Saint Petersburg - 1, server: 195.133.23.5, port: 20998, type: ss, cipher: aes-256-gcm, password: d99c422199e62b6b, udp: true}
   - {name: 🇷🇺 俄罗斯 - Saint Petersburg - 2, server: 195.133.23.200, port: 10998, type: ss, cipher: aes-256-gcm, password: 81a20429165df87e, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: sg1.xiaoliyu.cyou, port: 1935, type: hysteria2, password: 1427eb10-7529-4d38-a6a2-01b337868b37, auth: 1427eb10-7529-4d38-a6a2-01b337868b37, sni: sg1.xiaoliyu.cyou, skip-cert-verify: true, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 176.109.85.71, port: 14443, type: vless, uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f, tls: true, alpn: [http/1.1], servername: mws.tunnelgate.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /ru, headers: {Host: mws.tunnelgate.org}}, udp: true}
   - {name: 🇸🇪 瑞典 - Stockholm - 1, server: 172.234.100.80, port: 5612, type: trojan, password: fg20mtCFHy, sni: yugdv.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG_1|5.6MB/s, server: 47.129.241.226, port: 443, type: hysteria2, password: qQe1z5kU8kN6SlKnDt9Ru3Qp, auth: qQe1z5kU8kN6SlKnDt9Ru3Qp, sni: vpn-sg-001.fastervpn.world, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG_2|3.3MB/s, server: 168.138.177.12, port: 56927, type: ss, cipher: 2022-blake3-chacha20-poly1305, password: LYuXPKlNF1V2jY/UWxFA8wrIRzwPeCLkqqk/6y12TK8=, udp: true}
+  - {name: 🇸🇬 SG_1|1.1MB/s, server: 6ucb-1936he6.qvanta.top, port: 443, type: vless, uuid: 6179bb85-fd73-4aa1-a10d-a7c017306c1b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: t3_QIEko7K1ONUIWGr4L84HNHszQ3zB_kOqkALiacRg, short-id: "43a85ad1c112e5d8" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇸🇬 _SG_新加坡, server: paid.sshehi.ggff.net, port: 443, type: vless, uuid: 49c86212-ae0b-430e-9abb-244e715b533f, tls: true, network: ws, ws-opts: {path: /, headers: {Host: paid.sshehi.ggff.net}}, udp: true}
   - {name: 🇸🇬 新加坡, server: 95.40.14.234, port: 51396, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡2, server: 16.162.100.124, port: 7375, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 16.162.100.124, port: 51396, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇸🇬 新加坡3, server: 16.163.139.175, port: 26704, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: 85.90.197.131, port: 443, type: vless, uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI, short-id: "00bca5982f82d083" }, servername: eu-central.cendora.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US_1|1.6MB/s, server: 172.66.44.97, port: 443, type: vless, uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8, tls: true, servername: josni.hoyes.cloudns.ch, network: ws, ws-opts: {path: /musiclovers85_musiclovers85, headers: {Host: josni.hoyes.cloudns.ch}}, udp: true}
-  - {name: 🇺🇸 US_2|1.4MB/s, server: 176.109.108.83, port: 9830, type: vless, uuid: 2a650f3b-d95b-4bd6-aadf-16ccc0717155, tls: true, reality-opts: {public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU, short-id: "aabb" }, servername: dl.google.com, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-tunnel}, udp: true}
-  - {name: 🇺🇸 US_4|536KB/s, server: abc-production-bf72.up.railway.app, port: 443, type: vless, uuid: c711d66c-021b-4644-b6b4-1b507bbeeac2, tls: true, alpn: [h3], servername: abc-production-bf72.up.railway.app, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ws/vless/c711d66c-021b-4644-b6b4-1b507bbeeac2?ed", headers: {Host: abc-production-bf72.up.railway.app}}, udp: true}
+  - {name: 🇺🇸 US_10|580KB/s, server: 138.199.35.195, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_11|2.0MB/s, server: 138.199.35.213, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_12|1.2MB/s, server: 156.146.59.28, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_13|718KB/s, server: 156.146.59.5, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_14|2.0MB/s, server: 156.146.59.27, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_15|1.4MB/s, server: 156.146.59.10, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_16|1.3MB/s, server: 156.146.59.39, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_17|2.2MB/s, server: 154.29.155.211, port: 443, type: vless, uuid: e1588d14-0a16-483f-9d54-cf521541035b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GYD0NwdNDlDIAkRGIMqRC7RuhZTScmSw2SlknoRNrDo, short-id: "521959f62377e2fa" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US_18|1.7MB/s, server: 138.199.35.203, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_19|2.2MB/s, server: 138.199.35.219, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_1|1.8MB/s, server: 38.246.226.240, port: 52080, type: vmess, uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇺🇸 US_20|2.0MB/s, server: 138.199.35.216, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_21|2.0MB/s, server: 51.81.223.225, port: 11094, type: vless, uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk, short-id: "a356addf" }, servername: www.yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US_22|3.5MB/s, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US_23|2.3MB/s, server: 5.253.38.67, port: 40444, type: vless, uuid: 2af4399e-e3b4-4de4-a679-1dc15c3be2f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US_25|1.8MB/s, server: rssm-1btto92.joxenly.com, port: 443, type: vless, uuid: 83c18ff2-0565-4b53-89ad-57357fef153b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bHGC7iI4Q50nxoYStP3TjBaRXih6O0bmuemexki0aXY, short-id: "29ff8963a9fe281c" }, servername: www.bing.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US_27|2.4MB/s, server: 66.112.214.26, port: 443, type: vless, uuid: 490a11eb-e38a-4a85-b391-7175de597b80, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ExoLmgvra4OkUzW08_tkUKCOpqZ-fp-sur_NqpRui1s}, servername: www.icloud.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US_2|678KB/s, server: 138.199.35.210, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_3|1.2MB/s, server: 138.199.35.212, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_4|2.1MB/s, server: 138.199.35.208, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_5|674KB/s, server: 138.199.35.214, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_6|1.9MB/s, server: 138.199.35.206, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_7|1.3MB/s, server: 138.199.35.197, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_8|532KB/s, server: 138.199.35.209, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US_9|1.6MB/s, server: 138.199.35.204, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 _US_美国, server: 173.255.247.228, port: 5444, type: trojan, password: fg20mtCFHy, sni: frsdata.southbyte.xyz, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 _US_美国_1, server: 40.160.69.53, port: 8080, type: vless, uuid: 11af1c47-865a-47c6-92ff-118013655d78, tls: false, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 _US_美国_2, server: 104.21.89.181, port: 8880, type: vless, uuid: d6c595c9-bff4-4510-893a-dfa3c87fa0cd, tls: false, network: ws, ws-opts: {path: /pyip=ProxyIP.US.CMLiussss.net, headers: {Host: lucky-cell-d20c.78-107.workers.dev}}, udp: true}
@@ -141,17 +205,9 @@ proxies:
   - {name: 🇺🇸 _US_美国_4, server: 169.40.42.89, port: 443, type: vless, uuid: d65cc14c-f53f-4fe2-b262-97856601319c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg, short-id: "c39cc7310a" }, servername: yahoo.com, client-fingerprint: ios, network: tcp, udp: true}
   - {name: 🇺🇸 美国, server: 18.163.126.92, port: 28051, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - Chicago - 25, server: 172.237.131.75, port: 5446, type: trojan, password: fg20mtCFHy, sni: chosucy.southbyte.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 1, server: 38.246.226.240, port: 52080, type: vmess, uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
   - {name: 🇺🇸 美国 - Los Angeles - 10, server: 138.199.35.211, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - Los Angeles - 11, server: 138.199.35.199, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 2, server: 138.199.35.210, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 3, server: 138.199.35.212, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 4, server: 138.199.35.208, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 5, server: 138.199.35.214, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 6, server: 138.199.35.206, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - Los Angeles - 7, server: 138.199.35.220, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 8, server: 138.199.35.197, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - Los Angeles - 9, server: 138.199.35.204, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 12, server: 156.146.59.4, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 13, server: 156.146.59.21, port: 9002, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 14, server: 156.146.59.23, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
@@ -161,27 +217,25 @@ proxies:
   - {name: 🇺🇸 美国 - New York City - 18, server: 156.146.59.31, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 19, server: 156.146.59.8, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 20, server: 156.146.59.15, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - New York City - 21, server: 156.146.59.27, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 22, server: 156.146.59.34, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 - New York City - 23, server: 156.146.59.10, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国 - New York City - 24, server: 156.146.59.11, port: 9002, type: http, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: join-telegram-channel-tirexnet.trex.kdns.fr, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, alpn: [h3%2Ch2%2Chttp%2F1.1], network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.26.14.137, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.18.23.63, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.18.152.140, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.16.174.46, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.18.152.233, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
   - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.17.177.143, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.18.152.204, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.18.152.108, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.17.111.3, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.16.174.6, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.18.152.155, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.18.152.229, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 165.215.250.14, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: true, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 加州, server: 216.24.57.7, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
-  - {name: 🇺🇸 美国 加州 2, server: 216.24.57.1, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.16.174.22, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: //assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.21.46.3, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, alpn: [h3%2Ch2%2Chttp%2F1.1], network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.18.152.229, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.18.152.204, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.16.174.6, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: ip.myip2.qzz.io, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: www.true.th, port: 80, type: vmess, uuid: a150d554-e962-4632-829f-ee583ada3f95, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /htun, headers: {Host: d7pu5mzr9c4b0.cloudfront.net}}, udp: true}
+  - {name: 🇺🇸 美国 加州, server: render.com, port: 443, type: trojan, password: humanity, sni: www.ignitelimit.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.ignitelimit.com}}, udp: true}
   - {name: 🇺🇸 美国2, server: 16.162.192.182, port: 28051, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: 16.162.100.124, port: 39024, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3, server: 16.163.144.245, port: 39024, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国3|@ripaojiedian, server: 16.162.103.28, port: 53001, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 16.162.192.182, port: 39024, type: trojan, password: 6ec301428255a78a1d826988d86cc87e, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -213,30 +267,35 @@ proxy-groups:
       - _CW_CW
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - ❓Other_1|2.2MB/s
-      - 🇦🇹 AT_1|2.0MB/s
-      - 🇧🇪 BE_1|1.8MB/s
+      - ❓Other_1|2.1MB/s
+      - 🇦🇹 AT_1|1.4MB/s
+      - 🇧🇪 BE_1|909KB/s
+      - 🇧🇷 BR_1|1.2MB/s
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
       - 🇨🇦 加拿大 - Toronto - 1
-      - 🇨🇳 广东省广州市 电信IDC机房(校场西)
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇨🇭 CH_1|1.1MB/s
       - 🇨🇳 广东省广州市 腾讯云
-      - 🇩🇪 DE_1|2.4MB/s
-      - 🇩🇪 DE_2|2.1MB/s
+      - 🇩🇪 DE_1|3.0MB/s
+      - 🇩🇪 DE_2|2.5MB/s
+      - 🇩🇪 DE_3|1.8MB/s
+      - 🇩🇪 DE_4|1.1MB/s
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇪🇪 EE_1|2.1MB/s
       - 🇫🇮 FI_1|1.2MB/s
-      - 🇫🇮 FI_2|1.2MB/s
       - 🇫🇮 芬兰 - Helsinki - 1
+      - 🇫🇷 FR_1|1.5MB/s
       - 🇫🇷 _FR_法国
-      - 🇫🇷 法国巴黎 CloudFlare节点
-      - 🇬🇧 GB_1|537KB/s
-      - 🇬🇧 GB_2|2.1MB/s
-      - 🇬🇧 GB_4|2.1MB/s
+      - 🇬🇧 GB_1|1.3MB/s
+      - 🇬🇧 GB_2|1.3MB/s
       - 🇬🇧 _GB_英国
       - 🇬🇧 英国 - London - 1
       - 🇬🇧 英国 V2CROSS.COM
-      - 🇭🇰 HK_1|4.4MB/s
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 HK_1|3.3MB/s
+      - 🇭🇰 HK_2|5.2MB/s
+      - 🇭🇰 HK_3|1.8MB/s
       - 🇭🇰 香港
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -245,16 +304,18 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇮🇱 IL_1|1.4MB/s
       - 🇮🇳 _IN_印度
       - 🇮🇳 印度 - Bāshettihalli - 1
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇮🇹 意大利 - Milan - 1
-      - 🇯🇵 JP_1|858KB/s
-      - 🇯🇵 JP_2|559KB/s
-      - 🇯🇵 JP_3|870KB/s
-      - 🇯🇵 JP_4|5.7MB/s
-      - 🇯🇵 JP_5|1.7MB/s
-      - 🇯🇵 JP_6|3.2MB/s
+      - 🇯🇵 JP_1|3.4MB/s
+      - 🇯🇵 JP_2|2.2MB/s
+      - 🇯🇵 JP_3|2.9MB/s
+      - 🇯🇵 JP_4|2.2MB/s
+      - 🇯🇵 JP_5|5.0MB/s
+      - 🇯🇵 JP_6|821KB/s
+      - 🇯🇵 JP_7|3.7MB/s
+      - 🇯🇵 JP_8|1.3MB/s
       - 🇯🇵 _JP_日本
       - 🇯🇵 _JP_日本_1
       - 🇯🇵 日本
@@ -270,15 +331,26 @@ proxy-groups:
       - 🇯🇵 日本3
       - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 KR_1|579KB/s
-      - 🇰🇷 KR_2|600KB/s
-      - 🇰🇷 KR_5|10.2MB/s
-      - 🇰🇷 KR_6|3.6MB/s
+      - 🇰🇷 KR_1|3.5MB/s
+      - 🇰🇷 KR_2|2.8MB/s
+      - 🇰🇷 KR_3|2.8MB/s
+      - 🇰🇷 KR_4|4.8MB/s
+      - 🇰🇷 KR_5|5.5MB/s
+      - 🇰🇷 KR_6|2.0MB/s
+      - 🇰🇷 KR_7|2.5MB/s
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - Gangseo-gu - 1
-      - 🇳🇱 NL_1|1.6MB/s
-      - 🇳🇱 NL_2|1.4MB/s
-      - 🇳🇱 NL_3|2.4MB/s
+      - 🇱🇺 LU_1|1.3MB/s
+      - 🇳🇱 NL_10|2.6MB/s
+      - 🇳🇱 NL_1|1.7MB/s
+      - 🇳🇱 NL_2|1.3MB/s
+      - 🇳🇱 NL_3|964KB/s
+      - 🇳🇱 NL_4|948KB/s
+      - 🇳🇱 NL_5|1.5MB/s
+      - 🇳🇱 NL_6|1.6MB/s
+      - 🇳🇱 NL_7|1.4MB/s
+      - 🇳🇱 NL_8|2.6MB/s
+      - 🇳🇱 NL_9|2.0MB/s
       - 🇳🇱 _NL_荷兰
       - 🇳🇱 _NL_荷兰_1
       - 🇳🇱 荷兰 - Amsterdam - 1
@@ -290,8 +362,64 @@ proxy-groups:
       - 🇳🇱 荷兰 - Amsterdam - 7
       - 🇳🇱 荷兰 - Amsterdam - 8
       - 🇳🇱 荷兰 - Amsterdam - 9
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇵🇪 PE_1|2.0MB/s
+      - 🇵🇪 PE_1|1.7MB/s
+      - 🇵🇱 PL_1|548KB/s
+      - 🇷🇴 RO_10|650KB/s
+      - 🇷🇴 RO_11|843KB/s
+      - 🇷🇴 RO_12|783KB/s
+      - 🇷🇴 RO_13|616KB/s
+      - 🇷🇴 RO_14|792KB/s
+      - 🇷🇴 RO_15|842KB/s
+      - 🇷🇴 RO_16|685KB/s
+      - 🇷🇴 RO_17|947KB/s
+      - 🇷🇴 RO_18|1.4MB/s
+      - 🇷🇴 RO_19|573KB/s
+      - 🇷🇴 RO_1|1.1MB/s
+      - 🇷🇴 RO_20|932KB/s
+      - 🇷🇴 RO_21|825KB/s
+      - 🇷🇴 RO_22|1.8MB/s
+      - 🇷🇴 RO_23|1.3MB/s
+      - 🇷🇴 RO_24|2.1MB/s
+      - 🇷🇴 RO_25|1.3MB/s
+      - 🇷🇴 RO_26|930KB/s
+      - 🇷🇴 RO_27|1.9MB/s
+      - 🇷🇴 RO_28|1.8MB/s
+      - 🇷🇴 RO_29|912KB/s
+      - 🇷🇴 RO_2|1.7MB/s
+      - 🇷🇴 RO_30|1.3MB/s
+      - 🇷🇴 RO_31|1.9MB/s
+      - 🇷🇴 RO_32|2.0MB/s
+      - 🇷🇴 RO_33|1.4MB/s
+      - 🇷🇴 RO_34|1.0MB/s
+      - 🇷🇴 RO_35|1.8MB/s
+      - 🇷🇴 RO_36|2.1MB/s
+      - 🇷🇴 RO_37|1.4MB/s
+      - 🇷🇴 RO_38|818KB/s
+      - 🇷🇴 RO_39|1.3MB/s
+      - 🇷🇴 RO_3|1.9MB/s
+      - 🇷🇴 RO_40|1.1MB/s
+      - 🇷🇴 RO_41|1.0MB/s
+      - 🇷🇴 RO_42|626KB/s
+      - 🇷🇴 RO_43|2.0MB/s
+      - 🇷🇴 RO_44|1.9MB/s
+      - 🇷🇴 RO_45|861KB/s
+      - 🇷🇴 RO_46|1.4MB/s
+      - 🇷🇴 RO_47|1.2MB/s
+      - 🇷🇴 RO_48|797KB/s
+      - 🇷🇴 RO_49|1.7MB/s
+      - 🇷🇴 RO_4|1.8MB/s
+      - 🇷🇴 RO_50|1.2MB/s
+      - 🇷🇴 RO_51|903KB/s
+      - 🇷🇴 RO_52|2.1MB/s
+      - 🇷🇴 RO_53|2.2MB/s
+      - 🇷🇴 RO_54|1.3MB/s
+      - 🇷🇴 RO_55|1.7MB/s
+      - 🇷🇴 RO_56|722KB/s
+      - 🇷🇴 RO_5|1.6MB/s
+      - 🇷🇴 RO_6|939KB/s
+      - 🇷🇴 RO_7|1.4MB/s
+      - 🇷🇴 RO_8|671KB/s
+      - 🇷🇴 RO_9|1.5MB/s
       - 🇷🇴 罗马尼亚 - Bucharest - 1
       - 🇷🇴 罗马尼亚 - Bucharest - 10
       - 🇷🇴 罗马尼亚 - Bucharest - 11
@@ -336,9 +464,10 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - Moscow - 3
       - 🇷🇺 俄罗斯 - Saint Petersburg - 1
       - 🇷🇺 俄罗斯 - Saint Petersburg - 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇸🇪 瑞典 - Stockholm - 1
-      - 🇸🇬 SG_1|5.6MB/s
-      - 🇸🇬 SG_2|3.3MB/s
+      - 🇸🇬 SG_1|1.1MB/s
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
@@ -347,9 +476,32 @@ proxy-groups:
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇺🇸 US_1|1.6MB/s
-      - 🇺🇸 US_2|1.4MB/s
-      - 🇺🇸 US_4|536KB/s
+      - 🇺🇸 US_10|580KB/s
+      - 🇺🇸 US_11|2.0MB/s
+      - 🇺🇸 US_12|1.2MB/s
+      - 🇺🇸 US_13|718KB/s
+      - 🇺🇸 US_14|2.0MB/s
+      - 🇺🇸 US_15|1.4MB/s
+      - 🇺🇸 US_16|1.3MB/s
+      - 🇺🇸 US_17|2.2MB/s
+      - 🇺🇸 US_18|1.7MB/s
+      - 🇺🇸 US_19|2.2MB/s
+      - 🇺🇸 US_1|1.8MB/s
+      - 🇺🇸 US_20|2.0MB/s
+      - 🇺🇸 US_21|2.0MB/s
+      - 🇺🇸 US_22|3.5MB/s
+      - 🇺🇸 US_23|2.3MB/s
+      - 🇺🇸 US_24|2.3MB/s
+      - 🇺🇸 US_25|1.8MB/s
+      - 🇺🇸 US_27|2.4MB/s
+      - 🇺🇸 US_2|678KB/s
+      - 🇺🇸 US_3|1.2MB/s
+      - 🇺🇸 US_4|2.1MB/s
+      - 🇺🇸 US_5|674KB/s
+      - 🇺🇸 US_6|1.9MB/s
+      - 🇺🇸 US_7|1.3MB/s
+      - 🇺🇸 US_8|532KB/s
+      - 🇺🇸 US_9|1.6MB/s
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
@@ -393,42 +545,47 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 加州
-      - 🇺🇸 美国 加州 2
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇻🇳 VN_1|1.5MB/s
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - _CW_CW
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - ❓Other_1|2.2MB/s
-      - 🇦🇹 AT_1|2.0MB/s
-      - 🇧🇪 BE_1|1.8MB/s
+      - ❓Other_1|2.1MB/s
+      - 🇦🇹 AT_1|1.4MB/s
+      - 🇧🇪 BE_1|909KB/s
+      - 🇧🇷 BR_1|1.2MB/s
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
       - 🇨🇦 加拿大 - Toronto - 1
-      - 🇨🇳 广东省广州市 电信IDC机房(校场西)
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇨🇭 CH_1|1.1MB/s
       - 🇨🇳 广东省广州市 腾讯云
-      - 🇩🇪 DE_1|2.4MB/s
-      - 🇩🇪 DE_2|2.1MB/s
+      - 🇩🇪 DE_1|3.0MB/s
+      - 🇩🇪 DE_2|2.5MB/s
+      - 🇩🇪 DE_3|1.8MB/s
+      - 🇩🇪 DE_4|1.1MB/s
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇪🇪 EE_1|2.1MB/s
       - 🇫🇮 FI_1|1.2MB/s
-      - 🇫🇮 FI_2|1.2MB/s
       - 🇫🇮 芬兰 - Helsinki - 1
+      - 🇫🇷 FR_1|1.5MB/s
       - 🇫🇷 _FR_法国
-      - 🇫🇷 法国巴黎 CloudFlare节点
-      - 🇬🇧 GB_1|537KB/s
-      - 🇬🇧 GB_2|2.1MB/s
-      - 🇬🇧 GB_4|2.1MB/s
+      - 🇬🇧 GB_1|1.3MB/s
+      - 🇬🇧 GB_2|1.3MB/s
       - 🇬🇧 _GB_英国
       - 🇬🇧 英国 - London - 1
       - 🇬🇧 英国 V2CROSS.COM
-      - 🇭🇰 HK_1|4.4MB/s
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 HK_1|3.3MB/s
+      - 🇭🇰 HK_2|5.2MB/s
+      - 🇭🇰 HK_3|1.8MB/s
       - 🇭🇰 香港
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -437,16 +594,18 @@ proxy-groups:
       - 🇭🇰 香港5
       - 🇭🇰 香港5|@ripaojiedian
       - 🇭🇰 香港|@ripaojiedian
+      - 🇮🇱 IL_1|1.4MB/s
       - 🇮🇳 _IN_印度
       - 🇮🇳 印度 - Bāshettihalli - 1
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇮🇹 意大利 - Milan - 1
-      - 🇯🇵 JP_1|858KB/s
-      - 🇯🇵 JP_2|559KB/s
-      - 🇯🇵 JP_3|870KB/s
-      - 🇯🇵 JP_4|5.7MB/s
-      - 🇯🇵 JP_5|1.7MB/s
-      - 🇯🇵 JP_6|3.2MB/s
+      - 🇯🇵 JP_1|3.4MB/s
+      - 🇯🇵 JP_2|2.2MB/s
+      - 🇯🇵 JP_3|2.9MB/s
+      - 🇯🇵 JP_4|2.2MB/s
+      - 🇯🇵 JP_5|5.0MB/s
+      - 🇯🇵 JP_6|821KB/s
+      - 🇯🇵 JP_7|3.7MB/s
+      - 🇯🇵 JP_8|1.3MB/s
       - 🇯🇵 _JP_日本
       - 🇯🇵 _JP_日本_1
       - 🇯🇵 日本
@@ -462,15 +621,26 @@ proxy-groups:
       - 🇯🇵 日本3
       - 🇯🇵 日本3|@ripaojiedian
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 KR_1|579KB/s
-      - 🇰🇷 KR_2|600KB/s
-      - 🇰🇷 KR_5|10.2MB/s
-      - 🇰🇷 KR_6|3.6MB/s
+      - 🇰🇷 KR_1|3.5MB/s
+      - 🇰🇷 KR_2|2.8MB/s
+      - 🇰🇷 KR_3|2.8MB/s
+      - 🇰🇷 KR_4|4.8MB/s
+      - 🇰🇷 KR_5|5.5MB/s
+      - 🇰🇷 KR_6|2.0MB/s
+      - 🇰🇷 KR_7|2.5MB/s
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - Gangseo-gu - 1
-      - 🇳🇱 NL_1|1.6MB/s
-      - 🇳🇱 NL_2|1.4MB/s
-      - 🇳🇱 NL_3|2.4MB/s
+      - 🇱🇺 LU_1|1.3MB/s
+      - 🇳🇱 NL_10|2.6MB/s
+      - 🇳🇱 NL_1|1.7MB/s
+      - 🇳🇱 NL_2|1.3MB/s
+      - 🇳🇱 NL_3|964KB/s
+      - 🇳🇱 NL_4|948KB/s
+      - 🇳🇱 NL_5|1.5MB/s
+      - 🇳🇱 NL_6|1.6MB/s
+      - 🇳🇱 NL_7|1.4MB/s
+      - 🇳🇱 NL_8|2.6MB/s
+      - 🇳🇱 NL_9|2.0MB/s
       - 🇳🇱 _NL_荷兰
       - 🇳🇱 _NL_荷兰_1
       - 🇳🇱 荷兰 - Amsterdam - 1
@@ -482,8 +652,64 @@ proxy-groups:
       - 🇳🇱 荷兰 - Amsterdam - 7
       - 🇳🇱 荷兰 - Amsterdam - 8
       - 🇳🇱 荷兰 - Amsterdam - 9
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇵🇪 PE_1|2.0MB/s
+      - 🇵🇪 PE_1|1.7MB/s
+      - 🇵🇱 PL_1|548KB/s
+      - 🇷🇴 RO_10|650KB/s
+      - 🇷🇴 RO_11|843KB/s
+      - 🇷🇴 RO_12|783KB/s
+      - 🇷🇴 RO_13|616KB/s
+      - 🇷🇴 RO_14|792KB/s
+      - 🇷🇴 RO_15|842KB/s
+      - 🇷🇴 RO_16|685KB/s
+      - 🇷🇴 RO_17|947KB/s
+      - 🇷🇴 RO_18|1.4MB/s
+      - 🇷🇴 RO_19|573KB/s
+      - 🇷🇴 RO_1|1.1MB/s
+      - 🇷🇴 RO_20|932KB/s
+      - 🇷🇴 RO_21|825KB/s
+      - 🇷🇴 RO_22|1.8MB/s
+      - 🇷🇴 RO_23|1.3MB/s
+      - 🇷🇴 RO_24|2.1MB/s
+      - 🇷🇴 RO_25|1.3MB/s
+      - 🇷🇴 RO_26|930KB/s
+      - 🇷🇴 RO_27|1.9MB/s
+      - 🇷🇴 RO_28|1.8MB/s
+      - 🇷🇴 RO_29|912KB/s
+      - 🇷🇴 RO_2|1.7MB/s
+      - 🇷🇴 RO_30|1.3MB/s
+      - 🇷🇴 RO_31|1.9MB/s
+      - 🇷🇴 RO_32|2.0MB/s
+      - 🇷🇴 RO_33|1.4MB/s
+      - 🇷🇴 RO_34|1.0MB/s
+      - 🇷🇴 RO_35|1.8MB/s
+      - 🇷🇴 RO_36|2.1MB/s
+      - 🇷🇴 RO_37|1.4MB/s
+      - 🇷🇴 RO_38|818KB/s
+      - 🇷🇴 RO_39|1.3MB/s
+      - 🇷🇴 RO_3|1.9MB/s
+      - 🇷🇴 RO_40|1.1MB/s
+      - 🇷🇴 RO_41|1.0MB/s
+      - 🇷🇴 RO_42|626KB/s
+      - 🇷🇴 RO_43|2.0MB/s
+      - 🇷🇴 RO_44|1.9MB/s
+      - 🇷🇴 RO_45|861KB/s
+      - 🇷🇴 RO_46|1.4MB/s
+      - 🇷🇴 RO_47|1.2MB/s
+      - 🇷🇴 RO_48|797KB/s
+      - 🇷🇴 RO_49|1.7MB/s
+      - 🇷🇴 RO_4|1.8MB/s
+      - 🇷🇴 RO_50|1.2MB/s
+      - 🇷🇴 RO_51|903KB/s
+      - 🇷🇴 RO_52|2.1MB/s
+      - 🇷🇴 RO_53|2.2MB/s
+      - 🇷🇴 RO_54|1.3MB/s
+      - 🇷🇴 RO_55|1.7MB/s
+      - 🇷🇴 RO_56|722KB/s
+      - 🇷🇴 RO_5|1.6MB/s
+      - 🇷🇴 RO_6|939KB/s
+      - 🇷🇴 RO_7|1.4MB/s
+      - 🇷🇴 RO_8|671KB/s
+      - 🇷🇴 RO_9|1.5MB/s
       - 🇷🇴 罗马尼亚 - Bucharest - 1
       - 🇷🇴 罗马尼亚 - Bucharest - 10
       - 🇷🇴 罗马尼亚 - Bucharest - 11
@@ -528,9 +754,10 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - Moscow - 3
       - 🇷🇺 俄罗斯 - Saint Petersburg - 1
       - 🇷🇺 俄罗斯 - Saint Petersburg - 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇸🇪 瑞典 - Stockholm - 1
-      - 🇸🇬 SG_1|5.6MB/s
-      - 🇸🇬 SG_2|3.3MB/s
+      - 🇸🇬 SG_1|1.1MB/s
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
@@ -539,9 +766,32 @@ proxy-groups:
       - 🇸🇬 新加坡3|@ripaojiedian
       - 🇸🇬 新加坡|@ripaojiedian
       - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇺🇸 US_1|1.6MB/s
-      - 🇺🇸 US_2|1.4MB/s
-      - 🇺🇸 US_4|536KB/s
+      - 🇺🇸 US_10|580KB/s
+      - 🇺🇸 US_11|2.0MB/s
+      - 🇺🇸 US_12|1.2MB/s
+      - 🇺🇸 US_13|718KB/s
+      - 🇺🇸 US_14|2.0MB/s
+      - 🇺🇸 US_15|1.4MB/s
+      - 🇺🇸 US_16|1.3MB/s
+      - 🇺🇸 US_17|2.2MB/s
+      - 🇺🇸 US_18|1.7MB/s
+      - 🇺🇸 US_19|2.2MB/s
+      - 🇺🇸 US_1|1.8MB/s
+      - 🇺🇸 US_20|2.0MB/s
+      - 🇺🇸 US_21|2.0MB/s
+      - 🇺🇸 US_22|3.5MB/s
+      - 🇺🇸 US_23|2.3MB/s
+      - 🇺🇸 US_24|2.3MB/s
+      - 🇺🇸 US_25|1.8MB/s
+      - 🇺🇸 US_27|2.4MB/s
+      - 🇺🇸 US_2|678KB/s
+      - 🇺🇸 US_3|1.2MB/s
+      - 🇺🇸 US_4|2.1MB/s
+      - 🇺🇸 US_5|674KB/s
+      - 🇺🇸 US_6|1.9MB/s
+      - 🇺🇸 US_7|1.3MB/s
+      - 🇺🇸 US_8|532KB/s
+      - 🇺🇸 US_9|1.6MB/s
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
@@ -585,12 +835,12 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 加州
-      - 🇺🇸 美国 加州 2
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
       - 🇺🇸 美国3|@ripaojiedian
       - 🇺🇸 美国|@ripaojiedian
+      - 🇻🇳 VN_1|1.5MB/s
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -643,7 +893,9 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇭🇰 HK_1|4.4MB/s
+      - 🇭🇰 HK_1|3.3MB/s
+      - 🇭🇰 HK_2|5.2MB/s
+      - 🇭🇰 HK_3|1.8MB/s
       - 🇭🇰 香港
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -665,9 +917,10 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇨🇳 广东省广州市 电信IDC机房(校场西)
       - 🇨🇳 广东省广州市 腾讯云
-      - 🇭🇰 HK_1|4.4MB/s
+      - 🇭🇰 HK_1|3.3MB/s
+      - 🇭🇰 HK_2|5.2MB/s
+      - 🇭🇰 HK_3|1.8MB/s
       - 🇭🇰 香港
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -682,8 +935,7 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇸🇬 SG_1|5.6MB/s
-      - 🇸🇬 SG_2|3.3MB/s
+      - 🇸🇬 SG_1|1.1MB/s
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
@@ -697,12 +949,14 @@ proxy-groups:
     interval: 15
     tolerance: 100
     proxies:
-      - 🇯🇵 JP_1|858KB/s
-      - 🇯🇵 JP_2|559KB/s
-      - 🇯🇵 JP_3|870KB/s
-      - 🇯🇵 JP_4|5.7MB/s
-      - 🇯🇵 JP_5|1.7MB/s
-      - 🇯🇵 JP_6|3.2MB/s
+      - 🇯🇵 JP_1|3.4MB/s
+      - 🇯🇵 JP_2|2.2MB/s
+      - 🇯🇵 JP_3|2.9MB/s
+      - 🇯🇵 JP_4|2.2MB/s
+      - 🇯🇵 JP_5|5.0MB/s
+      - 🇯🇵 JP_6|821KB/s
+      - 🇯🇵 JP_7|3.7MB/s
+      - 🇯🇵 JP_8|1.3MB/s
       - 🇯🇵 _JP_日本
       - 🇯🇵 _JP_日本_1
       - 🇯🇵 日本
@@ -724,9 +978,32 @@ proxy-groups:
     interval: 15
     tolerance: 300
     proxies:
-      - 🇺🇸 US_1|1.6MB/s
-      - 🇺🇸 US_2|1.4MB/s
-      - 🇺🇸 US_4|536KB/s
+      - 🇺🇸 US_10|580KB/s
+      - 🇺🇸 US_11|2.0MB/s
+      - 🇺🇸 US_12|1.2MB/s
+      - 🇺🇸 US_13|718KB/s
+      - 🇺🇸 US_14|2.0MB/s
+      - 🇺🇸 US_15|1.4MB/s
+      - 🇺🇸 US_16|1.3MB/s
+      - 🇺🇸 US_17|2.2MB/s
+      - 🇺🇸 US_18|1.7MB/s
+      - 🇺🇸 US_19|2.2MB/s
+      - 🇺🇸 US_1|1.8MB/s
+      - 🇺🇸 US_20|2.0MB/s
+      - 🇺🇸 US_21|2.0MB/s
+      - 🇺🇸 US_22|3.5MB/s
+      - 🇺🇸 US_23|2.3MB/s
+      - 🇺🇸 US_24|2.3MB/s
+      - 🇺🇸 US_25|1.8MB/s
+      - 🇺🇸 US_27|2.4MB/s
+      - 🇺🇸 US_2|678KB/s
+      - 🇺🇸 US_3|1.2MB/s
+      - 🇺🇸 US_4|2.1MB/s
+      - 🇺🇸 US_5|674KB/s
+      - 🇺🇸 US_6|1.9MB/s
+      - 🇺🇸 US_7|1.3MB/s
+      - 🇺🇸 US_8|532KB/s
+      - 🇺🇸 US_9|1.6MB/s
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
@@ -770,7 +1047,6 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 加州
-      - 🇺🇸 美国 加州 2
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -785,40 +1061,55 @@ proxy-groups:
       - _CW_CW
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - ❓Other_1|2.2MB/s
-      - 🇦🇹 AT_1|2.0MB/s
-      - 🇧🇪 BE_1|1.8MB/s
+      - ❓Other_1|2.1MB/s
+      - 🇦🇹 AT_1|1.4MB/s
+      - 🇧🇪 BE_1|909KB/s
+      - 🇧🇷 BR_1|1.2MB/s
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
       - 🇨🇦 加拿大 - Toronto - 1
-      - 🇩🇪 DE_1|2.4MB/s
-      - 🇩🇪 DE_2|2.1MB/s
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇨🇭 CH_1|1.1MB/s
+      - 🇩🇪 DE_1|3.0MB/s
+      - 🇩🇪 DE_2|2.5MB/s
+      - 🇩🇪 DE_3|1.8MB/s
+      - 🇩🇪 DE_4|1.1MB/s
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇪🇪 EE_1|2.1MB/s
       - 🇫🇮 FI_1|1.2MB/s
-      - 🇫🇮 FI_2|1.2MB/s
       - 🇫🇮 芬兰 - Helsinki - 1
+      - 🇫🇷 FR_1|1.5MB/s
       - 🇫🇷 _FR_法国
-      - 🇫🇷 法国巴黎 CloudFlare节点
-      - 🇬🇧 GB_1|537KB/s
-      - 🇬🇧 GB_2|2.1MB/s
-      - 🇬🇧 GB_4|2.1MB/s
+      - 🇬🇧 GB_1|1.3MB/s
+      - 🇬🇧 GB_2|1.3MB/s
       - 🇬🇧 _GB_英国
       - 🇬🇧 英国 - London - 1
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇮🇱 IL_1|1.4MB/s
       - 🇮🇳 _IN_印度
       - 🇮🇳 印度 - Bāshettihalli - 1
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇮🇹 意大利 - Milan - 1
-      - 🇰🇷 KR_1|579KB/s
-      - 🇰🇷 KR_2|600KB/s
-      - 🇰🇷 KR_5|10.2MB/s
-      - 🇰🇷 KR_6|3.6MB/s
+      - 🇰🇷 KR_1|3.5MB/s
+      - 🇰🇷 KR_2|2.8MB/s
+      - 🇰🇷 KR_3|2.8MB/s
+      - 🇰🇷 KR_4|4.8MB/s
+      - 🇰🇷 KR_5|5.5MB/s
+      - 🇰🇷 KR_6|2.0MB/s
+      - 🇰🇷 KR_7|2.5MB/s
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - Gangseo-gu - 1
-      - 🇳🇱 NL_1|1.6MB/s
-      - 🇳🇱 NL_2|1.4MB/s
-      - 🇳🇱 NL_3|2.4MB/s
+      - 🇱🇺 LU_1|1.3MB/s
+      - 🇳🇱 NL_10|2.6MB/s
+      - 🇳🇱 NL_1|1.7MB/s
+      - 🇳🇱 NL_2|1.3MB/s
+      - 🇳🇱 NL_3|964KB/s
+      - 🇳🇱 NL_4|948KB/s
+      - 🇳🇱 NL_5|1.5MB/s
+      - 🇳🇱 NL_6|1.6MB/s
+      - 🇳🇱 NL_7|1.4MB/s
+      - 🇳🇱 NL_8|2.6MB/s
+      - 🇳🇱 NL_9|2.0MB/s
       - 🇳🇱 _NL_荷兰
       - 🇳🇱 _NL_荷兰_1
       - 🇳🇱 荷兰 - Amsterdam - 1
@@ -830,8 +1121,64 @@ proxy-groups:
       - 🇳🇱 荷兰 - Amsterdam - 7
       - 🇳🇱 荷兰 - Amsterdam - 8
       - 🇳🇱 荷兰 - Amsterdam - 9
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇵🇪 PE_1|2.0MB/s
+      - 🇵🇪 PE_1|1.7MB/s
+      - 🇵🇱 PL_1|548KB/s
+      - 🇷🇴 RO_10|650KB/s
+      - 🇷🇴 RO_11|843KB/s
+      - 🇷🇴 RO_12|783KB/s
+      - 🇷🇴 RO_13|616KB/s
+      - 🇷🇴 RO_14|792KB/s
+      - 🇷🇴 RO_15|842KB/s
+      - 🇷🇴 RO_16|685KB/s
+      - 🇷🇴 RO_17|947KB/s
+      - 🇷🇴 RO_18|1.4MB/s
+      - 🇷🇴 RO_19|573KB/s
+      - 🇷🇴 RO_1|1.1MB/s
+      - 🇷🇴 RO_20|932KB/s
+      - 🇷🇴 RO_21|825KB/s
+      - 🇷🇴 RO_22|1.8MB/s
+      - 🇷🇴 RO_23|1.3MB/s
+      - 🇷🇴 RO_24|2.1MB/s
+      - 🇷🇴 RO_25|1.3MB/s
+      - 🇷🇴 RO_26|930KB/s
+      - 🇷🇴 RO_27|1.9MB/s
+      - 🇷🇴 RO_28|1.8MB/s
+      - 🇷🇴 RO_29|912KB/s
+      - 🇷🇴 RO_2|1.7MB/s
+      - 🇷🇴 RO_30|1.3MB/s
+      - 🇷🇴 RO_31|1.9MB/s
+      - 🇷🇴 RO_32|2.0MB/s
+      - 🇷🇴 RO_33|1.4MB/s
+      - 🇷🇴 RO_34|1.0MB/s
+      - 🇷🇴 RO_35|1.8MB/s
+      - 🇷🇴 RO_36|2.1MB/s
+      - 🇷🇴 RO_37|1.4MB/s
+      - 🇷🇴 RO_38|818KB/s
+      - 🇷🇴 RO_39|1.3MB/s
+      - 🇷🇴 RO_3|1.9MB/s
+      - 🇷🇴 RO_40|1.1MB/s
+      - 🇷🇴 RO_41|1.0MB/s
+      - 🇷🇴 RO_42|626KB/s
+      - 🇷🇴 RO_43|2.0MB/s
+      - 🇷🇴 RO_44|1.9MB/s
+      - 🇷🇴 RO_45|861KB/s
+      - 🇷🇴 RO_46|1.4MB/s
+      - 🇷🇴 RO_47|1.2MB/s
+      - 🇷🇴 RO_48|797KB/s
+      - 🇷🇴 RO_49|1.7MB/s
+      - 🇷🇴 RO_4|1.8MB/s
+      - 🇷🇴 RO_50|1.2MB/s
+      - 🇷🇴 RO_51|903KB/s
+      - 🇷🇴 RO_52|2.1MB/s
+      - 🇷🇴 RO_53|2.2MB/s
+      - 🇷🇴 RO_54|1.3MB/s
+      - 🇷🇴 RO_55|1.7MB/s
+      - 🇷🇴 RO_56|722KB/s
+      - 🇷🇴 RO_5|1.6MB/s
+      - 🇷🇴 RO_6|939KB/s
+      - 🇷🇴 RO_7|1.4MB/s
+      - 🇷🇴 RO_8|671KB/s
+      - 🇷🇴 RO_9|1.5MB/s
       - 🇷🇴 罗马尼亚 - Bucharest - 1
       - 🇷🇴 罗马尼亚 - Bucharest - 10
       - 🇷🇴 罗马尼亚 - Bucharest - 11
@@ -876,12 +1223,17 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - Moscow - 3
       - 🇷🇺 俄罗斯 - Saint Petersburg - 1
       - 🇷🇺 俄罗斯 - Saint Petersburg - 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇸🇪 瑞典 - Stockholm - 1
       - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇻🇳 VN_1|1.5MB/s
   - name: 👆🏻🇭🇰 ‍香港
     type: select
     proxies:
-      - 🇭🇰 HK_1|4.4MB/s
+      - 🇭🇰 HK_1|3.3MB/s
+      - 🇭🇰 HK_2|5.2MB/s
+      - 🇭🇰 HK_3|1.8MB/s
       - 🇭🇰 香港
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -897,9 +1249,10 @@ proxy-groups:
   - name: 👆🏻🇨🇳 ‍中国
     type: select
     proxies:
-      - 🇨🇳 广东省广州市 电信IDC机房(校场西)
       - 🇨🇳 广东省广州市 腾讯云
-      - 🇭🇰 HK_1|4.4MB/s
+      - 🇭🇰 HK_1|3.3MB/s
+      - 🇭🇰 HK_2|5.2MB/s
+      - 🇭🇰 HK_3|1.8MB/s
       - 🇭🇰 香港
       - 🇭🇰 香港3
       - 🇭🇰 香港3|@ripaojiedian
@@ -911,8 +1264,7 @@ proxy-groups:
   - name: 👆🏻🇸🇬 ‍新加坡
     type: select
     proxies:
-      - 🇸🇬 SG_1|5.6MB/s
-      - 🇸🇬 SG_2|3.3MB/s
+      - 🇸🇬 SG_1|1.1MB/s
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 新加坡
       - 🇸🇬 新加坡2
@@ -923,12 +1275,14 @@ proxy-groups:
   - name: 👆🏻🇯🇵 ‍日本
     type: select
     proxies:
-      - 🇯🇵 JP_1|858KB/s
-      - 🇯🇵 JP_2|559KB/s
-      - 🇯🇵 JP_3|870KB/s
-      - 🇯🇵 JP_4|5.7MB/s
-      - 🇯🇵 JP_5|1.7MB/s
-      - 🇯🇵 JP_6|3.2MB/s
+      - 🇯🇵 JP_1|3.4MB/s
+      - 🇯🇵 JP_2|2.2MB/s
+      - 🇯🇵 JP_3|2.9MB/s
+      - 🇯🇵 JP_4|2.2MB/s
+      - 🇯🇵 JP_5|5.0MB/s
+      - 🇯🇵 JP_6|821KB/s
+      - 🇯🇵 JP_7|3.7MB/s
+      - 🇯🇵 JP_8|1.3MB/s
       - 🇯🇵 _JP_日本
       - 🇯🇵 _JP_日本_1
       - 🇯🇵 日本
@@ -947,9 +1301,32 @@ proxy-groups:
   - name: 👆🏻🇺🇸 ‍美国
     type: select
     proxies:
-      - 🇺🇸 US_1|1.6MB/s
-      - 🇺🇸 US_2|1.4MB/s
-      - 🇺🇸 US_4|536KB/s
+      - 🇺🇸 US_10|580KB/s
+      - 🇺🇸 US_11|2.0MB/s
+      - 🇺🇸 US_12|1.2MB/s
+      - 🇺🇸 US_13|718KB/s
+      - 🇺🇸 US_14|2.0MB/s
+      - 🇺🇸 US_15|1.4MB/s
+      - 🇺🇸 US_16|1.3MB/s
+      - 🇺🇸 US_17|2.2MB/s
+      - 🇺🇸 US_18|1.7MB/s
+      - 🇺🇸 US_19|2.2MB/s
+      - 🇺🇸 US_1|1.8MB/s
+      - 🇺🇸 US_20|2.0MB/s
+      - 🇺🇸 US_21|2.0MB/s
+      - 🇺🇸 US_22|3.5MB/s
+      - 🇺🇸 US_23|2.3MB/s
+      - 🇺🇸 US_24|2.3MB/s
+      - 🇺🇸 US_25|1.8MB/s
+      - 🇺🇸 US_27|2.4MB/s
+      - 🇺🇸 US_2|678KB/s
+      - 🇺🇸 US_3|1.2MB/s
+      - 🇺🇸 US_4|2.1MB/s
+      - 🇺🇸 US_5|674KB/s
+      - 🇺🇸 US_6|1.9MB/s
+      - 🇺🇸 US_7|1.3MB/s
+      - 🇺🇸 US_8|532KB/s
+      - 🇺🇸 US_9|1.6MB/s
       - 🇺🇸 _US_美国
       - 🇺🇸 _US_美国_1
       - 🇺🇸 _US_美国_2
@@ -993,7 +1370,6 @@ proxy-groups:
       - 🇺🇸 美国 CloudFlare节点 10
       - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 加州
-      - 🇺🇸 美国 加州 2
       - 🇺🇸 美国2
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国3
@@ -1005,40 +1381,55 @@ proxy-groups:
       - _CW_CW
       - ℹ️ tg频道:@freenodedaily
       - ℹ️ tg频道:@ripaojiedian
-      - ❓Other_1|2.2MB/s
-      - 🇦🇹 AT_1|2.0MB/s
-      - 🇧🇪 BE_1|1.8MB/s
+      - ❓Other_1|2.1MB/s
+      - 🇦🇹 AT_1|1.4MB/s
+      - 🇧🇪 BE_1|909KB/s
+      - 🇧🇷 BR_1|1.2MB/s
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
       - 🇨🇦 加拿大 - Toronto - 1
-      - 🇩🇪 DE_1|2.4MB/s
-      - 🇩🇪 DE_2|2.1MB/s
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇨🇭 CH_1|1.1MB/s
+      - 🇩🇪 DE_1|3.0MB/s
+      - 🇩🇪 DE_2|2.5MB/s
+      - 🇩🇪 DE_3|1.8MB/s
+      - 🇩🇪 DE_4|1.1MB/s
       - 🇩🇪 _DE_德国
       - 🇩🇪 _DE_德国_1
       - 🇩🇪 德国 - Frankfurt am Main - 1
-      - 🇪🇪 EE_1|2.1MB/s
       - 🇫🇮 FI_1|1.2MB/s
-      - 🇫🇮 FI_2|1.2MB/s
       - 🇫🇮 芬兰 - Helsinki - 1
+      - 🇫🇷 FR_1|1.5MB/s
       - 🇫🇷 _FR_法国
-      - 🇫🇷 法国巴黎 CloudFlare节点
-      - 🇬🇧 GB_1|537KB/s
-      - 🇬🇧 GB_2|2.1MB/s
-      - 🇬🇧 GB_4|2.1MB/s
+      - 🇬🇧 GB_1|1.3MB/s
+      - 🇬🇧 GB_2|1.3MB/s
       - 🇬🇧 _GB_英国
       - 🇬🇧 英国 - London - 1
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇮🇱 IL_1|1.4MB/s
       - 🇮🇳 _IN_印度
       - 🇮🇳 印度 - Bāshettihalli - 1
-      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇮🇹 意大利 - Milan - 1
-      - 🇰🇷 KR_1|579KB/s
-      - 🇰🇷 KR_2|600KB/s
-      - 🇰🇷 KR_5|10.2MB/s
-      - 🇰🇷 KR_6|3.6MB/s
+      - 🇰🇷 KR_1|3.5MB/s
+      - 🇰🇷 KR_2|2.8MB/s
+      - 🇰🇷 KR_3|2.8MB/s
+      - 🇰🇷 KR_4|4.8MB/s
+      - 🇰🇷 KR_5|5.5MB/s
+      - 🇰🇷 KR_6|2.0MB/s
+      - 🇰🇷 KR_7|2.5MB/s
       - 🇰🇷 _KR_韩国
       - 🇰🇷 韩国 - Gangseo-gu - 1
-      - 🇳🇱 NL_1|1.6MB/s
-      - 🇳🇱 NL_2|1.4MB/s
-      - 🇳🇱 NL_3|2.4MB/s
+      - 🇱🇺 LU_1|1.3MB/s
+      - 🇳🇱 NL_10|2.6MB/s
+      - 🇳🇱 NL_1|1.7MB/s
+      - 🇳🇱 NL_2|1.3MB/s
+      - 🇳🇱 NL_3|964KB/s
+      - 🇳🇱 NL_4|948KB/s
+      - 🇳🇱 NL_5|1.5MB/s
+      - 🇳🇱 NL_6|1.6MB/s
+      - 🇳🇱 NL_7|1.4MB/s
+      - 🇳🇱 NL_8|2.6MB/s
+      - 🇳🇱 NL_9|2.0MB/s
       - 🇳🇱 _NL_荷兰
       - 🇳🇱 _NL_荷兰_1
       - 🇳🇱 荷兰 - Amsterdam - 1
@@ -1050,8 +1441,64 @@ proxy-groups:
       - 🇳🇱 荷兰 - Amsterdam - 7
       - 🇳🇱 荷兰 - Amsterdam - 8
       - 🇳🇱 荷兰 - Amsterdam - 9
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇵🇪 PE_1|2.0MB/s
+      - 🇵🇪 PE_1|1.7MB/s
+      - 🇵🇱 PL_1|548KB/s
+      - 🇷🇴 RO_10|650KB/s
+      - 🇷🇴 RO_11|843KB/s
+      - 🇷🇴 RO_12|783KB/s
+      - 🇷🇴 RO_13|616KB/s
+      - 🇷🇴 RO_14|792KB/s
+      - 🇷🇴 RO_15|842KB/s
+      - 🇷🇴 RO_16|685KB/s
+      - 🇷🇴 RO_17|947KB/s
+      - 🇷🇴 RO_18|1.4MB/s
+      - 🇷🇴 RO_19|573KB/s
+      - 🇷🇴 RO_1|1.1MB/s
+      - 🇷🇴 RO_20|932KB/s
+      - 🇷🇴 RO_21|825KB/s
+      - 🇷🇴 RO_22|1.8MB/s
+      - 🇷🇴 RO_23|1.3MB/s
+      - 🇷🇴 RO_24|2.1MB/s
+      - 🇷🇴 RO_25|1.3MB/s
+      - 🇷🇴 RO_26|930KB/s
+      - 🇷🇴 RO_27|1.9MB/s
+      - 🇷🇴 RO_28|1.8MB/s
+      - 🇷🇴 RO_29|912KB/s
+      - 🇷🇴 RO_2|1.7MB/s
+      - 🇷🇴 RO_30|1.3MB/s
+      - 🇷🇴 RO_31|1.9MB/s
+      - 🇷🇴 RO_32|2.0MB/s
+      - 🇷🇴 RO_33|1.4MB/s
+      - 🇷🇴 RO_34|1.0MB/s
+      - 🇷🇴 RO_35|1.8MB/s
+      - 🇷🇴 RO_36|2.1MB/s
+      - 🇷🇴 RO_37|1.4MB/s
+      - 🇷🇴 RO_38|818KB/s
+      - 🇷🇴 RO_39|1.3MB/s
+      - 🇷🇴 RO_3|1.9MB/s
+      - 🇷🇴 RO_40|1.1MB/s
+      - 🇷🇴 RO_41|1.0MB/s
+      - 🇷🇴 RO_42|626KB/s
+      - 🇷🇴 RO_43|2.0MB/s
+      - 🇷🇴 RO_44|1.9MB/s
+      - 🇷🇴 RO_45|861KB/s
+      - 🇷🇴 RO_46|1.4MB/s
+      - 🇷🇴 RO_47|1.2MB/s
+      - 🇷🇴 RO_48|797KB/s
+      - 🇷🇴 RO_49|1.7MB/s
+      - 🇷🇴 RO_4|1.8MB/s
+      - 🇷🇴 RO_50|1.2MB/s
+      - 🇷🇴 RO_51|903KB/s
+      - 🇷🇴 RO_52|2.1MB/s
+      - 🇷🇴 RO_53|2.2MB/s
+      - 🇷🇴 RO_54|1.3MB/s
+      - 🇷🇴 RO_55|1.7MB/s
+      - 🇷🇴 RO_56|722KB/s
+      - 🇷🇴 RO_5|1.6MB/s
+      - 🇷🇴 RO_6|939KB/s
+      - 🇷🇴 RO_7|1.4MB/s
+      - 🇷🇴 RO_8|671KB/s
+      - 🇷🇴 RO_9|1.5MB/s
       - 🇷🇴 罗马尼亚 - Bucharest - 1
       - 🇷🇴 罗马尼亚 - Bucharest - 10
       - 🇷🇴 罗马尼亚 - Bucharest - 11
@@ -1096,8 +1543,11 @@ proxy-groups:
       - 🇷🇺 俄罗斯 - Moscow - 3
       - 🇷🇺 俄罗斯 - Saint Petersburg - 1
       - 🇷🇺 俄罗斯 - Saint Petersburg - 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
       - 🇸🇪 瑞典 - Stockholm - 1
       - 🇺🇦 乌克兰 V2CROSS.COM
+      - 🇻🇳 VN_1|1.5MB/s
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,DIRECT
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
