@@ -84,7 +84,9 @@ proxies:
   - {name: "🇨🇦 [www.v2nodes.com] ss-CA-1559...", server: 51.79.85.185, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
   - {name: "🇨🇦 [www.v2nodes.com] vless-CA-1... #1", server: milo.rubinaz.xyz, port: 8080, type: vless, uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8, tls: false, network: tcp, udp: true}
   - {name: "🇨🇭 [www.v2nodes.com] ss-CH-1573...", server: 132.243.175.144, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3, udp: true}
+  - {name: 🇨🇭 瑞士 V2CROSS.COM, server: ru16.oshost.network, port: 443, type: vless, uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: X9ghpQ7c1lgpEQjAcgx4K9eYs83PC9t9Uy6WHZvSsQY, short-id: "2181f7d4104207e4" }, servername: ru16.oshost.network, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇨🇳 中国 - 合肥 - 1, server: 112.132.215.108, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, servername: 112.132.215.108, udp: true}
+  - {name: 🇨🇳 北京市 惟译天创信息技术有限公司, server: jp.sofast.live, port: 52683, type: vless, uuid: 399b6b23-cc40-4831-a494-61948e2df133, tls: false, network: tcp, udp: true}
   - {name: 🇩🇪 DE_1|2.4MB/s, server: 149.36.50.1, port: 443, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE_2|1.2MB/s|R002-260618, server: 149.36.50.129, port: 443, type: http, password: None, tls: true, skip-cert-verify: true, udp: true}
   - {name: 🇩🇪 DE_speednode_0004, server: 213.109.163.119, port: 443, type: http, tls: true, skip-cert-verify: true, udp: true}
@@ -95,8 +97,6 @@ proxies:
   - {name: "🇩🇪 [www.v2nodes.com] vless-DE-1... #4", server: de5.pad-sservice.lat, port: 443, type: vless, uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e, tls: true, servername: de5.pad-sservice.lat, client-fingerprint: chrome, network: ws, ws-opts: {path: /DE5W, headers: {Host: de5.pad-service.com}}, udp: true}
   - {name: "🇩🇪 [www.v2nodes.com] vless-DE-1... #7", server: 5.175.205.190, port: 27774, type: vless, uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f, tls: false, network: tcp, udp: true}
   - {name: "🇩🇪 [www.v2nodes.com] vless-DE-1... #9", server: mci.amir12.ir, port: 2112, type: vless, uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9, tls: false, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 5.253.28.224, port: 40443, type: vless, uuid: af5eac96-e478-488a-bc8c-45269d7e8847, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw, short-id: "68a8" }, servername: deepl.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM 2, server: dorado.yokkastars.com, port: 40443, type: vless, uuid: af5eac96-e478-488a-bc8c-45269d7e8847, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw, short-id: "68a8" }, servername: deepl.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇩🇪 德国 | DEU, server: 77.42.12.225, port: 443, type: vless, uuid: 056405e8-de9f-4d0d-8145-956f13cc34da, tls: true, reality-opts: {public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18, short-id: "09d0a94a1c6fc9d5" }, servername: 8fc752g.fi3.h1clayd.click, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: f345a414c040}, udp: true}
   - {name: "🇩🇪 德国 | DEU #3", server: lvi.su, port: 443, type: vless, uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4, tls: true, alpn: [http/1.1], servername: lvi.su, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vpn-relay?token=27fede42482b3c29d4c1c9640876c250", headers: {Host: lvi.su}}, udp: true}
   - {name: "🇩🇪 德国 | DEU #4", server: wqHbVOk8YR9ZAfBY.v.3dns.vip, port: 443, type: vmess, uuid: b664cc36-4896-454b-bb9c-1377c76176de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wqHbVOk8YR9ZAfBY.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: wqHbVOk8YR9ZAfBY.v.3dns.vip}}, udp: true}
@@ -170,6 +170,7 @@ proxies:
   - {name: "🇭🇺 [www.v2nodes.com] vless-HU-1...", server: 13.143.191.7, port: 443, type: vless, uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc, tls: true, servername: edv6f206j8ujw.hat.onl, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: v1.segment.mNoQuDdqMKJm1Jo7.ts}, udp: true}
   - {name: "🇭🇺 [www.v2nodes.com] vless-HU-6...", server: 37.221.210.113, port: 8443, type: vless, uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902, tls: true, servername: free.cndyw.ggff.net, network: ws, ws-opts: {path: pyip=bpb.yousef.isegaro.comfp=random, headers: {Host: free.cndyw.ggff.net}}, udp: true}
   - {name: 🇮🇪 IE_speednode_0013, server: 34.249.214.108, port: 443, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇪 爱尔兰 V2CROSS.COM, server: 78.17.178.125, port: 443, type: vless, uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE, short-id: "e0215064d8d1fd7c" }, servername: cdn.tbank.ru, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇮🇪 爱尔兰 | IRL, server: 50.7.5.165, port: 443, type: vless, uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277, tls: true, flow: xtls-rprx-vision, servername: ir-new1.failspace.top, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇮🇪 爱尔兰 | IRL 2, server: ir-new.failspace.top, port: 443, type: vless, uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277, tls: true, alpn: [h2], flow: xtls-rprx-vision, servername: ir-new.failspace.top, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: 🇮🇪 爱尔兰 | IRL 3, server: 50.7.5.166, port: 443, type: vless, uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277, tls: true, flow: xtls-rprx-vision, servername: ekb.eg, client-fingerprint: firefox, network: tcp, udp: true}
@@ -260,12 +261,12 @@ proxies:
   - {name: "🇷🇺 [www.v2nodes.com] vless-RU-1... #1", server: 201.24.121.243, port: 443, type: vless, uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d, tls: true, network: tcp, udp: true}
   - {name: "🇷🇺 [www.v2nodes.com] vless-RU-1... #4", server: xsru1.ddnsfree.com, port: 443, type: vless, uuid: c90395e6-2140-47ad-a54d-9b166729d3ef, tls: true, servername: xsru1.ddnsfree.com, client-fingerprint: random, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-ru}, udp: true}
   - {name: "🇷🇺 [www.v2nodes.com] vless-RU-1... #5", server: 194.87.143.165, port: 8443, type: vless, uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c, tls: true, servername: wsru1.wba-pn.ru, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: ru11.oshost.network, port: 443, type: vless, uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI, short-id: "97a15f5af85c4a30" }, servername: ru11.oshost.network, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇷🇺 俄罗斯 | RUS, server: ee.h1cloud.net, port: 25895, type: vless, uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2, tls: true, reality-opts: {public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k, short-id: "a73f0410d728c823" }, servername: www.samsung.com, client-fingerprint: firefox, network: tcp, udp: true}
   - {name: "🇷🇺 俄罗斯 | RUS #2", server: xssite.webredirect.org, port: 443, type: vless, uuid: c90395e6-2140-47ad-a54d-9b166729d3ef, tls: true, servername: xssite.webredirect.org, client-fingerprint: random, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: /}, udp: true}
   - {name: "🇷🇺 俄罗斯 | RUS #3", server: 147.45.175.81, port: 443, type: vless, uuid: c90395e6-2140-47ad-a54d-9b166729d3ef, tls: true, servername: xsru2.freeddns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /wsru, headers: {Host: xsru2.freeddns.org}}, udp: true}
   - {name: "🇸🇪 [www.v2nodes.com] ss-SE-1560...", server: 70.34.212.124, port: 8388, type: ss, cipher: aes-256-gcm, password: AxIYWtskJWIIaefW, udp: true}
   - {name: "🇸🇪 [www.v2nodes.com] vless-SE-1...", server: 150.241.72.161, port: 443, type: vless, uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc, tls: true, servername: b6i5po18lw.hat.onl, client-fingerprint: firefox, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: live.gpuwxc84nl.chunk-4022.m4s}, udp: true}
+  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: msk2.rvpn.app, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: MODziWLa9qMuW-4yPa0rfw, udp: true}
   - {name: "🇸🇪 瑞典 | SWE #1", server: 51.20.192.255, port: 443, type: vless, uuid: 7060231d-b9ba-495f-a218-bf427940cf3e, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [play.googleapis.com]}}, udp: true}
   - {name: 🇸🇪 瑞典 | SWE 2, server: 136.148.211.243, port: 443, type: vless, uuid: 4b1be712-774c-4b65-8491-a3339e124a70, tls: true, reality-opts: {public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo, short-id: "11d37dd92940329e" }, servername: se1-cl3.vless-fiberstasis.top, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: grpc-se-3}, udp: true}
   - {name: "🇸🇬 [www.v2nodes.com] trojan-SG-...", server: 139.180.146.200, port: 8886, type: trojan, password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437, udp: true}
@@ -306,9 +307,9 @@ proxies:
   - {name: "🇺🇸 [www.v2nodes.com] trojan-US-... #7", server: 66.163.114.166, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com, skip-cert-verify: true, udp: true}
   - {name: "🇺🇸 [www.v2nodes.com] trojan-US-... #8", server: 66.163.114.132, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: courses.findconnectwithemployersandbuildprofessionalnetwork.com, skip-cert-verify: true, udp: true}
   - {name: "🇺🇸 [www.v2nodes.com] trojan-US-... #9", server: 66.163.114.114, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: learn.findconnectwithemployersandbuildprofessionalnetwork.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.26.4.2, port: 443, type: vless, uuid: d342d11e-d224-4463-b982-532309285094, tls: true, servername: ccc.010304.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /fp=chrome, headers: {Host: ccc.010304.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 108.162.194.134, port: 443, type: trojan, password: humanity, sni: www.pleadcourt.org, network: ws, ws-opts: {path: /assignment, headers: {Host: www.pleadcourt.org}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 45.128.76.242, port: 443, type: trojan, password: humanity, sni: www.trusteeforward.com, network: ws, ws-opts: {path: /assignment, headers: {Host: www.trusteeforward.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.187.145, port: 80, type: vmess, uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: vmess.lbw666.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: starlink-ft.251313.xyz, port: 443, type: hysteria2, password: https%3A%2F%2Fxship.top, auth: https%3A%2F%2Fxship.top, sni: xship.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: ph001.zestapp778.com, port: 15656, type: vless, uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80, tls: true, servername: ph001.zestapp778.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: "🇺🇸 美国 | USA #1", server: 104.18.153.10, port: 443, type: vless, uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4, tls: true, servername: jp3.yohototo.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /tyxyws, headers: {Host: jp3.yohototo.top}}, udp: true}
   - {name: "🇺🇸 美国 | USA #3", server: www.visa.com.sg, port: 2096, type: trojan, password: 3aa78b49-5530-45a2-93cb-b093745824f1, sni: au4.yang-1989.xyz, skip-cert-verify: true, udp: true}
   - {name: "🇺🇸 美国 | USA #4", server: jijWLfZr2d5Hn3ut.v.3dns.vip, port: 443, type: vmess, uuid: b664cc36-4896-454b-bb9c-1377c76176de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: jijWLfZr2d5Hn3ut.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: jijWLfZr2d5Hn3ut.v.3dns.vip}}, udp: true}
@@ -317,7 +318,6 @@ proxies:
   - {name: "🇺🇸 美国 | USA #8", server: 199.232.78.160, port: 443, type: vless, uuid: 46cb8a26-0712-4e85-89bf-2538a2788652, tls: true, servername: firefox.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.}}, udp: true}
   - {name: "🇺🇸 美国 | USA #9", server: 146.75.59.186, port: 443, type: vless, uuid: 46cb8a26-0712-4e85-89bf-2538a2788652, tls: true, servername: firefox.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.}}, udp: true}
   - {name: 🇺🇸 美国 | USA 7, server: 156.229.160.98, port: 9443, type: vless, uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4, short-id: "b390142456517acc" }, servername: www.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司, server: 192.236.226.182, port: 2053, type: hysteria2, password: 46647da9-d4b4-407f-bea6-ad0b1abc561f, auth: 46647da9-d4b4-407f-bea6-ad0b1abc561f, sni: 192.236.226.182, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian, server: bJ1Aa2ZyJxYamYuK.v.3dns.vip, port: 443, type: vmess, uuid: 88888888-8888-8888-8888-888888888888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: bJ1Aa2ZyJxYamYuK.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: bJ1Aa2ZyJxYamYuK.v.3dns.vip}}, udp: true}
   - {name: 🇺🇸 美国2|@ripaojiedian 2, server: 63182sh8-4d7b.aws-agent.net, port: 12122, type: trojan, password: AA885B42-133C-3828-FB69-E45105C06092, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 美国|@ripaojiedian, server: 53vXOVarmgcreAsv.v.3dns.vip, port: 443, type: vmess, uuid: 88888888-8888-8888-8888-888888888888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 53vXOVarmgcreAsv.v.3dns.vip, network: ws, ws-opts: {path: /ws-vmess, headers: {Host: 53vXOVarmgcreAsv.v.3dns.vip}}, udp: true}
@@ -440,7 +440,9 @@ proxy-groups:
       - 🇨🇦 [www.v2nodes.com] ss-CA-1559...
       - "🇨🇦 [www.v2nodes.com] vless-CA-1... #1"
       - 🇨🇭 [www.v2nodes.com] ss-CH-1573...
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇨🇳 中国 - 合肥 - 1
+      - 🇨🇳 北京市 惟译天创信息技术有限公司
       - 🇩🇪 DE_1|2.4MB/s
       - 🇩🇪 DE_2|1.2MB/s|R002-260618
       - 🇩🇪 DE_speednode_0004
@@ -451,8 +453,6 @@ proxy-groups:
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #4"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #7"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #9"
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM 2
       - 🇩🇪 德国 | DEU
       - "🇩🇪 德国 | DEU #3"
       - "🇩🇪 德国 | DEU #4"
@@ -536,6 +536,7 @@ proxy-groups:
       - 🇭🇺 [www.v2nodes.com] vless-HU-1...
       - 🇭🇺 [www.v2nodes.com] vless-HU-6...
       - 🇮🇪 IE_speednode_0013
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇮🇪 爱尔兰 | IRL
       - 🇮🇪 爱尔兰 | IRL 2
       - 🇮🇪 爱尔兰 | IRL 3
@@ -625,6 +626,7 @@ proxy-groups:
       - 🇳🇴 挪威 | NOR 5
       - 🇳🇿 新西兰 V2CROSS.COM
       - 🇳🇿 新西兰 V2CROSS.COM 2
+      - 🇳🇿 新西兰 V2CROSS.COM 3
       - 🇵🇱 PL_1|1.8MB/s
       - 🇵🇱 PL_speednode_0028
       - 🇵🇱 [www.v2nodes.com] ss-PL-1273...
@@ -644,7 +646,6 @@ proxy-groups:
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #1"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #4"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #5"
-      - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 | RUS
       - "🇷🇺 俄罗斯 | RUS #2"
       - "🇷🇺 俄罗斯 | RUS #3"
@@ -652,6 +653,7 @@ proxy-groups:
       - 🇸🇪 [www.v2nodes.com] ss-SE-1560...
       - 🇸🇪 [www.v2nodes.com] vless-SE-1...
       - 🇸🇪 [www.v2nodes.com] vless-SE-9...
+      - 🇸🇪 瑞典 V2CROSS.COM
       - "🇸🇪 瑞典 | SWE #1"
       - 🇸🇪 瑞典 | SWE 2
       - 🇸🇬 [www.v2nodes.com] trojan-SG-...
@@ -694,8 +696,8 @@ proxy-groups:
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #8"
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #9"
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
       - "🇺🇸 美国 | USA #1"
       - "🇺🇸 美国 | USA #2"
       - "🇺🇸 美国 | USA #3"
@@ -706,7 +708,6 @@ proxy-groups:
       - "🇺🇸 美国 | USA #9"
       - 🇺🇸 美国 | USA 3
       - 🇺🇸 美国 | USA 7
-      - 🇺🇸 美国 俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian 2
       - 🇺🇸 美国|@ripaojiedian
@@ -806,7 +807,9 @@ proxy-groups:
       - 🇨🇦 [www.v2nodes.com] ss-CA-1559...
       - "🇨🇦 [www.v2nodes.com] vless-CA-1... #1"
       - 🇨🇭 [www.v2nodes.com] ss-CH-1573...
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇨🇳 中国 - 合肥 - 1
+      - 🇨🇳 北京市 惟译天创信息技术有限公司
       - 🇩🇪 DE_1|2.4MB/s
       - 🇩🇪 DE_2|1.2MB/s|R002-260618
       - 🇩🇪 DE_speednode_0004
@@ -817,8 +820,6 @@ proxy-groups:
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #4"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #7"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #9"
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM 2
       - 🇩🇪 德国 | DEU
       - "🇩🇪 德国 | DEU #3"
       - "🇩🇪 德国 | DEU #4"
@@ -902,6 +903,7 @@ proxy-groups:
       - 🇭🇺 [www.v2nodes.com] vless-HU-1...
       - 🇭🇺 [www.v2nodes.com] vless-HU-6...
       - 🇮🇪 IE_speednode_0013
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇮🇪 爱尔兰 | IRL
       - 🇮🇪 爱尔兰 | IRL 2
       - 🇮🇪 爱尔兰 | IRL 3
@@ -991,6 +993,7 @@ proxy-groups:
       - 🇳🇴 挪威 | NOR 5
       - 🇳🇿 新西兰 V2CROSS.COM
       - 🇳🇿 新西兰 V2CROSS.COM 2
+      - 🇳🇿 新西兰 V2CROSS.COM 3
       - 🇵🇱 PL_1|1.8MB/s
       - 🇵🇱 PL_speednode_0028
       - 🇵🇱 [www.v2nodes.com] ss-PL-1273...
@@ -1010,7 +1013,6 @@ proxy-groups:
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #1"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #4"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #5"
-      - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 | RUS
       - "🇷🇺 俄罗斯 | RUS #2"
       - "🇷🇺 俄罗斯 | RUS #3"
@@ -1018,6 +1020,7 @@ proxy-groups:
       - 🇸🇪 [www.v2nodes.com] ss-SE-1560...
       - 🇸🇪 [www.v2nodes.com] vless-SE-1...
       - 🇸🇪 [www.v2nodes.com] vless-SE-9...
+      - 🇸🇪 瑞典 V2CROSS.COM
       - "🇸🇪 瑞典 | SWE #1"
       - 🇸🇪 瑞典 | SWE 2
       - 🇸🇬 [www.v2nodes.com] trojan-SG-...
@@ -1060,8 +1063,8 @@ proxy-groups:
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #8"
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #9"
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
       - "🇺🇸 美国 | USA #1"
       - "🇺🇸 美国 | USA #2"
       - "🇺🇸 美国 | USA #3"
@@ -1072,7 +1075,6 @@ proxy-groups:
       - "🇺🇸 美国 | USA #9"
       - 🇺🇸 美国 | USA 3
       - 🇺🇸 美国 | USA 7
-      - 🇺🇸 美国 俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian 2
       - 🇺🇸 美国|@ripaojiedian
@@ -1179,6 +1181,7 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇨🇳 中国 - 合肥 - 1
+      - 🇨🇳 北京市 惟译天创信息技术有限公司
       - 🇭🇰 HK_1|1.1MB/s
       - 🇭🇰 HK_1|656KB/s
       - 🇭🇰 [www.v2nodes.com] trojan-HK-...
@@ -1274,8 +1277,8 @@ proxy-groups:
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #8"
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #9"
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
       - "🇺🇸 美国 | USA #1"
       - "🇺🇸 美国 | USA #2"
       - "🇺🇸 美国 | USA #3"
@@ -1286,7 +1289,6 @@ proxy-groups:
       - "🇺🇸 美国 | USA #9"
       - 🇺🇸 美国 | USA 3
       - 🇺🇸 美国 | USA 7
-      - 🇺🇸 美国 俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian 2
       - 🇺🇸 美国|@ripaojiedian
@@ -1382,6 +1384,7 @@ proxy-groups:
       - 🇨🇦 [www.v2nodes.com] ss-CA-1559...
       - "🇨🇦 [www.v2nodes.com] vless-CA-1... #1"
       - 🇨🇭 [www.v2nodes.com] ss-CH-1573...
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇩🇪 DE_1|2.4MB/s
       - 🇩🇪 DE_2|1.2MB/s|R002-260618
       - 🇩🇪 DE_speednode_0004
@@ -1392,8 +1395,6 @@ proxy-groups:
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #4"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #7"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #9"
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM 2
       - 🇩🇪 德国 | DEU
       - "🇩🇪 德国 | DEU #3"
       - "🇩🇪 德国 | DEU #4"
@@ -1449,6 +1450,7 @@ proxy-groups:
       - 🇭🇺 [www.v2nodes.com] vless-HU-1...
       - 🇭🇺 [www.v2nodes.com] vless-HU-6...
       - 🇮🇪 IE_speednode_0013
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇮🇪 爱尔兰 | IRL
       - 🇮🇪 爱尔兰 | IRL 2
       - 🇮🇪 爱尔兰 | IRL 3
@@ -1526,6 +1528,7 @@ proxy-groups:
       - 🇳🇴 挪威 | NOR 5
       - 🇳🇿 新西兰 V2CROSS.COM
       - 🇳🇿 新西兰 V2CROSS.COM 2
+      - 🇳🇿 新西兰 V2CROSS.COM 3
       - 🇵🇱 PL_1|1.8MB/s
       - 🇵🇱 PL_speednode_0028
       - 🇵🇱 [www.v2nodes.com] ss-PL-1273...
@@ -1545,7 +1548,6 @@ proxy-groups:
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #1"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #4"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #5"
-      - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 | RUS
       - "🇷🇺 俄罗斯 | RUS #2"
       - "🇷🇺 俄罗斯 | RUS #3"
@@ -1553,6 +1555,7 @@ proxy-groups:
       - 🇸🇪 [www.v2nodes.com] ss-SE-1560...
       - 🇸🇪 [www.v2nodes.com] vless-SE-1...
       - 🇸🇪 [www.v2nodes.com] vless-SE-9...
+      - 🇸🇪 瑞典 V2CROSS.COM
       - "🇸🇪 瑞典 | SWE #1"
       - 🇸🇪 瑞典 | SWE 2
       - 🇸🇮 [www.v2nodes.com] vless-SI-1...
@@ -1607,6 +1610,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 中国 - 合肥 - 1
+      - 🇨🇳 北京市 惟译天创信息技术有限公司
       - 🇭🇰 HK_1|1.1MB/s
       - 🇭🇰 HK_1|656KB/s
       - 🇭🇰 [www.v2nodes.com] trojan-HK-...
@@ -1693,8 +1697,8 @@ proxy-groups:
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #8"
       - "🇺🇸 [www.v2nodes.com] trojan-US-... #9"
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 2
       - "🇺🇸 美国 | USA #1"
       - "🇺🇸 美国 | USA #2"
       - "🇺🇸 美国 | USA #3"
@@ -1705,7 +1709,6 @@ proxy-groups:
       - "🇺🇸 美国 | USA #9"
       - 🇺🇸 美国 | USA 3
       - 🇺🇸 美国 | USA 7
-      - 🇺🇸 美国 俄克拉何马州欧塞奇、罗杰斯、塔尔萨与瓦戈纳县塔尔萨市HostWinds有限公司
       - 🇺🇸 美国2|@ripaojiedian
       - 🇺🇸 美国2|@ripaojiedian 2
       - 🇺🇸 美国|@ripaojiedian
@@ -1798,6 +1801,7 @@ proxy-groups:
       - 🇨🇦 [www.v2nodes.com] ss-CA-1559...
       - "🇨🇦 [www.v2nodes.com] vless-CA-1... #1"
       - 🇨🇭 [www.v2nodes.com] ss-CH-1573...
+      - 🇨🇭 瑞士 V2CROSS.COM
       - 🇩🇪 DE_1|2.4MB/s
       - 🇩🇪 DE_2|1.2MB/s|R002-260618
       - 🇩🇪 DE_speednode_0004
@@ -1808,8 +1812,6 @@ proxy-groups:
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #4"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #7"
       - "🇩🇪 [www.v2nodes.com] vless-DE-1... #9"
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM 2
       - 🇩🇪 德国 | DEU
       - "🇩🇪 德国 | DEU #3"
       - "🇩🇪 德国 | DEU #4"
@@ -1865,6 +1867,7 @@ proxy-groups:
       - 🇭🇺 [www.v2nodes.com] vless-HU-1...
       - 🇭🇺 [www.v2nodes.com] vless-HU-6...
       - 🇮🇪 IE_speednode_0013
+      - 🇮🇪 爱尔兰 V2CROSS.COM
       - 🇮🇪 爱尔兰 | IRL
       - 🇮🇪 爱尔兰 | IRL 2
       - 🇮🇪 爱尔兰 | IRL 3
@@ -1942,6 +1945,7 @@ proxy-groups:
       - 🇳🇴 挪威 | NOR 5
       - 🇳🇿 新西兰 V2CROSS.COM
       - 🇳🇿 新西兰 V2CROSS.COM 2
+      - 🇳🇿 新西兰 V2CROSS.COM 3
       - 🇵🇱 PL_1|1.8MB/s
       - 🇵🇱 PL_speednode_0028
       - 🇵🇱 [www.v2nodes.com] ss-PL-1273...
@@ -1961,7 +1965,6 @@ proxy-groups:
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #1"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #4"
       - "🇷🇺 [www.v2nodes.com] vless-RU-1... #5"
-      - 🇷🇺 俄罗斯 V2CROSS.COM
       - 🇷🇺 俄罗斯 | RUS
       - "🇷🇺 俄罗斯 | RUS #2"
       - "🇷🇺 俄罗斯 | RUS #3"
@@ -1969,6 +1972,7 @@ proxy-groups:
       - 🇸🇪 [www.v2nodes.com] ss-SE-1560...
       - 🇸🇪 [www.v2nodes.com] vless-SE-1...
       - 🇸🇪 [www.v2nodes.com] vless-SE-9...
+      - 🇸🇪 瑞典 V2CROSS.COM
       - "🇸🇪 瑞典 | SWE #1"
       - 🇸🇪 瑞典 | SWE 2
       - 🇸🇮 [www.v2nodes.com] vless-SI-1...
